@@ -1,0 +1,354 @@
+import {
+    FaFacebookF,
+    FaInstagram,
+    FaLinkedinIn,
+    FaXTwitter,
+    FaYoutube,
+} from "react-icons/fa6";
+
+import { FaShop } from "react-icons/fa6";
+import { MdVilla } from "react-icons/md";
+
+export const categories = [
+    {
+        id: "1",
+        name: "للبيع",
+        name_en: "Property for sale",
+        icon: "/assets/icons/house.svg",
+    },
+    {
+        id: "2",
+        name: "للإيجار",
+        name_en: "Property for rent",
+        icon: "/assets/icons/house-rent.svg",
+    },
+];
+
+export const propretyTypes = [
+    {
+        id: "1",
+        value: "سكني",
+        label: "وحدات سكنية",
+        name_en: "Residental Property",
+        icon: <MdVilla size={20} color={"rgb(244 63 94)"} />,
+    },
+    {
+        id: "2",
+        value: "تجاري",
+        label: "وحدات تجارية",
+        name_en: "Commercial Property",
+        icon: <FaShop size={20} color={"rgb(244 63 94)"} />,
+    },
+];
+
+export const navItems = [
+    {
+        id: "1",
+        name: "الرئيسية",
+        slug: "/",
+    },
+    {
+        id: "2",
+        name: "للبيع",
+        slug: "/properties-for-sale",
+    },
+    {
+        id: "2",
+        name: "للإيجار",
+        slug: "/properties-for-rent",
+    },
+    {
+        id: "3",
+        name: "المدونة",
+        slug: "/#",
+    },
+    {
+        id: "5",
+        name: "من نحن",
+        slug: "/#",
+    },
+    {
+        id: "5",
+        name: "اتصل بنا",
+        slug: "/#",
+    },
+];
+
+export const residentalTypes = [
+    {
+        id: "1",
+        label: "شقة",
+        name: "شقة",
+        name_en: "Apartmnet",
+    },
+    {
+        id: "2",
+        label: "فيلا",
+        name: "فيلا",
+
+        name_en: "Villa",
+    },
+    {
+        id: "3",
+        label: "تاونهاوس",
+        name: "تاونهاوس",
+
+        name_en: "Townhouse",
+    },
+    {
+        id: "4",
+        label: "بنتهاوس",
+        name: "بنتهاوس",
+        name_en: "penthouse",
+    },
+    {
+        id: "5",
+        label: "دوبلكس",
+        name: "دوبلكس",
+        name_en: "Duplex",
+    },
+    {
+        id: "6",
+        label: "مبنى سكني",
+        name: "مبنى سكني",
+        name_en: "Building",
+    },
+    {
+        id: "7",
+        label: "مجمع فيلات",
+        name: "مجمع فيلات",
+        name_en: "Villa compound",
+    },
+    {
+        id: "8",
+        label: "طابق سكني",
+        name: "طابق سكني",
+        name_en: "Floor",
+    },
+    {
+        id: "9",
+        label: "منزل",
+        name: "منزل",
+        name_en: "House",
+    },
+    {
+        id: "10",
+        label: "قطعة أرض",
+        name: "قطعة أرض",
+        name_en: "Land",
+    },
+];
+
+export const commercialTypes = [
+    {
+        id: "1",
+        label: "مكتب",
+        name: "مكتب",
+        name_en: "Office for sale",
+    },
+    {
+        id: "2",
+        label: "مخزن",
+        name: "مخزن",
+        name_en: "Warehouse",
+    },
+    {
+        id: "3",
+        label: "محل تجاري ",
+        name: "محل تجاري ",
+        name_en: "Shop for sale",
+    },
+    {
+        id: "4",
+        label: "طابق تجاري",
+        name: "طابق تجاري",
+        name_en: "commercial floor",
+    },
+    {
+        id: "5",
+        label: "مصنع",
+        name: "مصنع",
+        name_en: "Factory",
+    },
+    {
+        id: "6",
+        label: "مساحة عمل",
+        name: "مساحة عمل",
+        name_en: "Work space",
+    },
+    {
+        id: "7",
+        label: "قاعة عرض",
+        name: "قاعة عرض",
+        name_en: "Show room",
+    },
+    {
+        id: "8",
+        label: "مبنى تجاري",
+        name: "مبنى تجاري",
+        name_en: "Commercial building",
+    },
+];
+
+export const amenitiesItems = [
+    {
+        id: "1",
+        name: "شرفة",
+    },
+    {
+        id: "2",
+        name: "حمام سباحة خاص  ",
+    },
+    {
+        id: "3",
+        name: "حمام سباحة مشترك   ",
+    },
+    {
+        id: "4",
+        name: "إطلالة على معلم رئيسي   ",
+    },
+    {
+        id: "5",
+        name: "خدمات المصاعد  ",
+    },
+    {
+        id: "6",
+        name: "مركز أعمال ",
+    },
+
+    {
+        id: "7",
+        name: "تسهيلات لأصحاب الهمم  ",
+    },
+];
+
+export const paymentPlans = [
+    {
+        id: "1",
+        name: " الدفع كاش",
+        name_en: "Cash Plan",
+    },
+    {
+        id: "2",
+        name: "  الدفع بنظام الأقساط",
+        name_en: "Installment Plan",
+    },
+];
+
+export const saleTypes = [
+    {
+        id: "1",
+        name: " بيع من المطور",
+        name_en: "By Developer",
+    },
+    {
+        id: "2",
+        name: " إعادة بيع ",
+    },
+];
+
+export const socialMedia = [
+    {
+        id: "1",
+        name: "فيسبوك",
+        name_en: "Facebook",
+        icon: <FaFacebookF />,
+        url: "https://facebook.com",
+    },
+    {
+        id: "2",
+        name: "تويتر",
+        name_en: "Twitter",
+        icon: <FaXTwitter />,
+        url: "https://x.com",
+    },
+    {
+        id: "3",
+        name: "إنستجرام",
+        name_en: "Instagram",
+        icon: <FaInstagram />,
+        url: "https://instagram.com",
+    },
+    {
+        id: "4",
+        name: "يوتيوب",
+        name_en: "Youtube",
+        icon: <FaYoutube />,
+        url: "https://youtube.com",
+    },
+    {
+        id: "5",
+        name: "لينكد إن",
+        name_en: "Linkedin",
+        icon: <FaLinkedinIn />,
+        url: "https://linkedin.com",
+    },
+];
+
+
+export const topSearchingAreas = [
+    {
+        id: "1",
+        label: "القاهرة الجديدة",
+        name: "القاهرة الجديدة",
+        name_en: "New Cairo",
+        image: "/assets/images/new-cairo.jpg",
+        slug: `/search?aria=القاهرة الجديدة`,
+    },
+    {
+        id: "2",
+        label: "العاصمة الإدارية الجديدة",
+        name: "العاصمة الإدارية ",
+        name_en: "New Capital City",
+        image: "/assets/images/new-capital-city.jpg",
+        slug: `/search?aria=العاصمة الإدارية الجديدة`,
+    },
+    {
+      id: "3",
+        label: "مدينة السادس من اكتوبر",
+        name: " السادس من اكتوبر",
+        name_en: " 6th October City",
+        image: "/assets/images/6th-october-city.jpg",
+        slug: `/search?aria=مدينة السادس من اكتوبر`,
+    },
+    {
+      id: "4",
+        label: "الساحل الشمالي",
+        name: "الساحل الشمالي",
+        name_en: "The North Coast",
+        image: "/assets/images/north-coast.jpg",
+        slug: `/search?aria=الساحل الشمالي`,
+    },
+    {
+      id: "5",
+        label: "مدينة الشيخ زايد",
+        name: "مدينة الشيخ زايد",
+        name_en: "Shiekh Zayed City",
+        image: "/assets/images/shiekh-zayed-city.jpg",
+        slug: `/search?aria=مدينة الشيخ زايد`,
+    },
+    {
+      id: "6",
+        label: "الجونة",
+        name: "الجونة",
+        name_en: "El-Gouna",
+        image: "/assets/images/algouna.jpg",
+        slug: `/search?aria=الجونة`,
+    },
+    {
+      id: "7",
+        label: "مدينة المستقبل",
+        name: "مدينة المستقبل",
+        name_en: "Al Mustakbal City",
+        image: "/assets/images/almustakbal.jpg",
+        slug: `/search?aria=مدينة المستقبل`,
+    },
+    {
+      id: "8",
+        label: "العين السخنة",
+        name: "العين السخنة",
+        name_en: "Al-Ain Alsokhna",
+        image: "/assets/images/alsokhna.jpg",
+        slug: `/search?aria=العين السخنة`,
+    }
+];

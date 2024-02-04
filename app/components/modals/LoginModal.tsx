@@ -1,15 +1,16 @@
 'use client';
 
-import { useCallback, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { toast } from "react-hot-toast";
 import { signIn } from 'next-auth/react';
-import { 
-  FieldValues, 
-  SubmitHandler, 
+import {
+  FieldValues,
+  SubmitHandler,
   useForm
 } from "react-hook-form";
 import { FcGoogle } from "react-icons/fc";
-import { AiFillGithub } from "react-icons/ai";
+import { FaFacebook } from "react-icons/fa";
+import { MdMail } from "react-icons/md";
 import { useRouter } from "next/navigation";
 
 import useRegisterModal from "@/app/hooks/useRegisterModal";
@@ -25,9 +26,11 @@ const LoginModal = () => {
   const loginModal = useLoginModal();
   const registerModal = useRegisterModal();
   const [isLoading, setIsLoading] = useState(false);
+  const [email, setEmail] = useState(Boolean);
+  const ltr = false//(router as any).locale === 'en';
 
-  const { 
-    register, 
+  const {
+    register,
     handleSubmit,
     formState: {
       errors,
@@ -38,46 +41,51 @@ const LoginModal = () => {
       password: ''
     },
   });
-  
-  const onSubmit: SubmitHandler<FieldValues> = 
-  (data) => {
-    setIsLoading(true);
 
-    signIn('credentials', { 
-      ...data, 
-      redirect: false,
-    })
-    .then((callback) => {
-      setIsLoading(false);
+  const onSubmit: SubmitHandler<FieldValues> =
+    (data) => {
+      setIsLoading(true);
 
-      if (callback?.ok) {
-        toast.success('Logged in');
-        router.refresh();
-        loginModal.onClose();
-      }
-      
-      if (callback?.error) {
-        toast.error(callback.error);
-      }
-    });
-  }
+      signIn('credentials', {
+        ...data,
+        redirect: false,
+      })
+        .then((callback) => {
+          setIsLoading(false);
+
+          if (callback?.ok) {
+            router.refresh();
+            loginModal.onClose();
+          }
+
+          if (callback?.error) {
+            toast.error(callback.error);
+          }
+        });
+    }
+
+  useEffect(() => {
+    if (loginModal.isOpen) {
+      setEmail(false);
+    }
+  }, [loginModal.isOpen])
 
   const onToggle = useCallback(() => {
     loginModal.onClose();
     registerModal.onOpen();
   }, [loginModal, registerModal])
 
-  const bodyContent = (
-    <div className="flex flex-col gap-4">
+  const emailLogin = (
+    <div className="flex flex-col gap-4 px-2 md:px-5 lg:px-5 xl:px-5">
       <Heading
-        title="Welcome back"
-        subtitle="Login to your account!"
+        title={ltr ? "Welcome back" : "مرحبا بك!"}
+        subtitle={ltr ? "Login to your account!" : " تسجيل الدخول إلى حسابك"}
       />
       <Input
         id="email"
         label="Email"
         disabled={isLoading}
-        register={register}  
+        register={register}
         errors={errors}
         required
       />
@@ -93,49 +101,58 @@ const LoginModal = () => {
     </div>
   )
 
-  const footerContent = (
-    <div className="flex flex-col gap-4 mt-3">
-      <hr />
-      <Button 
-        outline 
-        label="Continue with Google"
+  const socialLogin = (
+    <div className="flex flex-col gap-4 mt-3 px-2 md:px-5 lg:px-5 xl:px-5">
+      <Button
+        outline
+        label={ltr ? 'Continue with Google' : 'متابعة باستخدام جوجل'}
         icon={FcGoogle}
         onClick={() => signIn('google')}
       />
-      <Button 
-        outline 
-        label="Continue with Github"
-        icon={AiFillGithub}
-        onClick={() => signIn('github')}
+      <Button
+        outline
+        label={ltr ? 'Continue with Facebook' : 'متابعة باستخدام فيسبوك'}
+        icon={FaFacebook}
+        onClick={() => signIn('facebook')}
       />
-      <div className="
-      text-neutral-500 text-center mt-4 font-light">
-        <p>First time using Airbnb?
-          <span 
-            onClick={onToggle} 
-            className="
-              text-neutral-800
+      <Button
+        outline
+        label={ltr ? 'Continue with Email' : 'متابعة باستخدام البريد الإلكتروني'}
+        icon={MdMail}
+        onClick={() => setEmail(true)}
+      />
+    </div>
+  )
+
+  const footer = (
+    <div className="
+      text-neutral-500 text-sm text-center mt-4 font-light px-2 md:px-5 lg:px-5 xl:px-5">
+      <p> {ltr ? 'You dont have an account?' : 'ليس لديك حساب؟ '}
+        <span
+          onClick={onToggle}
+          className="
+              text-red-500
+              text-sm
               cursor-pointer 
               hover:underline
             "
-            > Create an account</span>
-        </p>
-      </div>
-    </div>
-  )
+        >  {ltr ? 'Create an account' : 'أنشاء حساب جديد '}</span>
+      </p>
+    </div>)
+
 
   return (
     <Modal
       disabled={isLoading}
       isOpen={loginModal.isOpen}
-      title="Login"
-      actionLabel="Continue"
+      title={ltr ? 'Login' : 'تسجيل الدخول '}
+      actionLabel={ltr ? 'Continue' : 'متابعة'}
       onClose={loginModal.onClose}
-      onSubmit={handleSubmit(onSubmit)}
-      body={bodyContent}
-      footer={footerContent}
+      onSubmit={email ? handleSubmit(onSubmit) : () => setEmail(true)}
+      body={!email ? socialLogin : emailLogin}
+      footer={footer}
     />
-  );
-}
+  )
+};
 
 export default LoginModal;

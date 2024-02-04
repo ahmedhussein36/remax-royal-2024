@@ -14,7 +14,7 @@ interface ListingClientProps {
 
 const ListingClient: React.FC<ListingClientProps> = ({
     listing,
-    currentUser,
+    currentUser, 
 }) => {   
 
     return (

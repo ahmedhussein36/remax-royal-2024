@@ -10,6 +10,7 @@ const formattedGovernorates = governorates.map((governorate) => ({
 const formattedCity = cities.map((city) => ({
     id: city.id,
     govId: city.governorate_id,
+    govName: "",
     value: city.city_name_ar,
     name: city.city_name_ar,
     name_en: city.city_name_en,

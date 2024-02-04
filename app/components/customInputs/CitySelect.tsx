@@ -34,7 +34,7 @@ const CitySelect: React.FC<CitySelectProps> = ({
                 formatOptionLabel={({ value }) => <div>{value}</div>}
                 classNames={{
                     control: () =>
-                        "p-2 border placeholder:text-slate-400 focus:border-primary-500",
+                        "p-1 border placeholder:text-slate-400 focus:border-primary-500",
                     input: () => "text-slate-300",
                     option: () => "",
                 }}

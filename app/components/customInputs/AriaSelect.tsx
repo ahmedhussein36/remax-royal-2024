@@ -32,13 +32,15 @@ const AriaSelect: React.FC<CitySelectProps> = ({
             <Select
                 isClearable
                 value={value}
-                onChange={(value) => onChange(value as AriaSelectValue)}
+                onChange={(value) => {
+                    onChange(value as AriaSelectValue);
+                }}
                 options={govId ? filteredArias : getAll()}
-                placeholder="اختر المنطقة أو الحي"
+                placeholder="ابحث عن المدينة أو المنطقة أو الكمبوند"
                 formatOptionLabel={({ value }: any) => <div>{value}</div>}
                 classNames={{
-                    control: () => "p-2 border placeholder:text-slate-300",
-                    input: () => "text-red-400",
+                    control: () => "p-1 border placeholder:text-slate-300",
+                    input: () => "",
                     option: () => "",
                 }}
                 theme={(theme) => ({
@@ -48,7 +50,7 @@ const AriaSelect: React.FC<CitySelectProps> = ({
                         ...theme.colors,
                         primary50: "rgb(241 245 249)",
                         primary25: "rgb(241 245 249)",
-                        primary: "#CBD2E0",
+                        primary: "#cbd5e1",
                     },
                 })}
             />

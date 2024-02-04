@@ -32,7 +32,7 @@ const Footer = () => {
                             ))}
                         </div>
                         <span className="hidden md:block">|</span>
-                        <div className="flex justify-start items-center gap-2 md:gap-4 flex-wrap text-xs w-full">
+                        <div className="flex justify-start items-center gap-2 md:gap-4 flex-wrap text-sm w-full">
                             {navItems.map((item, index) => (
                                 <Link href={item.slug} key={index}>
                                     <span>{item.name}</span>

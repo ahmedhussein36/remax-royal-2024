@@ -39,7 +39,11 @@ const CategoryBox: React.FC<CategoryBoxProps> = ({
         cursor-pointer
         ${selected && !isFilter ? "border-red-500" : "border-slate-300"}
         ${isFilter ? "w-1/2" : ""}
-        ${selected && isFilter ? "bg-slate-500 text-slate-50 border-0" : "bg-white"}
+        ${
+            selected && isFilter
+                ? "bg-slate-500 text-slate-50 border-0"
+                : "bg-white"
+        }
 
       `}
         >

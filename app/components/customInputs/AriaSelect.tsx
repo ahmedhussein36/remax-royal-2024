@@ -28,13 +28,13 @@ const AriaSelect: React.FC<CitySelectProps> = ({
 
     return (
         <div>
-            {!isFilter ? <span className=" ">المحافظة</span> : ""}
+            {!isFilter ? <span className=" ">المدينة</span> : ""}
             <Select
                 isClearable
                 value={value}
                 onChange={(value) => onChange(value as AriaSelectValue)}
                 options={govId ? filteredArias : getAll()}
-                placeholder="اختر المدينة أو المنطقة"
+                placeholder="اختر المنطقة أو الحي"
                 formatOptionLabel={({ value }: any) => <div>{value}</div>}
                 classNames={{
                     control: () => "p-2 border placeholder:text-slate-300",

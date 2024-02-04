@@ -12,14 +12,18 @@ import PropretyContacts from "./PropretyContacts";
 interface PropertyCardProps {
     data: SafeProperty;
     currentUser?: SafeUser | null;
-    parent?:string
+    parent?: string;
 }
 
-const PropertyCard: React.FC<PropertyCardProps> = ({ data, currentUser, parent }) => {
+const PropertyCard: React.FC<PropertyCardProps> = ({
+    data,
+    currentUser,
+    parent,
+}) => {
     const router = useRouter();
 
     const location = `${data.ariaValue} / ${data.cityValue}`;
-    const title = ` ${data.propertyGroup} ${data.category} في ${data.ariaValue} ب${data.cityValue}`;
+    const title = ` ${data.propertyGroup} ${data.category} ${data.roomCount} غرفة في ${data.address} ب${data.ariaValue}`;
 
     return (
         <div

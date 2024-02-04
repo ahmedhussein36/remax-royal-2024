@@ -30,7 +30,7 @@ const CitySelect: React.FC<CitySelectProps> = ({
                 onChange={(value) => onChange(value as CitySelectValue)}
                 isClearable
                 options={getAll()}
-                placeholder="اختر المحافظة"
+                placeholder="المدينة"
                 formatOptionLabel={({ value }) => <div>{value}</div>}
                 classNames={{
                     control: () =>

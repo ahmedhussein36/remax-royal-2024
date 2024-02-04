@@ -26,7 +26,7 @@ export const authOptions: AuthOptions = {
       },
       async authorize(credentials) {
         if (!credentials?.email || !credentials?.password) {
-          throw new Error('Invalid credentials');
+          throw new Error('خطأ في اسم المستخدم أو كلمة المرور');
         }
 
         const user = await prisma.user.findUnique({
@@ -36,7 +36,7 @@ export const authOptions: AuthOptions = {
         });
 
         if (!user || !user?.hashedPassword) {
-          throw new Error('Invalid credentials');
+          throw new Error('خطأ في اسم المستخدم أو كلمة المرور');
         }
 
         const isCorrectPassword = await bcrypt.compare(
@@ -45,7 +45,7 @@ export const authOptions: AuthOptions = {
         );
 
         if (!isCorrectPassword) {
-          throw new Error('Invalid credentials');
+          throw new Error('خطأ في اسم المستخدم أو كلمة المرور');
         }
 
         return user;
@@ -54,6 +54,7 @@ export const authOptions: AuthOptions = {
   ],
   pages: {
     signIn: '/',
+    signOut: '/'
   },
   debug: process.env.NODE_ENV === 'development',
   session: {

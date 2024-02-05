@@ -7,11 +7,11 @@ import HeartButton from "./SingleHeartButton ";
 import { SafeProperty, SafeUser } from "@/app/types";
 
 interface PropertInfoProps {
-    data: SafeProperty; 
+    data: SafeProperty;
     currentUser?: SafeUser | null;
     listingId: string;
-    title: string
-    location: string
+    title: string;
+    location: string;
 }
 
 const PropertInfo: React.FC<PropertInfoProps> = ({
@@ -31,39 +31,43 @@ const PropertInfo: React.FC<PropertInfoProps> = ({
                     <div className="flex items-center gap-2">
                         <SlLocationPin />
 
-                        <p>
-                            {location}
-                        </p>
+                        <p>{location}</p>
                     </div>
                 </div>
 
                 <div className="proFeature bg-slate-0 px-4  py-2 w-[50%] flex justify-between items-center gap-2 rounded-md text-slate-600">
                     <div className="flex justify-start items-center gap-1">
-                        <LuBedDouble />
+                        <LuBedDouble size={20} color="#64748b" />
                         <span className=" text-base">
                             {data.roomCount} غرفة
                         </span>
                     </div>
                     <div className="flex justify-start items-center gap-1">
-                        <LuBath />
+                        <LuBath size={20} color="#64748b" />
                         <span className=" text-base">
                             {data.bathroomCount} حمام
                         </span>
                     </div>
 
                     <div className="flex justify-start items-center gap-1">
-                        <LiaRulerCombinedSolid />
+                        <LiaRulerCombinedSolid size={20} color="#64748b" />
                         <span className=" text-base">{data.size} متر مربع</span>
                     </div>
                 </div>
 
-                <div className="proPrice h-full flex flex-col justify-between gap-1 items-start ">
+                <div className="proPrice h-full flex justify-between gap-6 items-end ">
                     <div className="flex gap-2 items-end">
                         <span className="text-2xl text-slate-600 font-bold">
                             {data.price}
                         </span>
                         <span>{"ج.م"}</span>
                     </div>
+                    {data.installmentValue !== 0 && (
+                        <div className=" text-lg font-bold text-slate-500">
+                            <span>{data.installmentValue}</span>{" "}
+                            <span>/ شهريا</span>
+                        </div>
+                    )}
                 </div>
             </div>
             <div className=" flex justify-end items-center w-1/4">

@@ -7,7 +7,7 @@ import Gallary from "@/app/components/properties/Gallary";
 import PropertInfo from "@/app/components/properties/PropertInfo";
 import PropertDetails from "@/app/components/properties/PropertDetails";
 import AgentInfo from "@/app/components/properties/AgentInfo";
-import PaymentPlans from "@/app/components/properties/paymentPlans";
+import PaymentPlans from "@/app/components/properties/PaymentPlans";
 
 interface PropertyClientProps {
     listing: SafeProperty & {
@@ -45,7 +45,7 @@ const PropertyClient: React.FC<PropertyClientProps> = ({
                             image={listing.user?.image as string}
                             listing={listing}
                         />
-                        <PaymentPlans data={listing}/>
+                        <PaymentPlans data={listing} />
                     </div>
                 </div>
             </Container>

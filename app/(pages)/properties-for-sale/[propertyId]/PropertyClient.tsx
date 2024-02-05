@@ -8,14 +8,15 @@ import PropertInfo from "@/app/components/properties/PropertInfo";
 import PropertDetails from "@/app/components/properties/PropertDetails";
 import AgentInfo from "@/app/components/properties/AgentInfo";
 
-interface ListingClientProps {
+interface PropertyClientProps {
     listing: SafeProperty & {
         user: SafeUser;
     };
+
     currentUser?: SafeUser | null;
 }
 
-const ListingClient: React.FC<ListingClientProps> = ({
+const PropertyClient: React.FC<PropertyClientProps> = ({
     listing,
     currentUser,
 }) => {
@@ -27,16 +28,17 @@ const ListingClient: React.FC<ListingClientProps> = ({
                 <div className="flex flex-col md:flex-row justify-between items-start gap-4 w-full my-4">
                     <div className="w-full gap-4 column-8">
                         <PropertInfo
-                            listings={listing}
+                            data={listing}
                             currentUser={currentUser}
                             listingId={listing.id}
                         />
-                        <PropertDetails listings={listing} />
+                        <PropertDetails data={listing} />
                     </div>
                     <div className="w-1/3 column-2">
                         <AgentInfo
-                            user={listing.user.name}
-                            image={listing.user.image}
+                            user={listing.user?.name as string}
+                            image={listing.user?.image as string}
+                            listing={listing}
                         />
                     </div>
                 </div>
@@ -45,4 +47,4 @@ const ListingClient: React.FC<ListingClientProps> = ({
     );
 };
 
-export default ListingClient;
+export default PropertyClient;

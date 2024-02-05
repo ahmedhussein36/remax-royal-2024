@@ -1,9 +1,10 @@
+import { SafeProperty } from "@/app/types";
 
 interface PropDetailsProps{
-    data: any[]
+    data: any
 }
 
-const PropDetails = ({ data }) => {
+const PropDetails: React.FC<PropDetailsProps> = ({ data }) => {
     return (
         <div className="flex flex-col mt-4 border rounded-lg p-6">
             <h2 className="font-bold text-xl">تفاصيل العقار</h2>
@@ -24,7 +25,7 @@ const PropDetails = ({ data }) => {
                     <div className="flex justify-start items-center gap-2 w-full border-b py-3">
                         <span className="w-1/2 text-sm">الرقم المرجعي</span>
                         <span className=" w-1/2 font-bold text-sm">
-                            {data?.propertyId || "N/A"}
+                            {data?.id || "N/A"}
                         </span>
                     </div>
                     <div className="flex justify-start items-center gap-2 w-full border-b py-3">
@@ -77,13 +78,19 @@ const PropDetails = ({ data }) => {
                     <div className="flex item-center justify-start gap-4 w-[250px]">
                         <span className="w-1/2">المقدم</span>
                         <span className="w-1/2 text-base font-bold">
-                            {}
+                            {data.downPayment}
+                        </span>
+                    </div>
+                    <div className="flex item-center justify-start gap-4 w-[250px]">
+                        <span className="w-1/2">قيمة القسط</span>
+                        <span className="w-1/2 text-base font-bold">
+                            {data.installmentValue}
                         </span>
                     </div>
                     <div className="flex item-center justify-start gap-4 w-[250px]">
                         <span className="w-1/2">مدة التقسيط</span>
                         <span className="w-1/2 text-base font-bold">
-                        {} سنوات
+                        {data.installmentPeriod} سنوات
                         </span>
                     </div>
                 </div>

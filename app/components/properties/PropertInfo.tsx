@@ -7,13 +7,13 @@ import HeartButton from "./SingleHeartButton ";
 import { SafeProperty, SafeUser } from "@/app/types";
 
 interface PropertInfoProps {
-    listings: SafeProperty[];
+    data: SafeProperty;
     currentUser?: SafeUser | null;
     listingId: string;
 }
 
 const PropertInfo: React.FC<PropertInfoProps> = ({
-    listings,
+    data,
     listingId,
     currentUser,
 }) => {
@@ -22,13 +22,13 @@ const PropertInfo: React.FC<PropertInfoProps> = ({
             <div className="flex flex-col gap-3 justify-between  items-start w-3/4 ">
                 <div className="title flex flex-col gap-2 items-start">
                     <h1 className=" text-xl font-bold text-slate-700">
-                        {`${listings.propertyGroup} ${listings.category}  في ${listings.ariaValue} ب${listings.cityValue}`}
+                        {`${data.propertyGroup} ${data.category}  في ${data.ariaValue} ب${data.cityValue}`}
                     </h1>
                     <div className="flex items-center gap-2">
                         <SlLocationPin />
 
                         <p>
-                            {listings.ariaValue} / {listings.cityValue}
+                            {data.ariaValue} / {data.cityValue}
                         </p>
                     </div>
                 </div>
@@ -37,26 +37,26 @@ const PropertInfo: React.FC<PropertInfoProps> = ({
                     <div className="flex justify-start items-center gap-1">
                         <LuBedDouble />
                         <span className=" text-base">
-                            {listings.roomCount} غرفة
+                            {data.roomCount} غرفة
                         </span>
                     </div>
                     <div className="flex justify-start items-center gap-1">
                         <LuBath />
                         <span className=" text-base">
-                            {listings.bathroomCount} حمام
+                            {data.bathroomCount} حمام
                         </span>
                     </div>
 
                     <div className="flex justify-start items-center gap-1">
                         <LiaRulerCombinedSolid />
-                        <span className=" text-base">{listings.size} متر مربع</span>
+                        <span className=" text-base">{data.size} متر مربع</span>
                     </div>
                 </div>
 
                 <div className="proPrice h-full flex flex-col justify-between gap-1 items-start ">
                     <div className="flex gap-2 items-end">
                         <span className="text-2xl text-slate-600 font-bold">
-                            {listings.price}
+                            {data.price}
                         </span>
                         <span>{"ج.م"}</span>
                     </div>

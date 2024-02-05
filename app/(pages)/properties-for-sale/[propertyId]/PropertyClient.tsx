@@ -7,6 +7,7 @@ import Gallary from "@/app/components/properties/Gallary";
 import PropertInfo from "@/app/components/properties/PropertInfo";
 import PropertDetails from "@/app/components/properties/PropertDetails";
 import AgentInfo from "@/app/components/properties/AgentInfo";
+import PaymentPlans from "@/app/components/properties/paymentPlans";
 
 interface PropertyClientProps {
     listing: SafeProperty & {
@@ -20,14 +21,18 @@ const PropertyClient: React.FC<PropertyClientProps> = ({
     listing,
     currentUser,
 }) => {
+    const location = `${listing.ariaValue} / ${listing.cityValue}`;
+    const title = ` ${listing.propertyGroup} ${listing.category} ${listing.roomCount} غرفة في ${listing.address} ب${listing.ariaValue}`;
+
     return (
         <ClientOnly>
             <Container>
                 <Gallary images={listing.propertyImages} />
-
                 <div className="flex flex-col md:flex-row justify-between items-start gap-4 w-full my-4">
                     <div className="w-full gap-4 column-8">
                         <PropertInfo
+                            title={title}
+                            location={location}
                             data={listing}
                             currentUser={currentUser}
                             listingId={listing.id}
@@ -40,6 +45,7 @@ const PropertyClient: React.FC<PropertyClientProps> = ({
                             image={listing.user?.image as string}
                             listing={listing}
                         />
+                        <PaymentPlans data={listing}/>
                     </div>
                 </div>
             </Container>

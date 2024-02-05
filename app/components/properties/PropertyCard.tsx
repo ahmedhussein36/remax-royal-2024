@@ -14,7 +14,7 @@ interface PropertyCardProps {
     currentUser?: SafeUser | null;
     parent?: string;
 }
-
+ 
 const PropertyCard: React.FC<PropertyCardProps> = ({
     data,
     currentUser,

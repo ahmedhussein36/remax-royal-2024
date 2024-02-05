@@ -7,28 +7,32 @@ import HeartButton from "./SingleHeartButton ";
 import { SafeProperty, SafeUser } from "@/app/types";
 
 interface PropertInfoProps {
-    data: SafeProperty;
+    data: SafeProperty; 
     currentUser?: SafeUser | null;
     listingId: string;
+    title: string
+    location: string
 }
 
 const PropertInfo: React.FC<PropertInfoProps> = ({
     data,
     listingId,
     currentUser,
+    title,
+    location,
 }) => {
     return (
         <div className=" flex justify-between items-start border-b-2 p-6 w-full">
             <div className="flex flex-col gap-3 justify-between  items-start w-3/4 ">
                 <div className="title flex flex-col gap-2 items-start">
                     <h1 className=" text-xl font-bold text-slate-700">
-                        {`${data.propertyGroup} ${data.category}  في ${data.ariaValue} ب${data.cityValue}`}
+                        {title}
                     </h1>
                     <div className="flex items-center gap-2">
                         <SlLocationPin />
 
                         <p>
-                            {data.ariaValue} / {data.cityValue}
+                            {location}
                         </p>
                     </div>
                 </div>

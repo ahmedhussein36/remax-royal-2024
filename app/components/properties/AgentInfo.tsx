@@ -13,7 +13,7 @@ interface AgentInfoProps {
 
 const AgentInfo: React.FC<AgentInfoProps> = ({ user, image, listing }) => {
     return (
-        <div className="max-w-[350px] border-2 rounded-md flex flex-col gap-4 justify-between items-start p-4">
+        <div className="w-full md:max-w-[350px] border-2 rounded-md flex flex-col gap-4 justify-between items-start p-4">
             <div className="flex justify-center items-center gap-4">
                 <div className="prfilePic">
                     <Avatar avatarSrc={image} isListing />

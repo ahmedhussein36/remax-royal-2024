@@ -39,7 +39,7 @@ const PropertyClient: React.FC<PropertyClientProps> = ({
                         />
                         <PropertDetails data={listing} />
                     </div>
-                    <div className="w-1/3 column-2 mt-8">
+                    <div className="w-full md:w-1/3 columns-1 md:column-2 mt-8">
                         <AgentInfo
                             user={listing.user?.name as string}
                             image={listing.user?.image as string}

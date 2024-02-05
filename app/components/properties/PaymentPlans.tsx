@@ -11,7 +11,7 @@ const PaymentPlans: React.FC<paymentPlansProps> = ({ data }) => {
             className=" 
                         border flex 
                         bg-slate-100
-                        md:flex-col sm:flex-col 
+                        flex-col
                         items-startjustify-center
                         w-full my-4 rounded-lg p-4 
                         shadow-lg shadow-indigo-50"
@@ -19,7 +19,7 @@ const PaymentPlans: React.FC<paymentPlansProps> = ({ data }) => {
             <h2 className="font-bold text-xl mb-4">خطط السداد</h2>
             <div className="w-full rounded-lg p-4 py-8 flex  justify-center items-center gap-4 bg-white">
                 
-                {data.paymentPlan !== "الدفع كاش" ? (
+                {data.paymentPlan !== " الدفع كاش" ? (
                     <>
                         <div className="flex flex-col item-center justify-center gap-4 w-1/2">
                             <span className="text-center text-xl font-black text-red-500">
@@ -40,7 +40,7 @@ const PaymentPlans: React.FC<paymentPlansProps> = ({ data }) => {
                         </div>
                     </>
                 ) : (
-                    <div>الدفع كاش</div>
+                    <div className=" text-2xl font-bold ">الدفع كاش</div>
                 )}
             </div>
         </div>

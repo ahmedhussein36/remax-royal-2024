@@ -69,7 +69,7 @@ const PropDetails: React.FC<PropDetailsProps> = ({ data }) => {
                 <div className="border-b-2 my-12"></div>
             </div>
             <div aria-label="description">
-                <p>{data.description}</p>
+                <p className=" text-lg text-slate-600 space-y-3 leading-[2]">{data.description}</p>
             </div>
         </div>
     );

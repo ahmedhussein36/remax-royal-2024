@@ -8,7 +8,10 @@ import AriaSelect, { AriaSelectValue } from "../customInputs/AriaSelect";
 import { SelectInput } from "./SelectInput";
 import CategoryInput from "../customInputs/CategoryInput";
 import { categories, commercialTypes, residentalTypes } from "../data/data";
+import { IoSearch } from "react-icons/io5";
 import Button from "../Button";
+
+const searchIcon = () => <IoSearch color="#ffff" size={20} />;
 
 const roomOptions: any = [
     { label: "1 غرفة", value: 1 },
@@ -166,7 +169,11 @@ const Filter = () => {
                 </div>
 
                 <div className="h-full">
-                    <Button onClick={onSubmit} label={"بحث"} />
+                    <Button
+                        onClick={onSubmit}
+                        label={"بحث"}
+                        icon={searchIcon}
+                    />
                 </div>
             </div>
         </div>

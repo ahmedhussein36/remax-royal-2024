@@ -37,11 +37,11 @@ const Button: React.FC<ButtonProps> = ({
                         hover:opacity-80
                         transition
                         w-full
-                        ${Icon ? "justify-start" : "justify-center"}
+                        ${Icon ? "justify-center" : "justify-center"}
                         ${outline ? "bg-slate-50" : "bg-rose-500"}
                         ${outline ? "border-slate-400" : "border-rose-500"}
                         ${outline ? "text-slate-500" : "text-white"}
-                        ${small ? "text-sm" : "text-sm"}
+                        ${small ? "text-sm" : "text-lg"}
                         ${small ? "py-1" : "py-3"}
                         ${small ? "font-light" : "font-normal"}
                         ${small ? "border-[1px]" : "border-2"}

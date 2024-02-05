@@ -2,9 +2,6 @@ import Container from "../components/Container";
 import Logo from "./header/Logo";
 import Link from "next/link";
 import { navItems, socialMedia } from "./data/data";
-import { Inter } from "next/font/google";
-
-const inter = Inter({ subsets: ["latin"] });
 
 const Footer = () => {
     const currentYear = new Date().getFullYear();
@@ -47,9 +44,7 @@ const Footer = () => {
                             </Link>
                         </div>
                         <div className="md:w-1/3 lg:w-1/3 sm:w-full">
-                            <p
-                                className={`${inter.className} " text-xs text-left"`}
-                            >
+                            <p className=" text-xs text-left">
                                 Copyrights {currentYear} - Remax Royal &copy;
                             </p>
                         </div>

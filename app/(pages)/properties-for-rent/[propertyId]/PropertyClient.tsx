@@ -2,26 +2,55 @@
 
 import { SafeProperty, SafeUser } from "@/app/types";
 import Container from "@/app/components/Container";
-import Gallery from "@/app/components/properties/Gallary"
+import ClientOnly from "@/app/components/ClientOnly";
+import Gallary from "@/app/components/properties/Gallary";
+import PropertInfo from "@/app/components/properties/PropertInfo";
+import PropertDetails from "@/app/components/properties/PropertDetails";
+import AgentInfo from "@/app/components/properties/AgentInfo";
+import PaymentPlans from "@/app/components/properties/PaymentPlans";
 
-
-interface ListingClientProps {
+interface PropertyClientProps {
     listing: SafeProperty & {
         user: SafeUser;
     };
+
     currentUser?: SafeUser | null;
 }
 
-const ListingClient: React.FC<ListingClientProps> = ({
+const PropertyClient: React.FC<PropertyClientProps> = ({
     listing,
-    currentUser, 
-}) => {   
+    currentUser,
+}) => {
+    const location = `${listing.ariaValue} / ${listing.cityValue}`;
+    const title = ` ${listing.propertyGroup} ${listing.category} ${listing.roomCount} غرفة في ${listing.address} ب${listing.ariaValue}`;
 
     return (
-        <Container>
-            <Gallery images={listing.propertyImages} />
-        </Container>
+        <ClientOnly>
+            <Container>
+                <Gallary images={listing.propertyImages} />
+                <div className="flex flex-col md:flex-row justify-between items-start gap-4 w-full my-4">
+                    <div className="w-full gap-4 column-8">
+                        <PropertInfo
+                            title={title}
+                            location={location}
+                            data={listing}
+                            currentUser={currentUser}
+                            listingId={listing.id}
+                        />
+                        <PropertDetails data={listing} />
+                    </div>
+                    <div className="w-1/3 column-2 mt-8">
+                        <AgentInfo
+                            user={listing.user?.name as string}
+                            image={listing.user?.image as string}
+                            listing={listing}
+                        />
+                        <PaymentPlans data={listing} />
+                    </div>
+                </div>
+            </Container>
+        </ClientOnly>
     );
 };
 
-export default ListingClient;
+export default PropertyClient;

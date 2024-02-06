@@ -10,7 +10,7 @@ const HeroSection = ({ children }: { children: React.ReactNode }) => {
         >
             <div
                 className="  
-                            shadow-lg z-50
+                            shadow-lg z-[1]
                             bg-slate-50/70 backdrop-blur-sm px-4 py-6
                             rounded-md flex justify-center items-center w-full md:w-2/3
                         "

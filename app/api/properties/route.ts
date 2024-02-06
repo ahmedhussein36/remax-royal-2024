@@ -49,9 +49,6 @@ export async function POST(request: Request) {
     const property = await prisma.property.create({
         data: {
             title: `${propertyGroup} ${category} في ${address} ${aria.value}`,
-            slug: (propertyGroup + category + address + aria.value)
-                .toString()
-                .replace(new RegExp(" ", "g"), "-"),
             name,
             description,
             imageSrc,

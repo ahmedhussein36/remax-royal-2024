@@ -79,7 +79,9 @@ model Reservation {
 
 model Property {
   id                String   @id @default(auto()) @map("_id") @db.ObjectId
+  slug              String
   title             String
+  name              String
   description       String
   imageSrc          String
   propertyImages    String[]

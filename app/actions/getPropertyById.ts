@@ -7,6 +7,7 @@ interface IParams {
 export default async function getPropertyById(params: IParams) {
     try {
         const { propertyId } = params;
+
         const property = await prisma.property.findUnique({
             where: {
                 id: propertyId,

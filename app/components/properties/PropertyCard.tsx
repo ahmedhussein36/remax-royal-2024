@@ -14,7 +14,7 @@ interface PropertyCardProps {
     currentUser?: SafeUser | null;
     parent?: string;
 }
- 
+
 const PropertyCard: React.FC<PropertyCardProps> = ({
     data,
     currentUser,
@@ -23,8 +23,6 @@ const PropertyCard: React.FC<PropertyCardProps> = ({
     const router = useRouter();
 
     const location = `${data.ariaValue} / ${data.cityValue}`;
-    const title = ` ${data.propertyGroup} ${data.category} ${data.roomCount} غرفة في ${data.address} ب${data.ariaValue}`;
-
     return (
         <div
             onClick={() => router.push(`/${parent}/${data.id}`)}
@@ -43,7 +41,7 @@ const PropertyCard: React.FC<PropertyCardProps> = ({
                         absolute
                         top-3
                         right-3
-                        z-10
+                        z-[1]
                     "
                 >
                     <HeartButton
@@ -65,7 +63,7 @@ const PropertyCard: React.FC<PropertyCardProps> = ({
                     <div className="proTitle w-full flex flex-col justify-between items-start gap-2">
                         <div className="w-full flex justify-between items-center">
                             <div className="flex justify-center items-center text-slate-600 text-md font-bold">
-                                <h3>{title}</h3>
+                                <h3>{data.title}</h3>
                             </div>
                         </div>
 

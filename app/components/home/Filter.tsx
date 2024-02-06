@@ -10,6 +10,7 @@ import CategoryInput from "../customInputs/CategoryInput";
 import { categories, commercialTypes, residentalTypes } from "../data/data";
 import { IoSearch } from "react-icons/io5";
 import Button from "../Button";
+import SearchInput, { SearchValue } from "../inputs/SearchInput";
 
 const searchIcon = () => <IoSearch color="#ffff" size={20} />;
 
@@ -59,6 +60,7 @@ const Filter = () => {
     const [city, setCity] = useState<CitySelectValue>();
     const [aria, setAria] = useState<AriaSelectValue>();
     const [propertyGroup, setPropertyGroup] = useState<any>();
+    const [title, setTitle] = useState<string>();
 
     const onSubmit = useCallback(async () => {
         let currentQuery = {};
@@ -70,6 +72,7 @@ const Filter = () => {
         const updatedQuery: any = {
             ...currentQuery,
             category,
+            title: title,
             roomCount: roomCount?.value,
             bathroomCount: bathroomCount?.value,
             propertyType: null,
@@ -97,6 +100,7 @@ const Filter = () => {
         propertyGroup,
         city,
         aria,
+        title,
         price?.gte,
         price?.lte,
         params,
@@ -118,6 +122,7 @@ const Filter = () => {
             <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4 items-center gap-2 w-full">
                 <div className="">
                     <CitySelect
+                        isSearchable={false}
                         isFilter={true}
                         value={city}
                         onChange={(value) => setCity(value as CitySelectValue)}
@@ -125,16 +130,17 @@ const Filter = () => {
                 </div>
 
                 <div className=" col-span-2">
-                    <AriaSelect
-                        isFilter={true}
-                        value={aria}
-                        onChange={(value) => setAria(value as AriaSelectValue)}
-                        govId={city?.id}
+                    <SearchInput
+                        id="title"
+                        value={title}
+                        onChange={(e) => setTitle(e.target.value as any)}
+                        Placeholder="ابحث عن المنطقة أ الحي أو الكمبوند "
                     />
                 </div>
 
                 <div className="">
                     <SelectInput
+                        isSearchable={false}
                         value={propertyGroup}
                         onChange={(value) => setPropertyGroup(value as any)}
                         placeholder={"نوع العقار"}
@@ -144,6 +150,7 @@ const Filter = () => {
 
                 <div className="">
                     <SelectInput
+                        isSearchable={false}
                         value={roomCount}
                         onChange={(value) => setRoomCount(value as any)}
                         placeholder={"عدد الغرف"}
@@ -153,6 +160,7 @@ const Filter = () => {
 
                 <div className="">
                     <SelectInput
+                        isSearchable={false}
                         value={bathroomCount}
                         onChange={(value) => setBathroomCount(value as any)}
                         placeholder={"عدد الحمامات"}
@@ -161,6 +169,7 @@ const Filter = () => {
                 </div>
                 <div className="">
                     <SelectInput
+                        isSearchable={false}
                         value={price}
                         onChange={(value) => setPrice(value as any)}
                         placeholder={"السعر"}

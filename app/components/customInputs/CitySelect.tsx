@@ -6,18 +6,21 @@ export type CitySelectValue = {
     id: string;
     name: string;
     value: string;
+   
 };
 
 interface CitySelectProps {
     value?: CitySelectValue;
     onChange: (value: CitySelectValue) => void;
-    isFilter?: boolean;
+    isFilter?: boolean; 
+    isSearchable?: boolean
 }
 
 const CitySelect: React.FC<CitySelectProps> = ({
     value,
     onChange,
     isFilter,
+    isSearchable
 }) => {
     const { getAll } = useCities();
 
@@ -29,6 +32,7 @@ const CitySelect: React.FC<CitySelectProps> = ({
                 value={value}
                 onChange={(value) => onChange(value as CitySelectValue)}
                 isClearable
+                isSearchable={isSearchable}
                 options={getAll()}
                 placeholder="المدينة"
                 formatOptionLabel={({ value }) => <div>{value}</div>}

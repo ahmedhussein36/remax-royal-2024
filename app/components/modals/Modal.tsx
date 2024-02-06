@@ -78,7 +78,7 @@ const Modal: React.FC<ModalProps> = ({
                 overflow-y-hidden
                 fixed 
                 inset-0 
-                z-50 
+                z-[999]
                 outline-none 
                 focus:outline-none
                 bg-neutral-800/70
@@ -164,15 +164,15 @@ const Modal: React.FC<ModalProps> = ({
                             <div className="flex flex-col gap-2 p-3 md:p-6 ">
                                 <div
                                     className="
-                                              flex 
-                                              flex-row 
-                                              items-center 
-                                              gap-4 
-                                              w-full
-                                              h-[59.2px]
-                                              mb-4
-                                              px-2 md:px-5 lg:px-5 xl:px-5
-                                            "
+                                            flex 
+                                            flex-row 
+                                            items-center 
+                                            gap-4 
+                                            w-full
+                                            h-[59.2px]
+                                            mb-4
+                                            px-2 md:px-5 lg:px-5 xl:px-5
+                                        "
                                 >
                                     {secondaryAction &&
                                         secondaryActionLabel && (

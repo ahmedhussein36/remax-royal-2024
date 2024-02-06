@@ -25,7 +25,6 @@ const HeartButton: React.FC<HeartButtonProps> = ({
     <div 
       onClick={toggleFavorite}
       className="
-        relative
         hover:opacity-80
         transition
         cursor-pointer

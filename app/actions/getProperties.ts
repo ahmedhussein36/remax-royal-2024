@@ -2,6 +2,8 @@ import prisma from "@/app/libs/prismadb";
 
 export interface IParams {
     userId?: string;
+    title?: string;
+    slug?: string;
     roomCount?: number;
     bathroomCount?: number;
     city?: string;
@@ -17,6 +19,8 @@ export default async function getProperties(params: IParams) {
     try {
         const {
             userId,
+            title,
+            slug,
             roomCount,
             bathroomCount,
             city,
@@ -36,6 +40,15 @@ export default async function getProperties(params: IParams) {
 
         if (category) {
             query.category = category;
+        }
+
+        if (title) {
+            query.title = {
+                contains : title
+            };
+        }
+        if (slug) {
+            query.slug = slug;
         }
 
         if (PropertyType) {

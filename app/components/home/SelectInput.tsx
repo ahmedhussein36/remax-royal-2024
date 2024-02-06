@@ -9,6 +9,7 @@ interface SelectInputProps {
     onChange: (value: SelectValue) => void;
     options: any[];
     placeholder: string;
+    isSearchable?: boolean
 }
 
 export const SelectInput: React.FC<SelectInputProps> = ({
@@ -16,11 +17,13 @@ export const SelectInput: React.FC<SelectInputProps> = ({
     onChange,
     options,
     placeholder,
+    isSearchable
 }) => {
     return (
         <div>
             <Select
                 isClearable
+                isSearchable ={isSearchable}
                 value={value}
                 options={options}
                 onChange={(value) => onChange(value as SelectValue)}

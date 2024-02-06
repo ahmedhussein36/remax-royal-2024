@@ -12,7 +12,6 @@ const LightboxImages = ({ images, isopen }) => {
             close={() => setOpen(false)}
             slides={images}
             render={{ slide: NextJsImage, thumbnail: NextJsImage }}
-            plugins={[Thumbnails]}
         />
     );
 };

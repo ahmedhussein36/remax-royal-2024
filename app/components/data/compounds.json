@@ -2871,10 +2871,10 @@
         }
     },
     {
-        "id": 843,
+        "copound_id": 125,
         "name": "راديوم",
         "is_super": false,
-        "slug": "843-كلاود-ايست",
+        "slug": "125-كلاود-ايست",
         "properties_count": 27,
         "image": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/compound_image/image/7644/medium_Screenshot_1.png",
         "min_price": 7096558,
@@ -2981,7 +2981,7 @@
         }
     },
     {
-        "id": 1068,
+        "copound_id": 124,
         "name": "ايلاف ريزيدنس",
         "is_super": false,
         "slug": "1068-ايلاف-ريزيدنس",

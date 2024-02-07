@@ -55,6 +55,7 @@ const AddNewProperty = () => {
     } = useForm<FieldValues>({
         defaultValues: {
             name: "",
+            slug: "",
             description: "",
             category: "",
             propertyType: "",

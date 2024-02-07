@@ -3,7 +3,6 @@ import prisma from "@/app/libs/prismadb";
 export interface IParams {
     userId?: string;
     title?: string;
-    slug?: string;
     roomCount?: number;
     bathroomCount?: number;
     city?: string;
@@ -20,7 +19,6 @@ export default async function getProperties(params: IParams) {
         const {
             userId,
             title,
-            slug,
             roomCount,
             bathroomCount,
             city,
@@ -44,13 +42,9 @@ export default async function getProperties(params: IParams) {
 
         if (title) {
             query.title = {
-                contains : title
+                contains: title,
             };
         }
-        if (slug) {
-            query.slug = slug;
-        }
-
         if (PropertyType) {
             query.PropertyType = PropertyType;
         }

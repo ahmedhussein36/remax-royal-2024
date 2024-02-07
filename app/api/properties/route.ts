@@ -2,6 +2,7 @@ import { NextResponse } from "next/server";
 
 import prisma from "@/app/libs/prismadb";
 import getCurrentUser from "@/app/actions/getCurrentUser";
+import { title } from "process";
 
 export async function POST(request: Request) {
     const currentUser = await getCurrentUser();
@@ -49,6 +50,10 @@ export async function POST(request: Request) {
     const property = await prisma.property.create({
         data: {
             title: `${propertyGroup} ${category} في ${address} ${aria.value}`,
+            slug: `${propertyGroup} ${category} في ${address} ${aria.value}`.replace(
+                new RegExp(" ", "g"),
+                "-"
+            ),
             name,
             description,
             imageSrc,

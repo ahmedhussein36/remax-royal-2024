@@ -2869,5 +2869,957 @@
                 }
             ]
         }
+    },
+    {
+        "id": 843,
+        "name": "راديوم",
+        "is_super": false,
+        "slug": "843-كلاود-ايست",
+        "properties_count": 27,
+        "image": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/compound_image/image/7644/medium_Screenshot_1.png",
+        "min_price": 7096558,
+        "max_price": 60060280,
+        "min_unit_area": 47,
+        "max_unit_area": 344,
+        "available_bathrooms": [
+            0
+        ],
+        "available_bedrooms": [
+            0
+        ],
+        "currency": "جم",
+        "developer": {
+            "id": 257,
+            "name": "ميك بلاس للتطوير العقاري ميميك",
+            "logo_path": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/developer/logo_image/257/Screenshot_2023-02-06_124648.png"
+        },
+        "area": {
+            "id": 2,
+            "name": "القاهرة الجديدة",
+            "slug": "القاهرة-الجديدة"
+        },
+        "sponsored": 0,
+        "max_installment_years": 7,
+        "min_down_payment": 1064484,
+        "min_ready_by": "2026-07-30",
+        "properties_ids": [
+            29652,
+            29658,
+            29659,
+            29660,
+            29661,
+            29665,
+            29671,
+            47234,
+            47235,
+            47236
+        ],
+        "sum_10_properties_min_price": 97941298,
+        "lat": 30.06790548,
+        "long": 31.52423859,
+        "has_offer": false,
+        "has_launches": false,
+        "is_launch": false,
+        "offer_title": null,
+        "limited_time_offer": true,
+        "property_types": [
+            "عيادة",
+            "مكتب",
+            "تجاري"
+        ],
+        "advertising_image_path": null,
+        "nawy_organization_id": null,
+        "property_types_count": [
+            {
+                "id": 13,
+                "name": "عيادة",
+                "count": 3,
+                "total": 3,
+                "rank": 9
+            },
+            {
+                "id": 8,
+                "name": "مكتب",
+                "count": 7,
+                "total": 7,
+                "rank": 10
+            },
+            {
+                "id": 10,
+                "name": "تجاري",
+                "count": 17,
+                "total": 17,
+                "rank": 12
+            }
+        ],
+        "favorite": false,
+        "property_types_count_highlighted": {
+            "highlighted": [],
+            "rest": [
+                {
+                    "id": 13,
+                    "name": "عيادة",
+                    "count": 3,
+                    "total": 3,
+                    "rank": 9
+                },
+                {
+                    "id": 8,
+                    "name": "مكتب",
+                    "count": 7,
+                    "total": 7,
+                    "rank": 10
+                },
+                {
+                    "id": 10,
+                    "name": "تجاري",
+                    "count": 17,
+                    "total": 17,
+                    "rank": 12
+                }
+            ]
+        }
+    },
+    {
+        "id": 1068,
+        "name": "ايلاف ريزيدنس",
+        "is_super": false,
+        "slug": "1068-ايلاف-ريزيدنس",
+        "properties_count": 21,
+        "image": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/compound_image/image/8205/medium_Screenshot_13.png",
+        "min_price": 4978000,
+        "max_price": 14728000,
+        "min_unit_area": 85,
+        "max_unit_area": 230,
+        "available_bathrooms": [
+            1,
+            3,
+            4
+        ],
+        "available_bedrooms": [
+            1,
+            2,
+            3,
+            4
+        ],
+        "currency": "جم",
+        "developer": {
+            "id": 222,
+            "name": "اعمار رزق جروب للتطوير العقاري ",
+            "logo_path": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/developer/logo_image/222/developer.png"
+        },
+        "area": {
+            "id": 2,
+            "name": "القاهرة الجديدة",
+            "slug": "القاهرة-الجديدة"
+        },
+        "sponsored": 0,
+        "max_installment_years": 8,
+        "min_down_payment": 497800,
+        "min_ready_by": "2028-12-30",
+        "properties_ids": [
+            46184,
+            46185,
+            46186,
+            46187,
+            46188,
+            46190,
+            46191,
+            46192,
+            46193,
+            46194
+        ],
+        "sum_10_properties_min_price": 67957000,
+        "lat": 30.02154351,
+        "long": 31.22314453,
+        "has_offer": false,
+        "has_launches": false,
+        "is_launch": false,
+        "offer_title": null,
+        "limited_time_offer": true,
+        "property_types": [
+            "شقة"
+        ],
+        "advertising_image_path": null,
+        "nawy_organization_id": null,
+        "property_types_count": [
+            {
+                "id": 21,
+                "name": "شقة",
+                "count": 21,
+                "total": 21,
+                "rank": 1
+            }
+        ],
+        "favorite": false,
+        "property_types_count_highlighted": {
+            "highlighted": [],
+            "rest": [
+                {
+                    "id": 21,
+                    "name": "شقة",
+                    "count": 21,
+                    "total": 21,
+                    "rank": 1
+                }
+            ]
+        }
+    },
+    {
+        "id": 1017,
+        "name": "بوتيك فيلادج من مدن للتطوير العقاري",
+        "is_super": false,
+        "slug": "1017-بوتيك-فيلادج-من-مدن-للتطوير-العقاري",
+        "properties_count": 3,
+        "image": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/compound_image/image/8210/medium_3.jpg",
+        "min_price": 10150145,
+        "max_price": 11530930,
+        "min_unit_area": 136,
+        "max_unit_area": 153,
+        "available_bathrooms": [
+            3
+        ],
+        "available_bedrooms": [
+            3
+        ],
+        "currency": "جم",
+        "developer": {
+            "id": 133,
+            "name": " مدن للتطوير العقاري",
+            "logo_path": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/developer/logo_image/133/Modon.png"
+        },
+        "area": {
+            "id": 2,
+            "name": "القاهرة الجديدة",
+            "slug": "القاهرة-الجديدة"
+        },
+        "sponsored": 0,
+        "max_installment_years": 7,
+        "min_down_payment": 1015015,
+        "min_ready_by": "2027-12-31",
+        "properties_ids": [
+            45609,
+            45610,
+            46787
+        ],
+        "sum_10_properties_min_price": 86518950,
+        "lat": 30.02154351,
+        "long": 31.22314453,
+        "has_offer": false,
+        "has_launches": false,
+        "is_launch": false,
+        "offer_title": null,
+        "limited_time_offer": true,
+        "property_types": [
+            "شقة"
+        ],
+        "advertising_image_path": null,
+        "nawy_organization_id": null,
+        "property_types_count": [
+            {
+                "id": 21,
+                "name": "شقة",
+                "count": 3,
+                "total": 3,
+                "rank": 1
+            }
+        ],
+        "favorite": false,
+        "property_types_count_highlighted": {
+            "highlighted": [],
+            "rest": [
+                {
+                    "id": 21,
+                    "name": "شقة",
+                    "count": 3,
+                    "total": 3,
+                    "rank": 1
+                }
+            ]
+        }
+    },
+    {
+        "id": 1094,
+        "name": "وايت ووك",
+        "is_super": false,
+        "slug": "1094-وايت-ووك",
+        "properties_count": 5,
+        "image": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/compound_image/image/8219/medium_White_Walk_Presentation_1__Page_17.jpg",
+        "min_price": 21781350,
+        "max_price": 73520722,
+        "min_unit_area": 77,
+        "max_unit_area": 314,
+        "available_bathrooms": [
+            0
+        ],
+        "available_bedrooms": [
+            0
+        ],
+        "currency": "جم",
+        "developer": {
+            "id": 144,
+            "name": "ابوايد للتطوير العقاري",
+            "logo_path": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/developer/logo_image/144/upwyde.png"
+        },
+        "area": {
+            "id": 2,
+            "name": "القاهرة الجديدة",
+            "slug": "القاهرة-الجديدة"
+        },
+        "sponsored": 0,
+        "max_installment_years": 7,
+        "min_down_payment": 2178135,
+        "min_ready_by": "2027-12-30",
+        "properties_ids": [
+            46031,
+            46032,
+            47395,
+            47396,
+            47397
+        ],
+        "sum_10_properties_min_price": 217487259,
+        "lat": 29.9903877,
+        "long": 31.4684879,
+        "has_offer": false,
+        "has_launches": false,
+        "is_launch": false,
+        "offer_title": null,
+        "limited_time_offer": true,
+        "property_types": [
+            "تجاري"
+        ],
+        "advertising_image_path": null,
+        "nawy_organization_id": null,
+        "property_types_count": [
+            {
+                "id": 10,
+                "name": "تجاري",
+                "count": 5,
+                "total": 5,
+                "rank": 12
+            }
+        ],
+        "favorite": false,
+        "property_types_count_highlighted": {
+            "highlighted": [],
+            "rest": [
+                {
+                    "id": 10,
+                    "name": "تجاري",
+                    "count": 5,
+                    "total": 5,
+                    "rank": 12
+                }
+            ]
+        }
+    },
+    {
+        "id": 745,
+        "name": "ايستشاير ",
+        "is_super": false,
+        "slug": "745-ايستشاير-سيجناتشر-فيلا",
+        "properties_count": 2,
+        "image": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/compound_image/image/5454/medium_4.png",
+        "min_price": 24794000,
+        "max_price": 31185000,
+        "min_unit_area": 261,
+        "max_unit_area": 285,
+        "available_bathrooms": [
+            4
+        ],
+        "available_bedrooms": [
+            3,
+            4
+        ],
+        "currency": "جم",
+        "developer": {
+            "id": 217,
+            "name": " القمزي للتطوير العقاري ",
+            "logo_path": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/developer/logo_image/217/qamzi_dev.jpg"
+        },
+        "area": {
+            "id": 2,
+            "name": "القاهرة الجديدة",
+            "slug": "القاهرة-الجديدة"
+        },
+        "sponsored": 0,
+        "max_installment_years": 7,
+        "min_down_payment": 2479400,
+        "min_ready_by": "2027-12-31",
+        "properties_ids": [
+            45604,
+            47995
+        ],
+        "sum_10_properties_min_price": 244254000,
+        "lat": 29.99759248,
+        "long": 31.50467992,
+        "has_offer": false,
+        "has_launches": false,
+        "is_launch": false,
+        "offer_title": "",
+        "limited_time_offer": true,
+        "property_types": [
+            "تاون هاوس"
+        ],
+        "advertising_image_path": null,
+        "nawy_organization_id": null,
+        "property_types_count": [
+            {
+                "id": 7,
+                "name": "تاون هاوس",
+                "count": 2,
+                "total": 2,
+                "rank": 4
+            }
+        ],
+        "favorite": false,
+        "property_types_count_highlighted": {
+            "highlighted": [],
+            "rest": [
+                {
+                    "id": 7,
+                    "name": "تاون هاوس",
+                    "count": 2,
+                    "total": 2,
+                    "rank": 4
+                }
+            ]
+        }
+    },
+    {
+        "id": 393,
+        "name": "الجازي فيرست ماريوت ريزيدنس",
+        "is_super": true,
+        "slug": "393-الجازي-فيرست-ماريوت-ريزيدنس",
+        "properties_count": 20,
+        "image": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/compound_image/image/2228/medium_LiKyqANzXiIzpWstUiShzmbL8SdF54.jpg",
+        "min_price": 14531722,
+        "max_price": 44640000,
+        "min_unit_area": 69,
+        "max_unit_area": 189,
+        "available_bathrooms": [
+            0,
+            3
+        ],
+        "available_bedrooms": [
+            0,
+            2,
+            3
+        ],
+        "currency": "جم",
+        "developer": {
+            "id": 103,
+            "name": " الجازي مصر للاستثمار العقاري",
+            "logo_path": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/developer/logo_image/103/J82Grjr6Bkla57b1xXCMUAaNG5wOkf71885809_136523571071414_2356213200250208256_o.png"
+        },
+        "area": {
+            "id": 2,
+            "name": "القاهرة الجديدة",
+            "slug": "القاهرة-الجديدة"
+        },
+        "sponsored": 0,
+        "max_installment_years": 5,
+        "min_down_payment": 2309983,
+        "min_ready_by": "2024-05-30",
+        "properties_ids": [
+            15802,
+            30738,
+            30741,
+            30742,
+            39703,
+            42531,
+            42533,
+            42534,
+            42535,
+            42536
+        ],
+        "sum_10_properties_min_price": 195335405,
+        "lat": 30.03556179,
+        "long": 31.47745743,
+        "has_offer": false,
+        "has_launches": false,
+        "is_launch": false,
+        "offer_title": null,
+        "limited_time_offer": true,
+        "property_types": [],
+        "advertising_image_path": null,
+        "nawy_organization_id": null,
+        "property_types_count": [],
+        "favorite": false,
+        "property_types_count_highlighted": {
+            "highlighted": [],
+            "rest": []
+        }
+    },
+    {
+        "id": 198,
+        "name": "هايد بارك بيزنس ديستركت",
+        "is_super": false,
+        "slug": "198-هايد-بارك-بيزنس-ديستركت",
+        "properties_count": 1,
+        "image": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/compound_image/image/7694/medium_Screenshot_5.png",
+        "min_price": 25460000,
+        "max_price": 25460000,
+        "min_unit_area": 205,
+        "max_unit_area": 205,
+        "available_bathrooms": [
+            0
+        ],
+        "available_bedrooms": [
+            0
+        ],
+        "currency": "جم",
+        "developer": {
+            "id": 15,
+            "name": "هايد بارك",
+            "logo_path": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/developer/logo_image/15/QwyW57CkvlEWufmwf7K8z9UBE3rjpHlogo.jpg"
+        },
+        "area": {
+            "id": 2,
+            "name": "القاهرة الجديدة",
+            "slug": "القاهرة-الجديدة"
+        },
+        "sponsored": 0,
+        "max_installment_years": 6,
+        "min_down_payment": 2546000,
+        "min_ready_by": "2025-12-31",
+        "properties_ids": [
+            15422
+        ],
+        "sum_10_properties_min_price": 25460000,
+        "lat": 29.97372428,
+        "long": 31.54356192,
+        "has_offer": false,
+        "has_launches": false,
+        "is_launch": false,
+        "offer_title": null,
+        "limited_time_offer": true,
+        "property_types": [
+            "مكتب"
+        ],
+        "advertising_image_path": null,
+        "nawy_organization_id": null,
+        "property_types_count": [
+            {
+                "id": 8,
+                "name": "مكتب",
+                "count": 1,
+                "total": 1,
+                "rank": 10
+            }
+        ],
+        "favorite": false,
+        "property_types_count_highlighted": {
+            "highlighted": [],
+            "rest": [
+                {
+                    "id": 8,
+                    "name": "مكتب",
+                    "count": 1,
+                    "total": 1,
+                    "rank": 10
+                }
+            ]
+        }
+    },
+    {
+        "id": 100,
+        "name": "بريكس",
+        "is_super": false,
+        "slug": "100-بريكس",
+        "properties_count": 3,
+        "image": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/compound_image/image/602/medium_V4LH7BIgEiZzKvJyIMKXsP8GW85Ydr.jpg",
+        "min_price": 9701000,
+        "max_price": 9960000,
+        "min_unit_area": 193,
+        "max_unit_area": 199,
+        "available_bathrooms": [
+            3
+        ],
+        "available_bedrooms": [
+            3
+        ],
+        "currency": "جم",
+        "developer": {
+            "id": 13,
+            "name": "انرشيا مصر",
+            "logo_path": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/developer/logo_image/13/qt9JXECoWdXbAyWBoBEsovibdGSZxPplaceholder-.jpg"
+        },
+        "area": {
+            "id": 1,
+            "name": "مدينه السادس من اكتوبر",
+            "slug": "مدينه-السادس-من-اكتوبر"
+        },
+        "sponsored": 0,
+        "max_installment_years": 7,
+        "min_down_payment": 970100,
+        "min_ready_by": "2025-01-01",
+        "properties_ids": [
+            46923,
+            46924,
+            46925
+        ],
+        "sum_10_properties_min_price": 49326000,
+        "lat": 30.0158109,
+        "long": 31.08686161,
+        "has_offer": false,
+        "has_launches": false,
+        "is_launch": false,
+        "offer_title": null,
+        "limited_time_offer": true,
+        "property_types": [
+            "شقة"
+        ],
+        "advertising_image_path": null,
+        "nawy_organization_id": null,
+        "property_types_count": [
+            {
+                "id": 21,
+                "name": "شقة",
+                "count": 3,
+                "total": 3,
+                "rank": 1
+            }
+        ],
+        "favorite": false,
+        "property_types_count_highlighted": {
+            "highlighted": [],
+            "rest": [
+                {
+                    "id": 21,
+                    "name": "شقة",
+                    "count": 3,
+                    "total": 3,
+                    "rank": 1
+                }
+            ]
+        }
+    },
+    {
+        "id": 167,
+        "name": "كابيتال جاردنز",
+        "is_super": false,
+        "slug": "167-كابيتال-جاردن",
+        "properties_count": 19,
+        "image": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/compound_image/image/2600/medium_BRZLVNQHeCc2H0tJu8Ybfo61USTDJM.jpg",
+        "min_price": 9369000,
+        "max_price": 18852000,
+        "min_unit_area": 143,
+        "max_unit_area": 208,
+        "available_bathrooms": [
+            3,
+            4
+        ],
+        "available_bedrooms": [
+            2,
+            3
+        ],
+        "currency": "جم",
+        "developer": {
+            "id": 16,
+            "name": "بالم هيلز للتطوير العقاري",
+            "logo_path": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/developer/logo_image/16/Palm_Hills.jpg"
+        },
+        "area": {
+            "id": 2,
+            "name": "القاهرة الجديدة",
+            "slug": "القاهرة-الجديدة"
+        },
+        "sponsored": 0,
+        "max_installment_years": 10,
+        "min_down_payment": 0,
+        "min_ready_by": "2025-06-30",
+        "properties_ids": [
+            27712,
+            27718,
+            44299,
+            44300,
+            44301,
+            44302,
+            44303,
+            44304,
+            44305,
+            44306
+        ],
+        "sum_10_properties_min_price": 108717000,
+        "lat": 30.0903998,
+        "long": 31.6968461,
+        "has_offer": false,
+        "has_launches": false,
+        "is_launch": false,
+        "offer_title": null,
+        "limited_time_offer": true,
+        "property_types": [
+            "شقة"
+        ],
+        "advertising_image_path": null,
+        "nawy_organization_id": null,
+        "property_types_count": [
+            {
+                "id": 21,
+                "name": "شقة",
+                "count": 29,
+                "total": 29,
+                "rank": 1
+            }
+        ],
+        "favorite": false,
+        "property_types_count_highlighted": {
+            "highlighted": [],
+            "rest": [
+                {
+                    "id": 21,
+                    "name": "شقة",
+                    "count": 29,
+                    "total": 29,
+                    "rank": 1
+                }
+            ]
+        }
+    },
+    {
+        "id": 469,
+        "name": "تشيس فيلد",
+        "is_super": false,
+        "slug": "469-تشيس-فيلد",
+        "properties_count": 17,
+        "image": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/compound_image/image/3054/medium_chess_field2.jpg",
+        "min_price": 14531722,
+        "max_price": 44640000,
+        "min_unit_area": 69,
+        "max_unit_area": 189,
+        "available_bathrooms": [
+            0
+        ],
+        "available_bedrooms": [
+            0
+        ],
+        "currency": "جم",
+        "developer": {
+            "id": 103,
+            "name": " الجازي مصر للاستثمار العقاري",
+            "logo_path": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/developer/logo_image/103/J82Grjr6Bkla57b1xXCMUAaNG5wOkf71885809_136523571071414_2356213200250208256_o.png"
+        },
+        "area": {
+            "id": 2,
+            "name": "القاهرة الجديدة",
+            "slug": "القاهرة-الجديدة"
+        },
+        "sponsored": 0,
+        "max_installment_years": 5,
+        "min_down_payment": 2309983,
+        "min_ready_by": "2024-07-30",
+        "properties_ids": [
+            15802,
+            30738,
+            30741,
+            30742,
+            39703,
+            42531,
+            42533,
+            42534,
+            42535,
+            42536
+        ],
+        "sum_10_properties_min_price": 196978560,
+        "lat": 30.03573674,
+        "long": 31.47823334,
+        "has_offer": false,
+        "has_launches": false,
+        "is_launch": false,
+        "offer_title": null,
+        "limited_time_offer": true,
+        "property_types": [
+            "مكتب",
+            "تجاري"
+        ],
+        "advertising_image_path": null,
+        "nawy_organization_id": null,
+        "property_types_count": [
+            {
+                "id": 8,
+                "name": "مكتب",
+                "count": 14,
+                "total": 14,
+                "rank": 10
+            },
+            {
+                "id": 10,
+                "name": "تجاري",
+                "count": 3,
+                "total": 3,
+                "rank": 12
+            }
+        ],
+        "favorite": false,
+        "property_types_count_highlighted": {
+            "highlighted": [],
+            "rest": [
+                {
+                    "id": 8,
+                    "name": "مكتب",
+                    "count": 14,
+                    "total": 14,
+                    "rank": 10
+                },
+                {
+                    "id": 10,
+                    "name": "تجاري",
+                    "count": 3,
+                    "total": 3,
+                    "rank": 12
+                }
+            ]
+        }
+    },
+    {
+        "id": 979,
+        "name": "اوربن بيزنس لين",
+        "is_super": false,
+        "slug": "979-ايربن-بيزينس-لين",
+        "properties_count": 2,
+        "image": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/compound_image/image/7683/medium_Screenshot_11.png",
+        "min_price": 14877720,
+        "max_price": 19764463,
+        "min_unit_area": 110,
+        "max_unit_area": 143,
+        "available_bathrooms": [
+            0
+        ],
+        "available_bedrooms": [
+            0
+        ],
+        "currency": "جم",
+        "developer": {
+            "id": 67,
+            "name": "تعمير للتطوير العقاري",
+            "logo_path": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/developer/logo_image/67/tameer_1.png"
+        },
+        "area": {
+            "id": 2,
+            "name": "القاهرة الجديدة",
+            "slug": "القاهرة-الجديدة"
+        },
+        "sponsored": 0,
+        "max_installment_years": 7,
+        "min_down_payment": 1487772,
+        "min_ready_by": "2027-01-01",
+        "properties_ids": [
+            47285,
+            47286
+        ],
+        "sum_10_properties_min_price": 52346669,
+        "lat": 30.01051939,
+        "long": 31.50487497,
+        "has_offer": false,
+        "has_launches": false,
+        "is_launch": false,
+        "offer_title": null,
+        "limited_time_offer": true,
+        "property_types": [
+            "مكتب"
+        ],
+        "advertising_image_path": null,
+        "nawy_organization_id": null,
+        "property_types_count": [
+            {
+                "id": 8,
+                "name": "مكتب",
+                "count": 2,
+                "total": 2,
+                "rank": 10
+            }
+        ],
+        "favorite": false,
+        "property_types_count_highlighted": {
+            "highlighted": [],
+            "rest": [
+                {
+                    "id": 8,
+                    "name": "مكتب",
+                    "count": 2,
+                    "total": 2,
+                    "rank": 10
+                }
+            ]
+        }
+    },
+    {
+        "id": 953,
+        "name": "فيروايز",
+        "is_super": false,
+        "slug": "953-فيروايز",
+        "properties_count": 4,
+        "image": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/compound/cover_image/953/fairways.png",
+        "min_price": 213045,
+        "max_price": 476656,
+        "min_unit_area": 50,
+        "max_unit_area": 130,
+        "available_bathrooms": [
+            1,
+            2,
+            3
+        ],
+        "available_bedrooms": [
+            0,
+            1,
+            2
+        ],
+        "currency": "دولار",
+        "developer": {
+            "id": 35,
+            "name": "اوراسكوم مصر للتطوير العقاري",
+            "logo_path": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/developer/logo_image/35/Orascom.jpg"
+        },
+        "area": {
+            "id": 5,
+            "name": "الجونة",
+            "slug": "الجونة"
+        },
+        "sponsored": 0,
+        "max_installment_years": 5,
+        "min_down_payment": 986761,
+        "min_ready_by": "2025-05-30",
+        "properties_ids": [
+            35347,
+            35348,
+            35349,
+            35350
+        ],
+        "sum_10_properties_min_price": 1771758,
+        "lat": 27.40812266,
+        "long": 33.65148712,
+        "has_offer": false,
+        "has_launches": false,
+        "is_launch": false,
+        "offer_title": null,
+        "limited_time_offer": true,
+        "property_types": [
+            "شقة"
+        ],
+        "advertising_image_path": null,
+        "nawy_organization_id": null,
+        "property_types_count": [
+            {
+                "id": 21,
+                "name": "شقة",
+                "count": 4,
+                "total": 4,
+                "rank": 1
+            }
+        ],
+        "favorite": false,
+        "property_types_count_highlighted": {
+            "highlighted": [],
+            "rest": [
+                {
+                    "id": 21,
+                    "name": "شقة",
+                    "count": 4,
+                    "total": 4,
+                    "rank": 1
+                }
+            ]
+        }
     }
 ]

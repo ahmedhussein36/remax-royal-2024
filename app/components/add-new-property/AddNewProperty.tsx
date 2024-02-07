@@ -54,8 +54,7 @@ const AddNewProperty = () => {
         reset,
     } = useForm<FieldValues>({
         defaultValues: {
-            name: "",
-            slug: "",
+            label: "",
             description: "",
             category: "",
             propertyType: "",
@@ -316,7 +315,7 @@ const AddNewProperty = () => {
                     center
                 />
                 <Input
-                    id="name"
+                    id="label"
                     label="العنوان"
                     disabled={isLoading}
                     register={register}

@@ -13,7 +13,7 @@ export async function POST(request: Request) {
 
     const body = await request.json();
     const {
-        name,
+        label,
         description,
         imageSrc,
         category,
@@ -50,8 +50,8 @@ export async function POST(request: Request) {
     const property = await prisma.property.create({
         data: {
             title: `${propertyGroup} ${category} في ${address} ${aria.value}`,
-            name,
             description,
+            label,
             imageSrc,
             propertyImages,
             category,

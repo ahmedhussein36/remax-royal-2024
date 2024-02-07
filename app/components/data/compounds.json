@@ -1,6 +1,6 @@
 [
     {
-        "id": 274,
+        "copound_id": 101,
         "name": "زيد ",
         "is_super": true,
         "slug": "274-زيد-الشيخ-زايد-أورا",
@@ -113,7 +113,7 @@
         }
     },
     {
-        "id": 202,
+        "copound_id": 102,
         "name": "بلوم فيلدز ",
         "is_super": true,
         "slug": "202-بلوم-فيلدز-تطوير-مصر-المستقبل-سيتي",
@@ -234,7 +234,7 @@
         }
     },
     {
-        "id": 90,
+        "copound_id": 103,
         "name": "المونت الجلالة",
         "is_super": true,
         "slug": "90-المونت-الجلالة",
@@ -377,7 +377,7 @@
         }
     },
     {
-        "id": 927,
+        "copound_id": 104,
         "name": "سولت",
         "is_super": false,
         "slug": "927-سولت",
@@ -451,7 +451,7 @@
         }
     },
     {
-        "id": 222,
+        "copound_id": 105,
         "name": "ديستريكت 5",
         "is_super": true,
         "slug": "222-ديستريكت-ديستريكت-5",
@@ -570,7 +570,7 @@
         }
     },
     {
-        "id": 258,
+        "copound_id": 106,
         "name": "أو ويست أوراسكوم",
         "is_super": true,
         "slug": "258-أو-ويست-أوراسكوم",
@@ -713,7 +713,7 @@
         }
     },
     {
-        "id": 181,
+        "copound_id": 107,
         "name": "البوسكو العاصمه الاداريه الجديد ",
         "is_super": true,
         "slug": "181-البوسكو-العاصمه-الاداريه-الجديد",
@@ -844,7 +844,7 @@
         }
     },
     {
-        "id": 223,
+        "copound_id": 108,
         "name": "بادية ",
         "is_super": true,
         "slug": "223-بادية-بالم-هيلز",
@@ -1008,7 +1008,7 @@
         }
     },
     {
-        "id": 148,
+        "copound_id": 109,
         "name": "بالم هيلز القاهرة الجديدة",
         "is_super": true,
         "slug": "148-بالم-هيلز-القاهرة-الجديدة",
@@ -1157,10 +1157,10 @@
         }
     },
     {
-        "id": 422,
+        "copound_id": 110,
         "name": "ماونتن فيو أي سيتي أكتوبر",
         "is_super": true,
-        "slug": "422-ماونتن-فيو-أي-سيتي-أكتوبر",
+        "slug": "110-ماونتن-فيو-أي-سيتي-أكتوبر",
         "properties_count": 45,
         "image": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/compound_image/image/3575/medium_4.jpg",
         "min_price": 8106278,
@@ -1283,10 +1283,10 @@
         }
     },
     {
-        "id": 195,
+        "copound_id": 111,
         "name": "ماونتن فيو أي سيتي القاهرة الجديدة",
         "is_super": true,
-        "slug": "195-ماونتن-فيو-أي-سيتي-القاهرة-الجديدة",
+        "slug": "111-ماونتن-فيو-أي-سيتي-القاهرة-الجديدة",
         "properties_count": 7,
         "image": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/compound_image/image/1109/medium_9FUwiPzCVGKUYDSGWiooLCRPNRBqoc.jpg",
         "min_price": 13900000,
@@ -1405,10 +1405,10 @@
         }
     },
     {
-        "id": 521,
+        "copound_id": 112,
         "name": "هاسيندا ويست",
         "is_super": false,
-        "slug": "521-هاسيندا-ويست",
+        "slug": "112-هاسيندا-ويست",
         "properties_count": 8,
         "image": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/compound_image/image/7284/medium_alm5.png",
         "min_price": 29598045,
@@ -1514,6 +1514,1360 @@
                 }
             ]
         }
+    },
+    {
+        "copound_id": 113,
+        "name": "هاسيندا ويست",
+        "is_super": false,
+        "slug": "113-هاسيندا-ويست",
+        "properties_count": 8,
+        "image": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/compound_image/image/7284/medium_alm5.png",
+        "min_price": 29598045,
+        "max_price": 61211000,
+        "min_unit_area": 155,
+        "max_unit_area": 353,
+        "available_bathrooms": [
+            3,
+            4,
+            5
+        ],
+        "available_bedrooms": [
+            3,
+            4
+        ],
+        "currency": "جم",
+        "developer": {
+            "id": 16,
+            "name": "بالم هيلز للتطوير العقاري",
+            "logo_path": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/developer/logo_image/16/Palm_Hills.jpg"
+        },
+        "area": {
+            "id": 3,
+            "name": "الساحل الشمالي",
+            "slug": "الساحل-الشمالي"
+        },
+        "sponsored": 0,
+        "max_installment_years": 7,
+        "min_down_payment": 2959805,
+        "min_ready_by": "2025-06-30",
+        "properties_ids": [
+            18142,
+            19292,
+            22634,
+            31497,
+            36871,
+            39983,
+            40183,
+            48009
+        ],
+        "sum_10_properties_min_price": 313093826,
+        "lat": 31.08954507,
+        "long": 27.95402526,
+        "has_offer": false,
+        "has_launches": false,
+        "is_launch": false,
+        "offer_title": null,
+        "limited_time_offer": true,
+        "property_types": [
+            "فيلا",
+            "توين هاوس",
+            "شاليه"
+        ],
+        "advertising_image_path": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/compound/advertising_image/521/Hacienda_West.jpg",
+        "nawy_organization_id": null,
+        "property_types_count": [
+            {
+                "id": 1,
+                "name": "فيلا",
+                "count": 2,
+                "total": 2,
+                "rank": 2
+            },
+            {
+                "id": 6,
+                "name": "توين هاوس",
+                "count": 1,
+                "total": 1,
+                "rank": 3
+            },
+            {
+                "id": 5,
+                "name": "شاليه",
+                "count": 6,
+                "total": 6,
+                "rank": 7
+            }
+        ],
+        "favorite": false,
+        "property_types_count_highlighted": {
+            "highlighted": [],
+            "rest": [
+                {
+                    "id": 1,
+                    "name": "فيلا",
+                    "count": 2,
+                    "total": 2,
+                    "rank": 2
+                },
+                {
+                    "id": 6,
+                    "name": "توين هاوس",
+                    "count": 1,
+                    "total": 1,
+                    "rank": 3
+                },
+                {
+                    "id": 5,
+                    "name": "شاليه",
+                    "count": 6,
+                    "total": 6,
+                    "rank": 7
+                }
+            ]
+        }
+    },
+    {
+        "copound_id": 114,
+        "name": "سيلفر ساندز",
+        "is_super": true,
+        "slug": "114-سيلفر-ساندز-الساحل-الشمالي",
+        "properties_count": 5,
+        "image": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/compound_image/image/5248/medium_3A-Back-01-S1.jpg",
+        "min_price": 35830000,
+        "max_price": 178189000,
+        "min_unit_area": 170,
+        "max_unit_area": 298,
+        "available_bathrooms": [
+            3,
+            4,
+            5
+        ],
+        "available_bedrooms": [
+            3,
+            4
+        ],
+        "currency": "جم",
+        "developer": {
+            "id": 85,
+            "name": "اورا للتطوير العقاري",
+            "logo_path": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/developer/logo_image/85/Ora.jpg"
+        },
+        "area": {
+            "id": 3,
+            "name": "الساحل الشمالي",
+            "slug": "الساحل-الشمالي"
+        },
+        "sponsored": 0,
+        "max_installment_years": 6,
+        "min_down_payment": 3583000,
+        "min_ready_by": "2027-01-01",
+        "properties_ids": [
+            46892,
+            47278,
+            47279,
+            47358,
+            48146
+        ],
+        "sum_10_properties_min_price": 695985000,
+        "lat": 31.18973063,
+        "long": 27.59368658,
+        "has_offer": false,
+        "has_launches": false,
+        "is_launch": false,
+        "offer_title": null,
+        "limited_time_offer": true,
+        "property_types": [
+            "شقة",
+            "فيلا",
+            "توين هاوس",
+            "شاليه"
+        ],
+        "advertising_image_path": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/compound/advertising_image/530/Silvertown_Ora.jpg",
+        "nawy_organization_id": null,
+        "property_types_count": [
+            {
+                "id": 21,
+                "name": "شقة",
+                "count": 1,
+                "total": 1,
+                "rank": 1
+            },
+            {
+                "id": 1,
+                "name": "فيلا",
+                "count": 7,
+                "total": 7,
+                "rank": 2
+            },
+            {
+                "id": 6,
+                "name": "توين هاوس",
+                "count": 2,
+                "total": 2,
+                "rank": 3
+            },
+            {
+                "id": 5,
+                "name": "شاليه",
+                "count": 8,
+                "total": 8,
+                "rank": 7
+            }
+        ],
+        "favorite": false,
+        "property_types_count_highlighted": {
+            "highlighted": [],
+            "rest": [
+                {
+                    "id": 21,
+                    "name": "شقة",
+                    "count": 1,
+                    "total": 1,
+                    "rank": 1
+                },
+                {
+                    "id": 1,
+                    "name": "فيلا",
+                    "count": 7,
+                    "total": 7,
+                    "rank": 2
+                },
+                {
+                    "id": 6,
+                    "name": "توين هاوس",
+                    "count": 2,
+                    "total": 2,
+                    "rank": 3
+                },
+                {
+                    "id": 5,
+                    "name": "شاليه",
+                    "count": 8,
+                    "total": 8,
+                    "rank": 7
+                }
+            ]
+        }
+    },
+    {
+        "copound_id": 115,
+        "name": "اكاسا ميا",
+        "is_super": false,
+        "slug": "115-اكاسا-ميا",
+        "properties_count": 5,
+        "image": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/compound/cover_image/1037/acasa_mia_02.png",
+        "min_price": 5970000,
+        "max_price": 9082785,
+        "min_unit_area": 105,
+        "max_unit_area": 178,
+        "available_bathrooms": [
+            2,
+            3
+        ],
+        "available_bedrooms": [
+            2,
+            3
+        ],
+        "currency": "جم",
+        "developer": {
+            "id": 336,
+            "name": "دار العالمية للتطوير العقاري",
+            "logo_path": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/developer/logo_image/336/dar_el_alamia.png"
+        },
+        "area": {
+            "id": 2,
+            "name": "القاهرة الجديدة",
+            "slug": "القاهرة-الجديدة"
+        },
+        "sponsored": 0,
+        "max_installment_years": 8,
+        "min_down_payment": 597000,
+        "min_ready_by": "2028-01-29",
+        "properties_ids": [
+            45898,
+            45899,
+            45901,
+            48234,
+            48235
+        ],
+        "sum_10_properties_min_price": 73043869,
+        "lat": 30.07826662,
+        "long": 31.54943837,
+        "has_offer": false,
+        "has_launches": false,
+        "is_launch": false,
+        "offer_title": null,
+        "limited_time_offer": true,
+        "property_types": [
+            "شقة"
+        ],
+        "advertising_image_path": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/compound/advertising_image/1037/acasamia.jpg",
+        "nawy_organization_id": null,
+        "property_types_count": [
+            {
+                "id": 21,
+                "name": "شقة",
+                "count": 5,
+                "total": 5,
+                "rank": 1
+            }
+        ],
+        "favorite": false,
+        "property_types_count_highlighted": {
+            "highlighted": [],
+            "rest": [
+                {
+                    "id": 21,
+                    "name": "شقة",
+                    "count": 5,
+                    "total": 5,
+                    "rank": 1
+                }
+            ]
+        }
+    },
+    {
+        "copound_id": 116,
+        "name": "ريفرز",
+        "is_super": false,
+        "slug": "116-ريفرز",
+        "properties_count": 11,
+        "image": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/compound/cover_image/827/Screenshot_2023-02-28_192904.png",
+        "min_price": 9123000,
+        "max_price": 42354000,
+        "min_unit_area": 120,
+        "max_unit_area": 250,
+        "available_bathrooms": [
+            3,
+            4,
+            5
+        ],
+        "available_bedrooms": [
+            2,
+            3,
+            4,
+            5
+        ],
+        "currency": "جم",
+        "developer": {
+            "id": 33,
+            "name": "تطوير مصر",
+            "logo_path": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/developer/logo_image/33/Tatweer_Misr.jpg"
+        },
+        "area": {
+            "id": 1,
+            "name": "مدينه السادس من اكتوبر",
+            "slug": "مدينه-السادس-من-اكتوبر"
+        },
+        "sponsored": 0,
+        "max_installment_years": 8,
+        "min_down_payment": 912300,
+        "min_ready_by": "2028-08-01",
+        "properties_ids": [
+            38905,
+            38906,
+            38908,
+            38909,
+            38910,
+            39001,
+            40014,
+            43091,
+            43492,
+            43493
+        ],
+        "sum_10_properties_min_price": 113181000,
+        "lat": 30.07251077,
+        "long": 30.85613251,
+        "has_offer": false,
+        "has_launches": false,
+        "is_launch": false,
+        "offer_title": "",
+        "limited_time_offer": true,
+        "property_types": [
+            "شقة",
+            "فيلا",
+            "توين هاوس",
+            "تاون هاوس",
+            "دوبلكس"
+        ],
+        "advertising_image_path": null,
+        "nawy_organization_id": null,
+        "property_types_count": [
+            {
+                "id": 21,
+                "name": "شقة",
+                "count": 10,
+                "total": 10,
+                "rank": 1
+            },
+            {
+                "id": 1,
+                "name": "فيلا",
+                "count": 4,
+                "total": 4,
+                "rank": 2
+            },
+            {
+                "id": 6,
+                "name": "توين هاوس",
+                "count": 1,
+                "total": 1,
+                "rank": 3
+            },
+            {
+                "id": 7,
+                "name": "تاون هاوس",
+                "count": 2,
+                "total": 2,
+                "rank": 4
+            },
+            {
+                "id": 3,
+                "name": "دوبلكس",
+                "count": 2,
+                "total": 2,
+                "rank": 5
+            }
+        ],
+        "favorite": false,
+        "property_types_count_highlighted": {
+            "highlighted": [],
+            "rest": [
+                {
+                    "id": 21,
+                    "name": "شقة",
+                    "count": 10,
+                    "total": 10,
+                    "rank": 1
+                },
+                {
+                    "id": 1,
+                    "name": "فيلا",
+                    "count": 4,
+                    "total": 4,
+                    "rank": 2
+                },
+                {
+                    "id": 6,
+                    "name": "توين هاوس",
+                    "count": 1,
+                    "total": 1,
+                    "rank": 3
+                },
+                {
+                    "id": 7,
+                    "name": "تاون هاوس",
+                    "count": 2,
+                    "total": 2,
+                    "rank": 4
+                },
+                {
+                    "id": 3,
+                    "name": "دوبلكس",
+                    "count": 2,
+                    "total": 2,
+                    "rank": 5
+                }
+            ]
+        }
+    },
+    {
+        "copound_id": 117,
+        "name": "فوكا باي",
+        "is_super": false,
+        "slug": "117-فوكا-باي",
+        "properties_count": 14,
+        "image": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/compound_image/image/1683/medium_mWlfcnewzlOLFWs0xhWIYMRtk6SihM.jpg",
+        "min_price": 12672000,
+        "max_price": 177577000,
+        "min_unit_area": 50,
+        "max_unit_area": 542,
+        "available_bathrooms": [
+            1,
+            2,
+            3,
+            4,
+            7
+        ],
+        "available_bedrooms": [
+            1,
+            2,
+            3,
+            4,
+            6
+        ],
+        "currency": "جم",
+        "developer": {
+            "id": 33,
+            "name": "تطوير مصر",
+            "logo_path": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/developer/logo_image/33/Tatweer_Misr.jpg"
+        },
+        "area": {
+            "id": 3,
+            "name": "الساحل الشمالي",
+            "slug": "الساحل-الشمالي"
+        },
+        "sponsored": 0,
+        "max_installment_years": 8,
+        "min_down_payment": 1267200,
+        "min_ready_by": "2026-12-30",
+        "properties_ids": [
+            46096,
+            46097,
+            46098,
+            46100,
+            46101,
+            46103,
+            46105,
+            46106,
+            46107,
+            46108
+        ],
+        "sum_10_properties_min_price": 155126000,
+        "lat": 31.08491717,
+        "long": 27.93477544,
+        "has_offer": false,
+        "has_launches": false,
+        "is_launch": false,
+        "offer_title": "",
+        "limited_time_offer": true,
+        "property_types": [
+            "فيلا",
+            "بينت هاوس",
+            "شاليه"
+        ],
+        "advertising_image_path": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/compound/advertising_image/84/Fokabay.png",
+        "nawy_organization_id": null,
+        "property_types_count": [
+            {
+                "id": 1,
+                "name": "فيلا",
+                "count": 5,
+                "total": 5,
+                "rank": 2
+            },
+            {
+                "id": 4,
+                "name": "بينت هاوس",
+                "count": 2,
+                "total": 2,
+                "rank": 6
+            },
+            {
+                "id": 5,
+                "name": "شاليه",
+                "count": 9,
+                "total": 9,
+                "rank": 7
+            }
+        ],
+        "favorite": false,
+        "property_types_count_highlighted": {
+            "highlighted": [],
+            "rest": [
+                {
+                    "id": 1,
+                    "name": "فيلا",
+                    "count": 5,
+                    "total": 5,
+                    "rank": 2
+                },
+                {
+                    "id": 4,
+                    "name": "بينت هاوس",
+                    "count": 2,
+                    "total": 2,
+                    "rank": 6
+                },
+                {
+                    "id": 5,
+                    "name": "شاليه",
+                    "count": 9,
+                    "total": 9,
+                    "rank": 7
+                }
+            ]
+        }
+    },
+    {
+        "copound_id": 118,
+        "name": "دي باي ",
+        "is_super": false,
+        "slug": "118-دي-باي-الساحل-الشمالي-تطوير-مصر",
+        "properties_count": 5,
+        "image": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/compound_image/image/6799/medium_d-b-2.jpg",
+        "min_price": 16394000,
+        "max_price": 120568000,
+        "min_unit_area": 110,
+        "max_unit_area": 370,
+        "available_bathrooms": [
+            2,
+            5,
+            6
+        ],
+        "available_bedrooms": [
+            3,
+            4,
+            5
+        ],
+        "currency": "جم",
+        "developer": {
+            "id": 33,
+            "name": "تطوير مصر",
+            "logo_path": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/developer/logo_image/33/Tatweer_Misr.jpg"
+        },
+        "area": {
+            "id": 3,
+            "name": "الساحل الشمالي",
+            "slug": "الساحل-الشمالي"
+        },
+        "sponsored": 0,
+        "max_installment_years": 7,
+        "min_down_payment": 1639400,
+        "min_ready_by": "2027-12-30",
+        "properties_ids": [
+            35176,
+            46091,
+            46092,
+            46093,
+            46095
+        ],
+        "sum_10_properties_min_price": 493338000,
+        "lat": 31.08190054,
+        "long": 28.39811325,
+        "has_offer": false,
+        "has_launches": false,
+        "is_launch": false,
+        "offer_title": "مقدم 5٪؜ و بعد ثلاث اشهر 5٪ ",
+        "limited_time_offer": true,
+        "property_types": [
+            "فيلا",
+            "توين هاوس",
+            "شاليه"
+        ],
+        "advertising_image_path": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/compound/advertising_image/452/Dbay.png",
+        "nawy_organization_id": null,
+        "property_types_count": [
+            {
+                "id": 1,
+                "name": "فيلا",
+                "count": 3,
+                "total": 3,
+                "rank": 2
+            },
+            {
+                "id": 6,
+                "name": "توين هاوس",
+                "count": 1,
+                "total": 1,
+                "rank": 3
+            },
+            {
+                "id": 5,
+                "name": "شاليه",
+                "count": 4,
+                "total": 4,
+                "rank": 7
+            }
+        ],
+        "favorite": false,
+        "property_types_count_highlighted": {
+            "highlighted": [],
+            "rest": [
+                {
+                    "id": 1,
+                    "name": "فيلا",
+                    "count": 3,
+                    "total": 3,
+                    "rank": 2
+                },
+                {
+                    "id": 6,
+                    "name": "توين هاوس",
+                    "count": 1,
+                    "total": 1,
+                    "rank": 3
+                },
+                {
+                    "id": 5,
+                    "name": "شاليه",
+                    "count": 4,
+                    "total": 4,
+                    "rank": 7
+                }
+            ]
+        }
+    },
+    {
+        "copound_id": 119,
+        "name": "سراي",
+        "is_super": true,
+        "slug": "119-ساراي",
+        "properties_count": 16,
+        "image": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/compound_image/image/1422/medium_h7xqEVPrcAq3Zyqe8s8JVMDddBLJwv.jpg",
+        "min_price": 2839036,
+        "max_price": 12037461,
+        "min_unit_area": 69,
+        "max_unit_area": 220,
+        "available_bathrooms": [
+            1,
+            2,
+            3,
+            4
+        ],
+        "available_bedrooms": [
+            1,
+            2,
+            3,
+            4
+        ],
+        "currency": "جم",
+        "developer": {
+            "id": 54,
+            "name": "مدينه مصر",
+            "logo_path": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/developer/logo_image/54/MMHD.png"
+        },
+        "area": {
+            "id": 2,
+            "name": "القاهرة الجديدة",
+            "slug": "القاهرة-الجديدة"
+        },
+        "sponsored": 0,
+        "max_installment_years": 8,
+        "min_down_payment": 283904,
+        "min_ready_by": "2026-01-15",
+        "properties_ids": [
+            29381,
+            40745,
+            45933,
+            45934,
+            45935,
+            45942,
+            45946,
+            45947,
+            45948,
+            45949
+        ],
+        "sum_10_properties_min_price": 29422465,
+        "lat": 30.09409061,
+        "long": 31.70440755,
+        "has_offer": false,
+        "has_launches": false,
+        "is_launch": false,
+        "offer_title": null,
+        "limited_time_offer": true,
+        "property_types": [
+            "شقة",
+            "فيلا",
+            "تاون هاوس",
+            "دوبلكس",
+            "بينت هاوس",
+            "إستوديو"
+        ],
+        "advertising_image_path": null,
+        "nawy_organization_id": null,
+        "property_types_count": [
+            {
+                "id": 21,
+                "name": "شقة",
+                "count": 26,
+                "total": 26,
+                "rank": 1
+            },
+            {
+                "id": 1,
+                "name": "فيلا",
+                "count": 6,
+                "total": 6,
+                "rank": 2
+            },
+            {
+                "id": 7,
+                "name": "تاون هاوس",
+                "count": 1,
+                "total": 1,
+                "rank": 4
+            },
+            {
+                "id": 3,
+                "name": "دوبلكس",
+                "count": 4,
+                "total": 4,
+                "rank": 5
+            },
+            {
+                "id": 4,
+                "name": "بينت هاوس",
+                "count": 2,
+                "total": 2,
+                "rank": 6
+            },
+            {
+                "id": 9,
+                "name": "إستوديو",
+                "count": 4,
+                "total": 4,
+                "rank": 8
+            }
+        ],
+        "favorite": false,
+        "property_types_count_highlighted": {
+            "highlighted": [],
+            "rest": [
+                {
+                    "id": 21,
+                    "name": "شقة",
+                    "count": 26,
+                    "total": 26,
+                    "rank": 1
+                },
+                {
+                    "id": 1,
+                    "name": "فيلا",
+                    "count": 6,
+                    "total": 6,
+                    "rank": 2
+                },
+                {
+                    "id": 7,
+                    "name": "تاون هاوس",
+                    "count": 1,
+                    "total": 1,
+                    "rank": 4
+                },
+                {
+                    "id": 3,
+                    "name": "دوبلكس",
+                    "count": 4,
+                    "total": 4,
+                    "rank": 5
+                },
+                {
+                    "id": 4,
+                    "name": "بينت هاوس",
+                    "count": 2,
+                    "total": 2,
+                    "rank": 6
+                },
+                {
+                    "id": 9,
+                    "name": "إستوديو",
+                    "count": 4,
+                    "total": 4,
+                    "rank": 8
+                }
+            ]
+        }
+    },
+    {
+        "copound_id": 120,
+        "name": "نمق",
+        "is_super": false,
+        "slug": "120-ان-ام-كيو",
+        "properties_count": 19,
+        "image": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/compound/cover_image/1067/1698844259443.jpg",
+        "min_price": 9643000,
+        "max_price": 30405000,
+        "min_unit_area": 91,
+        "max_unit_area": 256,
+        "available_bathrooms": [
+            0,
+            2,
+            3,
+            4,
+            5
+        ],
+        "available_bedrooms": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+        ],
+        "currency": "جم",
+        "developer": {
+            "id": 342,
+            "name": "ميلي للتطوير العقاري",
+            "logo_path": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/developer/logo_image/342/1694427545164.jpg"
+        },
+        "area": {
+            "id": 26,
+            "name": "الشيخ زايد",
+            "slug": "الشيخ-زايد"
+        },
+        "sponsored": 0,
+        "max_installment_years": 8,
+        "min_down_payment": 482150,
+        "min_ready_by": "2028-12-30",
+        "properties_ids": [
+            45790,
+            45791,
+            45797,
+            45803,
+            45805,
+            45808,
+            45809,
+            45811,
+            47688,
+            47689
+        ],
+        "sum_10_properties_min_price": 126964000,
+        "lat": 29.9935966,
+        "long": 30.996094,
+        "has_offer": true,
+        "has_launches": false,
+        "is_launch": false,
+        "offer_title": "",
+        "limited_time_offer": true,
+        "property_types": [
+            "شقة",
+            "فيلا",
+            "توين هاوس",
+            "تاون هاوس",
+            "دوبلكس",
+            "مكتب"
+        ],
+        "advertising_image_path": null,
+        "nawy_organization_id": null,
+        "property_types_count": [
+            {
+                "id": 21,
+                "name": "شقة",
+                "count": 8,
+                "total": 8,
+                "rank": 1
+            },
+            {
+                "id": 1,
+                "name": "فيلا",
+                "count": 2,
+                "total": 2,
+                "rank": 2
+            },
+            {
+                "id": 6,
+                "name": "توين هاوس",
+                "count": 1,
+                "total": 1,
+                "rank": 3
+            },
+            {
+                "id": 7,
+                "name": "تاون هاوس",
+                "count": 1,
+                "total": 1,
+                "rank": 4
+            },
+            {
+                "id": 3,
+                "name": "دوبلكس",
+                "count": 5,
+                "total": 5,
+                "rank": 5
+            },
+            {
+                "id": 8,
+                "name": "مكتب",
+                "count": 2,
+                "total": 2,
+                "rank": 10
+            }
+        ],
+        "favorite": false,
+        "property_types_count_highlighted": {
+            "highlighted": [],
+            "rest": [
+                {
+                    "id": 21,
+                    "name": "شقة",
+                    "count": 8,
+                    "total": 8,
+                    "rank": 1
+                },
+                {
+                    "id": 1,
+                    "name": "فيلا",
+                    "count": 2,
+                    "total": 2,
+                    "rank": 2
+                },
+                {
+                    "id": 6,
+                    "name": "توين هاوس",
+                    "count": 1,
+                    "total": 1,
+                    "rank": 3
+                },
+                {
+                    "id": 7,
+                    "name": "تاون هاوس",
+                    "count": 1,
+                    "total": 1,
+                    "rank": 4
+                },
+                {
+                    "id": 3,
+                    "name": "دوبلكس",
+                    "count": 5,
+                    "total": 5,
+                    "rank": 5
+                },
+                {
+                    "id": 8,
+                    "name": "مكتب",
+                    "count": 2,
+                    "total": 2,
+                    "rank": 10
+                }
+            ]
+        }
+    },
+    {
+        "copound_id": 121,
+        "name": "هيلز اوف وان",
+        "is_super": false,
+        "slug": "121-هيلز-اوف-وان",
+        "properties_count": 8,
+        "image": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/compound_image/image/8275/medium_Screenshot_2.png",
+        "min_price": 22789440,
+        "max_price": 106266592,
+        "min_unit_area": 200,
+        "max_unit_area": 1274,
+        "available_bathrooms": [
+            3,
+            4,
+            5,
+            8
+        ],
+        "available_bedrooms": [
+            3,
+            4,
+            6
+        ],
+        "currency": "جم",
+        "developer": {
+            "id": 225,
+            "name": "بيبول اند بلاسيز",
+            "logo_path": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/developer/logo_image/225/the_med.png"
+        },
+        "area": {
+            "id": 1,
+            "name": "مدينه السادس من اكتوبر",
+            "slug": "مدينه-السادس-من-اكتوبر"
+        },
+        "sponsored": 0,
+        "max_installment_years": 8,
+        "min_down_payment": 1139472,
+        "min_ready_by": "2028-01-01",
+        "properties_ids": [
+            48111,
+            48112,
+            48113,
+            48114,
+            48115,
+            48116,
+            48117,
+            48118
+        ],
+        "sum_10_properties_min_price": 282028032,
+        "lat": 30.02154351,
+        "long": 31.22314453,
+        "has_offer": false,
+        "has_launches": false,
+        "is_launch": false,
+        "offer_title": null,
+        "limited_time_offer": true,
+        "property_types": [
+            "فيلا",
+            "تاون هاوس"
+        ],
+        "advertising_image_path": null,
+        "nawy_organization_id": null,
+        "property_types_count": [
+            {
+                "id": 1,
+                "name": "فيلا",
+                "count": 5,
+                "total": 5,
+                "rank": 2
+            },
+            {
+                "id": 7,
+                "name": "تاون هاوس",
+                "count": 3,
+                "total": 3,
+                "rank": 4
+            }
+        ],
+        "favorite": false,
+        "property_types_count_highlighted": {
+            "highlighted": [],
+            "rest": [
+                {
+                    "id": 1,
+                    "name": "فيلا",
+                    "count": 5,
+                    "total": 5,
+                    "rank": 2
+                },
+                {
+                    "id": 7,
+                    "name": "تاون هاوس",
+                    "count": 3,
+                    "total": 3,
+                    "rank": 4
+                }
+            ]
+        }
+    },
+    {
+        "copound_id": 122,
+        "name": "سبايس مول",
+        "is_super": false,
+        "slug": "122-سبايس-مول",
+        "properties_count": 9,
+        "image": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/compound_image/image/7424/medium_Screenshot_2.png",
+        "min_price": 8335578,
+        "max_price": 39914400,
+        "min_unit_area": 82,
+        "max_unit_area": 200,
+        "available_bathrooms": [
+            0
+        ],
+        "available_bedrooms": [
+            0
+        ],
+        "currency": "جم",
+        "developer": {
+            "id": 135,
+            "name": "جيتس للتطوير العقاري",
+            "logo_path": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/developer/logo_image/135/gates_dev.jpg"
+        },
+        "area": {
+            "id": 26,
+            "name": "الشيخ زايد",
+            "slug": "الشيخ-زايد"
+        },
+        "sponsored": 0,
+        "max_installment_years": 7,
+        "min_down_payment": 416779,
+        "min_ready_by": "2024-04-30",
+        "properties_ids": [
+            48135,
+            48136,
+            48137,
+            48138,
+            48139,
+            48140,
+            48141,
+            48142,
+            48143
+        ],
+        "sum_10_properties_min_price": 186388446,
+        "lat": 30.0281216,
+        "long": 31.02441951,
+        "has_offer": false,
+        "has_launches": false,
+        "is_launch": false,
+        "offer_title": null,
+        "limited_time_offer": true,
+        "property_types": [
+            "مكتب",
+            "تجاري"
+        ],
+        "advertising_image_path": null,
+        "nawy_organization_id": null,
+        "property_types_count": [
+            {
+                "id": 8,
+                "name": "مكتب",
+                "count": 3,
+                "total": 3,
+                "rank": 10
+            },
+            {
+                "id": 10,
+                "name": "تجاري",
+                "count": 6,
+                "total": 6,
+                "rank": 12
+            }
+        ],
+        "favorite": false,
+        "property_types_count_highlighted": {
+            "highlighted": [],
+            "rest": [
+                {
+                    "id": 8,
+                    "name": "مكتب",
+                    "count": 3,
+                    "total": 3,
+                    "rank": 10
+                },
+                {
+                    "id": 10,
+                    "name": "تجاري",
+                    "count": 6,
+                    "total": 6,
+                    "rank": 12
+                }
+            ]
+        }
+    },
+    {
+        "copound_id": 123,
+        "name": "ازاد فيوز",
+        "is_super": false,
+        "slug": "123-ازاد-فيوز",
+        "properties_count": 6,
+        "image": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/compound_image/image/3806/medium_2.jpg",
+        "min_price": 13899030,
+        "max_price": 24909545,
+        "min_unit_area": 112,
+        "max_unit_area": 209,
+        "available_bathrooms": [
+            2,
+            3
+        ],
+        "available_bedrooms": [
+            2,
+            3,
+            4
+        ],
+        "currency": "جم",
+        "developer": {
+            "id": 67,
+            "name": "تعمير للتطوير العقاري",
+            "logo_path": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/developer/logo_image/67/tameer_1.png"
+        },
+        "area": {
+            "id": 2,
+            "name": "القاهرة الجديدة",
+            "slug": "القاهرة-الجديدة"
+        },
+        "sponsored": 0,
+        "max_installment_years": 8,
+        "min_down_payment": 2084855,
+        "min_ready_by": "2027-12-30",
+        "properties_ids": [
+            46533,
+            46537,
+            46538,
+            46809,
+            46811,
+            47541
+        ],
+        "sum_10_properties_min_price": 181915439,
+        "lat": 30.01365248,
+        "long": 31.50572359,
+        "has_offer": false,
+        "has_launches": false,
+        "is_launch": false,
+        "offer_title": "",
+        "limited_time_offer": true,
+        "property_types": [
+            "شقة"
+        ],
+        "advertising_image_path": null,
+        "nawy_organization_id": null,
+        "property_types_count": [
+            {
+                "id": 21,
+                "name": "شقة",
+                "count": 6,
+                "total": 6,
+                "rank": 1
+            }
+        ],
+        "favorite": false,
+        "property_types_count_highlighted": {
+            "highlighted": [],
+            "rest": [
+                {
+                    "id": 21,
+                    "name": "شقة",
+                    "count": 6,
+                    "total": 6,
+                    "rank": 1
+                }
+            ]
+        }
+    },
+    {
+        "copound_id": 124,
+        "name": "كراون سنترال",
+        "is_super": null,
+        "slug": "124-كراون-سنترال",
+        "properties_count": 6,
+        "image": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/compound_image/image/5121/medium_7.jpg",
+        "min_price": 13610000,
+        "max_price": 24005000,
+        "min_unit_area": 79,
+        "max_unit_area": 197,
+        "available_bathrooms": [
+            0
+        ],
+        "available_bedrooms": [
+            0
+        ],
+        "currency": "جم",
+        "developer": {
+            "id": 16,
+            "name": "بالم هيلز للتطوير العقاري",
+            "logo_path": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/developer/logo_image/16/Palm_Hills.jpg"
+        },
+        "area": {
+            "id": 1,
+            "name": "مدينه السادس من اكتوبر",
+            "slug": "مدينه-السادس-من-اكتوبر"
+        },
+        "sponsored": 0,
+        "max_installment_years": 6,
+        "min_down_payment": 1361000,
+        "min_ready_by": "2026-06-29",
+        "properties_ids": [
+            30349,
+            30814,
+            35060,
+            42202,
+            43865,
+            46798
+        ],
+        "sum_10_properties_min_price": 90407000,
+        "lat": 29.99517611,
+        "long": 31.05175784,
+        "has_offer": false,
+        "has_launches": false,
+        "is_launch": false,
+        "offer_title": null,
+        "limited_time_offer": true,
+        "property_types": [
+            "مكتب"
+        ],
+        "advertising_image_path": null,
+        "nawy_organization_id": null,
+        "property_types_count": [
+            {
+                "id": 8,
+                "name": "مكتب",
+                "count": 6,
+                "total": 6,
+                "rank": 10
+            }
+        ],
+        "favorite": false,
+        "property_types_count_highlighted": {
+            "highlighted": [],
+            "rest": [
+                {
+                    "id": 8,
+                    "name": "مكتب",
+                    "count": 6,
+                    "total": 6,
+                    "rank": 10
+                }
+            ]
+        }
     }
-
 ]

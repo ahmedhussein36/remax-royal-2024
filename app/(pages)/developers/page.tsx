@@ -27,7 +27,7 @@ const DevelopersPage = async ({ searchParams }: DevelopersPageProps) => {
                         />
                     </div>
 
-                    <div className=" flex justify-center items-center w-1/3">
+                    <div className=" flex justify-center items-center w-">
                         <div className="flex justify-center items-center w-full">
                             <Search placeholder={searchParams.name} />
                         </div>

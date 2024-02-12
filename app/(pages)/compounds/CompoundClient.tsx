@@ -1,3 +1,4 @@
+"use client";
 import { SafeUser } from "@/app/types";
 import ClientOnly from "@/app/components/ClientOnly";
 
@@ -26,8 +27,8 @@ const CompoundClient: React.FC<CompoundClientProps> = ({ data }) => {
                             relative
                         "
                 >
-                    {data.map((compond: any, index) => (
-                        <div key={index}>hello</div>
+                    {data.map((compound: any, index) => (
+                        <div key={index}>{compound.name}</div>
                     ))}
                 </div>
             </div>

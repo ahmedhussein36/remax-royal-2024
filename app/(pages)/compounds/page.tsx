@@ -6,14 +6,31 @@ import Heading from "@/app/components/Heading";
 import CompoundClient from "./CompoundClient";
 import Search from "./Search";
 import getCopmounds, { IParams } from "@/app/actions/getCopmounds";
+import axios from "axios";
 
 interface CompoundsPageProps {
     searchParams: IParams;
 }
 
 const CompoundsPage = async ({ searchParams }: CompoundsPageProps) => {
-    const compounds = await getCopmounds(searchParams);
+    // const compounds = await getCopmounds(searchParams);
     const currentUser = await getCurrentUser();
+
+    let compounds = [];
+
+    let headersList = {
+        Accept: "*/*",
+        "User-Agent": "Thunder Client (https://www.thunderclient.com)",
+    };
+
+    let reqOptions = {
+        url: "https://webapi.cooingestate.com/api/compounds?language=ar",
+        method: "GET",
+        headers: headersList,
+    };
+
+    let response = await axios.request(reqOptions);
+    compounds = response.data;
 
     return (
         <ClientOnly>
@@ -39,7 +56,10 @@ const CompoundsPage = async ({ searchParams }: CompoundsPageProps) => {
                             currentUser={currentUser}
                         />
                     ) : (
-                        <EmptyStateAr title="لايوجد كمبوندات متوفرة" subtitle="يرجى العوده في لاحقا" />
+                        <EmptyStateAr
+                            title="لايوجد كمبوندات متوفرة"
+                            subtitle="يرجى العودة لاحقا"
+                        />
                     )}
                 </div>
             </Container>

@@ -92,8 +92,8 @@ const UserMenu: React.FC<UserMenuProps> = ({ currentUser }) => {
             py-3
             px-4 
             rounded-lg
-            bg-rose-500
-            hover:bg-rose-400
+            bg-red-500
+            hover:bg-red-600
             transition 
             cursor-pointer
           "

@@ -4,7 +4,7 @@ export interface IParams {
     userId?: string;
     title?: string;
     roomCount?: number;
-    bathroomCount?: number;
+    bathroomCount?: number; 
     city?: string;
     aria?: string;
     PropertyType?: string;

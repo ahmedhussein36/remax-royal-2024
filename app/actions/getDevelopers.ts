@@ -12,7 +12,7 @@ export default async function getDevelopers(params: IParams) {
 
         let query: any = {};
 
-        if (name) {
+        if (name) { 
             query.name = {
                 contains: name,
             }
@@ -25,12 +25,12 @@ export default async function getDevelopers(params: IParams) {
             },
         });
 
-        const safedevelopers = developers.map((developer) => ({
+        const safeDevelopers = developers.map((developer) => ({
             ...developer,
             created_at: developer.developerId
         }));
 
-        return safedevelopers;
+        return safeDevelopers;
     } catch (error: any) {
         throw new Error(error);
     }

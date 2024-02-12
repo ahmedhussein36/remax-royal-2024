@@ -1,0 +1,903 @@
+[
+    {
+        "id": 67,
+        "phase_id": null,
+        "title": "ايفورى ايست من بي أر إي للتطوير العقاري",
+        "description": "\u003cp\u003eتطرح شركة بى ار اى مشروعها الجديد ايفورى ايست\u003c/p\u003e",
+        "start_date": "2023-11-19T00:00:00.000Z",
+        "expire_date": null,
+        "is_active": true,
+        "manual_ranking": 5,
+        "marketing_image_wide": {
+            "url": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/launch/marketing_image_wide/67/Ivoire_East.jpeg"
+        },
+        "marketing_image_wide_name": "Ivoire_East.jpeg",
+        "marketing_image_wide_path": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/launch/marketing_image_wide/67/Ivoire_East.jpeg",
+        "marketing_image_square": {
+            "url": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/launch/marketing_image_square/67/Ivoire_East.jpeg"
+        },
+        "marketing_image_square_name": "Ivoire_East.jpeg",
+        "marketing_image_square_path": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/launch/marketing_image_square/67/Ivoire_East.jpeg",
+        "marketing_video": {
+            "url": null
+        },
+        "marketing_video_name": null,
+        "marketing_video_path": null,
+        "created_at": "2023-11-19T21:35:56.359Z",
+        "updated_at": "2024-02-05T12:52:09.120Z",
+        "compound_id": 1076,
+        "slug": "1076-ايفورى-القاهرة-الجديدة",
+        "developer_id": 111,
+        "area_id": 2,
+        "video_url": null,
+        "starting_price": 16800000,
+        "currency_id": 5,
+        "short_title": "ايفورى ايست",
+        "slug_prefix": "compound",
+        "area": {
+            "id": 2,
+            "name": "القاهرة الجديدة"
+        },
+        "currency": "جم",
+        "compound": {
+            "id": 1076,
+            "name": "ايفورى القاهرة الجديدة",
+            "nawy_organization_id": null
+        },
+        "developer": {
+            "id": 111,
+            "name": "بي أر إي للتطوير العقاري",
+            "slug": "111-بي-أر-إي-للتطوير-العقاري",
+            "logo_path": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/developer/logo_image/111/pre.png"
+        },
+        "min_price": 16800000
+    },
+    {
+        "id": 94,
+        "phase_id": null,
+        "title": "البوسكو سيتى من مصر ايطاليا ",
+        "description": "\u003cp\u003eتطرح مصر ايطاليا مراحل جديدة فى البوسكو سيتى فى مستقبل سيتى من شقق و دوبلكسات و فلل\u003c/p\u003e\u003cp\u003e\u003cbr\u003e\u003c/p\u003e",
+        "start_date": "2024-02-07T00:00:00.000Z",
+        "expire_date": null,
+        "is_active": true,
+        "manual_ranking": null,
+        "marketing_image_wide": {
+            "url": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/launch/marketing_image_wide/94/Il_bosco.jpg"
+        },
+        "marketing_image_wide_name": "Il_bosco.jpg",
+        "marketing_image_wide_path": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/launch/marketing_image_wide/94/Il_bosco.jpg",
+        "marketing_image_square": {
+            "url": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/launch/marketing_image_square/94/Il_bosco.jpg"
+        },
+        "marketing_image_square_name": "Il_bosco.jpg",
+        "marketing_image_square_path": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/launch/marketing_image_square/94/Il_bosco.jpg",
+        "marketing_video": {
+            "url": null
+        },
+        "marketing_video_name": null,
+        "marketing_video_path": null,
+        "created_at": "2024-02-07T11:29:42.159Z",
+        "updated_at": "2024-02-07T11:29:42.165Z",
+        "compound_id": 490,
+        "slug": "94-البوسكو-سيتى-من-مصر-ايطاليا",
+        "developer_id": 55,
+        "area_id": 10,
+        "video_url": null,
+        "starting_price": 7000000,
+        "currency_id": 5,
+        "short_title": "البوسكو سيتى",
+        "slug_prefix": "new-launches",
+        "area": {
+            "id": 10,
+            "name": "مدينة المستقبل"
+        },
+        "currency": "جم",
+        "compound": {
+            "id": 490,
+            "name": "البوسكو سيتي",
+            "nawy_organization_id": null
+        },
+        "developer": {
+            "id": 55,
+            "name": "مصر إيطاليا للتطوير العقاري",
+            "slug": "55-مصر-إيطاليا-للتطوير-العقاري",
+            "logo_path": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/developer/logo_image/55/misr.png"
+        },
+        "min_price": 7000000
+    },
+    {
+        "id": 93,
+        "phase_id": null,
+        "title": "ريد من كورنر ستون للتطوير العقارى",
+        "description": "\u003cp\u003eتطلق شركة Corner Stone Developments مشروعها الجديد في مدينة المستقبل \"RED\"\u003c/p\u003e\u003cp\u003e\u003cbr\u003e\u003c/p\u003e\u003cp\u003eابق على اتصال لمزيد من المعلومات.\u003c/p\u003e",
+        "start_date": "2024-02-07T00:00:00.000Z",
+        "expire_date": null,
+        "is_active": true,
+        "manual_ranking": null,
+        "marketing_image_wide": {
+            "url": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/launch/marketing_image_wide/93/RED.jpeg"
+        },
+        "marketing_image_wide_name": "RED.jpeg",
+        "marketing_image_wide_path": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/launch/marketing_image_wide/93/RED.jpeg",
+        "marketing_image_square": {
+            "url": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/launch/marketing_image_square/93/RED.jpeg"
+        },
+        "marketing_image_square_name": "RED.jpeg",
+        "marketing_image_square_path": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/launch/marketing_image_square/93/RED.jpeg",
+        "marketing_video": {
+            "url": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/launch/marketing_video/93/Red.mp4"
+        },
+        "marketing_video_name": "[\"Red.mp4\", \"https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/launch/marketing_video/93/Red.mp4\"]",
+        "marketing_video_path": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/launch/marketing_video/93/Red.mp4",
+        "created_at": "2024-02-07T10:56:11.376Z",
+        "updated_at": "2024-02-07T10:56:11.840Z",
+        "compound_id": 1135,
+        "slug": "1135-ريد",
+        "developer_id": 152,
+        "area_id": 10,
+        "video_url": null,
+        "starting_price": null,
+        "currency_id": null,
+        "short_title": "ريد من كورنر ستون للتطوير العقارى",
+        "slug_prefix": "compound",
+        "area": {
+            "id": 10,
+            "name": "مدينة المستقبل"
+        },
+        "currency": null,
+        "compound": {
+            "id": 1135,
+            "name": "ريد",
+            "nawy_organization_id": null
+        },
+        "developer": {
+            "id": 152,
+            "name": "كورنر ستون للتطوير العقاري",
+            "slug": "152-كورنر-ستون-للتطوير-العقاري",
+            "logo_path": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/developer/logo_image/152/OUT_Cornerstone-logo-01-01.png"
+        },
+        "min_price": null
+    },
+    {
+        "id": 92,
+        "phase_id": null,
+        "title": "ذا كرست من الكازار ديفلوبمنت",
+        "description": "\u003cp\u003eتطلق الكازار للتطوير العقارى مشروعها الجديد \"كرست\" فى قلب القاهرة الجديدة\u003c/p\u003e\u003cp\u003e\u003cbr\u003e\u003c/p\u003e",
+        "start_date": "2024-02-04T00:00:00.000Z",
+        "expire_date": null,
+        "is_active": true,
+        "manual_ranking": null,
+        "marketing_image_wide": {
+            "url": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/launch/marketing_image_wide/92/The_Crest.jpg"
+        },
+        "marketing_image_wide_name": "The_Crest.jpg",
+        "marketing_image_wide_path": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/launch/marketing_image_wide/92/The_Crest.jpg",
+        "marketing_image_square": {
+            "url": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/launch/marketing_image_square/92/The_Crest.jpg"
+        },
+        "marketing_image_square_name": "The_Crest.jpg",
+        "marketing_image_square_path": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/launch/marketing_image_square/92/The_Crest.jpg",
+        "marketing_video": {
+            "url": null
+        },
+        "marketing_video_name": null,
+        "marketing_video_path": null,
+        "created_at": "2024-02-04T13:56:17.336Z",
+        "updated_at": "2024-02-04T13:56:17.342Z",
+        "compound_id": 806,
+        "slug": "806-الكازر-القاهره-الجديده",
+        "developer_id": 213,
+        "area_id": 2,
+        "video_url": null,
+        "starting_price": 7000000,
+        "currency_id": 5,
+        "short_title": "كرست",
+        "slug_prefix": "compound",
+        "area": {
+            "id": 2,
+            "name": "القاهرة الجديدة"
+        },
+        "currency": "جم",
+        "compound": {
+            "id": 806,
+            "name": "ذا كرست",
+            "nawy_organization_id": null
+        },
+        "developer": {
+            "id": 213,
+            "name": "  الكازار ديفلوبمنت",
+            "slug": "213-الكازار-ديفلوبمنت",
+            "logo_path": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/developer/logo_image/213/il_cazar.png"
+        },
+        "min_price": 7000000
+    },
+    {
+        "id": 91,
+        "phase_id": null,
+        "title": "الورا من شركة العربية للتطوير العقارى",
+        "description": "\u003cp\u003eفى قلب مدينة زايد الجديدة \"الورا\" اخر مشاريع العربية للتطوير \u003c/p\u003e\u003cp\u003e\u003cbr\u003e\u003c/p\u003e\u003cp\u003eانتظروا المزيد من المعلومات\u003c/p\u003e",
+        "start_date": "2024-02-04T00:00:00.000Z",
+        "expire_date": null,
+        "is_active": true,
+        "manual_ranking": null,
+        "marketing_image_wide": {
+            "url": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/launch/marketing_image_wide/91/Elora.jpg"
+        },
+        "marketing_image_wide_name": "Elora.jpg",
+        "marketing_image_wide_path": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/launch/marketing_image_wide/91/Elora.jpg",
+        "marketing_image_square": {
+            "url": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/launch/marketing_image_square/91/Elora2.jpg"
+        },
+        "marketing_image_square_name": "Elora2.jpg",
+        "marketing_image_square_path": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/launch/marketing_image_square/91/Elora2.jpg",
+        "marketing_video": {
+            "url": null
+        },
+        "marketing_video_name": null,
+        "marketing_video_path": null,
+        "created_at": "2024-02-04T12:56:38.483Z",
+        "updated_at": "2024-02-04T12:56:38.524Z",
+        "compound_id": 1122,
+        "slug": "1122-ارابيا-للتطوير-العقارى-زايد-الجديدة",
+        "developer_id": 68,
+        "area_id": 1,
+        "video_url": null,
+        "starting_price": null,
+        "currency_id": null,
+        "short_title": "الورا",
+        "slug_prefix": "compound",
+        "area": {
+            "id": 1,
+            "name": "مدينه السادس من اكتوبر"
+        },
+        "currency": null,
+        "compound": {
+            "id": 1122,
+            "name": "الورا",
+            "nawy_organization_id": null
+        },
+        "developer": {
+            "id": 68,
+            "name": "ارابيا هولدينج",
+            "slug": "68-ارابيا-هولدينج",
+            "logo_path": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/developer/logo_image/68/Arabia.png"
+        },
+        "min_price": null
+    },
+    {
+        "id": 90,
+        "phase_id": null,
+        "title": "جاذبية من شركة من ابوايد للتطوير العقاري",
+        "description": "\u003cp\u003eتطلق شركة ابوايد للتطوير العقاري مشروعها الجديد \"جاذبية\" في قلب مدينة 6 أكتوبر مباشرة على محور 26 يوليو.\u003c/p\u003e\u003cp\u003e\u003cbr\u003e\u003c/p\u003e\u003cp\u003eابق على اتصال لمزيد من المعلومات\u003c/p\u003e",
+        "start_date": "2024-01-31T00:00:00.000Z",
+        "expire_date": null,
+        "is_active": true,
+        "manual_ranking": null,
+        "marketing_image_wide": {
+            "url": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/launch/marketing_image_wide/90/Jazebeya.jpeg"
+        },
+        "marketing_image_wide_name": "Jazebeya.jpeg",
+        "marketing_image_wide_path": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/launch/marketing_image_wide/90/Jazebeya.jpeg",
+        "marketing_image_square": {
+            "url": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/launch/marketing_image_square/90/Jazebeya.jpeg"
+        },
+        "marketing_image_square_name": "Jazebeya.jpeg",
+        "marketing_image_square_path": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/launch/marketing_image_square/90/Jazebeya.jpeg",
+        "marketing_video": {
+            "url": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/launch/marketing_video/90/WhatsApp_Video_2024-01-30_at_5.01.16_PM.mp4"
+        },
+        "marketing_video_name": "[\"WhatsApp_Video_2024-01-30_at_5.01.16_PM.mp4\", \"https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/launch/marketing_video/90/WhatsApp_Video_2024-01-30_at_5.01.16_PM.mp4\"]",
+        "marketing_video_path": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/launch/marketing_video/90/WhatsApp_Video_2024-01-30_at_5.01.16_PM.mp4",
+        "created_at": "2024-01-31T10:52:41.919Z",
+        "updated_at": "2024-02-05T13:21:00.742Z",
+        "compound_id": 1130,
+        "slug": "1130-جاذبية",
+        "developer_id": 144,
+        "area_id": 1,
+        "video_url": null,
+        "starting_price": 3250000,
+        "currency_id": 5,
+        "short_title": "جاذبية ",
+        "slug_prefix": "compound",
+        "area": {
+            "id": 1,
+            "name": "مدينه السادس من اكتوبر"
+        },
+        "currency": "جم",
+        "compound": {
+            "id": 1130,
+            "name": "جاذبية",
+            "nawy_organization_id": null
+        },
+        "developer": {
+            "id": 144,
+            "name": "ابوايد للتطوير العقاري",
+            "slug": "144-ابوايد-للتطوير-العقاري",
+            "logo_path": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/developer/logo_image/144/upwyde.png"
+        },
+        "min_price": 3250000
+    },
+    {
+        "id": 89,
+        "phase_id": null,
+        "title": "ايفر القاهرة الجديدة من كريد للتطوير العقاري",
+        "description": "\u003cp\u003eتطلق شركة كريد للتطوير العقاري مشروعًا جديدًا في القاهرة الجديدة: ايفرالقاهرة الجديدة\u003c/p\u003e\u003cp\u003e128 فدان سكني وتجاري\u003c/p\u003e\u003cp\u003e\u003cbr\u003e\u003c/p\u003e\u003cp\u003eابق على اتصال لمزيد من المعلومات\u003c/p\u003e",
+        "start_date": "2024-01-28T00:00:00.000Z",
+        "expire_date": null,
+        "is_active": true,
+        "manual_ranking": null,
+        "marketing_image_wide": {
+            "url": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/launch/marketing_image_wide/89/Ever_Cred_new_cairo.jpeg"
+        },
+        "marketing_image_wide_name": "Ever_Cred_new_cairo.jpeg",
+        "marketing_image_wide_path": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/launch/marketing_image_wide/89/Ever_Cred_new_cairo.jpeg",
+        "marketing_image_square": {
+            "url": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/launch/marketing_image_square/89/Ever_Cred_new_cairo.jpeg"
+        },
+        "marketing_image_square_name": "Ever_Cred_new_cairo.jpeg",
+        "marketing_image_square_path": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/launch/marketing_image_square/89/Ever_Cred_new_cairo.jpeg",
+        "marketing_video": {
+            "url": null
+        },
+        "marketing_video_name": null,
+        "marketing_video_path": null,
+        "created_at": "2024-01-28T11:47:16.826Z",
+        "updated_at": "2024-02-06T11:51:57.504Z",
+        "compound_id": 1123,
+        "slug": "1123-ايفر-القاهرة-الجديدة",
+        "developer_id": 110,
+        "area_id": 2,
+        "video_url": null,
+        "starting_price": 19500000,
+        "currency_id": 5,
+        "short_title": "ايفرالقاهرة الجديدة",
+        "slug_prefix": "compound",
+        "area": {
+            "id": 2,
+            "name": "القاهرة الجديدة"
+        },
+        "currency": "جم",
+        "compound": {
+            "id": 1123,
+            "name": "ايفر القاهرة الجديدة",
+            "nawy_organization_id": null
+        },
+        "developer": {
+            "id": 110,
+            "name": "كريد للتطوير العقاري",
+            "slug": "110-كريد-للتطوير-العقاري",
+            "logo_path": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/developer/logo_image/110/Cred_developments.jpeg"
+        },
+        "min_price": 19500000
+    },
+    {
+        "id": 85,
+        "phase_id": null,
+        "title": "سولانا ايست من اورا للتطوير العقاري",
+        "description": "\u003cp\u003eسولانا يتجه شرقا.\u003c/p\u003e\u003cp\u003e\u003cbr\u003e\u003c/p\u003e\u003cp\u003eتطلق شركة اورا للتطوير العقارى أحدث مشاريعها في القاهرة الجديدة، سولانا إيست.\u003c/p\u003e\u003cp\u003e\u003cbr\u003e\u003c/p\u003e\u003cp\u003eترقبوا المزيد من المعلومات قريبا\u003c/p\u003e",
+        "start_date": "2024-01-23T00:00:00.000Z",
+        "expire_date": null,
+        "is_active": true,
+        "manual_ranking": null,
+        "marketing_image_wide": {
+            "url": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/launch/marketing_image_wide/85/Solana_East.jpg"
+        },
+        "marketing_image_wide_name": "Solana_East.jpg",
+        "marketing_image_wide_path": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/launch/marketing_image_wide/85/Solana_East.jpg",
+        "marketing_image_square": {
+            "url": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/launch/marketing_image_square/85/Solana_East.jpg"
+        },
+        "marketing_image_square_name": "Solana_East.jpg",
+        "marketing_image_square_path": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/launch/marketing_image_square/85/Solana_East.jpg",
+        "marketing_video": {
+            "url": null
+        },
+        "marketing_video_name": null,
+        "marketing_video_path": null,
+        "created_at": "2024-01-23T10:49:02.293Z",
+        "updated_at": "2024-01-23T10:49:02.301Z",
+        "compound_id": 1077,
+        "slug": "85-سولانا-ايست-من-اورا-للتطوير-العقاري",
+        "developer_id": 85,
+        "area_id": 2,
+        "video_url": null,
+        "starting_price": null,
+        "currency_id": null,
+        "short_title": "سولانا ايست",
+        "slug_prefix": "new-launches",
+        "area": {
+            "id": 2,
+            "name": "القاهرة الجديدة"
+        },
+        "currency": null,
+        "compound": {
+            "id": 1077,
+            "name": "سولانا ايست",
+            "nawy_organization_id": null
+        },
+        "developer": {
+            "id": 85,
+            "name": "اورا للتطوير العقاري",
+            "slug": "85-اورا-للتطوير-العقاري",
+            "logo_path": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/developer/logo_image/85/Ora.jpg"
+        },
+        "min_price": null
+    },
+    {
+        "id": 84,
+        "phase_id": null,
+        "title": "افلين من تايمز للتطوير العقارى ",
+        "description": "\u003cp\u003eتطلق شركة تايمز للتطوير العقارى مشروعًا جديدًا في القاهرة الجديدة.\u003c/p\u003e\u003cp\u003eالمشروع على مساحة 26 فدان 85% لاندسكيب و مسطحات مائية\u003c/p\u003e",
+        "start_date": "2024-01-21T00:00:00.000Z",
+        "expire_date": null,
+        "is_active": true,
+        "manual_ranking": null,
+        "marketing_image_wide": {
+            "url": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/launch/marketing_image_wide/84/avelin.jpg"
+        },
+        "marketing_image_wide_name": "avelin.jpg",
+        "marketing_image_wide_path": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/launch/marketing_image_wide/84/avelin.jpg",
+        "marketing_image_square": {
+            "url": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/launch/marketing_image_square/84/avelin.jpg"
+        },
+        "marketing_image_square_name": "avelin.jpg",
+        "marketing_image_square_path": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/launch/marketing_image_square/84/avelin.jpg",
+        "marketing_video": {
+            "url": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/launch/marketing_video/84/Times.mp4"
+        },
+        "marketing_video_name": "[\"Times.mp4\", \"https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/launch/marketing_video/84/Times.mp4\"]",
+        "marketing_video_path": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/launch/marketing_video/84/Times.mp4",
+        "created_at": "2024-01-21T15:47:26.563Z",
+        "updated_at": "2024-01-28T10:52:48.157Z",
+        "compound_id": 1116,
+        "slug": "1116-افلين",
+        "developer_id": 200,
+        "area_id": 2,
+        "video_url": null,
+        "starting_price": 3750000,
+        "currency_id": 5,
+        "short_title": "افلين",
+        "slug_prefix": "compound",
+        "area": {
+            "id": 2,
+            "name": "القاهرة الجديدة"
+        },
+        "currency": "جم",
+        "compound": {
+            "id": 1116,
+            "name": "افلين",
+            "nawy_organization_id": null
+        },
+        "developer": {
+            "id": 200,
+            "name": "تايمز ديفلوبمنتس",
+            "slug": "200-تايمز-ديفلوبمنتس",
+            "logo_path": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/developer/logo_image/200/WhatsApp_Image_2023-10-27_at_10.49.41_PM.jpeg"
+        },
+        "min_price": 3750000
+    },
+    {
+        "id": 81,
+        "phase_id": null,
+        "title": "سوديك ايست ",
+        "description": "\u003cp\u003eتطرح سوديك وحدات جديدة فى سوديك ايست\u003c/p\u003e",
+        "start_date": "2024-01-16T00:00:00.000Z",
+        "expire_date": null,
+        "is_active": true,
+        "manual_ranking": null,
+        "marketing_image_wide": {
+            "url": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/launch/marketing_image_wide/81/Sodic_East.jpg"
+        },
+        "marketing_image_wide_name": "Sodic_East.jpg",
+        "marketing_image_wide_path": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/launch/marketing_image_wide/81/Sodic_East.jpg",
+        "marketing_image_square": {
+            "url": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/launch/marketing_image_square/81/Sodic_East__1_.jpg"
+        },
+        "marketing_image_square_name": "Sodic_East__1_.jpg",
+        "marketing_image_square_path": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/launch/marketing_image_square/81/Sodic_East__1_.jpg",
+        "marketing_video": {
+            "url": null
+        },
+        "marketing_video_name": null,
+        "marketing_video_path": null,
+        "created_at": "2024-01-16T15:00:41.129Z",
+        "updated_at": "2024-01-21T10:24:38.078Z",
+        "compound_id": 176,
+        "slug": "81-سوديك-ايست",
+        "developer_id": 8,
+        "area_id": 16,
+        "video_url": null,
+        "starting_price": null,
+        "currency_id": null,
+        "short_title": "سوديك ايست ",
+        "slug_prefix": "new-launches",
+        "area": {
+            "id": 16,
+            "name": "هيليوبوليس الجديدة"
+        },
+        "currency": null,
+        "compound": {
+            "id": 176,
+            "name": "سوديك إيست",
+            "nawy_organization_id": null
+        },
+        "developer": {
+            "id": 8,
+            "name": "سوديك",
+            "slug": "8-سوديك",
+            "logo_path": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/developer/logo_image/8/Sodic.jpg"
+        },
+        "min_price": null
+    },
+    {
+        "id": 79,
+        "phase_id": null,
+        "title": "اليفا ماونتن فيو",
+        "description": "\u003cp\u003eتطلق ماونتن فيو مرحلة جديدة من اليفا مستقبل سيتى\u003c/p\u003e\u003cp\u003eمرحلة كاملة تطل على البحيرات و مسطحات خضراء\u003c/p\u003e\u003cp\u003e\u003cbr\u003e\u003c/p\u003e",
+        "start_date": "2024-01-16T00:00:00.000Z",
+        "expire_date": null,
+        "is_active": true,
+        "manual_ranking": null,
+        "marketing_image_wide": {
+            "url": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/launch/marketing_image_wide/79/Aliva.jpg"
+        },
+        "marketing_image_wide_name": "Aliva.jpg",
+        "marketing_image_wide_path": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/launch/marketing_image_wide/79/Aliva.jpg",
+        "marketing_image_square": {
+            "url": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/launch/marketing_image_square/79/Aliva__1_.jpg"
+        },
+        "marketing_image_square_name": "Aliva__1_.jpg",
+        "marketing_image_square_path": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/launch/marketing_image_square/79/Aliva__1_.jpg",
+        "marketing_video": {
+            "url": null
+        },
+        "marketing_video_name": null,
+        "marketing_video_path": null,
+        "created_at": "2024-01-16T10:18:07.361Z",
+        "updated_at": "2024-01-21T10:26:54.289Z",
+        "compound_id": 996,
+        "slug": "79-اليفا-ماونتن-فيو",
+        "developer_id": 6,
+        "area_id": 10,
+        "video_url": null,
+        "starting_price": null,
+        "currency_id": null,
+        "short_title": "اليفا ماونتن فيو",
+        "slug_prefix": "new-launches",
+        "area": {
+            "id": 10,
+            "name": "مدينة المستقبل"
+        },
+        "currency": null,
+        "compound": {
+            "id": 996,
+            "name": "اليفا ماونتن فيو مدينه المستقبل",
+            "nawy_organization_id": null
+        },
+        "developer": {
+            "id": 6,
+            "name": "ماونتن فيو",
+            "slug": "6-ماونتن-فيو",
+            "logo_path": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/developer/logo_image/6/MV.jpg"
+        },
+        "min_price": null
+    },
+    {
+        "id": 75,
+        "phase_id": null,
+        "title": "وست اند",
+        "description": "\u003cp\u003eمشروع جديد في زايد الجديدة\u003c/p\u003e\u003cp\u003e\u003cbr\u003e\u003c/p\u003e\u003cp\u003e10 فدان تاون هاوس .\u003c/p\u003e\u003cp\u003e2 دقيقة من طريق وصلة دهشور.\u003c/p\u003e\u003cp\u003e\u003cbr\u003e\u003c/p\u003e\u003cp\u003e\u003cbr\u003e\u003c/p\u003e\u003cp\u003eابق على اتصال لمزيد من المعلومات.\u003c/p\u003e",
+        "start_date": "2024-01-14T00:00:00.000Z",
+        "expire_date": null,
+        "is_active": true,
+        "manual_ranking": null,
+        "marketing_image_wide": {
+            "url": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/launch/marketing_image_wide/75/West_End.jpg"
+        },
+        "marketing_image_wide_name": "West_End.jpg",
+        "marketing_image_wide_path": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/launch/marketing_image_wide/75/West_End.jpg",
+        "marketing_image_square": {
+            "url": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/launch/marketing_image_square/75/West_End.jpg"
+        },
+        "marketing_image_square_name": "West_End.jpg",
+        "marketing_image_square_path": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/launch/marketing_image_square/75/West_End.jpg",
+        "marketing_video": {
+            "url": null
+        },
+        "marketing_video_name": null,
+        "marketing_video_path": null,
+        "created_at": "2024-01-14T14:21:40.714Z",
+        "updated_at": "2024-01-16T10:04:04.245Z",
+        "compound_id": 1111,
+        "slug": "1111-وست-اند",
+        "developer_id": 355,
+        "area_id": 1,
+        "video_url": null,
+        "starting_price": 10500000,
+        "currency_id": 5,
+        "short_title": "وست اند",
+        "slug_prefix": "compound",
+        "area": {
+            "id": 1,
+            "name": "مدينه السادس من اكتوبر"
+        },
+        "currency": "جم",
+        "compound": {
+            "id": 1111,
+            "name": "وست اند",
+            "nawy_organization_id": null
+        },
+        "developer": {
+            "id": 355,
+            "name": "ويست اند للتطوير العقاري",
+            "slug": "355-ويست-اند-للتطوير-العقاري",
+            "logo_path": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/developer/logo_image/355/west_end.png"
+        },
+        "min_price": 10500000
+    },
+    {
+        "id": 72,
+        "phase_id": null,
+        "title": "البروج",
+        "description": "\u003cp\u003eإطلاق التاون هاوس والشقق الجديدة\u003c/p\u003e\u003cp\u003e\u003cbr\u003e\u003c/p\u003e\u003cp\u003eابق على اتصال لمزيد من المعلومات\u003c/p\u003e",
+        "start_date": "2024-01-09T00:00:00.000Z",
+        "expire_date": null,
+        "is_active": true,
+        "manual_ranking": null,
+        "marketing_image_wide": {
+            "url": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/launch/marketing_image_wide/72/AL_BUROUJ_s_.png"
+        },
+        "marketing_image_wide_name": "AL_BUROUJ_s_.png",
+        "marketing_image_wide_path": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/launch/marketing_image_wide/72/AL_BUROUJ_s_.png",
+        "marketing_image_square": {
+            "url": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/launch/marketing_image_square/72/AL_BUROUJ_s_.png"
+        },
+        "marketing_image_square_name": "AL_BUROUJ_s_.png",
+        "marketing_image_square_path": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/launch/marketing_image_square/72/AL_BUROUJ_s_.png",
+        "marketing_video": {
+            "url": null
+        },
+        "marketing_video_name": null,
+        "marketing_video_path": null,
+        "created_at": "2024-01-09T13:03:16.510Z",
+        "updated_at": "2024-01-31T10:57:53.593Z",
+        "compound_id": 219,
+        "slug": "72-البروج",
+        "developer_id": 73,
+        "area_id": 8,
+        "video_url": null,
+        "starting_price": null,
+        "currency_id": null,
+        "short_title": "البروج",
+        "slug_prefix": "new-launches",
+        "area": {
+            "id": 8,
+            "name": "الشروق"
+        },
+        "currency": null,
+        "compound": {
+            "id": 219,
+            "name": "البروج",
+            "nawy_organization_id": null
+        },
+        "developer": {
+            "id": 73,
+            "name": "كابيتال جروب العقاريه",
+            "slug": "73-كابيتال-جروب-العقاريه",
+            "logo_path": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/developer/logo_image/73/I3WtnUKJqiXD22Gj8S5lhigBZXXdBZcgp.jpg"
+        },
+        "min_price": null
+    },
+    {
+        "id": 71,
+        "phase_id": null,
+        "title": "نوشن من تاون رايترز",
+        "description": "\u003cp\u003eمشروع جديد من تاون رايترز.\u003c/p\u003e\u003cp\u003e\u003cbr\u003e\u003c/p\u003e\u003cp\u003eابقوا متابعين.\u003c/p\u003e",
+        "start_date": "2024-01-09T00:00:00.000Z",
+        "expire_date": null,
+        "is_active": true,
+        "manual_ranking": null,
+        "marketing_image_wide": {
+            "url": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/launch/marketing_image_wide/71/Town_writters.jpg"
+        },
+        "marketing_image_wide_name": "Town_writters.jpg",
+        "marketing_image_wide_path": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/launch/marketing_image_wide/71/Town_writters.jpg",
+        "marketing_image_square": {
+            "url": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/launch/marketing_image_square/71/Town_writters.jpg"
+        },
+        "marketing_image_square_name": "Town_writters.jpg",
+        "marketing_image_square_path": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/launch/marketing_image_square/71/Town_writters.jpg",
+        "marketing_video": {
+            "url": null
+        },
+        "marketing_video_name": null,
+        "marketing_video_path": null,
+        "created_at": "2024-01-09T11:17:35.344Z",
+        "updated_at": "2024-01-30T11:49:12.151Z",
+        "compound_id": 1108,
+        "slug": "1108-نوشن",
+        "developer_id": 218,
+        "area_id": 2,
+        "video_url": null,
+        "starting_price": 2750000,
+        "currency_id": 5,
+        "short_title": "نوشن",
+        "slug_prefix": "compound",
+        "area": {
+            "id": 2,
+            "name": "القاهرة الجديدة"
+        },
+        "currency": "جم",
+        "compound": {
+            "id": 1108,
+            "name": "نوشن ",
+            "nawy_organization_id": null
+        },
+        "developer": {
+            "id": 218,
+            "name": "تاون رايترز",
+            "slug": "218-تاون-رايترز",
+            "logo_path": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/developer/logo_image/218/WhatsApp_Image_2023-12-04_at_3.36.02_PM.jpeg"
+        },
+        "min_price": 2750000
+    },
+    {
+        "id": 70,
+        "phase_id": null,
+        "title": "نيو جاردن سيتى ",
+        "description": "\u003cp\u003eتطلق شركة City Edge مشروعًا جديدًا في العاصمة الجديدة بمنطقة R5\u003c/p\u003e\u003cp\u003e\u003cbr\u003e\u003c/p\u003e\u003cp\u003eكمبوند\u0026nbsp;المقصد\u0026nbsp;في\u0026nbsp;قلب\u0026nbsp;العاصمة\u0026nbsp;الإدارية\u0026nbsp;الجديدة،\u0026nbsp;يعتبر\u0026nbsp;التطبيق\u0026nbsp;الحقيقي\u0026nbsp;لشعار\u0026nbsp;شركة\u0026nbsp;سيتي\u0026nbsp;إيدج\u0026nbsp;العقارية\u0026nbsp;“نحن\u0026nbsp;نبني\u0026nbsp;أولاً”،\u0026nbsp;حيث\u0026nbsp;يعتبرأول\u0026nbsp;كمبوند\u0026nbsp;سكني\u0026nbsp;تم\u0026nbsp;تنفيذه\u0026nbsp;في\u0026nbsp;العاصمة\u0026nbsp;الجديدة\u0026nbsp;ويعد\u0026nbsp;مثالاً\u0026nbsp;حياً\u0026nbsp;للعقارات\u0026nbsp;السكنية\u0026nbsp;الراقية،\u0026nbsp;حيث\u0026nbsp;يحتوي\u0026nbsp;على\u0026nbsp;وحدات\u0026nbsp;مختلفة\u0026nbsp;ذاتتصميمات\u0026nbsp;رائعة\u0026nbsp;بأسعار\u0026nbsp;متنوعة،\u0026nbsp;وتصاميم\u0026nbsp;مبهرة،\u0026nbsp;ومع\u0026nbsp;تطورات\u0026nbsp;السوق\u0026nbsp;المصري\u0026nbsp;وجذب\u0026nbsp;العاصمة\u0026nbsp;للكثير\u0026nbsp;من\u0026nbsp;العملائ\u0026nbsp;والاستثمارات،\u0026nbsp;أعللنتالشركة\u0026nbsp;عن\u0026nbsp;استكمال\u0026nbsp;سلسلة\u0026nbsp;نجاحاتها\u0026nbsp;هناك\u0026nbsp;وأعلنت\u0026nbsp;قبل\u0026nbsp;أيام\u0026nbsp;عن\u0026nbsp;مشروعها\u0026nbsp;نيو\u0026nbsp;جاردن\u0026nbsp;سيتي\u0026nbsp;العاصمة\u0026nbsp;الإدارية،\u0026nbsp;وسوف\u0026nbsp;نوضح\u0026nbsp;خلالالسطور\u0026nbsp;القادمة\u0026nbsp;بعض\u0026nbsp;المعلومات\u0026nbsp;حول\u0026nbsp;هذه\u0026nbsp;المشروع\u0026nbsp;المتميز.\u003c/p\u003e\u003cp\u003e\u003cbr\u003e\u003c/p\u003e\u003cp\u003e\u003cstrong\u003eنيو\u0026nbsp;جاردن\u0026nbsp;سيتي\u0026nbsp;العاصمة\u0026nbsp;الإدارية\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e\u003cbr\u003e\u003c/p\u003e\u003cul\u003e\u003cli class=\"ql-direction-rtl\"\u003eيقع\u0026nbsp;نيو\u0026nbsp;جاردن\u0026nbsp;سيتي\u0026nbsp;في\u0026nbsp;أفضل\u0026nbsp;منطقة\u0026nbsp;سكنية\u0026nbsp;بالعاصمة\u0026nbsp;الإدارية\u0026nbsp;الجديدة\u0026nbsp;وبالتحديد\u0026nbsp;في\u0026nbsp;R5.\u003c/li\u003e\u003cli class=\"ql-direction-rtl\"\u003eتم\u0026nbsp;تصميم\u0026nbsp;الكمبوند\u0026nbsp;بأسلوب\u0026nbsp;معماري\u0026nbsp;فريد،\u0026nbsp;مستوحى\u0026nbsp;من\u0026nbsp;التصاميم\u0026nbsp;العالمية.\u0026nbsp;حيث\u0026nbsp;تعاونت\u0026nbsp;شركة\u0026nbsp;سيتي\u0026nbsp;إيدج\u0026nbsp;كعادتها\u0026nbsp;مع\u0026nbsp;كبارالاستشاريين\u0026nbsp;والمهندسين\u0026nbsp;لوضح\u0026nbsp;المخطط\u0026nbsp;الرئيسي\u0026nbsp;لهذا\u0026nbsp;المشروع.\u003c/li\u003e\u003cli class=\"ql-direction-rtl\"\u003eحرصت\u0026nbsp;الشركة\u0026nbsp;المالكة\u0026nbsp;للمشروع\u0026nbsp;على\u0026nbsp;توفير\u0026nbsp;كافة\u0026nbsp;الخدمات\u0026nbsp;الرئيسية\u0026nbsp;والترفيهية\u0026nbsp;التي\u0026nbsp;يحتاجها\u0026nbsp;العملاء،\u0026nbsp;والتي\u0026nbsp;تساعد\u0026nbsp;على\u0026nbsp;خلق\u0026nbsp;مجتمعمكتفي\u0026nbsp;ذاتيًا\u0026nbsp;والحفاظ\u0026nbsp;على\u0026nbsp;رفاهية\u0026nbsp;السكان\u003c/li\u003e\u003cli class=\"ql-direction-rtl\"\u003eويقدم\u0026nbsp;نيو\u0026nbsp;جاردن\u0026nbsp;سيتي\u0026nbsp;العاصمة\u0026nbsp;الإدارية\u0026nbsp;وحدات\u0026nbsp;متميزة\u0026nbsp;بأشكال\u0026nbsp;ومساحات\u0026nbsp;متنوعة.\u0026nbsp;لتلبي\u0026nbsp;كافة\u0026nbsp;احتياجات\u0026nbsp;ورغبات\u0026nbsp;العملاء\u0026nbsp;المختلفة.\u003c/li\u003e\u003cli class=\"ql-direction-rtl\"\u003eوكافة\u0026nbsp;الوحدات\u0026nbsp;في\u0026nbsp;نيو\u0026nbsp;جاردن\u0026nbsp;سيتي\u0026nbsp;العاصمة\u0026nbsp;الإدارية\u0026nbsp;محاطة\u0026nbsp;بالحدائق\u0026nbsp;والمناظر\u0026nbsp;الطبيعية\u0026nbsp;الخضراء.\u0026nbsp;لتوفير\u0026nbsp;أجواء\u0026nbsp;خارجية\u0026nbsp;ممتعةوأكثر\u0026nbsp;راحة\u0026nbsp;وخصوصية.\u003c/li\u003e\u003c/ul\u003e",
+        "start_date": "2023-12-21T00:00:00.000Z",
+        "expire_date": null,
+        "is_active": true,
+        "manual_ranking": null,
+        "marketing_image_wide": {
+            "url": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/launch/marketing_image_wide/70/City_Edge.jpg"
+        },
+        "marketing_image_wide_name": "City_Edge.jpg",
+        "marketing_image_wide_path": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/launch/marketing_image_wide/70/City_Edge.jpg",
+        "marketing_image_square": {
+            "url": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/launch/marketing_image_square/70/City_Edge.jpg"
+        },
+        "marketing_image_square_name": "City_Edge.jpg",
+        "marketing_image_square_path": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/launch/marketing_image_square/70/City_Edge.jpg",
+        "marketing_video": {
+            "url": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/launch/marketing_video/70/City_Edge_-_New_Garden_City.mp4"
+        },
+        "marketing_video_name": "City_Edge_-_New_Garden_City.mp4",
+        "marketing_video_path": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/launch/marketing_video/70/City_Edge_-_New_Garden_City.mp4",
+        "created_at": "2023-12-21T11:10:14.434Z",
+        "updated_at": "2024-01-23T09:53:26.364Z",
+        "compound_id": 1099,
+        "slug": "1099-نيو-جاردن-سيتى",
+        "developer_id": 74,
+        "area_id": 9,
+        "video_url": null,
+        "starting_price": null,
+        "currency_id": null,
+        "short_title": "نيو جاردن سيتى ",
+        "slug_prefix": "compound",
+        "area": {
+            "id": 9,
+            "name": "العاصمة الإدارية الجديدة"
+        },
+        "currency": null,
+        "compound": {
+            "id": 1099,
+            "name": "نيو جاردن سيتى",
+            "nawy_organization_id": 2
+        },
+        "developer": {
+            "id": 74,
+            "name": "سيتي ايدج للتطوير العقاري",
+            "slug": "74-سيتي-ايدج-للتطوير-العقاري",
+            "logo_path": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/developer/logo_image/74/Px7G6xlJf1wkkFgCtFjsrQbIgsrCORCityEdge-800x799.jpg"
+        },
+        "min_price": null
+    },
+    {
+        "id": 69,
+        "phase_id": 896,
+        "title": "لاسيرتا - ازها العين السخنة",
+        "description": "\u003cp\u003e\u003cspan style=\"color: rgb(0, 0, 0);\"\u003eتطلق ازها السخنة مرحلة جديدة من الفلات المتشطبة, تقع جميع الوحدات على الكريستال لاجون و شاطئ خاص \u003c/span\u003e\u003c/p\u003e",
+        "start_date": "2023-12-03T00:00:00.000Z",
+        "expire_date": null,
+        "is_active": true,
+        "manual_ranking": null,
+        "marketing_image_wide": {
+            "url": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/launch/marketing_image_wide/69/AZHA_Sokhna.jpeg.jpg"
+        },
+        "marketing_image_wide_name": "AZHA_Sokhna.jpeg.jpg",
+        "marketing_image_wide_path": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/launch/marketing_image_wide/69/AZHA_Sokhna.jpeg.jpg",
+        "marketing_image_square": {
+            "url": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/launch/marketing_image_square/69/AZHA_Sokhna.jpeg.jpg"
+        },
+        "marketing_image_square_name": "AZHA_Sokhna.jpeg.jpg",
+        "marketing_image_square_path": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/launch/marketing_image_square/69/AZHA_Sokhna.jpeg.jpg",
+        "marketing_video": {
+            "url": null
+        },
+        "marketing_video_name": null,
+        "marketing_video_path": null,
+        "created_at": "2023-12-03T10:51:46.019Z",
+        "updated_at": "2023-12-03T10:51:46.110Z",
+        "compound_id": 88,
+        "slug": "69-لاسيرتا-ازها-العين-السخنة",
+        "developer_id": 36,
+        "area_id": 4,
+        "video_url": null,
+        "starting_price": null,
+        "currency_id": null,
+        "short_title": "لاسيرتا - ازها العين السخنة",
+        "slug_prefix": "new-launches",
+        "area": {
+            "id": 4,
+            "name": "العين السخنة"
+        },
+        "currency": null,
+        "compound": {
+            "id": 88,
+            "name": "أزها",
+            "nawy_organization_id": null
+        },
+        "developer": {
+            "id": 36,
+            "name": "مادار للتطوير العقاري",
+            "slug": "36-مادار-للتطوير-العقاري",
+            "logo_path": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/developer/logo_image/36/madaar_dev_logo.png"
+        },
+        "min_price": null
+    },
+    {
+        "id": 63,
+        "phase_id": null,
+        "title": "ديجويا بارك من شركة تاج مصر للتطوير العقارى",
+        "description": "\u003cp\u003eتطرح شركة تاج مصر للتطوير العقارى مشروعها الجديد ديجويا بارك\u003c/p\u003e",
+        "start_date": "2023-11-15T00:00:00.000Z",
+        "expire_date": null,
+        "is_active": true,
+        "manual_ranking": null,
+        "marketing_image_wide": {
+            "url": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/launch/marketing_image_wide/63/Dejoya_Park.jpg"
+        },
+        "marketing_image_wide_name": "Dejoya_Park.jpg",
+        "marketing_image_wide_path": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/launch/marketing_image_wide/63/Dejoya_Park.jpg",
+        "marketing_image_square": {
+            "url": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/launch/marketing_image_square/63/Dejoya_Park.jpg"
+        },
+        "marketing_image_square_name": "Dejoya_Park.jpg",
+        "marketing_image_square_path": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/launch/marketing_image_square/63/Dejoya_Park.jpg",
+        "marketing_video": {
+            "url": null
+        },
+        "marketing_video_name": null,
+        "marketing_video_path": null,
+        "created_at": "2023-11-15T12:26:59.393Z",
+        "updated_at": "2023-11-15T12:26:59.442Z",
+        "compound_id": 1075,
+        "slug": "1075-ديجويا-بارك",
+        "developer_id": 138,
+        "area_id": 1,
+        "video_url": null,
+        "starting_price": null,
+        "currency_id": null,
+        "short_title": "ديجويا بارك",
+        "slug_prefix": "compound",
+        "area": {
+            "id": 1,
+            "name": "مدينه السادس من اكتوبر"
+        },
+        "currency": null,
+        "compound": {
+            "id": 1075,
+            "name": "ديجويا بارك",
+            "nawy_organization_id": null
+        },
+        "developer": {
+            "id": 138,
+            "name": "تاج مصر للتطوير العقاري",
+            "slug": "138-تاج-مصر-للتطوير-العقاري",
+            "logo_path": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/developer/logo_image/138/taj_misr_developments.jpg"
+        },
+        "min_price": null
+    }
+]

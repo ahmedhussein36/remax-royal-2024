@@ -19,15 +19,6 @@ const ForRentPage = async ({ searchParams }: ForRentPageProps) => {
     const filterdByRent = listings.filter(
         (listing: any) => listing.category === "للإيجار"
     );
-
-    // if (listings.length === 0) {
-    //     return (
-    //         <ClientOnly>
-    //             <EmptyStateAr showReset />
-    //         </ClientOnly>
-    //     );
-    // }
-
     return (
         <ClientOnly>
             <Container>

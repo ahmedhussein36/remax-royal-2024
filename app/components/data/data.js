@@ -53,23 +53,34 @@ export const navItems = [
         slug: "/properties-for-sale",
     },
     {
-        id: "2",
+        id: "3",
         name: "للإيجار",
         slug: "/properties-for-rent",
     },
     {
-        id: "3",
+        id: "4",
+        name: "المطورون",
+        slug: "/developers",
+    },
+    {
+        id: "5",
+        name: "كمبوندات",
+        slug: "/compounds",
+    },
+    {
+        id: "6",
         name: "المدونة",
         slug: "/#",
     },
+
     {
-        id: "5",
-        name: "من نحن",
+        id: "7",
+        name: "اتصل بنا",
         slug: "/#",
     },
     {
-        id: "5",
-        name: "اتصل بنا",
+        id: "8",
+        name: "من نحن",
         slug: "/#",
     },
 ];
@@ -285,7 +296,6 @@ export const socialMedia = [
     },
 ];
 
-
 export const topSearchingAreas = [
     {
         id: "1",
@@ -304,7 +314,7 @@ export const topSearchingAreas = [
         slug: `/search?aria=العاصمة الإدارية الجديدة`,
     },
     {
-      id: "3",
+        id: "3",
         label: "مدينة السادس من اكتوبر",
         name: " السادس من اكتوبر",
         name_en: " 6th October City",
@@ -312,7 +322,7 @@ export const topSearchingAreas = [
         slug: `/search?aria=مدينة السادس من اكتوبر`,
     },
     {
-      id: "4",
+        id: "4",
         label: "الساحل الشمالي",
         name: "الساحل الشمالي",
         name_en: "The North Coast",
@@ -320,7 +330,7 @@ export const topSearchingAreas = [
         slug: `/search?aria=الساحل الشمالي`,
     },
     {
-      id: "5",
+        id: "5",
         label: "مدينة الشيخ زايد",
         name: "مدينة الشيخ زايد",
         name_en: "Shiekh Zayed City",
@@ -328,7 +338,7 @@ export const topSearchingAreas = [
         slug: `/search?aria=مدينة الشيخ زايد`,
     },
     {
-      id: "6",
+        id: "6",
         label: "الجونة",
         name: "الجونة",
         name_en: "El-Gouna",
@@ -336,7 +346,7 @@ export const topSearchingAreas = [
         slug: `/search?aria=الجونة`,
     },
     {
-      id: "7",
+        id: "7",
         label: "مدينة المستقبل",
         name: "مدينة المستقبل",
         name_en: "Al Mustakbal City",
@@ -344,11 +354,11 @@ export const topSearchingAreas = [
         slug: `/search?aria=مدينة المستقبل`,
     },
     {
-      id: "8",
+        id: "8",
         label: "العين السخنة",
         name: "العين السخنة",
         name_en: "Al-Ain Alsokhna",
         image: "/assets/images/alsokhna.jpg",
         slug: `/search?aria=العين السخنة`,
-    }
+    },
 ];

@@ -58,7 +58,9 @@ export default async function getProperties(params: IParams) {
         }
 
         if (aria) {
-            query.ariaValue = aria;
+            query.ariaValue = {
+                contains: aria,
+            };
         }
 
         if (roomCount) {

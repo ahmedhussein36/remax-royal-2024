@@ -120,18 +120,19 @@ const Filter = () => {
             </div>
 
             <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4 items-center gap-2 w-full">
-                <div className="">
+                {/* <div className="">
                     <CitySelect
                         isSearchable={false}
                         isFilter={true}
                         value={city}
                         onChange={(value) => setCity(value as CitySelectValue)}
                     />
-                </div>
+                </div> */}
 
                 <div className=" col-span-2">
                     <SearchInput
-                        id="title"
+                        isFilter={true}
+                        id="aria"
                         value={title}
                         onChange={(e) => setTitle(e.target.value as any)}
                         Placeholder="ابحث عن المنطقة أ الحي أو الكمبوند "
@@ -190,50 +191,3 @@ const Filter = () => {
 };
 
 export default Filter;
-
-// import { useState } from "react";
-
-// // ...
-
-// const Filter = () => {
-//     const [priceMin, setPriceMin] = useState<number | null>(null);
-//     const [priceMax, setPriceMax] = useState<number | null>(null);
-
-//     const onSubmit = () => {
-//         const updatedQuery = {
-//             // ...
-// priceMin,
-// priceMax,
-//         };
-
-//         // ...
-//     };
-
-//     return (
-// <div className="flex flex-col justify-center items-start gap-4 w-full">
-//     {/* ... */}
-//     <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-7 items-center gap-2 w-full">
-//         {/* ... */}
-//         <div className="">
-//             <input
-//                 type="number"
-//                 value={priceMin}
-//                 onChange={(e) => setPriceMin(Number(e.target.value))}
-//                 placeholder="الحد الأدنى للسعر"
-//             />
-//         </div>
-//         <div className="">
-//             <input
-//                 type="number"
-//                 value={priceMax}
-//                 onChange={(e) => setPriceMax(Number(e.target.value))}
-//                 placeholder="الحد الأعلى للسعر"
-//             />
-//         </div>
-//         {/* ... */}
-//     </div>
-// </div>
-//     );
-// };
-
-// export default Filter;

@@ -1,0 +1,2756 @@
+[
+    {
+        "developerId": 85,
+        "name": "اورا للتطوير العقاري",
+        "slug": "85-اورا-للتطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/Ora.jpg",
+        "compounds": 12,
+        "properties": 105,
+        "min_price": "5500000.0"
+    },
+    {
+        "developerId": 65,
+        "name": "مراكز للتطوير العقاري",
+        "slug": "65-مراكز-للتطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/Marakez.jpg",
+        "compounds": 5,
+        "properties": 14,
+        "min_price": "8000000.0"
+    },
+    {
+        "developerId": 16,
+        "name": "بالم هيلز للتطوير العقاري",
+        "slug": "16-بالم-هيلز-للتطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/Palm_Hills.jpg",
+        "compounds": 36,
+        "properties": 215,
+        "min_price": "2370000.0"
+    },
+    {
+        "developerId": 8,
+        "name": "سوديك",
+        "slug": "8-سوديك",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/Sodic.jpg",
+        "compounds": 34,
+        "properties": 37,
+        "min_price": "5272000.0"
+    },
+    {
+        "developerId": 35,
+        "name": "اوراسكوم مصر للتطوير العقاري",
+        "slug": "35-اوراسكوم-مصر-للتطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/Orascom.jpg",
+        "compounds": 36,
+        "properties": 56,
+        "min_price": "3500000.0"
+    },
+    {
+        "developerId": 6,
+        "name": "ماونتن فيو",
+        "slug": "6-ماونتن-فيو",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/MV.jpg",
+        "compounds": 22,
+        "properties": 189,
+        "min_price": "4355895.0"
+    },
+    {
+        "developerId": 55,
+        "name": "مصر إيطاليا للتطوير العقاري",
+        "slug": "55-مصر-إيطاليا-للتطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/misr.png",
+        "compounds": 16,
+        "properties": 172,
+        "min_price": "2568439.0"
+    },
+    {
+        "developerId": 33,
+        "name": "تطوير مصر",
+        "slug": "33-تطوير-مصر",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/Tatweer_Misr.jpg",
+        "compounds": 14,
+        "properties": 95,
+        "min_price": "3075000.0"
+    },
+    {
+        "developerId": 191,
+        "name": "الأهلي صبور للتطوير العقاري",
+        "slug": "191-الأهلي-صبور-للتطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/WhatsApp_Image_2023-07-05_at_2.44.36_PM.jpeg",
+        "compounds": 15,
+        "properties": 43,
+        "min_price": "1800000.0"
+    },
+    {
+        "developerId": 4,
+        "name": "اعمار مصر",
+        "slug": "4-اعمار-مصر",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/Emaar.jpg",
+        "compounds": 29,
+        "properties": 53,
+        "min_price": "7274000.0"
+    },
+    {
+        "developerId": 60,
+        "name": "ارديك للتطوير العقاري",
+        "slug": "60-ارديك-للتطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/DooEElJMjesuIn1LgAkrKJ1WBUe8Ykardic.jpg",
+        "compounds": 2,
+        "properties": 5,
+        "min_price": "1920258.0"
+    },
+    {
+        "developerId": 213,
+        "name": "  الكازار ديفلوبمنت",
+        "slug": "213-الكازار-ديفلوبمنت",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/il_cazar.png",
+        "compounds": 6,
+        "properties": 10,
+        "min_price": "7147200.0"
+    },
+    {
+        "developerId": 363,
+        "name": "  معماري جروب",
+        "slug": "363-معماري-جروب",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/download.png",
+        "compounds": 1,
+        "properties": 1,
+        "min_price": "8200000.0"
+    },
+    {
+        "developerId": 103,
+        "name": " الجازي مصر للاستثمار العقاري",
+        "slug": "103-الجازي-مصر-للاستثمار-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/J82Grjr6Bkla57b1xXCMUAaNG5wOkf71885809_136523571071414_2356213200250208256_o.png",
+        "compounds": 3,
+        "properties": 17,
+        "min_price": "14531722.0"
+    },
+    {
+        "developerId": 217,
+        "name": " القمزي للتطوير العقاري ",
+        "slug": "217-القمزي-للتطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/qamzi_dev.jpg",
+        "compounds": 2,
+        "properties": 5,
+        "min_price": "6086500.0"
+    },
+    {
+        "developerId": 143,
+        "name": " اي جي ريل استيت للتطوير العقاري",
+        "slug": "143-اي-جي-ريل-استيت-للتطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/EG_towers_real_estate_development.jpg",
+        "compounds": 1,
+        "properties": 0,
+        "min_price": null
+    },
+    {
+        "developerId": 101,
+        "name": " دي ام للتطوير العقاري",
+        "slug": "101-دي-ام-للتطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/DM_Development.png",
+        "compounds": 1,
+        "properties": 8,
+        "min_price": "3382500.0"
+    },
+    {
+        "developerId": 86,
+        "name": " ذا لاند للتطوير العقاري",
+        "slug": "86-ذا-لاند-للتطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/TLD_Developers.png",
+        "compounds": 2,
+        "properties": 2,
+        "min_price": "1755168.0"
+    },
+    {
+        "developerId": 186,
+        "name": " شركه شمال افريقيا للاستثمار العقاري",
+        "slug": "186-شركه-شمال-افريقيا-للاستثمار-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/Nest.png",
+        "compounds": 1,
+        "properties": 2,
+        "min_price": "4500000.0"
+    },
+    {
+        "developerId": 258,
+        "name": " صفوه ايربن للتطوير العقاري ",
+        "slug": "258-صفوه-ايربن-للتطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/4117728c4c5b862526f11f82671f2dcc.jpeg",
+        "compounds": 2,
+        "properties": 66,
+        "min_price": "2703950.0"
+    },
+    {
+        "developerId": 124,
+        "name": " فاسيل",
+        "slug": "124-فاسيل",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/facil_logo.jpg",
+        "compounds": 0,
+        "properties": 0,
+        "min_price": null
+    },
+    {
+        "developerId": 123,
+        "name": " ماستر بيلدر جروب للتطوير العقاري",
+        "slug": "123-ماستر-بيلدر-جروب-للتطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/developer_logo.jpg",
+        "compounds": 3,
+        "properties": 0,
+        "min_price": null
+    },
+    {
+        "developerId": 133,
+        "name": " مدن للتطوير العقاري",
+        "slug": "133-مدن-للتطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/Modon.png",
+        "compounds": 6,
+        "properties": 7,
+        "min_price": "3227263.0"
+    },
+    {
+        "developerId": 144,
+        "name": "ابوايد للتطوير العقاري",
+        "slug": "144-ابوايد-للتطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/upwyde.png",
+        "compounds": 9,
+        "properties": 29,
+        "min_price": "3562000.0"
+    },
+    {
+        "developerId": 291,
+        "name": "اتريك للتطوير العقاري",
+        "slug": "291-اتريك-للتطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/Atric_dev.png",
+        "compounds": 3,
+        "properties": 9,
+        "min_price": "4306125.0"
+    },
+    {
+        "developerId": 91,
+        "name": "اجنا للتطوير العقاري",
+        "slug": "91-اجنا-للتطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/Ajna.png",
+        "compounds": 1,
+        "properties": 22,
+        "min_price": "2700000.0"
+    },
+    {
+        "developerId": 285,
+        "name": "ادريس للتطوير العقاري",
+        "slug": "285-ادريس-للتطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/the_address.jpg",
+        "compounds": 1,
+        "properties": 0,
+        "min_price": null
+    },
+    {
+        "developerId": 201,
+        "name": "ار يو دي ديفلوبمنت",
+        "slug": "201-ار-يو-دي-ديفلوبمنت",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/WhatsApp_Image_2022-03-02_at_2.24.42_PM.jpeg",
+        "compounds": 1,
+        "properties": 23,
+        "min_price": "1277500.0"
+    },
+    {
+        "developerId": 305,
+        "name": "ارابكو ديفلوبمنتس",
+        "slug": "305-ارابكو-ديفلوبمنتس",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/arabco_dev.png",
+        "compounds": 2,
+        "properties": 0,
+        "min_price": null
+    },
+    {
+        "developerId": 68,
+        "name": "ارابيا هولدينج",
+        "slug": "68-ارابيا-هولدينج",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/Arabia.png",
+        "compounds": 7,
+        "properties": 40,
+        "min_price": "3927258.0"
+    },
+    {
+        "developerId": 207,
+        "name": "ارابيلا",
+        "slug": "207-ارابيلا",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/Screenshot_2023-06-20_173258.png",
+        "compounds": 1,
+        "properties": 5,
+        "min_price": "18000000.0"
+    },
+    {
+        "developerId": 116,
+        "name": "ارقي جروب للتطوير العقاري",
+        "slug": "116-ارقي-جروب-للتطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/Arqa.png",
+        "compounds": 1,
+        "properties": 21,
+        "min_price": "5762764.0"
+    },
+    {
+        "developerId": 174,
+        "name": "اركان بالم للتطوير العقاري",
+        "slug": "174-اركان-بالم-للتطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/dev_logo.png",
+        "compounds": 4,
+        "properties": 2,
+        "min_price": "8080074.0"
+    },
+    {
+        "developerId": 78,
+        "name": "اركو",
+        "slug": "78-اركو",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/i3ciSZJxhhwjvZr45sXb64UHpWBURZRdDlJMOhRGEqtc6BN8jkSnqOEaJ5iQ00235125_00235125_online_2018mar06arco_developments.png",
+        "compounds": 9,
+        "properties": 10,
+        "min_price": "2858714.0"
+    },
+    {
+        "developerId": 264,
+        "name": "اروما للتطوير العقاري",
+        "slug": "264-اروما-للتطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/aroma_dev.png",
+        "compounds": 1,
+        "properties": 3,
+        "min_price": "4000000.0"
+    },
+    {
+        "developerId": 153,
+        "name": "ازان للتطوير العقاري",
+        "slug": "153-ازان-للتطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/logo_dev.jpg",
+        "compounds": 0,
+        "properties": 0,
+        "min_price": null
+    },
+    {
+        "developerId": 347,
+        "name": "اسالدي للعقارات",
+        "slug": "347-اسالدي-للعقارات",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/1699351969348.jpg",
+        "compounds": 1,
+        "properties": 1,
+        "min_price": "7811000.0"
+    },
+    {
+        "developerId": 222,
+        "name": "اعمار رزق جروب للتطوير العقاري ",
+        "slug": "222-اعمار-رزق-جروب-للتطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/developer.png",
+        "compounds": 3,
+        "properties": 93,
+        "min_price": "2543406.0"
+    },
+    {
+        "developerId": 206,
+        "name": "افا مينا جروب",
+        "slug": "206-افا-مينا-جروب",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/LOGO.jpg",
+        "compounds": 1,
+        "properties": 10,
+        "min_price": "5574560.0"
+    },
+    {
+        "developerId": 328,
+        "name": "افاق للتطوير العقاري",
+        "slug": "328-افاق-للتطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/Afaaq.png",
+        "compounds": 1,
+        "properties": 1,
+        "min_price": "16400000.0"
+    },
+    {
+        "developerId": 170,
+        "name": "اكاديا للتطوير العقاري",
+        "slug": "170-اكاديا-للتطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/dev_logo.png",
+        "compounds": 1,
+        "properties": 3,
+        "min_price": "2127500.0"
+    },
+    {
+        "developerId": 224,
+        "name": "اكام الراجحي للتطوير العقاري",
+        "slug": "224-اكام-الراجحي-للتطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/dev_logo.png",
+        "compounds": 1,
+        "properties": 0,
+        "min_price": null
+    },
+    {
+        "developerId": 90,
+        "name": "اكام للتطوير العقاري",
+        "slug": "90-اكام-للتطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/h6ht0w0RLBA6MINXqCxjV9yLDQoArOdev.jpg",
+        "compounds": 3,
+        "properties": 1,
+        "min_price": "2300000.0"
+    },
+    {
+        "developerId": 303,
+        "name": "اكتوبر للتطوير العقاري",
+        "slug": "303-اكتوبر-للتطوير-العقاري",
+        "image": null,
+        "compounds": 1,
+        "properties": 0,
+        "min_price": null
+    },
+    {
+        "developerId": 282,
+        "name": "الأساليب المتطورة لتنمية العقارية",
+        "slug": "282-الأساليب-المتطورة-لتنمية-العقارية",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/Amko.png",
+        "compounds": 1,
+        "properties": 0,
+        "min_price": null
+    },
+    {
+        "developerId": 250,
+        "name": "الاسكان و التعمير العقاري",
+        "slug": "250-الاسكان-و-التعمير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/HPD-housing-and-development.jpg",
+        "compounds": 9,
+        "properties": 10,
+        "min_price": "5692000.0"
+    },
+    {
+        "developerId": 176,
+        "name": "الامارات هايتس",
+        "slug": "176-الامارات-هايتس",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/download.png",
+        "compounds": 1,
+        "properties": 13,
+        "min_price": "2050000.0"
+    },
+    {
+        "developerId": 18,
+        "name": "الاهلي للتنميه العقاريه",
+        "slug": "18-الاهلي-للتنميه-العقاريه",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/pYBi7z99cVEOK1eudsYNXxUvmBvDbq493883_Al-Ahly_for_Real_Estate_Logofront.jpg",
+        "compounds": 0,
+        "properties": 0,
+        "min_price": null
+    },
+    {
+        "developerId": 323,
+        "name": "البابطين جروب",
+        "slug": "323-البابطين-جروب",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/al_babtain_group.png",
+        "compounds": 1,
+        "properties": 3,
+        "min_price": "25000000.0"
+    },
+    {
+        "developerId": 330,
+        "name": "البارون للتطوير العقاري",
+        "slug": "330-البارون-للتطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/al_baron_developments.png",
+        "compounds": 1,
+        "properties": 0,
+        "min_price": null
+    },
+    {
+        "developerId": 292,
+        "name": "الجزيره جروب",
+        "slug": "292-الجزيره-جروب",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/al_guzeira_group_1.png",
+        "compounds": 1,
+        "properties": 1,
+        "min_price": "30000000.0"
+    },
+    {
+        "developerId": 107,
+        "name": "الجوهره ريل استيت للتطوير العقاري",
+        "slug": "107-الجوهره-ريل-استيت-للتطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/xgMuPtxho8H48P6C2DXQSlkbDZQRvgAl_Jawhara_Real_Estate_Development.jpg",
+        "compounds": 1,
+        "properties": 0,
+        "min_price": null
+    },
+    {
+        "developerId": 10,
+        "name": "الحازق",
+        "slug": "10-الحازق",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/rPnmibIb6qNg2ylP5P8Gw1klT7rJdaLogo.jpg",
+        "compounds": 4,
+        "properties": 3,
+        "min_price": "9225000.0"
+    },
+    {
+        "developerId": 327,
+        "name": "الخليج للأنماء و التعمير",
+        "slug": "327-الخليج-للأنماء-و-التعمير",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/Screenshot_20230614_160001.jpg",
+        "compounds": 3,
+        "properties": 2,
+        "min_price": "3000000.0"
+    },
+    {
+        "developerId": 246,
+        "name": "الدولية للتطوير العقاري ",
+        "slug": "246-الدولية-للتطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/Al-Dawlia_logo_20230.png",
+        "compounds": 2,
+        "properties": 3,
+        "min_price": "7900000.0"
+    },
+    {
+        "developerId": 226,
+        "name": "الديار القطريه",
+        "slug": "226-الديار-القطريه",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/logo.gif",
+        "compounds": 1,
+        "properties": 1,
+        "min_price": "27470000.0"
+    },
+    {
+        "developerId": 300,
+        "name": "الرباط للتطوير العقاري",
+        "slug": "300-الرباط-للتطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/al_rabat.png",
+        "compounds": 1,
+        "properties": 0,
+        "min_price": null
+    },
+    {
+        "developerId": 17,
+        "name": "الربوه جروب",
+        "slug": "17-الربوه-جروب",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/zmQ90qqV8cXckDDcj0nJS2wfrFsSJhlogo.jpg",
+        "compounds": 1,
+        "properties": 3,
+        "min_price": "12000000.0"
+    },
+    {
+        "developerId": 345,
+        "name": "الرياده مصر",
+        "slug": "345-الرياده-مصر",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/download__5_.png",
+        "compounds": 1,
+        "properties": 9,
+        "min_price": "5524000.0"
+    },
+    {
+        "developerId": 104,
+        "name": "الريدي جروب",
+        "slug": "104-الريدي-جروب",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/ryrFjRSm6cGx7qsLVYJAaCatsX1s8eReedy_group_logo_1.png",
+        "compounds": 3,
+        "properties": 11,
+        "min_price": "15831125.0"
+    },
+    {
+        "developerId": 87,
+        "name": "السعوديه المصريه للتعمير",
+        "slug": "87-السعوديه-المصريه-للتعمير",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/fBGXFwahtIJhcyZL8WGUUV7cOkat6yea2de87b-124f-4f50-8f67-6a8dbec8fd53.jpg",
+        "compounds": 9,
+        "properties": 54,
+        "min_price": "3715000.0"
+    },
+    {
+        "developerId": 56,
+        "name": "الشرقيون للتنميه العقاريه",
+        "slug": "56-الشرقيون-للتنميه-العقاريه",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/c80rAAuv9rifxCorzXQdkyMc7eBFKuUntitled.jpg",
+        "compounds": 2,
+        "properties": 0,
+        "min_price": null
+    },
+    {
+        "developerId": 277,
+        "name": "الشركه المصريه الهندسيه",
+        "slug": "277-الشركه-المصريه-الهندسيه",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/logo-New.png",
+        "compounds": 1,
+        "properties": 0,
+        "min_price": null
+    },
+    {
+        "developerId": 14,
+        "name": "الشركه المصريه للمنتجعات",
+        "slug": "14-الشركه-المصريه-للمنتجعات",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/jBSSEvXLeHmPNVwkA4NGmhNyNoHhZf1c5c2bd.png",
+        "compounds": 1,
+        "properties": 0,
+        "min_price": null
+    },
+    {
+        "developerId": 37,
+        "name": "الشهاوي جروب",
+        "slug": "37-الشهاوي-جروب",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/zyi1OWdoSrAdSXLGbKQWSxUqPRrlAmsh.jpg",
+        "compounds": 2,
+        "properties": 4,
+        "min_price": "2562500.0"
+    },
+    {
+        "developerId": 316,
+        "name": "الصفوة العقارية للإستثمار والمقاولات",
+        "slug": "316-الصفوة-العقارية-للإستثمار-والمقاولات",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/safwa_real_estate.png",
+        "compounds": 1,
+        "properties": 1,
+        "min_price": "25000000.0"
+    },
+    {
+        "developerId": 80,
+        "name": "العبد ريزورت سيدي حنيش",
+        "slug": "80-العبد-ريزورت-سيدي-حنيش",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/m9RkPRuEUxmv0yv98xC8jOmvtFVPm2Screen_Shot_2018-10-03_at_1.33.17_PM.png",
+        "compounds": 1,
+        "properties": 0,
+        "min_price": null
+    },
+    {
+        "developerId": 109,
+        "name": "العتال هولدينج للتطوير العقاري",
+        "slug": "109-العتال-هولدينج-للتطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/Pwngp6HGnpQBd5PFqVZ5VYBuMCtdKkElAttal_holding_logo.jpg",
+        "compounds": 3,
+        "properties": 26,
+        "min_price": "2781000.0"
+    },
+    {
+        "developerId": 321,
+        "name": "العروبه مصر للتطوير العقاري",
+        "slug": "321-العروبه-مصر-للتطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/Screenshot_2023-05-17_142321.png",
+        "compounds": 1,
+        "properties": 0,
+        "min_price": null
+    },
+    {
+        "developerId": 260,
+        "name": "العز للتطوير العقاري",
+        "slug": "260-العز-للتطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/el_ezz_development.png",
+        "compounds": 1,
+        "properties": 0,
+        "min_price": null
+    },
+    {
+        "developerId": 298,
+        "name": "العزيزيه للاستثمار التجاري",
+        "slug": "298-العزيزيه-للاستثمار-التجاري",
+        "image": null,
+        "compounds": 1,
+        "properties": 1,
+        "min_price": "20000000.0"
+    },
+    {
+        "developerId": 23,
+        "name": "الفطيم جروب للعقارات",
+        "slug": "23-الفطيم-جروب-للعقارات",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/I1ukmRZ2xSpQ9ZDCYI15q7ahiUnt0w254353_el2ytQ_bfront.jpg",
+        "compounds": 2,
+        "properties": 9,
+        "min_price": "12300000.0"
+    },
+    {
+        "developerId": 58,
+        "name": "الفطيم",
+        "slug": "58-الفطيم",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/8z9shz1WPg1u4ykeWAoIMi9hLjsNwEaboutFuttaim_Page_L1.jpg",
+        "compounds": 0,
+        "properties": 0,
+        "min_price": null
+    },
+    {
+        "developerId": 20,
+        "name": "القاهره الجديده للاستثمار العقاري",
+        "slug": "20-القاهره-الجديده-للاستثمار-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/qUt4Ai5ilsCfI1ZAJLPIyMgnlXMktologo.png",
+        "compounds": 2,
+        "properties": 3,
+        "min_price": "66000000.0"
+    },
+    {
+        "developerId": 108,
+        "name": "الكارمه للتطوير العقاري",
+        "slug": "108-الكارمه-للتطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/al_karma_dev.jpg",
+        "compounds": 6,
+        "properties": 3,
+        "min_price": "15000000.0"
+    },
+    {
+        "developerId": 319,
+        "name": "الكامل",
+        "slug": "319-الكامل",
+        "image": null,
+        "compounds": 1,
+        "properties": 0,
+        "min_price": null
+    },
+    {
+        "developerId": 317,
+        "name": "المتحده للاسكان و التعمير",
+        "slug": "317-المتحده-للاسكان-و-التعمير",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/united_for_housing.png",
+        "compounds": 1,
+        "properties": 1,
+        "min_price": "75000000.0"
+    },
+    {
+        "developerId": 62,
+        "name": "المراسم للتطوير العقاري",
+        "slug": "62-المراسم-للتطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/8fQCV617kNAh4Scg9wmuYXFbPa1ZSIFifth-Square-New-Cairo-By-Al-Marasem-Development-Residental-Compound-1-19.png",
+        "compounds": 4,
+        "properties": 9,
+        "min_price": "8712500.0"
+    },
+    {
+        "developerId": 84,
+        "name": "المطورون المصريون",
+        "slug": "84-المطورون-المصريون",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/AZrmUeRSuKeTtFi8sEKGVRoBqdkr6Jdeve.jpg",
+        "compounds": 0,
+        "properties": 0,
+        "min_price": null
+    },
+    {
+        "developerId": 262,
+        "name": "المناره للاستثمار و التطوير العقاري ",
+        "slug": "262-المناره-للاستثمار-و-التطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/Al_manara_for_urban_development.png",
+        "compounds": 1,
+        "properties": 1,
+        "min_price": "30000000.0"
+    },
+    {
+        "developerId": 320,
+        "name": "النسر الذهبى للبناء و الإسكان التعاونى",
+        "slug": "320-النسر-الذهبى-للبناء-و-الإسكان-التعاونى",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/al_nesr_al_zahaby.jpg",
+        "compounds": 1,
+        "properties": 1,
+        "min_price": "2158778.0"
+    },
+    {
+        "developerId": 294,
+        "name": "النصر للاسكان و التعمير",
+        "slug": "294-النصر-للاسكان-و-التعمير",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/al_nasr_housing_and_development.png",
+        "compounds": 2,
+        "properties": 2,
+        "min_price": "2400000.0"
+    },
+    {
+        "developerId": 129,
+        "name": "النيل للتطوير العقاري",
+        "slug": "129-النيل-للتطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/nile_development.JPG",
+        "compounds": 5,
+        "properties": 11,
+        "min_price": "5500000.0"
+    },
+    {
+        "developerId": 318,
+        "name": "الوادى للإستثمار العقارى",
+        "slug": "318-الوادى-للإستثمار-العقارى",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/el_wadi.jpg",
+        "compounds": 1,
+        "properties": 1,
+        "min_price": "1500000.0"
+    },
+    {
+        "developerId": 178,
+        "name": "الوالي ديفلوبمنت",
+        "slug": "178-الوالي-ديفلوبمنت",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/WhatsApp_Image_2021-09-23_at_5.05.01_PM.jpeg",
+        "compounds": 1,
+        "properties": 1,
+        "min_price": "62000000.0"
+    },
+    {
+        "developerId": 66,
+        "name": "ام 2 للتطوير العقاري",
+        "slug": "66-ام-2-للتطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/m_squared.jpg",
+        "compounds": 3,
+        "properties": 38,
+        "min_price": "6482000.0"
+    },
+    {
+        "developerId": 311,
+        "name": "ام جي للتطوير العقاري",
+        "slug": "311-ام-جي-للتطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/mg_developments.png",
+        "compounds": 3,
+        "properties": 4,
+        "min_price": "2152500.0"
+    },
+    {
+        "developerId": 148,
+        "name": "امازون هولدينج للتطوير العقاري ",
+        "slug": "148-امازون-هولدينج-للتطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/dev_logo.jpg",
+        "compounds": 1,
+        "properties": 9,
+        "min_price": "8528990.0"
+    },
+    {
+        "developerId": 344,
+        "name": "امتلاك للتطوير العقاري",
+        "slug": "344-امتلاك-للتطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/download__26_.jpg",
+        "compounds": 1,
+        "properties": 0,
+        "min_price": null
+    },
+    {
+        "developerId": 352,
+        "name": "ان سي بي للتطوير العقاري",
+        "slug": "352-ان-سي-بي-للتطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/33d77b79-cdac-4c41-bc68-a481d8a64974.jpg",
+        "compounds": 2,
+        "properties": 3,
+        "min_price": "1958365.0"
+    },
+    {
+        "developerId": 13,
+        "name": "انرشيا مصر",
+        "slug": "13-انرشيا-مصر",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/qt9JXECoWdXbAyWBoBEsovibdGSZxPplaceholder-.jpg",
+        "compounds": 11,
+        "properties": 50,
+        "min_price": "1261160.0"
+    },
+    {
+        "developerId": 326,
+        "name": "انفينيتي تاورز للتطوير العمراني",
+        "slug": "326-انفينيتي-تاورز-للتطوير-العمراني",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/1673264687866.jpg",
+        "compounds": 1,
+        "properties": 4,
+        "min_price": "17700000.0"
+    },
+    {
+        "developerId": 247,
+        "name": "اواجيك للتطوير العقاري",
+        "slug": "247-اواجيك-للتطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/owagik_development.png",
+        "compounds": 1,
+        "properties": 0,
+        "min_price": null
+    },
+    {
+        "developerId": 204,
+        "name": "اوربنلانز ديفلوبمنت",
+        "slug": "204-اوربنلانز-ديفلوبمنت",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/logo_dev.jpg",
+        "compounds": 3,
+        "properties": 10,
+        "min_price": "6000000.0"
+    },
+    {
+        "developerId": 290,
+        "name": "اوشن بلو جروب",
+        "slug": "290-اوشن-بلو-جروب",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/download__3_.png",
+        "compounds": 1,
+        "properties": 0,
+        "min_price": null
+    },
+    {
+        "developerId": 189,
+        "name": "اي جي اي ريل استيت",
+        "slug": "189-اي-جي-اي-ريل-استيت",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/dev.jpg",
+        "compounds": 4,
+        "properties": 14,
+        "min_price": "2566758.0"
+    },
+    {
+        "developerId": 350,
+        "name": "اي جي اي سي",
+        "slug": "350-اي-جي-اي-سي",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/images__1_.jpg",
+        "compounds": 1,
+        "properties": 1,
+        "min_price": "19500000.0"
+    },
+    {
+        "developerId": 216,
+        "name": "اي جي جاب",
+        "slug": "216-اي-جي-جاب",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/Egy-Gab-Developments-19961-372x300.jpg",
+        "compounds": 4,
+        "properties": 33,
+        "min_price": "3782660.0"
+    },
+    {
+        "developerId": 308,
+        "name": "اي كابيتال للتطوير العقاري",
+        "slug": "308-اي-كابيتال-للتطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/i_capital_dev_logo.png",
+        "compounds": 1,
+        "properties": 5,
+        "min_price": "5113000.0"
+    },
+    {
+        "developerId": 177,
+        "name": "ايجيدف",
+        "slug": "177-ايجيدف",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/1599830497998.jpg",
+        "compounds": 1,
+        "properties": 0,
+        "min_price": null
+    },
+    {
+        "developerId": 99,
+        "name": "ايدج هولدينج للتطوير العقاري",
+        "slug": "99-ايدج-هولدينج-للتطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/CCKHvxDzfYJaxIFchIzw3hc2tOpzOTlogo.png",
+        "compounds": 2,
+        "properties": 41,
+        "min_price": "4400000.0"
+    },
+    {
+        "developerId": 9,
+        "name": "ايديا فيردي للتطوير العقاري",
+        "slug": "9-ايديا-فيردي-للتطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/idea_verde.png",
+        "compounds": 0,
+        "properties": 0,
+        "min_price": null
+    },
+    {
+        "developerId": 349,
+        "name": "ايفيرست ",
+        "slug": "349-ايفيرست",
+        "image": null,
+        "compounds": 1,
+        "properties": 1,
+        "min_price": "41000000.0"
+    },
+    {
+        "developerId": 167,
+        "name": "ايمباير استيت للتطوير العقاري",
+        "slug": "167-ايمباير-استيت-للتطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/dev_logo.jpg",
+        "compounds": 2,
+        "properties": 7,
+        "min_price": "1001000.0"
+    },
+    {
+        "developerId": 180,
+        "name": "اينفرس جروب ديفلوبمنت",
+        "slug": "180-اينفرس-جروب-ديفلوبمنت",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/inverse_group.jpg",
+        "compounds": 2,
+        "properties": 0,
+        "min_price": null
+    },
+    {
+        "developerId": 169,
+        "name": "اينفينيتي للاستثمار",
+        "slug": "169-اينفينيتي-للاستثمار",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/dev_logo.png",
+        "compounds": 1,
+        "properties": 0,
+        "min_price": null
+    },
+    {
+        "developerId": 48,
+        "name": "اينلاند للعقارات",
+        "slug": "48-اينلاند-للعقارات",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/Exj9WyiyItDqnL2RzaO8LCsEpE49zvlogo.jpg",
+        "compounds": 0,
+        "properties": 0,
+        "min_price": null
+    },
+    {
+        "developerId": 71,
+        "name": "ايوان للتطوير العقاري",
+        "slug": "71-ايوان-للتطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/iwan_dev.jpg",
+        "compounds": 8,
+        "properties": 18,
+        "min_price": "2190835.0"
+    },
+    {
+        "developerId": 302,
+        "name": "باراجون للتطوير العقاري",
+        "slug": "302-باراجون-للتطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/paragon_dev.jpg",
+        "compounds": 3,
+        "properties": 0,
+        "min_price": null
+    },
+    {
+        "developerId": 315,
+        "name": "باكت للعقارات",
+        "slug": "315-باكت-للعقارات",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/1517078276729.jpg",
+        "compounds": 1,
+        "properties": 0,
+        "min_price": null
+    },
+    {
+        "developerId": 82,
+        "name": "باكت للعقارات",
+        "slug": "82-باكت-للعقارات",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/vT6BTPDPP2sWJiVtHuwoJu2QFbwpQppact-.jpg",
+        "compounds": 0,
+        "properties": 0,
+        "min_price": null
+    },
+    {
+        "developerId": 112,
+        "name": "بدر الدين للتطوير العقاري",
+        "slug": "112-بدر-الدين-للتطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/2Bej6z6hXZmKBMSBNXIcVUtJSg2PpHBadr_el_din_development.jpg",
+        "compounds": 2,
+        "properties": 2,
+        "min_price": "5800000.0"
+    },
+    {
+        "developerId": 255,
+        "name": "برايم للتطوير العقاري",
+        "slug": "255-برايم-للتطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/prime_development.png",
+        "compounds": 3,
+        "properties": 0,
+        "min_price": null
+    },
+    {
+        "developerId": 89,
+        "name": "بركلي جروب",
+        "slug": "89-بركلي-جروب",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/B7iySeOxq3cqZSFIZpJTw1b7pvbL6pdev.jpg",
+        "compounds": 2,
+        "properties": 0,
+        "min_price": null
+    },
+    {
+        "developerId": 259,
+        "name": "بنيان للتجاره و التطوير العقاري",
+        "slug": "259-بنيان-للتجاره-و-التطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/Bonyan_development_AND_TRADE.png",
+        "compounds": 1,
+        "properties": 0,
+        "min_price": null
+    },
+    {
+        "developerId": 183,
+        "name": "بورتو جروب",
+        "slug": "183-بورتو-جروب",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/logo__1_.png",
+        "compounds": 4,
+        "properties": 30,
+        "min_price": "1000000.0"
+    },
+    {
+        "developerId": 111,
+        "name": "بي أر إي للتطوير العقاري",
+        "slug": "111-بي-أر-إي-للتطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/pre.png",
+        "compounds": 6,
+        "properties": 31,
+        "min_price": "2880350.0"
+    },
+    {
+        "developerId": 27,
+        "name": "بيانكي للسياحه و التطوير العقاري",
+        "slug": "27-بيانكي-للسياحه-و-التطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/IposfJZkLzfBCbrkOGqeczENnA5WT6LOGO_with_sidi_rahman.png",
+        "compounds": 0,
+        "properties": 0,
+        "min_price": null
+    },
+    {
+        "developerId": 225,
+        "name": "بيبول اند بلاسيز",
+        "slug": "225-بيبول-اند-بلاسيز",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/the_med.png",
+        "compounds": 3,
+        "properties": 22,
+        "min_price": "13500000.0"
+    },
+    {
+        "developerId": 122,
+        "name": "بيتر هوم",
+        "slug": "122-بيتر-هوم",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/logo.jpg",
+        "compounds": 10,
+        "properties": 85,
+        "min_price": "1990814.0"
+    },
+    {
+        "developerId": 362,
+        "name": "بيجسكو للانشاات",
+        "slug": "362-بيجسكو-للانشاات",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/download__10_.png",
+        "compounds": 1,
+        "properties": 1,
+        "min_price": "6500000.0"
+    },
+    {
+        "developerId": 113,
+        "name": "بيراميدز للتطوير العقاري",
+        "slug": "113-بيراميدز-للتطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/hMHeqdZpTnViR8IPaFQM38K0bW1gQ4pyramids_development.png",
+        "compounds": 8,
+        "properties": 2,
+        "min_price": "3485000.0"
+    },
+    {
+        "developerId": 314,
+        "name": "بيراميزا بروبيرتيز",
+        "slug": "314-بيراميزا-بروبيرتيز",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/pyramisa.png",
+        "compounds": 1,
+        "properties": 0,
+        "min_price": null
+    },
+    {
+        "developerId": 278,
+        "name": "بيفرلي هيلز للتطوير العقاري",
+        "slug": "278-بيفرلي-هيلز-للتطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/beverly_hills_development.png",
+        "compounds": 1,
+        "properties": 0,
+        "min_price": null
+    },
+    {
+        "developerId": 173,
+        "name": "بيلرز للتطوير العقاري",
+        "slug": "173-بيلرز-للتطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/Pillarz-Developments-Egypt-57401-1601825355-og.png",
+        "compounds": 1,
+        "properties": 0,
+        "min_price": null
+    },
+    {
+        "developerId": 138,
+        "name": "تاج مصر للتطوير العقاري",
+        "slug": "138-تاج-مصر-للتطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/taj_misr_developments.jpg",
+        "compounds": 15,
+        "properties": 71,
+        "min_price": "1110000.0"
+    },
+    {
+        "developerId": 218,
+        "name": "تاون رايترز",
+        "slug": "218-تاون-رايترز",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/WhatsApp_Image_2023-12-04_at_3.36.02_PM.jpeg",
+        "compounds": 6,
+        "properties": 0,
+        "min_price": null
+    },
+    {
+        "developerId": 200,
+        "name": "تايمز ديفلوبمنتس",
+        "slug": "200-تايمز-ديفلوبمنتس",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/WhatsApp_Image_2023-10-27_at_10.49.41_PM.jpeg",
+        "compounds": 3,
+        "properties": 3,
+        "min_price": "4371752.0"
+    },
+    {
+        "developerId": 221,
+        "name": "تبارك للتطوير العقاري",
+        "slug": "221-تبارك-للتطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/cropped-fav.png",
+        "compounds": 2,
+        "properties": 18,
+        "min_price": "8483000.0"
+    },
+    {
+        "developerId": 149,
+        "name": "ترافكو للتطوير العقاري",
+        "slug": "149-ترافكو-للتطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/Travco-Properties-Egypt-13197-1500910231-og.jpg",
+        "compounds": 2,
+        "properties": 0,
+        "min_price": null
+    },
+    {
+        "developerId": 67,
+        "name": "تعمير للتطوير العقاري",
+        "slug": "67-تعمير-للتطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/tameer_1.png",
+        "compounds": 5,
+        "properties": 19,
+        "min_price": "7985702.0"
+    },
+    {
+        "developerId": 339,
+        "name": "تكامل للتطوير العقاري",
+        "slug": "339-تكامل-للتطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/download__9_.jpg",
+        "compounds": 1,
+        "properties": 0,
+        "min_price": null
+    },
+    {
+        "developerId": 338,
+        "name": "تميز للتطوير العقاري",
+        "slug": "338-تميز-للتطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/tamayoz.png",
+        "compounds": 3,
+        "properties": 3,
+        "min_price": "5347500.0"
+    },
+    {
+        "developerId": 333,
+        "name": "جبال للتطوير العقاري",
+        "slug": "333-جبال-للتطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/759908265312.png",
+        "compounds": 1,
+        "properties": 0,
+        "min_price": null
+    },
+    {
+        "developerId": 228,
+        "name": "جدار للتطوير العقاري",
+        "slug": "228-جدار-للتطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/Dev_logo_JDAR.png",
+        "compounds": 1,
+        "properties": 5,
+        "min_price": "2700000.0"
+    },
+    {
+        "developerId": 356,
+        "name": "جدير للتطوير العقاري",
+        "slug": "356-جدير-للتطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/jadeer_realestate.png",
+        "compounds": 1,
+        "properties": 0,
+        "min_price": null
+    },
+    {
+        "developerId": 214,
+        "name": "جراند بلازا للاستثمار العقاري و السياحي",
+        "slug": "214-جراند-بلازا-للاستثمار-العقاري-و-السياحي",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/logo.png",
+        "compounds": 2,
+        "properties": 16,
+        "min_price": "3947295.0"
+    },
+    {
+        "developerId": 140,
+        "name": "جرانه",
+        "slug": "140-جرانه",
+        "image": null,
+        "compounds": 1,
+        "properties": 1,
+        "min_price": "15000000.0"
+    },
+    {
+        "developerId": 125,
+        "name": "جروب البروج مصر للتطوير العقاري",
+        "slug": "125-جروب-البروج-مصر-للتطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/Albourouj_Misr_developments_logo.jpg",
+        "compounds": 4,
+        "properties": 27,
+        "min_price": "1755000.0"
+    },
+    {
+        "developerId": 43,
+        "name": "جرين بيتش",
+        "slug": "43-جرين-بيتش",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/XAikdlFPyLuq4hJ4kfVvpVhzB7nwtElogo-green.jpg",
+        "compounds": 1,
+        "properties": 1,
+        "min_price": "5000000.0"
+    },
+    {
+        "developerId": 242,
+        "name": "جسور العقاريه",
+        "slug": "242-جسور-العقاريه",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/dev.png",
+        "compounds": 1,
+        "properties": 0,
+        "min_price": null
+    },
+    {
+        "developerId": 70,
+        "name": "جلاله للاستثمار السياحي",
+        "slug": "70-جلاله-للاستثمار-السياحي",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/GLTHKEWrRdQINJFphQKHOIHe6NyHyoEINBAY_E-VERSION_023.jpg",
+        "compounds": 0,
+        "properties": 0,
+        "min_price": null
+    },
+    {
+        "developerId": 61,
+        "name": "جوار",
+        "slug": "61-جوار",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/FYvKeElFuylJIZqZU29c85vhdK6QoFUntitled.jpg",
+        "compounds": 1,
+        "properties": 0,
+        "min_price": null
+    },
+    {
+        "developerId": 47,
+        "name": "جوبيل",
+        "slug": "47-جوبيل",
+        "image": null,
+        "compounds": 1,
+        "properties": 0,
+        "min_price": null
+    },
+    {
+        "developerId": 340,
+        "name": "جولدن تاون للتطوير العقاري ",
+        "slug": "340-جولدن-تاون-للتطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/Screenshot_20231029_202204.jpg",
+        "compounds": 1,
+        "properties": 0,
+        "min_price": null
+    },
+    {
+        "developerId": 135,
+        "name": "جيتس للتطوير العقاري",
+        "slug": "135-جيتس-للتطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/gates_dev.jpg",
+        "compounds": 8,
+        "properties": 47,
+        "min_price": "1867806.0"
+    },
+    {
+        "developerId": 22,
+        "name": "حسن علام للعقارات",
+        "slug": "22-حسن-علام-للعقارات",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/wUt0R6u20LUvrDjGQ3suz35ZAspNQoScreen-Shot-2018-02-15-at-9.58.43-AM-750x370.png",
+        "compounds": 23,
+        "properties": 25,
+        "min_price": "4100000.0"
+    },
+    {
+        "developerId": 233,
+        "name": "خالد صبري هولدينج",
+        "slug": "233-خالد-صبري-هولدينج",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/khaled_sabry_logo.png",
+        "compounds": 2,
+        "properties": 6,
+        "min_price": "6000000.0"
+    },
+    {
+        "developerId": 128,
+        "name": "خزام للتطوير العقاري",
+        "slug": "128-خزام-للتطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/khozam_developments_logo.jpg",
+        "compounds": 0,
+        "properties": 0,
+        "min_price": null
+    },
+    {
+        "developerId": 336,
+        "name": "دار العالمية للتطوير العقاري",
+        "slug": "336-دار-العالمية-للتطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/dar_el_alamia.png",
+        "compounds": 1,
+        "properties": 5,
+        "min_price": "5970000.0"
+    },
+    {
+        "developerId": 267,
+        "name": "دار المغربي",
+        "slug": "267-دار-المغربي",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/dar_el_maghraby.png",
+        "compounds": 1,
+        "properties": 1,
+        "min_price": "5000000.0"
+    },
+    {
+        "developerId": 227,
+        "name": "دايموند للاستثمار العقاري",
+        "slug": "227-دايموند-للاستثمار-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/273499802_1072054596698223_463663449321539604_n.jpg",
+        "compounds": 1,
+        "properties": 0,
+        "min_price": null
+    },
+    {
+        "developerId": 346,
+        "name": "دبليوز",
+        "slug": "346-دبليوز",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/2f451be6-85fa-4c47-84b8-8436b76f21e5.jpg",
+        "compounds": 1,
+        "properties": 6,
+        "min_price": "8483028.0"
+    },
+    {
+        "developerId": 329,
+        "name": "دبي للتطوير العقاري",
+        "slug": "329-دبي-للتطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/WhatsApp_Image_2022-05-26_at_4.55.29_PM.jpeg",
+        "compounds": 3,
+        "properties": 0,
+        "min_price": null
+    },
+    {
+        "developerId": 63,
+        "name": "دره جروب",
+        "slug": "63-دره-جروب",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/EcuG7OZtiqM4i4nMYRzFERO5nyUfMnDorra-group-logo.png",
+        "compounds": 5,
+        "properties": 47,
+        "min_price": "5125000.0"
+    },
+    {
+        "developerId": 357,
+        "name": "دومينار للتطوير العقاري",
+        "slug": "357-دومينار-للتطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/dominar_developments.png",
+        "compounds": 1,
+        "properties": 0,
+        "min_price": null
+    },
+    {
+        "developerId": 263,
+        "name": "ديار للتطوير العقاري",
+        "slug": "263-ديار-للتطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/diar_dev.png",
+        "compounds": 0,
+        "properties": 0,
+        "min_price": null
+    },
+    {
+        "developerId": 132,
+        "name": "ديفلوبر اكس العقاريه",
+        "slug": "132-ديفلوبر-اكس-العقاريه",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/dev_logo.jpg",
+        "compounds": 4,
+        "properties": 1,
+        "min_price": "5617000.0"
+    },
+    {
+        "developerId": 313,
+        "name": "ديل انفستمنت جروب",
+        "slug": "313-ديل-انفستمنت-جروب",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/Deal_investment_group.png",
+        "compounds": 2,
+        "properties": 0,
+        "min_price": null
+    },
+    {
+        "developerId": 268,
+        "name": "ديونز كابيتال جروب",
+        "slug": "268-ديونز-كابيتال-جروب",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/Dunes_Capital_group.png",
+        "compounds": 2,
+        "properties": 1,
+        "min_price": "18271700.0"
+    },
+    {
+        "developerId": 307,
+        "name": "ديونز للتطوير  العقاري",
+        "slug": "307-ديونز-للتطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/dunes_development.png",
+        "compounds": 0,
+        "properties": 0,
+        "min_price": null
+    },
+    {
+        "developerId": 219,
+        "name": "ذا ارك للتطوير العقاري",
+        "slug": "219-ذا-ارك-للتطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/the_ark_dev.jpg",
+        "compounds": 1,
+        "properties": 0,
+        "min_price": null
+    },
+    {
+        "developerId": 249,
+        "name": "ذا مارك كميونيتيز",
+        "slug": "249-ذا-مارك-كميونيتيز",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/images__5_.jpeg",
+        "compounds": 2,
+        "properties": 1,
+        "min_price": "14179850.0"
+    },
+    {
+        "developerId": 64,
+        "name": "ذا واترواي ديفلوبمنتس",
+        "slug": "64-ذا-واترواي-ديفلوبمنتس",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/the_waterway_developments_logo.jpeg",
+        "compounds": 10,
+        "properties": 32,
+        "min_price": "4869000.0"
+    },
+    {
+        "developerId": 25,
+        "name": "رؤيه للتطوير العقاري",
+        "slug": "25-رؤيه-للتطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/roya_devel.png",
+        "compounds": 8,
+        "properties": 34,
+        "min_price": "4200000.0"
+    },
+    {
+        "developerId": 293,
+        "name": "راديكس للتطوير العقاري",
+        "slug": "293-راديكس-للتطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/radix_1.png",
+        "compounds": 1,
+        "properties": 6,
+        "min_price": "6345425.0"
+    },
+    {
+        "developerId": 118,
+        "name": "رافكو للتطوير العقاري",
+        "slug": "118-رافكو-للتطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/RFCO_logo.jpg",
+        "compounds": 1,
+        "properties": 7,
+        "min_price": "1950000.0"
+    },
+    {
+        "developerId": 134,
+        "name": "رامتان للتطوير العقاري",
+        "slug": "134-رامتان-للتطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/download.png",
+        "compounds": 1,
+        "properties": 0,
+        "min_price": null
+    },
+    {
+        "developerId": 273,
+        "name": "رسلان جروب",
+        "slug": "273-رسلان-جروب",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/Raslan-Logo.png",
+        "compounds": 1,
+        "properties": 1,
+        "min_price": "17700000.0"
+    },
+    {
+        "developerId": 51,
+        "name": "رمكو لانشاء القري السياحيه",
+        "slug": "51-رمكو-لانشاء-القري-السياحيه",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/EAORyKKIp3X7guF3t2xkzyaPKGKubuUntitled.jpg",
+        "compounds": 5,
+        "properties": 17,
+        "min_price": "2562500.0"
+    },
+    {
+        "developerId": 324,
+        "name": "رويال للتطوير العقاري",
+        "slug": "324-رويال-للتطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/royal_development.png",
+        "compounds": 1,
+        "properties": 0,
+        "min_price": null
+    },
+    {
+        "developerId": 49,
+        "name": "رويال ميدوز",
+        "slug": "49-رويال-ميدوز",
+        "image": null,
+        "compounds": 0,
+        "properties": 0,
+        "min_price": null
+    },
+    {
+        "developerId": 147,
+        "name": "ريبورتاج العقاريه",
+        "slug": "147-ريبورتاج-العقاريه",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/dev_logo.jpg",
+        "compounds": 1,
+        "properties": 2,
+        "min_price": "3864000.0"
+    },
+    {
+        "developerId": 139,
+        "name": "ريجنسي اوربن للتطوير العقاري",
+        "slug": "139-ريجنسي-اوربن-للتطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/dev_logo.jpg",
+        "compounds": 1,
+        "properties": 2,
+        "min_price": "1768000.0"
+    },
+    {
+        "developerId": 196,
+        "name": "ريد كون للمكاتب الاداريه و التجاريه",
+        "slug": "196-ريد-كون-للمكاتب-الاداريه-و-التجاريه",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/redcon_dev.jpg",
+        "compounds": 1,
+        "properties": 0,
+        "min_price": null
+    },
+    {
+        "developerId": 353,
+        "name": "زايا للتطوير العقاري",
+        "slug": "353-زايا-للتطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/Zaya.png",
+        "compounds": 1,
+        "properties": 2,
+        "min_price": "6550000.0"
+    },
+    {
+        "developerId": 145,
+        "name": "زودياك للتطوير العقاري",
+        "slug": "145-زودياك-للتطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/Zodiac.jpg",
+        "compounds": 2,
+        "properties": 1,
+        "min_price": "682000.0"
+    },
+    {
+        "developerId": 126,
+        "name": "ساك للتطوير العقاري",
+        "slug": "126-ساك-للتطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/sak_development.jpg",
+        "compounds": 3,
+        "properties": 2,
+        "min_price": "2040000.0"
+    },
+    {
+        "developerId": 287,
+        "name": "ساليدار للتطوير العقاري",
+        "slug": "287-ساليدار-للتطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/salidar.png",
+        "compounds": 1,
+        "properties": 0,
+        "min_price": null
+    },
+    {
+        "developerId": 53,
+        "name": "سامكريت للاستثمار",
+        "slug": "53-سامكريت-للاستثمار",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/pi4j7A5jMpWalq8ydTgVPPIOhLElw91749980_logo_1437045194.jpg",
+        "compounds": 1,
+        "properties": 1,
+        "min_price": "30000000.0"
+    },
+    {
+        "developerId": 75,
+        "name": "ستارلايت للتطوير العقاري",
+        "slug": "75-ستارلايت-للتطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/6ldpvSFMJr67tOHqN3Pq4XgAjcyqtbdev.jpg",
+        "compounds": 3,
+        "properties": 35,
+        "min_price": "7000000.0"
+    },
+    {
+        "developerId": 40,
+        "name": "ستيلا دي ماري للفنادق و المنتجعات",
+        "slug": "40-ستيلا-دي-ماري-للفنادق-و-المنتجعات",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/WvKWFe15bgkdWnKXN3SyTfpLpE8gi3logo__1_.png",
+        "compounds": 0,
+        "properties": 0,
+        "min_price": null
+    },
+    {
+        "developerId": 332,
+        "name": "سفاح الجيزة",
+        "slug": "332-سفاح-الجيزة",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/safahelgiza.jpg.jpg",
+        "compounds": 2,
+        "properties": 0,
+        "min_price": null
+    },
+    {
+        "developerId": 52,
+        "name": "سكاراب كلوب",
+        "slug": "52-سكاراب-كلوب",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/GdhHrehLAdAuVmf4NATsVbDMzJwo6ANew_Bitmap_Image.jpg",
+        "compounds": 1,
+        "properties": 1,
+        "min_price": "8555000.0"
+    },
+    {
+        "developerId": 121,
+        "name": "سكاي ابو ظبي للتطوير العقاري",
+        "slug": "121-سكاي-ابو-ظبي-للتطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/logo.jpg",
+        "compounds": 4,
+        "properties": 22,
+        "min_price": "2507597.0"
+    },
+    {
+        "developerId": 312,
+        "name": "سوليمار للعقارات",
+        "slug": "312-سوليمار-للعقارات",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/Screenshot_2023-05-03_161419.png",
+        "compounds": 1,
+        "properties": 0,
+        "min_price": null
+    },
+    {
+        "developerId": 12,
+        "name": "سوما باي",
+        "slug": "12-سوما-باي",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/vhf2PTHYUFmlpTSMhtF7w8eTOzHM6lplaceholder.jpg",
+        "compounds": 11,
+        "properties": 49,
+        "min_price": "7070000.0"
+    },
+    {
+        "developerId": 74,
+        "name": "سيتي ايدج للتطوير العقاري",
+        "slug": "74-سيتي-ايدج-للتطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/Px7G6xlJf1wkkFgCtFjsrQbIgsrCORCityEdge-800x799.jpg",
+        "compounds": 19,
+        "properties": 45,
+        "min_price": "2920000.0"
+    },
+    {
+        "developerId": 254,
+        "name": "سيراك للتطوير العقاري",
+        "slug": "254-سيراك-للتطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/serac_developments.png",
+        "compounds": 5,
+        "properties": 3,
+        "min_price": "2320000.0"
+    },
+    {
+        "developerId": 310,
+        "name": "سيسيليا للانشائات",
+        "slug": "310-سيسيليا-للانشائات",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/cecelia_for_construction.png",
+        "compounds": 1,
+        "properties": 2,
+        "min_price": "1332500.0"
+    },
+    {
+        "developerId": 19,
+        "name": "سيشيل",
+        "slug": "19-سيشيل",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/qKQWtW7adhGcVMWN3hDUlkN5O0aqxFLogo.jpg",
+        "compounds": 0,
+        "properties": 0,
+        "min_price": null
+    },
+    {
+        "developerId": 100,
+        "name": "شركه البحر المتوسط للاستثمار السياحي",
+        "slug": "100-شركه-البحر-المتوسط-للاستثمار-السياحي",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/Metico.png",
+        "compounds": 1,
+        "properties": 1,
+        "min_price": "19270000.0"
+    },
+    {
+        "developerId": 96,
+        "name": "شركه التعمير اريبيان للتطوير العقاري",
+        "slug": "96-شركه-التعمير-اريبيان-للتطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/SNK419zS20p7dGzRd0NHG8HTOXnUwp14.01.20_print_preview_3_018.jpg",
+        "compounds": 3,
+        "properties": 0,
+        "min_price": null
+    },
+    {
+        "developerId": 269,
+        "name": "شركه الخليج لتطوير العقاري",
+        "slug": "269-شركه-الخليج-لتطوير-العقاري",
+        "image": null,
+        "compounds": 1,
+        "properties": 1,
+        "min_price": "15000000.0"
+    },
+    {
+        "developerId": 102,
+        "name": "شركه الريان للاستثمار السياحي",
+        "slug": "102-شركه-الريان-للاستثمار-السياحي",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/vJfY5M29SadNVez5JHkUU0cWPjOkcNlogo__1_.jpg",
+        "compounds": 0,
+        "properties": 0,
+        "min_price": null
+    },
+    {
+        "developerId": 41,
+        "name": "شركه جاز",
+        "slug": "41-شركه-جاز",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/UWwAwEOjXhOj6iWPpVbcc344V2WXgbjaz_collection_purple.png",
+        "compounds": 0,
+        "properties": 0,
+        "min_price": null
+    },
+    {
+        "developerId": 42,
+        "name": "شركه دوم مارينا",
+        "slug": "42-شركه-دوم-مارينا",
+        "image": null,
+        "compounds": 1,
+        "properties": 0,
+        "min_price": null
+    },
+    {
+        "developerId": 281,
+        "name": "شركه سانتا كلوز للمنتجعات",
+        "slug": "281-شركه-سانتا-كلوز-للمنتجعات",
+        "image": null,
+        "compounds": 0,
+        "properties": 0,
+        "min_price": null
+    },
+    {
+        "developerId": 34,
+        "name": "شركه كارمه للتطوير العقاري",
+        "slug": "34-شركه-كارمه-للتطوير-العقاري",
+        "image": null,
+        "compounds": 1,
+        "properties": 0,
+        "min_price": null
+    },
+    {
+        "developerId": 236,
+        "name": "شركه مصر للاستثمار و التنميه",
+        "slug": "236-شركه-مصر-للاستثمار-و-التنميه",
+        "image": null,
+        "compounds": 1,
+        "properties": 0,
+        "min_price": null
+    },
+    {
+        "developerId": 239,
+        "name": "شهاب مظهر",
+        "slug": "239-شهاب-مظهر",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/440c5e161898725.Y3JvcCw3MjksNTcwLDQ2LDU0.jpg",
+        "compounds": 1,
+        "properties": 7,
+        "min_price": "24000000.0"
+    },
+    {
+        "developerId": 120,
+        "name": "صروح للتطوير العقاري",
+        "slug": "120-صروح-للتطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/logo.jpg",
+        "compounds": 3,
+        "properties": 33,
+        "min_price": "2080000.0"
+    },
+    {
+        "developerId": 252,
+        "name": "عامر جروب",
+        "slug": "252-عامر-جروب",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/amer_group.png",
+        "compounds": 2,
+        "properties": 0,
+        "min_price": null
+    },
+    {
+        "developerId": 203,
+        "name": "عفيفي كونستراكشن",
+        "slug": "203-عفيفي-كونستراكشن",
+        "image": null,
+        "compounds": 0,
+        "properties": 0,
+        "min_price": null
+    },
+    {
+        "developerId": 276,
+        "name": "عفيفي للتطوير العقاري والإنشاءات",
+        "slug": "276-عفيفي-للتطوير-العقاري-والإنشاءات",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/Afifi_for_developments_and_construction.png",
+        "compounds": 1,
+        "properties": 0,
+        "min_price": null
+    },
+    {
+        "developerId": 32,
+        "name": "غزاله باي",
+        "slug": "32-غزاله-باي",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/jelmG0zGXOOtIaJHgaOnM5cEIg7K4Qasset-1422809375490.png",
+        "compounds": 1,
+        "properties": 0,
+        "min_price": null
+    },
+    {
+        "developerId": 351,
+        "name": "فانتيدج للتطوير العقاري",
+        "slug": "351-فانتيدج-للتطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/download__6_.png",
+        "compounds": 1,
+        "properties": 1,
+        "min_price": "3325000.0"
+    },
+    {
+        "developerId": 79,
+        "name": "فلور دو فيل",
+        "slug": "79-فلور-دو-فيل",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/RGjI1Uk5OYo8oep4RBqGL6UoOyu9gQfleur_de_ville.jpg",
+        "compounds": 0,
+        "properties": 0,
+        "min_price": null
+    },
+    {
+        "developerId": 297,
+        "name": "فور سيزون جروب للتطوير العقاري",
+        "slug": "297-فور-سيزون-جروب-للتطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/fsg.png",
+        "compounds": 1,
+        "properties": 2,
+        "min_price": "2500000.0"
+    },
+    {
+        "developerId": 150,
+        "name": "فيا للتطوير العقاري",
+        "slug": "150-فيا-للتطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/VAI_Developments.jpg",
+        "compounds": 2,
+        "properties": 0,
+        "min_price": null
+    },
+    {
+        "developerId": 205,
+        "name": "فيردورا",
+        "slug": "205-فيردورا",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/dev_logo.png",
+        "compounds": 1,
+        "properties": 0,
+        "min_price": null
+    },
+    {
+        "developerId": 360,
+        "name": "فيرست جروب للتطوير العقاري",
+        "slug": "360-فيرست-جروب-للتطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/download__9_.png",
+        "compounds": 0,
+        "properties": 0,
+        "min_price": null
+    },
+    {
+        "developerId": 288,
+        "name": "فيرست جروب",
+        "slug": "288-فيرست-جروب",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/first_group_dev.png",
+        "compounds": 2,
+        "properties": 2,
+        "min_price": "5842500.0"
+    },
+    {
+        "developerId": 334,
+        "name": "كابيتال إليت للتطوير العقاري",
+        "slug": "334-كابيتال-إليت-للتطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/305927342_396108072706028_5984696660763364331_n.jpg",
+        "compounds": 1,
+        "properties": 0,
+        "min_price": null
+    },
+    {
+        "developerId": 73,
+        "name": "كابيتال جروب العقاريه",
+        "slug": "73-كابيتال-جروب-العقاريه",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/I3WtnUKJqiXD22Gj8S5lhigBZXXdBZcgp.jpg",
+        "compounds": 2,
+        "properties": 9,
+        "min_price": "4920000.0"
+    },
+    {
+        "developerId": 38,
+        "name": "كابيتال للتطوير العقاري",
+        "slug": "38-كابيتال-للتطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/ctes07kwYgoGPtqRKza6vO6xeJknwecapital-logo.png",
+        "compounds": 1,
+        "properties": 6,
+        "min_price": "3600000.0"
+    },
+    {
+        "developerId": 146,
+        "name": "كابيتال لينك للتطوير العقاري",
+        "slug": "146-كابيتال-لينك-للتطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/capital_link_logo.jpg",
+        "compounds": 5,
+        "properties": 13,
+        "min_price": "4484000.0"
+    },
+    {
+        "developerId": 348,
+        "name": "كابيتال هيلز للتطوير العقاري",
+        "slug": "348-كابيتال-هيلز-للتطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/8ec6a934-5e5b-4418-9817-4579c7fa59db.jpg",
+        "compounds": 1,
+        "properties": 5,
+        "min_price": "7344000.0"
+    },
+    {
+        "developerId": 117,
+        "name": "كايرو كابيتال للتطوير العقاري",
+        "slug": "117-كايرو-كابيتال-للتطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/cairo_capital_developments.jpg",
+        "compounds": 1,
+        "properties": 1,
+        "min_price": "11992500.0"
+    },
+    {
+        "developerId": 110,
+        "name": "كريد للتطوير العقاري",
+        "slug": "110-كريد-للتطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/Cred_developments.jpeg",
+        "compounds": 4,
+        "properties": 29,
+        "min_price": "2700000.0"
+    },
+    {
+        "developerId": 245,
+        "name": "كليوباترا للتطوير العقاري",
+        "slug": "245-كليوباترا-للتطوير-العقاري",
+        "image": null,
+        "compounds": 1,
+        "properties": 0,
+        "min_price": null
+    },
+    {
+        "developerId": 141,
+        "name": "كليوباترا للفاندق و التطوير العقاري",
+        "slug": "141-كليوباترا-للفاندق-و-التطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/cleopatra_dev.jpg",
+        "compounds": 2,
+        "properties": 10,
+        "min_price": "8617317.0"
+    },
+    {
+        "developerId": 261,
+        "name": "كواديكو",
+        "slug": "261-كواديكو",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/kuwadico_dev.png",
+        "compounds": 1,
+        "properties": 3,
+        "min_price": "16500000.0"
+    },
+    {
+        "developerId": 152,
+        "name": "كورنر ستون للتطوير العقاري",
+        "slug": "152-كورنر-ستون-للتطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/OUT_Cornerstone-logo-01-01.png",
+        "compounds": 3,
+        "properties": 15,
+        "min_price": "2968574.0"
+    },
+    {
+        "developerId": 299,
+        "name": "كونتاكت للتطوير العقاري",
+        "slug": "299-كونتاكت-للتطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/contact_dev.png",
+        "compounds": 1,
+        "properties": 0,
+        "min_price": null
+    },
+    {
+        "developerId": 179,
+        "name": "كونتراك ديفلوبمنت",
+        "slug": "179-كونتراك-ديفلوبمنت",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/logo_dev.jpg",
+        "compounds": 1,
+        "properties": 1,
+        "min_price": "3100000.0"
+    },
+    {
+        "developerId": 280,
+        "name": "كونكورد للهندسه و الانشاءات",
+        "slug": "280-كونكورد-للهندسه-و-الانشاءات",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/logo.png",
+        "compounds": 1,
+        "properties": 0,
+        "min_price": null
+    },
+    {
+        "developerId": 81,
+        "name": "كوور للتطوير العقاري",
+        "slug": "81-كوور-للتطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/oG53gKTvGw85He0MW1vNRX9aflWZ0gAlcamar_Building_Plans_Brochure_September_2018__1__001.jpg",
+        "compounds": 1,
+        "properties": 0,
+        "min_price": null
+    },
+    {
+        "developerId": 59,
+        "name": "لا روز",
+        "slug": "59-لا-روز",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/YB1n0EFmaJPqF5bQIaVutRljaVJF8R9cea01f6559aa5f1686e77805002cf8cfde0dd53_la-rose-noire-logo.jpg",
+        "compounds": 1,
+        "properties": 0,
+        "min_price": null
+    },
+    {
+        "developerId": 215,
+        "name": "لا سيرنا جروب",
+        "slug": "215-لا-سيرنا-جروب",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/logo.png",
+        "compounds": 10,
+        "properties": 83,
+        "min_price": "2250000.0"
+    },
+    {
+        "developerId": 235,
+        "name": "لا فيردي للتطوير العقاري",
+        "slug": "235-لا-فيردي-للتطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/la_verde_developments.png",
+        "compounds": 2,
+        "properties": 11,
+        "min_price": "5005000.0"
+    },
+    {
+        "developerId": 11,
+        "name": "لا فيستا للتطوير العقاري",
+        "slug": "11-لا-فيستا-للتطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/ha37omIwGwNK9GdjTqmLdjCqr7yL3kdev.jpg",
+        "compounds": 30,
+        "properties": 130,
+        "min_price": "4600000.0"
+    },
+    {
+        "developerId": 343,
+        "name": "لاكوينتا جروب",
+        "slug": "343-لاكوينتا-جروب",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/download__25_.jpg",
+        "compounds": 1,
+        "properties": 1,
+        "min_price": "23000000.0"
+    },
+    {
+        "developerId": 72,
+        "name": "لاند مارك للتطوير العقاري",
+        "slug": "72-لاند-مارك-للتطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/landmark_sabbour_1.png",
+        "compounds": 10,
+        "properties": 15,
+        "min_price": "14700000.0"
+    },
+    {
+        "developerId": 337,
+        "name": "لايف لوفرز",
+        "slug": "337-لايف-لوفرز",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/Life-Louvers-Logo-App-Icon-Olive-Background.png",
+        "compounds": 1,
+        "properties": 7,
+        "min_price": "5157896.0"
+    },
+    {
+        "developerId": 306,
+        "name": "لوزان للتطوير العمراني",
+        "slug": "306-لوزان-للتطوير-العمراني",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/Photo_1063.jpg",
+        "compounds": 1,
+        "properties": 4,
+        "min_price": "7738326.0"
+    },
+    {
+        "developerId": 181,
+        "name": "لوكيشن ديفلوبمنت",
+        "slug": "181-لوكيشن-ديفلوبمنت",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/location_dev.png",
+        "compounds": 1,
+        "properties": 11,
+        "min_price": "1628000.0"
+    },
+    {
+        "developerId": 46,
+        "name": "لي روا",
+        "slug": "46-لي-روا",
+        "image": null,
+        "compounds": 1,
+        "properties": 3,
+        "min_price": "17425000.0"
+    },
+    {
+        "developerId": 76,
+        "name": "ليفينج ياردز للتطوير العقاري",
+        "slug": "76-ليفينج-ياردز-للتطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/xHJzoaEUicUreZ2KTOARmDrrmdgGoC35755792_228610007737333_2899761605279481856_n.jpg",
+        "compounds": 5,
+        "properties": 28,
+        "min_price": "2700000.0"
+    },
+    {
+        "developerId": 296,
+        "name": "لينا ريل استيت",
+        "slug": "296-لينا-ريل-استيت",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/leena_real_estate.png",
+        "compounds": 1,
+        "properties": 0,
+        "min_price": null
+    },
+    {
+        "developerId": 187,
+        "name": "ماباني ادريس",
+        "slug": "187-ماباني-ادريس",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/dev.png",
+        "compounds": 6,
+        "properties": 6,
+        "min_price": "5778040.0"
+    },
+    {
+        "developerId": 36,
+        "name": "مادار للتطوير العقاري",
+        "slug": "36-مادار-للتطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/madaar_dev_logo.png",
+        "compounds": 3,
+        "properties": 12,
+        "min_price": "5500000.0"
+    },
+    {
+        "developerId": 151,
+        "name": "مارجين",
+        "slug": "151-مارجين",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/margins.jpg",
+        "compounds": 2,
+        "properties": 7,
+        "min_price": "9037600.0"
+    },
+    {
+        "developerId": 361,
+        "name": "مارديف",
+        "slug": "361-مارديف",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/mardev.png",
+        "compounds": 1,
+        "properties": 0,
+        "min_price": null
+    },
+    {
+        "developerId": 29,
+        "name": "مارسيليا للاستثمار العقاري",
+        "slug": "29-مارسيليا-للاستثمار-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/6WQjMMFpM17YkHTZG5hVJzZOTwfX26logo.png",
+        "compounds": 5,
+        "properties": 10,
+        "min_price": "1383750.0"
+    },
+    {
+        "developerId": 295,
+        "name": "ماروتا للتطوير العقاري",
+        "slug": "295-ماروتا-للتطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/marota_developments.png",
+        "compounds": 0,
+        "properties": 0,
+        "min_price": null
+    },
+    {
+        "developerId": 97,
+        "name": "مافين للتطوير العقاري",
+        "slug": "97-مافين-للتطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/nOXHtv1UstzjuFbc2Iq6CBZ58IdEwgtw.jpg",
+        "compounds": 2,
+        "properties": 10,
+        "min_price": "5400000.0"
+    },
+    {
+        "developerId": 26,
+        "name": "ماكسيم جروب",
+        "slug": "26-ماكسيم-جروب",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/mc7p10kWvCjCIWSsjk9vRkGuhgbOMZlogo.png",
+        "compounds": 1,
+        "properties": 0,
+        "min_price": null
+    },
+    {
+        "developerId": 88,
+        "name": "ماكسيم للتطوير العقاري",
+        "slug": "88-ماكسيم-للتطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/PlqETnFQaZSOQLrwEUxvGqKWKIf20bj.jpg",
+        "compounds": 5,
+        "properties": 14,
+        "min_price": "2500000.0"
+    },
+    {
+        "developerId": 44,
+        "name": "مانجروفي",
+        "slug": "44-مانجروفي",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/M99V43PU5XNo2OxpUQio7efYAsU78nlogo.jpg",
+        "compounds": 0,
+        "properties": 0,
+        "min_price": null
+    },
+    {
+        "developerId": 358,
+        "name": "ماين ماركس",
+        "slug": "358-ماين-ماركس",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/main_marks_developments_logo.jpg",
+        "compounds": 1,
+        "properties": 0,
+        "min_price": null
+    },
+    {
+        "developerId": 69,
+        "name": "مجموعة طلعت مصطفى القابضة",
+        "slug": "69-مجموعة-طلعت-مصطفى-القابضة",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/DIRIrKd0NDe1EwJ9IJWCoFvrs7xv9X1314338024.jpg",
+        "compounds": 8,
+        "properties": 43,
+        "min_price": "3750000.0"
+    },
+    {
+        "developerId": 265,
+        "name": "مجموعه ازميل العقاريه",
+        "slug": "265-مجموعه-ازميل-العقاريه",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/Azmeel_group_real_estate.png",
+        "compounds": 1,
+        "properties": 0,
+        "min_price": null
+    },
+    {
+        "developerId": 335,
+        "name": "مجموعه المعز",
+        "slug": "335-مجموعه-المعز",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/Screenshot_20230921_130611.jpg",
+        "compounds": 1,
+        "properties": 1,
+        "min_price": "11000000.0"
+    },
+    {
+        "developerId": 354,
+        "name": "مجموعه شركات المهندسون المصريون",
+        "slug": "354-مجموعه-شركات-المهندسون-المصريون",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/download__7_.png",
+        "compounds": 1,
+        "properties": 1,
+        "min_price": "35000000.0"
+    },
+    {
+        "developerId": 266,
+        "name": "مجموعه شركات بهجت",
+        "slug": "266-مجموعه-شركات-بهجت",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/bahgat_group.png",
+        "compounds": 1,
+        "properties": 6,
+        "min_price": "4407500.0"
+    },
+    {
+        "developerId": 279,
+        "name": "مجموعه كونكورد للتطوير العقاري و الانشاءات",
+        "slug": "279-مجموعه-كونكورد-للتطوير-العقاري-و-الانشاءات",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/images.png",
+        "compounds": 1,
+        "properties": 0,
+        "min_price": null
+    },
+    {
+        "developerId": 322,
+        "name": "مجموعه مطوري هيليوبوليس",
+        "slug": "322-مجموعه-مطوري-هيليوبوليس",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/HDG.png",
+        "compounds": 1,
+        "properties": 0,
+        "min_price": null
+    },
+    {
+        "developerId": 54,
+        "name": "مدينه مصر",
+        "slug": "54-مدينه-مصر",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/MMHD.png",
+        "compounds": 10,
+        "properties": 74,
+        "min_price": "1500000.0"
+    },
+    {
+        "developerId": 359,
+        "name": "مزايا للتطوير العقاري",
+        "slug": "359-مزايا-للتطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/download__8_.png",
+        "compounds": 0,
+        "properties": 0,
+        "min_price": null
+    },
+    {
+        "developerId": 309,
+        "name": "مصر الحياه للتطوير العقاري",
+        "slug": "309-مصر-الحياه-للتطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/masr_el_hayah.logo.png",
+        "compounds": 1,
+        "properties": 1,
+        "min_price": "2255000.0"
+    },
+    {
+        "developerId": 39,
+        "name": "مطاوع جروب",
+        "slug": "39-مطاوع-جروب",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/wpsDOXTgTb44Pd5uMHkIIddq8OfLaelogo.png",
+        "compounds": 0,
+        "properties": 0,
+        "min_price": null
+    },
+    {
+        "developerId": 98,
+        "name": "معمار المرشدي",
+        "slug": "98-معمار-المرشدي",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/pLagmHK72fyzo0ki9WMGAcY0ykruPnUntitled.jpg",
+        "compounds": 6,
+        "properties": 1,
+        "min_price": "5248000.0"
+    },
+    {
+        "developerId": 275,
+        "name": "معمار المنصور للتطوير العقاري",
+        "slug": "275-معمار-المنصور-للتطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/el_mansour_development.png",
+        "compounds": 1,
+        "properties": 0,
+        "min_price": null
+    },
+    {
+        "developerId": 131,
+        "name": "منصات للتطوير العقاري",
+        "slug": "131-منصات-للتطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/dev_logo.jpg",
+        "compounds": 3,
+        "properties": 9,
+        "min_price": "7608510.0"
+    },
+    {
+        "developerId": 188,
+        "name": "موبكو جروب",
+        "slug": "188-موبكو-جروب",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/dev.jpg",
+        "compounds": 1,
+        "properties": 6,
+        "min_price": "5913000.0"
+    },
+    {
+        "developerId": 304,
+        "name": "موسي كوست للتطوير العقاري",
+        "slug": "304-موسي-كوست-للتطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/Mouusa_Coast_Developments.jpg",
+        "compounds": 1,
+        "properties": 0,
+        "min_price": null
+    },
+    {
+        "developerId": 21,
+        "name": "ميراج سيتي",
+        "slug": "21-ميراج-سيتي",
+        "image": null,
+        "compounds": 1,
+        "properties": 2,
+        "min_price": "51250000.0"
+    },
+    {
+        "developerId": 168,
+        "name": "ميركون للتطوير العقاري",
+        "slug": "168-ميركون-للتطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/mercon_dev.jpg",
+        "compounds": 2,
+        "properties": 0,
+        "min_price": null
+    },
+    {
+        "developerId": 274,
+        "name": "ميسلانيوس",
+        "slug": "274-ميسلانيوس",
+        "image": null,
+        "compounds": 19,
+        "properties": 17,
+        "min_price": "2000000.0"
+    },
+    {
+        "developerId": 257,
+        "name": "ميك بلاس للتطوير العقاريميميك",
+        "slug": "257-ميك-بلاس-للتطوير-العقاريميميك",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/Screenshot_2023-02-06_124648.png",
+        "compounds": 2,
+        "properties": 27,
+        "min_price": "7096558.0"
+    },
+    {
+        "developerId": 342,
+        "name": "ميلي للتطوير العقاري",
+        "slug": "342-ميلي-للتطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/1694427545164.jpg",
+        "compounds": 2,
+        "properties": 19,
+        "min_price": "9643000.0"
+    },
+    {
+        "developerId": 223,
+        "name": "مينا للتطوير العقاري و السياحي",
+        "slug": "223-مينا-للتطوير-العقاري-و-السياحي",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/WhatsApp_Image_2022-06-27_at_5.53.34_PM.jpeg",
+        "compounds": 1,
+        "properties": 0,
+        "min_price": null
+    },
+    {
+        "developerId": 289,
+        "name": "مينا للتنميه العقاريه",
+        "slug": "289-مينا-للتنميه-العقاريه",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/download__2_.png",
+        "compounds": 4,
+        "properties": 1,
+        "min_price": "15118750.0"
+    },
+    {
+        "developerId": 105,
+        "name": "مينكا للتطوير العقاري",
+        "slug": "105-مينكا-للتطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/bDLlAfSiXaNhs9K43XgE2qn76Y3enyMinka_Development.jpg",
+        "compounds": 0,
+        "properties": 0,
+        "min_price": null
+    },
+    {
+        "developerId": 171,
+        "name": "ناخيل للتطوير العقاري",
+        "slug": "171-ناخيل-للتطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/Nakheel_developments.png",
+        "compounds": 1,
+        "properties": 3,
+        "min_price": "5804800.0"
+    },
+    {
+        "developerId": 253,
+        "name": "نايا للتطوير العقاري",
+        "slug": "253-نايا-للتطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/naia-logo-primary__1_.jpg",
+        "compounds": 2,
+        "properties": 9,
+        "min_price": "8144000.0"
+    },
+    {
+        "developerId": 364,
+        "name": "نوفو ستانزا العقاريه",
+        "slug": "364-نوفو-ستانزا-العقاريه",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/download__11_.png",
+        "compounds": 1,
+        "properties": 1,
+        "min_price": "26650000.0"
+    },
+    {
+        "developerId": 283,
+        "name": "نيكست ديل للأستثمار السياحى و العقارى",
+        "slug": "283-نيكست-ديل-للأستثمار-السياحى-و-العقارى",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/next_deal.png",
+        "compounds": 2,
+        "properties": 0,
+        "min_price": null
+    },
+    {
+        "developerId": 136,
+        "name": "نيو بلان",
+        "slug": "136-نيو-بلان",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/dev_logo.jpg",
+        "compounds": 8,
+        "properties": 1,
+        "min_price": "2651474.0"
+    },
+    {
+        "developerId": 341,
+        "name": "نيو تاون جروب",
+        "slug": "341-نيو-تاون-جروب",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/Screenshot_20231105_190547.jpg",
+        "compounds": 1,
+        "properties": 0,
+        "min_price": null
+    },
+    {
+        "developerId": 184,
+        "name": "نيو جنراشن ديفلوبمنت",
+        "slug": "184-نيو-جنراشن-ديفلوبمنت",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/NGD.jpg",
+        "compounds": 5,
+        "properties": 17,
+        "min_price": "3702800.0"
+    },
+    {
+        "developerId": 3,
+        "name": "نيو جيزه",
+        "slug": "3-نيو-جيزه",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/NB3nmSOqsphm2ImHZdNcRJdW97lOOydev.jpg",
+        "compounds": 7,
+        "properties": 21,
+        "min_price": "15100000.0"
+    },
+    {
+        "developerId": 271,
+        "name": "نيو ستار للتطوير العقاري",
+        "slug": "271-نيو-ستار-للتطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/New_Star_Real_estate.png",
+        "compounds": 1,
+        "properties": 5,
+        "min_price": "4100000.0"
+    },
+    {
+        "developerId": 234,
+        "name": "نيوسيتي للتطوير العقاري",
+        "slug": "234-نيوسيتي-للتطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/Newcity-Developments-Invest-Gate-750x370.jpg",
+        "compounds": 1,
+        "properties": 3,
+        "min_price": "1588750.0"
+    },
+    {
+        "developerId": 270,
+        "name": "هاي ارت",
+        "slug": "270-هاي-ارت",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/High_art.png",
+        "compounds": 1,
+        "properties": 0,
+        "min_price": null
+    },
+    {
+        "developerId": 15,
+        "name": "هايد بارك",
+        "slug": "15-هايد-بارك",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/QwyW57CkvlEWufmwf7K8z9UBE3rjpHlogo.jpg",
+        "compounds": 7,
+        "properties": 34,
+        "min_price": "4350000.0"
+    },
+    {
+        "developerId": 325,
+        "name": "هورايزون ايجيبت للتطوير العقاري",
+        "slug": "325-هورايزون-ايجيبت-للتطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/horizone_egypt_dev.png",
+        "compounds": 1,
+        "properties": 3,
+        "min_price": "21850000.0"
+    },
+    {
+        "developerId": 137,
+        "name": "هوم تاون للتطوير العقاري",
+        "slug": "137-هوم-تاون-للتطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/home_town_logo.jpg",
+        "compounds": 3,
+        "properties": 0,
+        "min_price": null
+    },
+    {
+        "developerId": 24,
+        "name": "هيئه المجتمعات العمرانيه الجديده",
+        "slug": "24-هيئه-المجتمعات-العمرانيه-الجديده",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/sXKbzAVek3SrKd9MTvAE4jqBYQVbAwdownload.jpg",
+        "compounds": 1,
+        "properties": 0,
+        "min_price": null
+    },
+    {
+        "developerId": 284,
+        "name": "هيا للتطوير العمراني",
+        "slug": "284-هيا-للتطوير-العمراني",
+        "image": null,
+        "compounds": 1,
+        "properties": 0,
+        "min_price": null
+    },
+    {
+        "developerId": 301,
+        "name": "وادي النخيل",
+        "slug": "301-وادي-النخيل",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/el_nakhil_dev.png",
+        "compounds": 1,
+        "properties": 0,
+        "min_price": null
+    },
+    {
+        "developerId": 92,
+        "name": "وادي النيل",
+        "slug": "92-وادي-النيل",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/2hLBCbFvZKfGEuBk4ARlzMv7bGSaBpWhatsApp_Image_2019-11-19_at_12.54.05_PM.jpeg",
+        "compounds": 1,
+        "properties": 0,
+        "min_price": null
+    },
+    {
+        "developerId": 28,
+        "name": "وادي دجله للتطوير العقاري",
+        "slug": "28-وادي-دجله-للتطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/qnDWvznALKfh80pA7DVahIwQKm2Te3logo.png",
+        "compounds": 8,
+        "properties": 19,
+        "min_price": "2142000.0"
+    },
+    {
+        "developerId": 355,
+        "name": "ويست اند للتطوير العقاري",
+        "slug": "355-ويست-اند-للتطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/west_end.png",
+        "compounds": 1,
+        "properties": 0,
+        "min_price": null
+    },
+    {
+        "developerId": 114,
+        "name": "ويست جولف",
+        "slug": "114-ويست-جولف",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/LBxLTyrgqxdjddUDNVV2tFQLGDOsEmwest_gulf_company__heaven_beach_.jpg",
+        "compounds": 0,
+        "properties": 0,
+        "min_price": null
+    },
+    {
+        "developerId": 251,
+        "name": "ويلث للتطوير العقاري",
+        "slug": "251-ويلث-للتطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/wealth_development_logo.png",
+        "compounds": 2,
+        "properties": 3,
+        "min_price": "41440000.0"
+    },
+    {
+        "developerId": 130,
+        "name": "يو سي للتطوير العقاري",
+        "slug": "130-يو-سي-للتطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/uc_development_logo.jpg",
+        "compounds": 3,
+        "properties": 10,
+        "min_price": "6000000.0"
+    },
+    {
+        "developerId": 119,
+        "name": "يونايتد للتطوير العقاري",
+        "slug": "119-يونايتد-للتطوير-العقاري",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/dev_logo.jpg",
+        "compounds": 1,
+        "properties": 0,
+        "min_price": null
+    },
+    {
+        "developerId": 238,
+        "name": "Al Yasmine International For Trade \u0026 Contracting",
+        "slug": "238-al-yasmine-international-for-trade-contracting",
+        "image": null,
+        "compounds": 1,
+        "properties": 0,
+        "min_price": null
+    },
+    {
+        "developerId": 240,
+        "name": "Arab Developers Holding",
+        "slug": "240-arab-developers-holding",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/download.png",
+        "compounds": 3,
+        "properties": 17,
+        "min_price": "1300000.0"
+    },
+    {
+        "developerId": 243,
+        "name": "EG Master Developments",
+        "slug": "243-eg-master-developments",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/5oM7PCtQDhGPVGzl.jpg",
+        "compounds": 1,
+        "properties": 1,
+        "min_price": "3277950.0"
+    },
+    {
+        "developerId": 241,
+        "name": "El Gabry Developments",
+        "slug": "241-el-gabry-developments",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/el_gabry.jpg",
+        "compounds": 4,
+        "properties": 3,
+        "min_price": "10300000.0"
+    },
+    {
+        "developerId": 248,
+        "name": "New Capital",
+        "slug": "248-new-capital",
+        "image": null,
+        "compounds": 0,
+        "properties": 0,
+        "min_price": null
+    },
+    {
+        "developerId": 244,
+        "name": "Novus Stanza",
+        "slug": "244-novus-stanza",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/download.png",
+        "compounds": 1,
+        "properties": 0,
+        "min_price": null
+    },
+    {
+        "developerId": 106,
+        "name": "شركه مصر للتنميه السياحيه - Misr Tourism Development Company",
+        "slug": "106--misr-tourism-development-company",
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/nGMgkr47eJAxDbL2kgJWXSH4bmxonNAmico_golf_el_solimaneya.jpg",
+        "compounds": 1,
+        "properties": 4,
+        "min_price": "6500000.0"
+    }
+]

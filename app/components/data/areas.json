@@ -1,0 +1,154 @@
+[
+    {
+        "id": 2,
+        "name": "القاهرة الجديدة",
+        "slug": "القاهرة-الجديدة",
+        "image": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/area/image/2/New_Cairo.jpg",
+        "compounds": 123,
+        "properties": 793
+    },
+    {
+        "id": 1,
+        "name": "مدينه السادس من اكتوبر",
+        "slug": "مدينه-السادس-من-اكتوبر",
+        "image": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/area/image/1/6th_october_city.jpg",
+        "compounds": 79,
+        "properties": 474
+    },
+    {
+        "id": 9,
+        "name": "العاصمة الإدارية الجديدة",
+        "slug": "العاصمة-الإدارية-الجديدة",
+        "image": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/area/image/9/New_Capital.jpg",
+        "compounds": 90,
+        "properties": 794
+    },
+    {
+        "id": 10,
+        "name": "مدينة المستقبل",
+        "slug": "مدينة-المستقبل",
+        "image": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/area/image/10/44.jpg",
+        "compounds": 18,
+        "properties": 148
+    },
+    {
+        "id": 4,
+        "name": "العين السخنة",
+        "slug": "العين-السخنة",
+        "image": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/area/image/4/EL-sokhna.jpg",
+        "compounds": 41,
+        "properties": 250
+    },
+    {
+        "id": 3,
+        "name": "الساحل الشمالي",
+        "slug": "الساحل-الشمالي",
+        "image": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/area/image/3/Elsahel.jpg",
+        "compounds": 83,
+        "properties": 547
+    },
+    {
+        "id": 5,
+        "name": "الجونة",
+        "slug": "الجونة",
+        "image": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/area/image/5/El-Gouna.jpg",
+        "compounds": 13,
+        "properties": 26
+    },
+    {
+        "id": 16,
+        "name": "هيليوبوليس الجديدة",
+        "slug": "هيليوبوليس-الجديدة",
+        "image": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/compound_image/image/1078/88s6BHjqg4Nt1SaCPvc6japMI9TyDh.jpg",
+        "compounds": 2,
+        "properties": 10
+    },
+    {
+        "id": 26,
+        "name": "الشيخ زايد",
+        "slug": "الشيخ-زايد",
+        "image": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/area/image/26/Elshekh_Zaied.jpeg",
+        "compounds": 37,
+        "properties": 188
+    },
+    {
+        "id": 18,
+        "name": "الغردقة",
+        "slug": "الغردقة",
+        "image": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/area/image/18/Hurghada.jpg",
+        "compounds": 2,
+        "properties": 5
+    },
+    {
+        "id": 17,
+        "name": "الأسكندرية",
+        "slug": "الأسكندرية",
+        "image": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/area/image/17/Alexandria.jpg",
+        "compounds": 2,
+        "properties": 7
+    },
+    {
+        "id": 8,
+        "name": "الشروق",
+        "slug": "الشروق",
+        "image": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/area/image/8/Sherok.jpg",
+        "compounds": 10,
+        "properties": 60
+    },
+    {
+        "id": 19,
+        "name": "راس سدر",
+        "slug": "راس-سدر",
+        "image": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/compound_image/image/6791/Screenshot_1.png",
+        "compounds": 4,
+        "properties": 24
+    },
+    {
+        "id": 6,
+        "name": "سوماباي",
+        "slug": "سوماباي",
+        "image": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/area/image/6/1_ce5c2_lg.jpg",
+        "compounds": 10,
+        "properties": 49
+    },
+    {
+        "id": 29,
+        "name": "القاهره",
+        "slug": "القاهره",
+        "image": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/compound_image/image/4984/7.png",
+        "compounds": 3,
+        "properties": 7
+    },
+    {
+        "id": 13,
+        "name": "بورسعيد",
+        "slug": "بورسعيد",
+        "image": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/compound_image/image/1588/Q1uTpi4oUf8KyGDBoxhuhTfwwG8Fe4.png",
+        "compounds": 1,
+        "properties": 3
+    },
+    {
+        "id": 12,
+        "name": "سهل حشيش",
+        "slug": "سهل-حشيش",
+        "image": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/area/image/12/Elsahel.jpg",
+        "compounds": 1,
+        "properties": 1
+    },
+    {
+        "id": 22,
+        "name": "معادي",
+        "slug": "معادي",
+        "image": null,
+        "compounds": 1,
+        "properties": 1
+    },
+    {
+        "id": 27,
+        "name": "مقطم",
+        "slug": "مقطم",
+        "image": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/compound_image/image/145/NGjsDBBARZlnPnHsab23aWhHiSI0842.jpg",
+        "compounds": 1,
+        "properties": 11
+    }
+]

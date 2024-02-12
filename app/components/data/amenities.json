@@ -1,0 +1,366 @@
+[
+    {
+        "value": 1,
+        "options": {
+            "displayedValue": "حديقه",
+            "image": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/amenity/image/1/Default_Icon.svg"
+        }
+    },
+    {
+        "value": 2,
+        "options": {
+            "displayedValue": "رووف",
+            "image": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/amenity/image/2/Default_Icon.svg"
+        }
+    },
+    {
+        "value": 3,
+        "options": {
+            "displayedValue": "ممرات  للدراجات",
+            "image": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/amenity/image/3/bicycle_lane.svg"
+        }
+    },
+    {
+        "value": 4,
+        "options": {
+            "displayedValue": "دعم ذوي الإعاقة",
+            "image": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/amenity/image/4/gated_parcels.svg"
+        }
+    },
+    {
+        "value": 5,
+        "options": {
+            "displayedValue": "التشطيبات",
+            "image": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/amenity/image/5/finishing.svg"
+        }
+    },
+    {
+        "value": 6,
+        "options": {
+            "displayedValue": "مسارات الركض",
+            "image": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/amenity/image/6/jogging_trail.svg"
+        }
+    },
+    {
+        "value": 7,
+        "options": {
+            "displayedValue": "حمامات السباحة الخارجية",
+            "image": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/amenity/image/7/Outdoor_pools.svg"
+        }
+    },
+    {
+        "value": 8,
+        "options": {
+            "displayedValue": "المساجد",
+            "image": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/amenity/image/8/Mosque.svg"
+        }
+    },
+    {
+        "value": 9,
+        "options": {
+            "displayedValue": "أندية رياضية",
+            "image": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/amenity/image/9/Sports_Club.svg"
+        }
+    },
+    {
+        "value": 10,
+        "options": {
+            "displayedValue": "مركز تجاري",
+            "image": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/amenity/image/10/Business_Hub0000.svg"
+        }
+    },
+    {
+        "value": 11,
+        "options": {
+            "displayedValue": "منطقة تجارية",
+            "image": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/amenity/image/11/Commercial_strip_.svg"
+        }
+    },
+    {
+        "value": 12,
+        "options": {
+            "displayedValue": "مراكز طبية",
+            "image": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/amenity/image/12/Medical_center.svg"
+        }
+    },
+    {
+        "value": 13,
+        "options": {
+            "displayedValue": "المدراس ",
+            "image": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/amenity/image/13/School.svg"
+        }
+    },
+    {
+        "value": 14,
+        "options": {
+            "displayedValue": "جراج للسيارات تحت الأرض",
+            "image": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/amenity/image/14/Parking.svg"
+        }
+    },
+    {
+        "value": 15,
+        "options": {
+            "displayedValue": "البنية التحتية",
+            "image": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/amenity/image/15/Default_Icon.svg"
+        }
+    },
+    {
+        "value": 16,
+        "options": {
+            "displayedValue": "مساحة المشروع",
+            "image": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/amenity/image/16/Project_Area.svg"
+        }
+    },
+    {
+        "value": 17,
+        "options": {
+            "displayedValue": "نسبة الوحدات الساكنة",
+            "image": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/amenity/image/17/Default_Icon.svg"
+        }
+    },
+    {
+        "value": 18,
+        "options": {
+            "displayedValue": "نسبة الإشغال",
+            "image": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/amenity/image/18/footprint_area.svg"
+        }
+    },
+    {
+        "value": 19,
+        "options": {
+            "displayedValue": "نادي اجتماعي",
+            "image": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/amenity/image/19/Sports_Club.svg"
+        }
+    },
+    {
+        "value": 20,
+        "options": {
+            "displayedValue": "تراس",
+            "image": null
+        }
+    },
+    {
+        "value": 21,
+        "options": {
+            "displayedValue": "غرفه سائق",
+            "image": null
+        }
+    },
+    {
+        "value": 22,
+        "options": {
+            "displayedValue": "غرفه مربيه",
+            "image": null
+        }
+    },
+    {
+        "value": 23,
+        "options": {
+            "displayedValue": "مطل علي البحر",
+            "image": null
+        }
+    },
+    {
+        "value": 24,
+        "options": {
+            "displayedValue": "مطل علي حمام سباحه",
+            "image": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/amenity/image/24/Pools.svg"
+        }
+    },
+    {
+        "value": 25,
+        "options": {
+            "displayedValue": "مطل علي حديقه",
+            "image": null
+        }
+    },
+    {
+        "value": 26,
+        "options": {
+            "displayedValue": "مطل علي لاجون",
+            "image": null
+        }
+    },
+    {
+        "value": 27,
+        "options": {
+            "displayedValue": "صف اول",
+            "image": null
+        }
+    },
+    {
+        "value": 28,
+        "options": {
+            "displayedValue": "صف تاني",
+            "image": null
+        }
+    },
+    {
+        "value": 29,
+        "options": {
+            "displayedValue": "صف ثالث",
+            "image": null
+        }
+    },
+    {
+        "value": 30,
+        "options": {
+            "displayedValue": "حمام سباحه خاص",
+            "image": null
+        }
+    },
+    {
+        "value": 31,
+        "options": {
+            "displayedValue": "كابينه",
+            "image": null
+        }
+    },
+    {
+        "value": 32,
+        "options": {
+            "displayedValue": "غرفه معيشه",
+            "image": null
+        }
+    },
+    {
+        "value": 33,
+        "options": {
+            "displayedValue": "غير مطل علي البحر",
+            "image": null
+        }
+    },
+    {
+        "value": 34,
+        "options": {
+            "displayedValue": "صف رابع",
+            "image": null
+        }
+    },
+    {
+        "value": 35,
+        "options": {
+            "displayedValue": "صف خامس",
+            "image": null
+        }
+    },
+    {
+        "value": 36,
+        "options": {
+            "displayedValue": "منطقه شواء",
+            "image": null
+        }
+    },
+    {
+        "value": 37,
+        "options": {
+            "displayedValue": "منطقه لعب للاطفال",
+            "image": null
+        }
+    },
+    {
+        "value": 38,
+        "options": {
+            "displayedValue": "سبا مشترك",
+            "image": null
+        }
+    },
+    {
+        "value": 39,
+        "options": {
+            "displayedValue": "خدمه ارشاد العملاء",
+            "image": null
+        }
+    },
+    {
+        "value": 40,
+        "options": {
+            "displayedValue": "جيم خاص",
+            "image": null
+        }
+    },
+    {
+        "value": 41,
+        "options": {
+            "displayedValue": "حمام سباحه للاطفال",
+            "image": null
+        }
+    },
+    {
+        "value": 42,
+        "options": {
+            "displayedValue": "خدمه مربيه اطفال",
+            "image": null
+        }
+    },
+    {
+        "value": 43,
+        "options": {
+            "displayedValue": "جيم مشترك",
+            "image": null
+        }
+    },
+    {
+        "value": 44,
+        "options": {
+            "displayedValue": "جراج",
+            "image": null
+        }
+    },
+    {
+        "value": 45,
+        "options": {
+            "displayedValue": "جاكوزي",
+            "image": null
+        }
+    },
+    {
+        "value": 46,
+        "options": {
+            "displayedValue": "حديقه خاصه",
+            "image": null
+        }
+    },
+    {
+        "value": 47,
+        "options": {
+            "displayedValue": "تكيف مركزي",
+            "image": null
+        }
+    },
+    {
+        "value": 48,
+        "options": {
+            "displayedValue": "بلكونه",
+            "image": null
+        }
+    },
+    {
+        "value": 49,
+        "options": {
+            "displayedValue": "دولاب حائط",
+            "image": null
+        }
+    },
+    {
+        "value": 50,
+        "options": {
+            "displayedValue": "اجهزه مطبخ",
+            "image": null
+        }
+    },
+    {
+        "value": 51,
+        "options": {
+            "displayedValue": "دريسنج روم",
+            "image": null
+        }
+    },
+    {
+        "value": 52,
+        "options": {
+            "displayedValue": "فود كورت",
+            "image": null
+        }
+    }
+]

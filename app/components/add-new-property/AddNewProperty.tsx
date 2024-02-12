@@ -344,7 +344,6 @@ const AddNewProperty = () => {
                             value,
                         ]);
 
-                        console.log(propertyImages);
                     }}
                     value={imageSrc}
                     allImages={allPropertyImages}

@@ -31,7 +31,7 @@ const Sort = ({ onSortChange }: SortProps) => {
                 placeholder={placeholder}
                 className="text-right text-slate-500 text-sm transition font-medium border-0"
                 classNamePrefix="select pl-28"
-                isSearchable
+                isSearchable={false}
                 isClearable
                 isRtl={true}
                 classNames={{

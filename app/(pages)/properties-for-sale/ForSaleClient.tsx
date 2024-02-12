@@ -12,6 +12,7 @@ const ForSaleClient: React.FC<ForSaleClientProps> = ({
     currentUser,
 }) => {
     const parent = "properties-for-sale";
+
     return (
         <ClientOnly>
             <>
@@ -35,6 +36,19 @@ const ForSaleClient: React.FC<ForSaleClientProps> = ({
                         />
                     ))}
                 </div>
+
+                <div
+                    className="
+                            pt-2
+                            mt-8
+                            grid 
+                            grid-cols-1
+                            sm:grid-cols-3
+                            md:grid-cols-4 
+                            gap-8
+                            relative
+                        "
+                ></div>
             </>
         </ClientOnly>
     );

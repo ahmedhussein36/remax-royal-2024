@@ -7,11 +7,11 @@ interface IParams {
 
 export default async function getCompoundId(params: IParams) {
     try {
-        const { compounId, slug } = params;
+        const { compounId } = params;
 
         const compound = await prisma.compound.findUnique({
             where: {
-                id: slug,
+                id: compounId,
             },
             include: {
                 developer: true,
@@ -33,3 +33,9 @@ export default async function getCompoundId(params: IParams) {
         throw new Error(error);
     }
 }
+
+interface IParams {
+    compounId?: string;
+    slug?: string
+}
+

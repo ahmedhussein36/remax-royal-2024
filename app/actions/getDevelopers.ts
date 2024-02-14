@@ -1,7 +1,8 @@
 import prisma from "@/app/libs/prismadb";
 
 export interface IParams {
-    name: string
+    name?: string 
+    
 }
 
 export default async function getDevelopers(params: IParams) {
@@ -21,7 +22,7 @@ export default async function getDevelopers(params: IParams) {
         const developers = await prisma.developer.findMany({
             where: query,
             orderBy: {
-                name: "asc",
+                developerId: "asc",
             },
         });
 

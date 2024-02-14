@@ -118,14 +118,14 @@ model Property {
 }
 
 model Compound {
-  id                               String     @id @default(auto()) @map("_id") @db.ObjectId
-  compoundId                       Int        @unique
-  createdAt                        DateTime   @default(now())
-  updatedAt                        DateTime   @updatedAt
+  id                               String   @id @default(auto()) @map("_id") @db.ObjectId
+  compoundId                       Int      @unique
+  createdAt                        DateTime @default(now())
+  updatedAt                        DateTime @updatedAt
   name                             String
   description                      String?
   is_super                         Boolean?
-  slug                             String     @unique
+  slug                             String   @unique
   properties_count                 Int?
   image                            String?
   min_price                        Int?
@@ -138,8 +138,8 @@ model Compound {
   sponsored                        Int?
   max_installment_years            Int?
   min_down_payment                 Int?
-  min_ready_by                     DateTime?
-  properties                       Property[]
+  min_ready_by                     String?
+  properties_ids                   Int[]
   sum_10_properties_min_price      Int?
   lat                              Float?
   long                             Float?
@@ -154,6 +154,8 @@ model Compound {
   favorite                         Boolean?
   property_types_count_highlighted Json?
 
+  properties Property[]
+
   developer   Developer @relation(fields: [developerId], references: [developerId])
   developerId Int
   area        Area      @relation(fields: [areaId], references: [areaId])
@@ -161,15 +163,15 @@ model Compound {
 }
 
 model Developer {
-  id            String     @id @default(auto()) @map("_id") @db.ObjectId
-  developerId   Int        @unique
+  id            String             @id @default(auto()) @map("_id") @db.ObjectId
+  developerId   Int                @unique
   name          String
-  slug          String
+  slug          String             @unique
   image         String?
   min_price     String?
   description   String?
-  created_at    DateTime?  @default(now())
-  updated_at    DateTime?  @updatedAt
+  created_at    DateTime?          @default(now())
+  updated_at    DateTime?          @updatedAt
   add_to_slider Boolean?
   logo_image    Json?
   official_name String?
@@ -177,24 +179,31 @@ model Developer {
   properties    Int
   compound      Compound[]
   property      Property[]
+  area          developersOnArea[]
 }
 
 model Area {
-  id             String     @id @default(auto()) @map("_id") @db.ObjectId
-  areaId         Int        @unique
-  slug           String
-  all_slug       Json?
-  name           String
-  description    String
-  created_at     DateTime   @default(now())
-  updated_at     DateTime   @updatedAt
-  manual_ranking Int
-  lat            Int
-  long           Int
-  image          Json
-  is_off_season  Boolean
-  is_super       Boolean
-  parent_area_id Int?
-  compounds      Compound[]
-  Property       Property[]
+  id          String             @id @default(auto()) @map("_id") @db.ObjectId
+  areaId      Int                @unique
+  slug        String             @unique
+  name        String
+  description String?
+  created_at  DateTime           @default(now())
+  updated_at  DateTime           @updatedAt
+  lat         Float?
+  long        Float?
+  image       String
+  compounds   Compound[]
+  Property    Property[]
+  developer   developersOnArea[]
+}
+
+model developersOnArea {
+  id          String    @id @default(auto()) @map("_id") @db.ObjectId
+  developerId Int
+  areaId      Int
+  developer   Developer @relation(fields: [developerId], references: [developerId])
+  area        Area      @relation(fields: [areaId], references: [areaId])
+
+  @@unique([developerId, areaId])
 }

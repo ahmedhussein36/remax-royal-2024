@@ -33,7 +33,7 @@ const Card: React.FC<CardProps> = ({
     const minPriceInt = Math.floor(minPrice || 0);
 
     const formattedMinPrice = formatNumber(minPriceInt) || null;
-    const placeholder = "/assets/images/rem-placeholder.jpg";
+    const placeholder = "/assets/images/placeholder.jpg";
 
     return (
         <Link
@@ -63,16 +63,18 @@ const Card: React.FC<CardProps> = ({
             </div>
             <div>
                 <div className="flex flex-col justify-center items-center gap-3 w-full p-2">
-                    <h2 className=" font-bold text-center text-slate-600">{title}</h2>
+                    <h2 className=" font-bold text-center text-slate-600">
+                        {title}
+                    </h2>
                 </div>
 
-                <div className=" flex justify-center items-center py-3 gap-2 w-full">
+               {minPrice && <div className=" flex justify-center items-center py-3 gap-2 w-full">
                     <span>أسعار تبدأ من</span>
                     <span className=" font-bold text-lg">
                         {formattedMinPrice}
                     </span>
                     جنيه
-                </div>
+                </div>}
 
                 <div className=" flex gap-4 justify-center items-center w-full text-gray-600">
                     <div>

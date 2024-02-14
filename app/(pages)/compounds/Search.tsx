@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, useCallback } from "react";
-import SearchInput, { SearchValue } from "./inputs/SearchInput";
+import SearchInput, { SearchValue } from "@/app/components/inputs/SearchInput";
 import { useRouter, useSearchParams } from "next/navigation";
 import qs from "query-string";
 
@@ -24,7 +24,7 @@ const Search = ({ placeholder }: { placeholder?: string }) => {
 
         const url = qs.stringifyUrl(
             {
-                url: "/developers",
+                url: "/compounds",
                 query: updatedQuery,
             },
             { skipNull: true }
@@ -38,11 +38,10 @@ const Search = ({ placeholder }: { placeholder?: string }) => {
             <div className="flex justify-center items-center mt-8 w-full relative">
                 <SearchInput
                     id="name"
-                    label="البحث عن مطورين"
-                    Placeholder={"ابحث عن مطورين ..."}
+                    Placeholder={"ابحث عن كمبوند ..."}
                     value={name}
                     onChange={(e: SearchValue) => setName(e.target.value)}
-                    className="w-full md:w-1/2 lg:w-[400px] px-4 rounded-full border-2"
+                    className="w-full md:w-1/2 lg:w-[400px] rounded-full border-2 px-4"
                     button
                     onclick={onSubmit}
                 />
@@ -51,7 +50,7 @@ const Search = ({ placeholder }: { placeholder?: string }) => {
                 {name !== "" && (
                     <button
                         onClick={() => {
-                            router.push("/developers");
+                            router.push("/compounds");
                             setName("");
                         }}
                         className=" text-red-500 underline"

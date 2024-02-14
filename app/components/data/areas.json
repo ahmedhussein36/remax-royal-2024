@@ -1,154 +1,173 @@
 [
     {
-        "id": 2,
+        "areaId": 2,
+        "description": "",
         "name": "القاهرة الجديدة",
         "slug": "القاهرة-الجديدة",
-        "image": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/area/image/2/New_Cairo.jpg",
-        "compounds": 123,
-        "properties": 793
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/New_Cairo.jpg",
+        "lat": 30.035216603131666,
+        "long": 31.51016235351562
     },
     {
-        "id": 1,
+        "areaId": 1,
+        "description": "",
         "name": "مدينه السادس من اكتوبر",
         "slug": "مدينه-السادس-من-اكتوبر",
-        "image": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/area/image/1/6th_october_city.jpg",
-        "compounds": 79,
-        "properties": 474
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/6th_october_city.jpg",
+        "lat": 29.987055162623875,
+        "long": 30.945053100585934
     },
     {
-        "id": 9,
+        "areaId": 9,
+        "description": "",
         "name": "العاصمة الإدارية الجديدة",
         "slug": "العاصمة-الإدارية-الجديدة",
-        "image": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/area/image/9/New_Capital.jpg",
-        "compounds": 90,
-        "properties": 794
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/New_Capital.jpg",
+        "lat": 30.007273923504556,
+        "long": 31.746368408203125
     },
     {
-        "id": 10,
+        "areaId": 10,
+        "description": "",
         "name": "مدينة المستقبل",
         "slug": "مدينة-المستقبل",
-        "image": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/area/image/10/44.jpg",
-        "compounds": 18,
-        "properties": 148
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/44.jpg",
+        "lat": 30.021543509740027,
+        "long": 31.22314453125
     },
     {
-        "id": 4,
+        "areaId": 4,
+        "description": "",
         "name": "العين السخنة",
         "slug": "العين-السخنة",
-        "image": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/area/image/4/EL-sokhna.jpg",
-        "compounds": 41,
-        "properties": 250
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/EL-sokhna.jpg",
+        "lat": 29.63435225887697,
+        "long": 32.34443664550781
     },
     {
-        "id": 3,
+        "areaId": 3,
+        "description": "",
         "name": "الساحل الشمالي",
         "slug": "الساحل-الشمالي",
-        "image": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/area/image/3/Elsahel.jpg",
-        "compounds": 83,
-        "properties": 547
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/Elsahel.jpg",
+        "lat": 30.82147402917217,
+        "long": 29.012832641601562
     },
     {
-        "id": 5,
+        "areaId": 5,
+        "description": "",
         "name": "الجونة",
         "slug": "الجونة",
-        "image": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/area/image/5/El-Gouna.jpg",
-        "compounds": 13,
-        "properties": 26
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/El-Gouna.jpg",
+        "lat": 30.021543509740027,
+        "long": 31.22314453125
     },
     {
-        "id": 16,
+        "areaId": 16,
+        "description": "",
         "name": "هيليوبوليس الجديدة",
         "slug": "هيليوبوليس-الجديدة",
-        "image": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/compound_image/image/1078/88s6BHjqg4Nt1SaCPvc6japMI9TyDh.jpg",
-        "compounds": 2,
-        "properties": 10
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/88s6BHjqg4Nt1SaCPvc6japMI9TyDh.jpg",
+        "lat": 30.021543509740027,
+        "long": 31.22314453125
     },
     {
-        "id": 26,
+        "areaId": 26,
+        "description": "",
         "name": "الشيخ زايد",
         "slug": "الشيخ-زايد",
-        "image": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/area/image/26/Elshekh_Zaied.jpeg",
-        "compounds": 37,
-        "properties": 188
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/Elshekh_Zaied.jpeg",
+        "lat": 29.97515985012391,
+        "long": 30.890808105468746
     },
     {
-        "id": 18,
+        "areaId": 18,
+        "description": "",
         "name": "الغردقة",
         "slug": "الغردقة",
-        "image": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/area/image/18/Hurghada.jpg",
-        "compounds": 2,
-        "properties": 5
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/Hurghada.jpg",
+        "lat": 27.222556,
+        "long": 33.8307062
     },
     {
-        "id": 17,
+        "areaId": 17,
+        "description": "",
         "name": "الأسكندرية",
         "slug": "الأسكندرية",
-        "image": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/area/image/17/Alexandria.jpg",
-        "compounds": 2,
-        "properties": 7
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/Alexandria.jpg",
+        "lat": 31.182846836676664,
+        "long": 29.896545410156246
     },
     {
-        "id": 8,
+        "areaId": 8,
+        "description": "",
         "name": "الشروق",
         "slug": "الشروق",
-        "image": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/area/image/8/Sherok.jpg",
-        "compounds": 10,
-        "properties": 60
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/Sherok.jpg",
+        "lat": 30.021543509740027,
+        "long": 31.22314453125
     },
     {
-        "id": 19,
+        "areaId": 19,
+        "description": "",
         "name": "راس سدر",
         "slug": "راس-سدر",
-        "image": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/compound_image/image/6791/Screenshot_1.png",
-        "compounds": 4,
-        "properties": 24
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/Screenshot_1.png",
+        "lat": 30.021543509740027,
+        "long": 31.22314453125
     },
     {
-        "id": 6,
+        "areaId": 6,
+        "description": "",
         "name": "سوماباي",
         "slug": "سوماباي",
-        "image": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/area/image/6/1_ce5c2_lg.jpg",
-        "compounds": 10,
-        "properties": 49
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/1_ce5c2_lg.jpg",
+        "lat": 30.021543509740027,
+        "long": 31.22314453125
     },
     {
-        "id": 29,
+        "areaId": 29,
+        "description": "",
         "name": "القاهره",
         "slug": "القاهره",
-        "image": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/compound_image/image/4984/7.png",
-        "compounds": 3,
-        "properties": 7
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/7.png",
+        "lat": 30.021543509740027,
+        "long": 31.22314453125
     },
     {
-        "id": 13,
+        "areaId": 13,
+        "description": "",
         "name": "بورسعيد",
         "slug": "بورسعيد",
-        "image": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/compound_image/image/1588/Q1uTpi4oUf8KyGDBoxhuhTfwwG8Fe4.png",
-        "compounds": 1,
-        "properties": 3
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/Q1uTpi4oUf8KyGDBoxhuhTfwwG8Fe4.png",
+        "lat": null,
+        "long": null
     },
     {
-        "id": 12,
+        "areaId": 12,
+        "description": "",
         "name": "سهل حشيش",
         "slug": "سهل-حشيش",
-        "image": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/area/image/12/Elsahel.jpg",
-        "compounds": 1,
-        "properties": 1
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/Elsahel.jpg",
+        "lat": 30.021543509740027,
+        "long": 31.22314453125
     },
     {
-        "id": 22,
+        "areaId": 22,
+        "description": "",
         "name": "معادي",
         "slug": "معادي",
         "image": null,
-        "compounds": 1,
-        "properties": 1
+        "lat": 30.021543509740027,
+        "long": 31.22314453125
     },
     {
-        "id": 27,
+        "areaId": 27,
+        "description": "",
         "name": "مقطم",
         "slug": "مقطم",
-        "image": "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/compound_image/image/145/NGjsDBBARZlnPnHsab23aWhHiSI0842.jpg",
-        "compounds": 1,
-        "properties": 11
+        "image": "https://res.cloudinary.com/dpzvseigo/image/upload/v1707584379/developer/NGjsDBBARZlnPnHsab23aWhHiSI0842.jpg",
+        "lat": 30.021543509740027,
+        "long": 31.22314453125
     }
 ]

@@ -57,15 +57,16 @@ export const navItems = [
         name: "للإيجار",
         slug: "/properties-for-rent",
     },
+
     {
         id: "4",
-        name: "المطورون",
-        slug: "/developers",
+        name: "كمبوندات",
+        slug: "/compounds",
     },
     {
         id: "5",
-        name: "كمبوندات",
-        slug: "/compounds",
+        name: "المطورون",
+        slug: "/developers",
     },
     {
         id: "6",

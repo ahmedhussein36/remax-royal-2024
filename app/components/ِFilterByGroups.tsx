@@ -20,7 +20,7 @@ const FilterByGroups: React.FC<{ parent: string }> = ({ parent }) => {
                         rounded-lg 
                         grid grid-cols-4
                         xl:grid-cols-9
-                        lg:grid-cols-8 md:grid-cols-6 sm:grid-cols-3 gap-4 gap-y-4
+                        lg:grid-cols-8 md:grid-cols-6 sm:grid-cols-3 gap-3 gap-y-2
                         justify-items-start"
         >
             {allTypes.map((item) => (

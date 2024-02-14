@@ -1,0 +1,36 @@
+import prisma from "@/app/libs/prismadb";
+
+interface IParams {
+    id?: string;
+    developerId?: number;
+}
+
+export default async function getCompoundById(params: IParams) {
+    try {
+        const { id } = params;
+
+        const compound = await prisma.compound.findUnique({
+            where: {
+                id: id,
+            },
+            include: {
+                developer: true,
+                area : true,
+            }
+        })
+
+        if (!compound) {
+            return null;
+        }
+
+        const safecompound = {
+            ...compound,
+            createdAat: compound?.createdAt?.toString()
+
+        }
+
+        return safecompound;
+    } catch (error: any) {
+        throw new Error(error);
+    }
+}

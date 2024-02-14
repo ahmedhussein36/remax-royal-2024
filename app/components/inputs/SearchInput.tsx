@@ -61,12 +61,12 @@ const SearchInput: React.FC<InputProps> = ({
                     placeholder={Placeholder}
                     className={` ${className}
                        ${button ? "w-auto" : "w-full"} 
-                        p-3 
+                        
                        
                         ${
                             button
                                 ? "rounded-none border-none h-full p-2 bg-none"
-                                : " rounded-md  bg-white "
+                                : " rounded-md  bg-white p-3 "
                         }
                         border
                         rounded-md
@@ -79,7 +79,7 @@ const SearchInput: React.FC<InputProps> = ({
                 {button && (
                     <button
                         onClick={onclick}
-                        className=" bg-red-500 p-4 rounded-full m-1 hover:bg-red-600 transition-all duration-300 ease-in-out"
+                        className=" bg-red-500 p-2 rounded-full m-1 hover:bg-red-600 transition-all duration-300 ease-in-out"
                     >
                         <IoSearch color="#ffff" size={20} />
                     </button>

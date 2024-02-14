@@ -15,6 +15,9 @@ export type SafeArea = Omit<Area, "createdAt"> & {
 export type SafeListing = Omit<Listing, "createdAt"> & {
   createdAt: string;
 };
+export type SafeDeveloper = Omit<Developer, "createdAt"> & {
+  createdAt: string;
+};
 
 export type SafeReservation = Omit<
   Reservation,
@@ -35,10 +38,3 @@ export type SafeUser = Omit<
   emailVerified: string | null;
 };
 
-export type SafeDeveloper = Omit<
-  Developer,
-  "createdAt" | "updatedAt" | "emailVerified"
-> & {
-  createdAt: string;
-  updatedAt: string;
-};

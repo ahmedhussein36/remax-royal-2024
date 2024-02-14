@@ -1,10 +1,9 @@
-import { SafeUser } from "@/app/types";
+import { SafeDeveloper, SafeUser } from "@/app/types";
 import ClientOnly from "@/app/components/ClientOnly";
 import Card from "@/app/components/Card";
-import Search from "@/app/components/Search";
 
 interface DeveloperClientProps {
-    developers: any[];
+    developers: SafeDeveloper[] | any;
     currentUser?: SafeUser | null;
     params?: string;
 }
@@ -19,8 +18,6 @@ const DeveloperClient: React.FC<DeveloperClientProps> = ({
     return (
         <ClientOnly>
             <div className="flex flex-col w-full justify-center items-center">
-                
-
                 <div
                     className="
                             pt-2
@@ -34,7 +31,7 @@ const DeveloperClient: React.FC<DeveloperClientProps> = ({
                             relative
                         "
                 >
-                    {developers.map((developer: any, index) => (
+                    {developers.map((developer: any) => (
                         <Card
                             key={developer.id}
                             logo={developer.image}
@@ -42,7 +39,7 @@ const DeveloperClient: React.FC<DeveloperClientProps> = ({
                             compoundsCount={developer.compounds}
                             propertiesCount={developer.properties}
                             minPrice={developer.min_price}
-                            slug={developer.slug}
+                            slug={developer.id}
                             parent={parent}
                         />
                     ))}

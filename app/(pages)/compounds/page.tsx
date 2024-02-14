@@ -3,16 +3,16 @@ import EmptyStateAr from "@/app/components/EmptyStateAr";
 import getCurrentUser from "@/app/actions/getCurrentUser";
 import ClientOnly from "@/app/components/ClientOnly";
 import Heading from "@/app/components/Heading";
-import DeveloperClient from "./DeveloperClient";
-import getDevelopers, { IParams } from "@/app/actions/getDevelopers";
-import Search from "@/app/components/Search";
+import getCompounds, { IParams } from "@/app/actions/getCompounds";
+import Search from "./Search";
+import CompoundClient from "./CompoundClient";
 
 interface DevelopersPageProps {
     searchParams: IParams;
 }
 
-const DevelopersPage = async ({ searchParams }: DevelopersPageProps) => {
-    const developers = await getDevelopers(searchParams);
+const CompoundsPage = async ({ searchParams }: DevelopersPageProps) => {
+    const compounds = await getCompounds(searchParams);
     const currentUser = await getCurrentUser();
 
     return (
@@ -22,8 +22,8 @@ const DevelopersPage = async ({ searchParams }: DevelopersPageProps) => {
                     <div>
                         {" "}
                         <Heading
-                            title={"جميع المطورين العقاريين"}
-                            subtitle={`نتائج ${developers.length || 0}`}
+                            title={"كمبوندات في مصر "}
+                            subtitle={`نتائج ${compounds.length || 0}`}
                         />
                     </div>
 
@@ -35,13 +35,10 @@ const DevelopersPage = async ({ searchParams }: DevelopersPageProps) => {
                 </div>
 
                 <div className="flex justify-center items-center mt-4 w-full">
-                    {developers.length !== 0 ? (
-                        <DeveloperClient
-                            developers={developers}
-                            currentUser={currentUser}
-                        />
+                    {compounds.length !== 0 ? (
+                        <CompoundClient compounds= {compounds}  />
                     ) : (
-                        <EmptyStateAr />
+                        <EmptyStateAr title="لايوجد نتائج متوفرة" />
                     )}
                 </div>
             </Container>
@@ -49,4 +46,4 @@ const DevelopersPage = async ({ searchParams }: DevelopersPageProps) => {
     );
 };
 
-export default DevelopersPage;
+export default CompoundsPage;

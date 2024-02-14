@@ -1,6 +1,8 @@
+"use client";
 import { SafeProperty, SafeUser } from "@/app/types";
 import PropertyCard from "@/app/components/properties/PropertyCard";
 import ClientOnly from "@/app/components/ClientOnly";
+import axios from "axios";
 
 interface ForSaleClientProps {
     listings: SafeProperty[];

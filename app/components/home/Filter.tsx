@@ -119,7 +119,7 @@ const Filter = () => {
                 ))}
             </div>
 
-            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4 items-center gap-2 w-full">
+            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-7 items-center gap-2 w-full">
                 {/* <div className="">
                     <CitySelect
                         isSearchable={false}

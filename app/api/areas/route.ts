@@ -13,20 +13,13 @@ export async function POST(request: Request) {
     const body = await request.json();
     const {
         areaId,
-        developerId,
         slug,
-        all_slug,
         name,
         description,
-        manual_ranking,
         lat,
         long,
         image,
-        is_off_season,
-        is_super,
-        parent_area_id,
-        compounds,
-        Property,
+
     } = body;
 
     Object.keys(body).forEach((value: any) => {
@@ -39,19 +32,11 @@ export async function POST(request: Request) {
         data: {
             areaId,
             slug,
-            all_slug,
             name,
             description,
-            manual_ranking,
             lat,
             long,
             image,
-            is_off_season,
-            is_super,
-            parent_area_id,
-            compounds,
-            Property,
-
         },
     });
 

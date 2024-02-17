@@ -31,7 +31,7 @@ export default async function getCompounds(params: IParams) {
                 area: true
             },
             orderBy: {
-                name: "asc",
+                createdAt: "desc",
             },
         });
 

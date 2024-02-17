@@ -54,7 +54,7 @@ export const authOptions: AuthOptions = {
     ],
     pages: {
         signIn: "/",
-        signOut: "/place-ad",
+        signOut: "/",
     },
     debug: process.env.NODE_ENV === "development",
     session: {

@@ -4,20 +4,51 @@ import Button from "@/app/components/Button";
 import ClientOnly from "@/app/components/ClientOnly";
 import Container from "@/app/components/Container";
 import PropretyContacts from "@/app/components/properties/PropretyContacts";
+import { on } from "events";
 import Image from "next/legacy/image";
 import { useState } from "react";
 
 export default function Page() {
-    const [name, setName] = useState("");
-    const [phone, setPhone] = useState("");
+    const [data, setData] = useState({
+        name: "",
+        phone: "",
+    });
+    const [isLoading, setIsLoading] = useState(false);
 
-    const onSubmit = () => {
-        const form = {
-            name: name,
-            phone: phone,
-        };
+    const { name, phone } = data;
 
-        console.log(JSON.stringify(form));
+    const handelChange = (e: any) => {
+        setData({ ...data, [e.target.name]: e.target.value });
+    };
+
+    const onSubmit = async (e: any) => {
+        e.preventDefault();
+        try {
+            if (name === "" || phone === "") {
+                alert("يجب ملئ جميع الحقول");
+            } else {
+                setIsLoading(true);
+                const response = await fetch(
+                    "https://v1.nocodeapi.com/ahmedhussein36/google_sheets/fOUAbkxGGwjmiLnK?tabId=data",
+                    {
+                        method: "POST",
+                        headers: {
+                            "Content-Type": "application/json",
+                        },
+                        body: JSON.stringify([
+                            [name, phone, new Date().toLocaleString()],
+                        ]),
+                    }
+                );
+
+                await response.json();
+                setIsLoading(false);
+                setData({ ...data, name: "", phone: "" });
+                alert("تم ارسال البيانات بنجاح");
+            }
+        } catch (error) {
+            console.log(error);
+        }
     };
 
     const compound = {
@@ -493,6 +524,7 @@ export default function Page() {
                                 للحجز و الاستفسار
                             </div>
                             <form
+                                onSubmit={onSubmit}
                                 id="form"
                                 className=" w-full border-2 flex flex-col gap-3 p-4 rounded-lg bg-slate-100"
                             >
@@ -501,10 +533,7 @@ export default function Page() {
                                     <input
                                         name="name"
                                         value={name}
-                                        onChange={(e) =>
-                                            setName(e.target.value)
-                                        }
-                                        required
+                                        onChange={handelChange}
                                         className="w-full border p-2 py-4 rounded-md"
                                         type="text"
                                         placeholder="ادخل الاسم"
@@ -514,11 +543,8 @@ export default function Page() {
                                     <label htmlFor="phone">رقم الهاتف*</label>
                                     <input
                                         name="phone"
-                                        required
                                         value={phone}
-                                        onChange={(e) =>
-                                            setPhone(e.target.value)
-                                        }
+                                        onChange={handelChange}
                                         className="w-full border p-2 py-4 rounded-md"
                                         id="phone"
                                         type="tel"
@@ -527,12 +553,8 @@ export default function Page() {
                                 </div>
 
                                 <div className="w-full flex flex-col justify-center items-start gap-2">
-                                    <Button
-                                        label={"ارسال"}
-                                        onClick={(e) => {
-                                            e.preventDefault();
-                                            onSubmit();
-                                        }}
+                                    <Button label={`${isLoading ? "جاري الارسال" : "ارسال"}`}
+                                    disabled={isLoading} 
                                     />
                                 </div>
                             </form>

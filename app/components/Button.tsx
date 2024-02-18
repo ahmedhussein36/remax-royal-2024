@@ -6,7 +6,7 @@ import { SyncLoader } from "react-spinners";
 
 interface ButtonProps {
     label: any;
-    onClick: (e: React.MouseEvent<HTMLButtonElement>) => void;
+    onClick?: (e: React.MouseEvent<HTMLButtonElement>) => void;
     disabled?: boolean;
     outline?: boolean;
     small?: boolean;

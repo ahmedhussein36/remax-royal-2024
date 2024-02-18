@@ -4,6 +4,7 @@ import Button from "@/app/components/Button";
 import ClientOnly from "@/app/components/ClientOnly";
 import Container from "@/app/components/Container";
 import PropretyContacts from "@/app/components/properties/PropretyContacts";
+import { el } from "date-fns/locale";
 import { on } from "events";
 import Image from "next/legacy/image";
 import { useState } from "react";
@@ -26,7 +27,15 @@ export default function Page() {
         try {
             if (name === "" || phone === "") {
                 alert("يجب ملئ جميع الحقول");
-            } else {
+            }
+           else if (phone.length < 11 || phone.length > 11) {
+                alert("رقم الهاتف يجب ان يكون 11 رقم");
+            }
+            else if (name.length < 3) {
+                alert("الاسم يجب ان يكون اكبر من 3 حروف");
+            }
+            
+            else {
                 setIsLoading(true);
                 const response = await fetch(
                     "https://v1.nocodeapi.com/ahmedhussein36/google_sheets/fOUAbkxGGwjmiLnK?tabId=data",
@@ -538,6 +547,7 @@ export default function Page() {
                                         type="text"
                                         placeholder="ادخل الاسم"
                                         min={3}
+                                        max={50}
                                         required
                                     />
                                 </div>
@@ -552,6 +562,7 @@ export default function Page() {
                                         type="tel"
                                         placeholder="ادخل رقم هاتفك"
                                         min={11}
+                                        max={11}
                                         required
                                     />
                                 </div>

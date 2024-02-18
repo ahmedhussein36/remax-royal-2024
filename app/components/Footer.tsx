@@ -39,7 +39,7 @@ const Footer = () => {
                             <Link href="/terms-and-conditions">
                                 <span>الشروط و الأحكام</span>
                             </Link>
-                            <Link href="/terms-and-conditions">
+                            <Link href="/privacy-policy">
                                 <span>سياسة الخصوصية</span>
                             </Link>
                         </div>

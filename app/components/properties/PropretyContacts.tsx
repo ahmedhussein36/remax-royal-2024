@@ -33,7 +33,7 @@ const PropretyContacts: React.FC<PropretyContactsProps> = ({
             </button>
             <button
                 onClick={() => {
-                    open(`tel:+2${phone}`);
+                    open(`tel:${phone}`);
                 }}
                 className="flex justify-center items-center gap-2 bg-slate-100 py-2 px-3 rounded-md w-1/2 hover:bg-slate-200 duration-300"
             >

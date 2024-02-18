@@ -27,15 +27,11 @@ export default function Page() {
         try {
             if (name === "" || phone === "") {
                 alert("يجب ملئ جميع الحقول");
-            }
-           else if (phone.length < 11 || phone.length > 11) {
+            } else if (phone.length < 11 || phone.length > 11) {
                 alert("رقم الهاتف يجب ان يكون 11 رقم");
-            }
-            else if (name.length < 3) {
+            } else if (name.length < 3) {
                 alert("الاسم يجب ان يكون اكبر من 3 حروف");
-            }
-            
-            else {
+            } else {
                 setIsLoading(true);
                 const response = await fetch(
                     "https://v1.nocodeapi.com/ahmedhussein36/google_sheets/fOUAbkxGGwjmiLnK?tabId=data",
@@ -65,6 +61,8 @@ export default function Page() {
         slug: "",
         image: "/images/كمبوند-ذا-كريست-القاهرة-الجديدة-Compound-The-Crest-New-Cairo.webp",
         name: " كمبوند ذا كريست القاهرة الجديدة",
+        phone: "20225388918",
+        whatsApp: "20225388918",
         discription: "",
         developer: {
             image: "/images/il-cazar-400xauto.png",
@@ -178,8 +176,8 @@ export default function Page() {
                                 </div>
                                 <div className=" flex-1 flex justify-center items-center my-6 ">
                                     <PropretyContacts
-                                        phone={"0225388918"}
-                                        whatsApp={"0225388918"}
+                                        phone={compound.phone}
+                                        whatsApp={compound.whatsApp}
                                     />
                                 </div>
                             </div>
@@ -370,8 +368,8 @@ export default function Page() {
                                 </div>
                                 <div className="w-full flex-1 flex justify-center items-center my-6 ">
                                     <PropretyContacts
-                                        phone={"0225388918"}
-                                        whatsApp={"0225388918"}
+                                        phone={compound.phone}
+                                        whatsApp={compound.whatsApp}
                                     />
                                 </div>
                             </div>
@@ -496,8 +494,8 @@ export default function Page() {
                                 </div>
                                 <div className="w-full flex-1 flex justify-center items-center my-6 ">
                                     <PropretyContacts
-                                        phone={"0225388918"}
-                                        whatsApp={"0225388918"}
+                                        phone={compound.phone}
+                                        whatsApp={compound.whatsApp}
                                     />
                                 </div>
                             </div>
@@ -568,15 +566,18 @@ export default function Page() {
                                 </div>
 
                                 <div className="w-full flex flex-col justify-center items-start gap-2">
-                                    <Button label={`${isLoading ? "جاري الارسال" : "ارسال"}`}
-                                    disabled={isLoading} 
+                                    <Button
+                                        label={`${
+                                            isLoading ? "جاري الارسال" : "ارسال"
+                                        }`}
+                                        disabled={isLoading}
                                     />
                                 </div>
                             </form>
                             <div className=" flex-1 flex justify-center items-center my-6 ">
                                 <PropretyContacts
-                                    phone={"0225388918"}
-                                    whatsApp={"0225388918"}
+                                    phone={compound.phone}
+                                    whatsApp={compound.whatsApp}
                                 />
                             </div>
                         </div>

@@ -537,6 +537,8 @@ export default function Page() {
                                         className="w-full border p-2 py-4 rounded-md"
                                         type="text"
                                         placeholder="ادخل الاسم"
+                                        min={3}
+                                        required
                                     />
                                 </div>
                                 <div className="w-full flex flex-col justify-center items-start gap-2">
@@ -549,6 +551,8 @@ export default function Page() {
                                         id="phone"
                                         type="tel"
                                         placeholder="ادخل رقم هاتفك"
+                                        min={11}
+                                        required
                                     />
                                 </div>
 

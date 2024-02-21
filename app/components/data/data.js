@@ -77,7 +77,7 @@ export const navItems = [
     {
         id: "7",
         name: "اتصل بنا",
-        slug: "/#",
+        slug: "/contact-us",
     },
     {
         id: "8",

@@ -6,7 +6,6 @@ import Container from "@/app/components/Container";
 import PropretyContacts from "@/app/components/properties/PropretyContacts";
 import Image from "next/legacy/image";
 import { useState } from "react";
-import toast from "react-hot-toast";
 import { FaCheckCircle } from "react-icons/fa";
 
 export default function Page() {

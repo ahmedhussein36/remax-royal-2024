@@ -9,6 +9,7 @@ body,
 :root {
   height: 100%;
   font-size: 14px;
+  scroll-behavior: smooth;
 }
 
 .ltr {
@@ -48,6 +49,7 @@ body {
 *::-webkit-scrollbar {
   width: 7px;
 }
+
 
 
 *::-webkit-scrollbar-track {

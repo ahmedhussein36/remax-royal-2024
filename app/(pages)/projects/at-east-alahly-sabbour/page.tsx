@@ -15,13 +15,12 @@ export default function Page() {
     const [data, setData] = useState({
         name: "",
         phone: "",
+        subject: "مشروع ات ايست الاهلي صبور",
     });
-
-    const router = useRouter();
 
     const [isLoading, setIsLoading] = useState(false);
 
-    const { name, phone } = data;
+    const { name, phone, subject } = data;
 
     const handelChange = (e: any) => {
         setData({ ...data, [e.target.name]: e.target.value });
@@ -45,8 +44,9 @@ export default function Page() {
                         headers: {
                             "Content-Type": "application/json",
                         },
+
                         body: JSON.stringify([
-                            [name, phone, new Date().toLocaleString()],
+                            [name, phone, new Date().toLocaleString(), subject],
                         ]),
                     }
                 );
@@ -433,24 +433,23 @@ export default function Page() {
                                 </p>
                             </div>
                             <div className=" w-full border-2 rounded-lg bg-blue-900 p-6 ">
-                                
                                 <div className="hidden md:block w-full border-2 rounded-lg bg-blue-900 p-6 ">
-                                <div className="w-full text-center font-bold text-white">
-                                    تواصل معنا لمعرفة احدث الأسعار وأفضل أنظمة
-                                    السداد
+                                    <div className="w-full text-center font-bold text-white">
+                                        تواصل معنا لمعرفة احدث الأسعار وأفضل
+                                        أنظمة السداد
+                                    </div>
+                                    <div className="w-full flex-1 flex justify-center items-center my-6 ">
+                                        <PropretyContacts
+                                            phone={compound.phone}
+                                            whatsApp={compound.whatsApp}
+                                        />
+                                    </div>
                                 </div>
-                                <div className="w-full flex-1 flex justify-center items-center my-6 ">
-                                    <PropretyContacts
-                                        phone={compound.phone}
-                                        whatsApp={compound.whatsApp}
-                                    />
-                                </div>
-                            </div>
                                 <div className=" block md:hidden">
-                                <div className="w-full text-center font-bold text-white">
-                                تواصل معنا لمعرفة احدث الأسعار وأفضل أنظمة
-                                    السداد و الحجز او الاستفسار
-                                </div>{" "}
+                                    <div className="w-full text-center font-bold text-white">
+                                        تواصل معنا لمعرفة احدث الأسعار وأفضل
+                                        أنظمة السداد و الحجز او الاستفسار
+                                    </div>{" "}
                                     <div className="w-full col-span-full md:col-span-1 p-0 lg:p-4 relative ">
                                         <div className="w-full sticky top-0 pt-8">
                                             <form
@@ -777,7 +776,8 @@ export default function Page() {
                     <MdWhatsapp color="#fff" size={30} />
                     تواصل
                 </div>
-                <a href="#contacts"
+                <a
+                    href="#contacts"
                     className="flex justify-center items-center gap-3 w-1/2 rounded-lg bg-blue-600 text-white p-2 text-center"
                 >
                     <RiShareBoxLine color="#fff" size={30} />

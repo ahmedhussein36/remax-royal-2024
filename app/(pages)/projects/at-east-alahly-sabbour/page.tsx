@@ -7,9 +7,7 @@ import PropretyContacts from "@/app/components/properties/PropretyContacts";
 import Image from "next/legacy/image";
 import { useState } from "react";
 import { MdWhatsapp } from "react-icons/md";
-import { useRouter } from "next/navigation";
 import { RiShareBoxLine } from "react-icons/ri";
-import Link from "next/link";
 
 export default function Page() {
     const [data, setData] = useState({
@@ -54,7 +52,7 @@ export default function Page() {
                 await response.json();
                 setIsLoading(false);
                 setData({ ...data, name: "", phone: "" });
-                alert("تم ارسال البيانات بنجاح");
+                alert("تم تقديم طلبك بنجاح");
             }
         } catch (error) {
             console.log(error);
@@ -92,7 +90,12 @@ export default function Page() {
                 bedrooms: 4,
                 priceRange: "13,770,000 up to 15,300,000",
             },
-            { type: "Twinhouse", size: "180m2", priceRange: "14,580,000" },
+            {
+                type: "Twinhouse",
+                size: "180m2",
+                bedrooms: 4,
+                priceRange: "14,580,000",
+            },
             {
                 type: "Villa",
                 size: "1 story 220m2",
@@ -766,7 +769,7 @@ export default function Page() {
                     </div>
                 </div>
             </Container>
-            <div className="md:hidden w-full m-2 fixed bottom-0 bg-white rounded-lg shadow-lg p-4 flex justify-between items-center gap-4">
+            <div className="md:hidden w-full m-2 fixed bottom-0 bg-slate-100 rounded-lg mb-0 shadow-xl p-4 flex justify-between items-center gap-4">
                 <div
                     onClick={() => {
                         open(`https://wa.me/20225388918`);

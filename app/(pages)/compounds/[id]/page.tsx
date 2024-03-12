@@ -6,7 +6,6 @@ import getDeveloperById from "@/app/actions/getDeveloperById";
 
 interface IParams {
     id: string;
-    developerId: string;
 }
 
 const DeveloperPage = async ({ params }: { params: IParams }) => {

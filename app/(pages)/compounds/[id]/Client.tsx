@@ -1,12 +1,13 @@
 import ClientOnly from "@/app/components/ClientOnly";
 import Container from "@/app/components/Container";
 import PropretyContacts from "@/app/components/properties/PropretyContacts";
+import { SafeCompound, SafeDeveloper } from "@/app/types";
 import Image from "next/legacy/image";
 import Link from "next/link";
 
 interface ClientProps {
-    compound: any;
-    developer: any;
+    compound: SafeCompound;
+    developer: SafeDeveloper;
 }
 const Client: React.FC<ClientProps> = ({ compound, developer }) => {
     const formatNumber = (number: number | undefined): string => {
@@ -18,14 +19,15 @@ const Client: React.FC<ClientProps> = ({ compound, developer }) => {
         }
     };
 
-    const minPriceInt = Math.floor(compound.min_price || 0);
+    // const minPriceInt = Math.floor(compound.min_price || 0);
 
-    const formattedMinPrice = formatNumber(minPriceInt) || null;
-    const formatmaxPrice = formatNumber(compound.max_price) || null;
+    // const formattedMinPrice = formatNumber(minPriceInt) || null;
+    // const formatmaxPrice = formatNumber(compound.max_price) || null;
     const placeholder = "/assets/images/placeholder2.png";
     return (
         <ClientOnly>
-            <Container>
+            <div>No Data</div>
+            {/* <Container>
                 <div className="relative flex justify-center items-center w-full h-[400px] rounded-lg overflow-hidden my-8">
                     <Image
                         src={compound.image || placeholder}
@@ -117,7 +119,7 @@ const Client: React.FC<ClientProps> = ({ compound, developer }) => {
                         ></div>
                     </div>
                 </div>
-            </Container>
+            </Container> */}
         </ClientOnly>
     );
 };

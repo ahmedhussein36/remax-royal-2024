@@ -23,7 +23,7 @@ const DeveloperPage = async ({ params }: { params: IParams }) => {
 
     return (
         <ClientOnly>
-            <Client compound={compound as any} developer={developer} />
+            <Client compound={compound as any} developer={developer as any} />
         </ClientOnly>
     );
 };

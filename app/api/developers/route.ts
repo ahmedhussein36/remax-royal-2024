@@ -11,15 +11,11 @@ export async function POST(request: Request) {
 
     const body = await request.json();
     const {
-        developerId,
         name,
         slug,
         image,
-        compounds,
-        properties,
-        min_price,
-        official_name,
-        add_to_slider
+        description,
+        areaId,
     } = body;
 
     Object.keys(body).forEach((value: any) => {
@@ -30,15 +26,11 @@ export async function POST(request: Request) {
 
     const developer = await prisma.developer.create({
         data: {
-            developerId,
             name,
             slug,
             image,
-            compounds,
-            properties,
-            min_price,
-            add_to_slider,
-            official_name,
+            description,
+            areaId,
         },
     });
 

@@ -36,7 +36,7 @@ const ForRentPage = async ({ searchParams }: ForRentPageProps) => {
                 </div>
                 {filterdByRent.length !== 0 ? (
                     <ForRentClient
-                        listings={filterdByRent}
+                        listings={filterdByRent as any}
                         currentUser={currentUser}
                     />
                 ) : (

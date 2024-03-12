@@ -2,7 +2,6 @@ import { NextResponse } from "next/server";
 
 import prisma from "@/app/libs/prismadb";
 import getCurrentUser from "@/app/actions/getCurrentUser";
-import { title } from "process";
 
 export async function POST(request: Request) {
     const currentUser = await getCurrentUser();
@@ -15,28 +14,30 @@ export async function POST(request: Request) {
     const {
         title,
         description,
-        imageSrc,
+        slug,
+        images,
+        mainImage,
         category,
         roomCount,
         bathroomCount,
         propertyType,
-        propertyGroup,
         saleType,
-        propertyImages,
         paymentPlan,
         downPayment,
         installmentValue,
         installmentPeriod,
         developerName,
         commissionValue,
+        deliveryDate,
         address,
         country,
-        city,
-        aria,
         phone,
         whatsapp,
         price,
         currency,
+        developerId,
+        compoundId,
+        areaId,
         size,
         sizeUnit,
     } = body;
@@ -51,24 +52,25 @@ export async function POST(request: Request) {
         data: {
             title,
             description,
-            imageSrc,
-            propertyImages,
+            slug,
+            images,
+            mainImage,
+            areaId,
             category,
             roomCount,
             bathroomCount,
             propertyType,
             saleType,
-            propertyGroup,
-            paymentPlan,
+            developerId,
+            compoundId, paymentPlan,
             downPayment: parseInt(downPayment),
             installmentValue: parseInt(installmentValue),
             installmentPeriod: parseInt(installmentPeriod),
             developerName,
             commissionValue: parseFloat(commissionValue),
             address,
+            deliveryDate,
             country,
-            cityValue: city.value,
-            ariaValue: aria.value,
             phone,
             whatsapp,
             price: parseInt(price),
@@ -76,7 +78,6 @@ export async function POST(request: Request) {
             size: parseInt(size),
             sizeUnit,
             userId: currentUser.id,
-            createdAt: new Date(),
         },
     });
 

@@ -1,4 +1,4 @@
-import { SafeDeveloper, SafeUser } from "@/app/types";
+import { SafeCompound, SafeDeveloper, SafeUser } from "@/app/types";
 import Container from "@/app/components/Container";
 import ClientOnly from "@/app/components/ClientOnly";
 import Image from "next/legacy/image";
@@ -7,15 +7,11 @@ import PropretyContacts from "@/app/components/properties/PropretyContacts";
 
 interface DevClientProps {
     developer: SafeDeveloper | any;
-    compounds: any;
+    compounds: any[];
     currentUser?: SafeUser | null;
 }
 
-const DevClient: React.FC<DevClientProps> = ({
-    developer,
-    currentUser,
-    compounds,
-}) => {
+const DevClient: React.FC<DevClientProps> = ({ developer, compounds }) => {
     const formatNumber = (number: number | undefined): string => {
         if (!number) return String(0);
         if (number >= 1000) {
@@ -30,8 +26,9 @@ const DevClient: React.FC<DevClientProps> = ({
     const formattedMinPrice = formatNumber(minPriceInt) || null;
     const placeholder = "/assets/images/placeholder2.jpg";
 
-    const areas = compounds.map((compound: any) => compound.area.name);
-    const uniqueAreas = [...(new Set(areas) as any)];
+    const areas = compounds.map((compound) => {
+        compound.area;
+    });
 
     return (
         <ClientOnly>
@@ -92,7 +89,7 @@ const DevClient: React.FC<DevClientProps> = ({
                         <h3>المناطق</h3>
                     </div>
                     <div className="flex gap-3">
-                        {uniqueAreas.map((item: any) => (
+                        {areas.map((item: any) => (
                             <div
                                 className=" p-2 px-4 border rounded-lg"
                                 key={item}

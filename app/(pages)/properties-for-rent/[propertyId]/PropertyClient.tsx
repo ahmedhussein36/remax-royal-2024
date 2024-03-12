@@ -1,6 +1,6 @@
 "use client";
 
-import { SafeProperty, SafeUser } from "@/app/types";
+import { SafeArea, SafeCompound, SafeProperty, SafeUser } from "@/app/types";
 import Container from "@/app/components/Container";
 import ClientOnly from "@/app/components/ClientOnly";
 import Gallary from "@/app/components/properties/Gallary";
@@ -12,6 +12,8 @@ import PaymentPlans from "@/app/components/properties/PaymentPlans";
 interface PropertyClientProps {
     listing: SafeProperty & {
         user: SafeUser;
+        compound: SafeCompound;
+        area: SafeArea;
     };
 
     currentUser?: SafeUser | null;
@@ -21,12 +23,12 @@ const PropertyClient: React.FC<PropertyClientProps> = ({
     listing,
     currentUser,
 }) => {
-    const location = `${listing.ariaValue} / ${listing.cityValue}`;
+    const location = `${listing.compound} / ${listing.area}`;
 
     return (
         <ClientOnly>
             <Container>
-                <Gallary images={listing.propertyImages} />
+                <Gallary images={listing.images} />
                 <div className="flex flex-col md:flex-row justify-between items-start gap-4 w-full my-4">
                     <div className="w-full gap-4 column-8">
                         <PropertInfo

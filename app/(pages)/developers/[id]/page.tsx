@@ -11,7 +11,7 @@ interface DevParams {
 const DeveloperPage = async ({ params }: { params: DevParams }) => {
     const developer = await getDeveloperById(params);
     const compounds = await getCompounds({
-        developerId: developer?.developerId,
+        developerId: developer?.id,
     });
 
     if (!developer) {

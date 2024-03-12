@@ -20,7 +20,6 @@ const ForSalePage = async ({ searchParams }: ForSalePageProps) => {
         (listing: any) => listing.category === "للبيع"
     );
 
-   
     return (
         <ClientOnly>
             <Container>
@@ -39,7 +38,7 @@ const ForSalePage = async ({ searchParams }: ForSalePageProps) => {
                 </div>
                 {filterdBySale.length !== 0 ? (
                     <ForSaleClient
-                        listings={filterdBySale}
+                        listings={filterdBySale as any}
                         currentUser={currentUser}
                     />
                 ) : (

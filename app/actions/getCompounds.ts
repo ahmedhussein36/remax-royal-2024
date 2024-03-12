@@ -2,7 +2,7 @@ import prisma from "@/app/libs/prismadb";
 
 export interface IParams {
     name?: string
-    developerId?: number
+    developerId?: string
 }
 
 export default async function getCompounds(params: IParams) {

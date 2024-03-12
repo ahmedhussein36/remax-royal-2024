@@ -5,14 +5,14 @@ import getCompoundById from "@/app/actions/getCompoundById";
 import getDeveloperById from "@/app/actions/getDeveloperById";
 
 interface IParams {
-    id?: string;
-    developerId?: number;
+    id: string;
+    developerId: string;
 }
 
 const DeveloperPage = async ({ params }: { params: IParams }) => {
     const compound = await getCompoundById(params);
     const developer = await getDeveloperById({
-        developerId: compound?.developerId,
+        id: compound?.developerId,
     });
     if (!compound) {
         return (

@@ -22,13 +22,13 @@ export default async function getDevelopers(params: IParams) {
         const developers = await prisma.developer.findMany({
             where: query,
             orderBy: {
-                developerId: "asc",
+                createdAt: "desc",
             },
         });
 
         const safeDevelopers = developers.map((developer) => ({
             ...developer,
-            created_at: developer.developerId
+            created_at: developer.createdAt
         }));
 
         return safeDevelopers;

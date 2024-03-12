@@ -1,11 +1,14 @@
 "use client";
-import { SafeProperty, SafeUser } from "@/app/types";
+import { SafeArea, SafeCompound, SafeProperty, SafeUser } from "@/app/types";
 import PropertyCard from "@/app/components/properties/PropertyCard";
 import ClientOnly from "@/app/components/ClientOnly";
-import axios from "axios";
 
 interface ForSaleClientProps {
-    listings: SafeProperty[];
+    listings: SafeProperty[] & {
+        user: SafeUser;
+        compound: SafeCompound;
+        area: SafeArea;
+    };
     currentUser?: SafeUser | null;
 }
 

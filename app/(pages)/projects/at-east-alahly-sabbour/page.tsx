@@ -5,9 +5,10 @@ import ClientOnly from "@/app/components/ClientOnly";
 import Container from "@/app/components/Container";
 import PropretyContacts from "@/app/components/properties/PropretyContacts";
 import Image from "next/legacy/image";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { MdWhatsapp } from "react-icons/md";
 import { RiShareBoxLine } from "react-icons/ri";
+import { initializeGoogleTagManager } from "@/app/googleTagManager";
 
 export default function Page() {
     const [data, setData] = useState({
@@ -19,6 +20,11 @@ export default function Page() {
     const [isLoading, setIsLoading] = useState(false);
 
     const { name, phone, subject } = data;
+
+    useEffect(() => {
+        // Initialize Google Tag Manager with your GTM ID
+        initializeGoogleTagManager("GTM-K5KSH3B9");
+    }, []);
 
     const handelChange = (e: any) => {
         setData({ ...data, [e.target.name]: e.target.value });
@@ -379,7 +385,7 @@ export default function Page() {
                             </div>
                             <div className=" w-full h-[400px] relative mb-12">
                                 <Image
-                                    src="/images/موقع كمبوند ات ايست الاهلي صبور.jpg"
+                                    src="/images/map.webp"
                                     layout="fill"
                                     objectFit="cover"
                                     alt="مشروع ات ايست المستقبل سيتي - At East Almustakbal city"
@@ -784,7 +790,7 @@ export default function Page() {
                     className="flex justify-center items-center gap-3 w-1/2 rounded-lg bg-blue-600 text-white p-2 text-center"
                 >
                     <RiShareBoxLine color="#fff" size={30} />
-                    ارسال طلب
+                    تواصل معنا
                 </a>
             </div>
         </ClientOnly>

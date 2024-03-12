@@ -3,9 +3,10 @@ import ClientOnly from "@/app/components/ClientOnly";
 import EmptyState from "@/app/components/EmptyState";
 import PropertyClient from "./PropertyClient";
 import getPropertyById from "@/app/actions/getPropertyById";
+import { SafeListing, SafeProperty } from "@/app/types";
 
 interface IParams {
-    propertyId?: string;
+    propertyId: string;
 }
 
 const PropertyPage = async ({ params }: { params: IParams }) => {
@@ -22,9 +23,10 @@ const PropertyPage = async ({ params }: { params: IParams }) => {
 
     return (
         <ClientOnly>
-            <PropertyClient 
-            listing={listing} 
-            currentUser={currentUser} />
+            <PropertyClient
+                listing={listing as any}
+                currentUser={currentUser}
+            />
         </ClientOnly>
     );
 };

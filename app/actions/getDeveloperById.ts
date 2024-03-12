@@ -2,21 +2,20 @@ import prisma from "@/app/libs/prismadb";
 
 interface IParams {
     id?: string;
-    developerId?: number;
 }
 
 export default async function getDeveloperById(params: IParams) {
     try {
-        const { id, developerId } = params;
+        const { id } = params;
 
         const developer = await prisma.developer.findUnique({
             where: {
                 id: id,
-                developerId: developerId
             },
             include: {
                 property: true,
                 compound: true,
+                area: true,
                 _count: true,
             }
         })
@@ -27,7 +26,7 @@ export default async function getDeveloperById(params: IParams) {
 
         const safeDeveloper = {
             ...developer,
-            created_at: developer?.created_at?.toString()
+            created_at: developer?.createdAt?.toString()
 
         }
 

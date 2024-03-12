@@ -23,7 +23,7 @@ const PropertyPage = async ({ params }: { params: IParams }) => {
     return (
         <ClientOnly>
             <PropertyClient 
-            listing={listing} 
+            listing={listing as any} 
             currentUser={currentUser} />
         </ClientOnly>
     );

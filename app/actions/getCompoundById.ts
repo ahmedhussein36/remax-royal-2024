@@ -2,7 +2,6 @@ import prisma from "@/app/libs/prismadb";
 
 interface IParams {
     id?: string;
-    developerId?: number;
 }
 
 export default async function getCompoundById(params: IParams) {
@@ -15,7 +14,7 @@ export default async function getCompoundById(params: IParams) {
             },
             include: {
                 developer: true,
-                area : true,
+                area: true,
             }
         })
 

@@ -10,9 +10,6 @@ interface IParams {
 
 const DeveloperPage = async ({ params }: { params: IParams }) => {
     const compound = await getCompoundById(params);
-    const developer = await getDeveloperById({
-        id: compound?.developerId as string,
-    });
     if (!compound) {
         return (
             <ClientOnly>
@@ -23,7 +20,7 @@ const DeveloperPage = async ({ params }: { params: IParams }) => {
 
     return (
         <ClientOnly>
-            <Client compound={compound as any} developer={developer as any} />
+            <Client compound={compound as any}  />
         </ClientOnly>
     );
 };

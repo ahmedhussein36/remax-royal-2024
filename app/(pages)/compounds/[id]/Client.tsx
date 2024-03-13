@@ -6,10 +6,12 @@ import Image from "next/legacy/image";
 import Link from "next/link";
 
 interface ClientProps {
-    compound: SafeCompound;
-    developer: SafeDeveloper;
+    compound: SafeCompound &{
+    developer : SafeDeveloper
+};
 }
-const Client: React.FC<ClientProps> = ({ compound, developer }) => {
+const Client: React.FC<ClientProps> = ({ compound }) => {
+
     const formatNumber = (number: number | undefined): string => {
         if (!number) return String(0);
         if (number >= 1000) {

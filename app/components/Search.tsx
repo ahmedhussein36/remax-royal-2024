@@ -5,7 +5,7 @@ import { useRouter, useSearchParams } from "next/navigation";
 import qs from "query-string";
 
 const Search = ({ placeholder }: { placeholder?: string }) => {
-    const [name, setName] = useState("");
+    const [title, setTitle] = useState("");
 
     const router = useRouter();
     const params = useSearchParams();
@@ -19,7 +19,7 @@ const Search = ({ placeholder }: { placeholder?: string }) => {
 
         const updatedQuery: any = {
             ...currentQuery,
-            name: name,
+            title: title,
         };
 
         const url = qs.stringifyUrl(
@@ -31,7 +31,7 @@ const Search = ({ placeholder }: { placeholder?: string }) => {
         );
 
         router.push(url);
-    }, [name, params, router]);
+    }, [title, params, router]);
 
     return (
         <div className=" w-full flex flex-col gap-3 justify-center items-center">
@@ -40,19 +40,19 @@ const Search = ({ placeholder }: { placeholder?: string }) => {
                     id="name"
                     label="البحث عن مطورين"
                     Placeholder={"ابحث عن مطورين ..."}
-                    value={name}
-                    onChange={(e: SearchValue) => setName(e.target.value)}
+                    value={title}
+                    onChange={(e: SearchValue) => setTitle(e.target.value)}
                     className="w-full md:w-1/2 lg:w-[400px] px-4 rounded-full border-2"
                     button
                     onclick={onSubmit}
                 />
             </div>
             <div className="h-[15px]">
-                {name !== "" && (
+                {title !== "" && (
                     <button
                         onClick={() => {
                             router.push("/developers");
-                            setName("");
+                            setTitle("");
                         }}
                         className=" text-red-500 underline"
                     >

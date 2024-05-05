@@ -36,14 +36,11 @@ const CompoundClient: React.FC<CompoundClienttProps> = ({
                             key={compound.id}
                             slug={compound.id}
                             id={compound.id}
-                            title={compound.name}
-                            image={compound.image}
-                            typesCount={compound.property_types_count}
-                            location={compound.area.name}
-                            developer={compound.developer.name}
-                            maxInstYears={compound.max_installment_years}
-                            minDownPayment={compound.min_down_payment}
-                            minPrice={compound.min_price}
+                            title={compound.title}
+                            image={compound.mainImage}
+                            typesCount={compound.isLaunch}
+                            location={compound?.area?.title}
+                            developer={compound.developer.title}
                             parent={parent}
                         />
                     ))}

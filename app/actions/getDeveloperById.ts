@@ -15,10 +15,8 @@ export default async function getDeveloperById(params: IParams) {
             include: {
                 property: true,
                 compound: true,
-                area: true,
-                _count: true,
-            }
-        })
+            },
+        });
 
         if (!developer) {
             return null;
@@ -26,9 +24,8 @@ export default async function getDeveloperById(params: IParams) {
 
         const safeDeveloper = {
             ...developer,
-            created_at: developer?.createdAt?.toString()
-
-        }
+            created_at: developer?.createdAt?.toString(),
+        };
 
         return safeDeveloper;
     } catch (error: any) {

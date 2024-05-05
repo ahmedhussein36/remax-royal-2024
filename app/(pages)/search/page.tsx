@@ -29,7 +29,7 @@ const SearchPage = async ({ searchParams }: SearchPageProps) => {
                 <div className="flex gap-4 justify-between items-center my-8 w-full">
                     <Heading
                         title={`نتائج البحث عن العقارت في  ${
-                            searchParams.aria || searchParams.city || "مصر"
+                            searchParams.city || "مصر"
                         } `}
                         subtitle={`عدد النتائج: ${listings.length}`}
                     />

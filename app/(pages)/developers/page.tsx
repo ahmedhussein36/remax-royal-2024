@@ -29,21 +29,21 @@ const DevelopersPage = async ({ searchParams }: DevelopersPageProps) => {
 
                     <div className=" flex justify-center items-center w-">
                         <div className="flex justify-center items-center w-full">
-                            <Search placeholder={searchParams.name} />
+                            <Search placeholder={searchParams.title} />
                         </div>
                     </div>
                 </div>
 
-                <div className="flex justify-center items-center mt-4 w-full">
+              
                     {developers.length !== 0 ? (
                         <DeveloperClient
-                            developers={developers}
+                            developers={developers as any}
                             currentUser={currentUser}
                         />
                     ) : (
                         <EmptyStateAr />
                     )}
-                </div>
+              
             </Container>
         </ClientOnly>
     );

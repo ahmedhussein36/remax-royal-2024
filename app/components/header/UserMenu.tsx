@@ -48,7 +48,7 @@ const UserMenu: React.FC<UserMenuProps> = ({ currentUser }) => {
             return loginModal.onOpen();
         }
 
-        router.push("/place-ad");
+        router.push("/");
     }, [loginModal, currentUser, router]);
 
     return (
@@ -82,24 +82,7 @@ const UserMenu: React.FC<UserMenuProps> = ({ currentUser }) => {
                         <span className=" text-sm">تسجيل الدخول</span>
                     )}
                 </div>
-                <div
-                    onClick={createAd}
-                    className="
-            hidden
-            md:block
-            text-sm 
-            text-white
-            py-3
-            px-4 
-            rounded-lg
-            bg-red-500
-            hover:bg-red-600
-            transition 
-            cursor-pointer
-          "
-                >
-                    أعلن عن وحدتك
-                </div>
+               
             </div>
             {isOpen && (
                 <div

@@ -44,7 +44,7 @@ const DevClient: React.FC<DevClientProps> = ({ developer, compounds }) => {
                     <div className=" h-[120px] w-[120px] relative p-3 bg-white rounded-lg overflow-hidden ">
                         <Image
                             src={developer?.image || placeholder}
-                            alt={developer?.name}
+                            alt={developer?.title}
                             layout="fill"
                             objectFit="cover"
                         />
@@ -56,8 +56,8 @@ const DevClient: React.FC<DevClientProps> = ({ developer, compounds }) => {
                             </h1>
                         </div>
                         <div className="flex gap-5">
-                            <div>{developer.compounds} كمبوند</div>
-                            <div>{developer.properties} وحدة</div>
+                            <div>{developer?.compounds?.length || 0} كمبوند</div>
+                            <div>{developer?.properties?.length || 0} وحدة</div>
                         </div>
                         {developer.min_price && (
                             <div>

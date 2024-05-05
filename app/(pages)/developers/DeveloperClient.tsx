@@ -1,9 +1,20 @@
-import { SafeDeveloper, SafeUser } from "@/app/types";
+"use client";
+import {
+    SafeCompound,
+    SafeDeveloper,
+    SafeProperty,
+    SafeUser,
+} from "@/app/types";
 import ClientOnly from "@/app/components/ClientOnly";
 import Card from "@/app/components/Card";
+import getCompounds from "@/app/actions/getCompounds";
+import { useEffect } from "react";
 
 interface DeveloperClientProps {
-    developers: SafeDeveloper[] | any;
+    developers: SafeDeveloper[] & {
+        compounds: SafeCompound;
+        property: SafeProperty;
+    };
     currentUser?: SafeUser | null;
     params?: string;
 }
@@ -17,11 +28,11 @@ const DeveloperClient: React.FC<DeveloperClientProps> = ({
 
     return (
         <ClientOnly>
-            <div className="flex flex-col w-full justify-center items-center">
-                <div
-                    className="
+            <div
+                className="
+                    w-full
                             pt-2
-                            mt-8
+                            
                             grid 
                             grid-cols-1
                             sm:grid-cols-2
@@ -30,20 +41,18 @@ const DeveloperClient: React.FC<DeveloperClientProps> = ({
                             gap-8
                             relative
                         "
-                >
-                    {developers.map((developer: any) => (
-                        <Card
-                            key={developer.id}
-                            logo={developer.image}
-                            title={developer.name}
-                            compoundsCount={developer.compounds}
-                            propertiesCount={developer.properties}
-                            minPrice={developer.min_price}
-                            slug={developer.id}
-                            parent={parent}
-                        />
-                    ))}
-                </div>
+            >
+                {developers.map((developer: SafeDeveloper | any) => (
+                    <Card
+                        key={developer.id}
+                        logo={developer?.image}
+                        title={developer.title}
+                        compoundsCount={developer?.compounds?.length}
+                        propertiesCount={0}
+                        slug={developer.id}
+                        parent={parent}
+                    />
+                ))}
             </div>
         </ClientOnly>
     );

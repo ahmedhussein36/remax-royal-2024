@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { SafeProperty, SafeUser } from "@/app/types";
+import { SafeArea, SafeCompound, SafeDeveloper, SafeProperty, SafeUser } from "@/app/types";
 import { LuBedDouble } from "react-icons/lu";
 import { LuBath } from "react-icons/lu";
 import { LiaRulerCombinedSolid } from "react-icons/lia";
@@ -9,7 +9,11 @@ import PropretyContacts from "./PropretyContacts";
 import Link from "next/link";
 
 interface PropertyCardProps {
-    data: any;
+    data: SafeProperty& {
+        compound: SafeCompound
+        area: SafeArea
+        developer: SafeDeveloper
+    };
     currentUser?: SafeUser | null;
     parent?: string;
 }
@@ -27,9 +31,9 @@ const PropertyCard: React.FC<PropertyCardProps> = ({
         }
     };
 
-    const formattedMinPrice = formatNumber(data.price);
+    const formattedMinPrice = formatNumber(data?.price);
 
-    const location = `${data.compound} / ${data.area}`;
+    const location = `${data?.compound?.title} / ${data?.area?.title}`;
     return (
         <Link href={`/${parent}/${data.id}`}>
             <div className="col-span-1 group relative mb-4 flex justify-center item-center overflow-hidden cursor-pointer">
@@ -57,7 +61,7 @@ const PropertyCard: React.FC<PropertyCardProps> = ({
                     <div className="relative proImage w-[400px] h-[220px] overflow-hidden flex justify-center items-center">
                         <Image
                             className="group-hover:scale-105 duration-300 transition-all "
-                            src={data.imageSrc}
+                            src={data.mainImage}
                             alt="listing thumbnail image"
                             fill
                             sizes={"100%"}

@@ -6,7 +6,7 @@ export interface IParams {
     roomCount?: number;
     bathroomCount?: number; 
     city?: string;
-    aria?: string;
+    area?: string;
     PropertyType?: string;
     propertyGroup?: string;
     category?: string;
@@ -22,7 +22,7 @@ export default async function getProperties(params: IParams) {
             roomCount,
             bathroomCount,
             city,
-            aria,
+            area,
             PropertyType,
             propertyGroup,
             category,
@@ -54,12 +54,12 @@ export default async function getProperties(params: IParams) {
         }
 
         if (city) {
-            query.cityValue = city;
+            query.city = city;
         }
 
-        if (aria) {
-            query.ariaValue = {
-                contains: aria,
+        if (area) {
+            query.area.title = {
+                contains: area,
             };
         }
 

@@ -13,7 +13,7 @@ const PropDetails: React.FC<PropDetailsProps> = ({ data }) => {
                     <div className="flex justify-start items-center gap-2 w-full border-b py-3">
                         <span className="w-1/2 text-sm"> نوع العقار</span>
                         <span className=" w-1/2 font-bold text-sm">
-                            {data.propertyGroup}
+                            {data.propertyType}
                         </span>
                     </div>
                     <div className="flex justify-start items-center gap-2 w-full border-b py-3">
@@ -30,7 +30,7 @@ const PropDetails: React.FC<PropDetailsProps> = ({ data }) => {
                     </div>
                     <div className="flex justify-start items-center gap-2 w-full border-b py-3">
                         <span className="w-1/2 text-sm">حالة البناء</span>
-                        <span className=" w-1/2 font-bold text-sm">جاهز</span>
+                        <span className=" w-1/2 font-bold text-sm">{data.deliveryStatus}</span>
                     </div>
                 </div>
 
@@ -43,11 +43,11 @@ const PropDetails: React.FC<PropDetailsProps> = ({ data }) => {
                     </div>
                     <div className="flex justify-start items-center gap-2 w-full border-b py-3">
                         <span className="w-1/2 text-sm">تاريخ التسليم</span>
-                        <span className=" w-1/2 font-bold text-sm">2024</span>
+                        <span className=" w-1/2 font-bold text-sm">{data.deliveryDate}</span>
                     </div>
                     <div className="flex justify-start items-center gap-2 w-full border-b py-3">
                         <span className="w-1/2 text-sm">نوع التشطيب</span>
-                        <span className=" w-1/2 font-bold text-sm">كامل</span>
+                        <span className=" w-1/2 font-bold text-sm">{data.finishing}</span>
                     </div>
                     <div className="flex justify-start items-center gap-2 w-full border-b py-3">
                         <span className="w-1/2 text-sm">مساحة العقار</span>
@@ -65,11 +65,15 @@ const PropDetails: React.FC<PropDetailsProps> = ({ data }) => {
                 aria-label="amenities"
                 className="flex flex-wrap justify-start items-center my-6 gap-4"
             >
-                لا يوجد
+                {
+                    data.amenities.map((item : any) => (
+                        item.name
+                    ))
+                }
                 <div className="border-b-2 my-12"></div>
             </div>
             <div aria-label="description">
-                <p className=" text-lg text-slate-600 space-y-3 leading-[2]">{data.description}</p>
+                <p className=" text-lg text-slate-600 space-y-3 leading-[2]">{data.content}</p>
             </div>
         </div>
     );

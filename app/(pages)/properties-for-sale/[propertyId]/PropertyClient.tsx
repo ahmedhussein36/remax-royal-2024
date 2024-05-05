@@ -24,7 +24,7 @@ const PropertyClient: React.FC<PropertyClientProps> = ({
     listing,
     currentUser,
 }) => {
-    const location = `${listing.compound} / ${listing.area}`;
+    const location = `${listing?.compound?.title} / ${listing?.area?.title || ""}`;
     return (
         <ClientOnly>
             <Container>

@@ -13,10 +13,9 @@ const SearchClient: React.FC<SearchClientProps> = ({
     currentUser,
 }) => {
     return (
-        <ClientOnly>
-            <>
-                <div
-                    className="
+        <Container>
+            <div
+                className="
                             pt-2
                             mt-8
                             grid 
@@ -25,22 +24,21 @@ const SearchClient: React.FC<SearchClientProps> = ({
                             md:grid-cols-3 
                             gap-8
                         "
-                >
-                    {listings.map((listing: any) => (
-                        <PropertyCard
-                            parent={
-                                listing.category === "للبيع"
-                                    ? "properties-for-sale"
-                                    : "properties-for-rent"
-                            }
-                            data={listing}
-                            currentUser={currentUser}
-                            key={listing.id}
-                        />
-                    ))}
-                </div>
-            </>
-        </ClientOnly>
+            >
+                {listings.map((listing: SafeProperty) => (
+                    <PropertyCard
+                        parent={
+                            listing.category === "للبيع"
+                                ? "properties-for-sale"
+                                : "properties-for-rent"
+                        }
+                        data={listing as any}
+                        currentUser={currentUser}
+                        key={listing.id}
+                    />
+                ))}
+            </div>
+        </Container>
     );
 };
 export default SearchClient;

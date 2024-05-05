@@ -7,7 +7,7 @@ interface GallaryProps {
 const placeholder = "/assets/images/placeholder2.png";
 
 const Gallary = ({ images }: { images: string[] }) => {
-    const mainImage = images.slice(-1);
+    const mainImage = images.slice(0);
 
     return (
         <div
@@ -22,7 +22,7 @@ const Gallary = ({ images }: { images: string[] }) => {
             >
                 <Image
                     fill
-                    src={mainImage[0] || placeholder}
+                    src={mainImage[1] || placeholder}
                     alt="property image"
                 />
             </div>

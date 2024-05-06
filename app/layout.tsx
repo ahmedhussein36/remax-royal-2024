@@ -5,7 +5,6 @@ import ToasterProvider from "@/app/providers/ToasterProvider";
 import getCurrentUser from "./actions/getCurrentUser";
 import TopLoader from "./components/TopLoader";
 import Footer from "./components/Footer";
-import { Analytics } from "@vercel/analytics/react";
 
 import { Noto_Kufi_Arabic } from "next/font/google";
 import "./globals.css";
@@ -27,7 +26,6 @@ export default async function RootLayout({
     return (
         <html lang="ar" dir="rtl">
             <body className={font.className}>
-                <Analytics />
                 <TopLoader />
                 <div className=" flex flex-col">
                     <div className=" z-10">

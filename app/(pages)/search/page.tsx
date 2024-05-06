@@ -13,10 +13,8 @@ interface SearchPageProps {
 }
 
 const SearchPage = async ({ searchParams }: SearchPageProps) => {
-    // const listings = await getProperties(searchParams);
+    const listings = await getProperties(searchParams);
     const currentUser = await getCurrentUser();
-
-    const res = await axios.get("/properties")
 
     if (listings.length === 0) {
         return (

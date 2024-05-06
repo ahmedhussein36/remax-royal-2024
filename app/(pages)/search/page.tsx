@@ -6,14 +6,17 @@ import ClientOnly from "@/app/components/ClientOnly";
 import Heading from "@/app/components/Heading";
 import Sort from "@/app/components/Sort";
 import SearchClient from "./SearchClient";
+import axios from "axios";
 
 interface SearchPageProps {
     searchParams: IParams;
 }
 
 const SearchPage = async ({ searchParams }: SearchPageProps) => {
-    const listings = await getProperties(searchParams);
+    // const listings = await getProperties(searchParams);
     const currentUser = await getCurrentUser();
+
+    const res = await axios.get("/properties")
 
     if (listings.length === 0) {
         return (

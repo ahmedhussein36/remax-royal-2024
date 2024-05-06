@@ -6,9 +6,9 @@ export interface IParams {
     roomCount?: number;
     bathroomCount?: number; 
     city?: string;
-    area?: string;
+    areaId?: string;
     PropertyType?: string;
-    propertyGroup?: string;
+    group?: string;
     category?: string;
     minprice?: number;
     maxprice?: number;
@@ -22,9 +22,9 @@ export default async function getProperties(params: IParams) {
             roomCount,
             bathroomCount,
             city,
-            area,
+            areaId,
             PropertyType,
-            propertyGroup,
+            group,
             category,
             minprice,
             maxprice,
@@ -34,6 +34,10 @@ export default async function getProperties(params: IParams) {
 
         if (userId) {
             query.userId = userId;
+        }
+
+        if (areaId) {
+            query.areaId = areaId;
         }
 
         if (category) {
@@ -49,18 +53,12 @@ export default async function getProperties(params: IParams) {
             query.PropertyType = PropertyType;
         }
 
-        if (propertyGroup) {
-            query.propertyGroup = propertyGroup;
+        if (group) {
+            query.group = group;
         }
 
         if (city) {
             query.city = city;
-        }
-
-        if (area) {
-            query.area.title = {
-                contains: area,
-            };
         }
 
         if (roomCount) {

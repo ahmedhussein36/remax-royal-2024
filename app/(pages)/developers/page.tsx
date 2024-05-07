@@ -30,7 +30,7 @@ const DevelopersPage = async ({ searchParams }: DevelopersPageProps) => {
                         />
                     </div>
                 </div>
-                <ClientOnly fallback={<DeveloperLoader />}>
+                <>
                     {developers.length !== 0 ? (
                         // <DeveloperLoader />
                         <DeveloperClient
@@ -40,7 +40,7 @@ const DevelopersPage = async ({ searchParams }: DevelopersPageProps) => {
                     ) : (
                         <EmptyStateAr />
                     )}{" "}
-                </ClientOnly>
+                </>
             </Container>
         </>
     );

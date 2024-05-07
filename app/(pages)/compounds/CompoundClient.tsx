@@ -19,9 +19,9 @@ const CompoundClient: React.FC<CompoundClienttProps> = ({
     return (
         <>
             <div className=" flex justify-center items-center w-">
-                <div className="flex justify-center items-center w-full">
+                {/* <div className="flex justify-center items-center w-full">
                     <Search placeholder={params} />
-                </div>
+                </div> */}
             </div>
             <div className="flex flex-col w-full justify-center items-center">
                 <div

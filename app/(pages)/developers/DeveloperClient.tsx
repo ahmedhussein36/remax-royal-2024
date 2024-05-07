@@ -32,9 +32,9 @@ const DeveloperClient: React.FC<DeveloperClientProps> = ({
        <>
         <ClientOnly fallback={<DeveloperLoader />} >
             <div className=" flex justify-center items-center w-full md:w-1/2 m-4">
-                {/* <div className="flex justify-center items-center w-full">
+                <div className="flex justify-center items-center w-full">
                     <Search placeholder={params} />
-                </div> */}
+                </div>
             </div>
             <div
                 className="

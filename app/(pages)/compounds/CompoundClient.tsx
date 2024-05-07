@@ -18,7 +18,7 @@ const CompoundClient: React.FC<CompoundClienttProps> = ({
     const parent = "compounds";
 
     return (
-        <ClientOnly>
+        <>
               <div className=" flex justify-center items-center w-">
                         <div className="flex justify-center items-center w-full">
                             <Search placeholder={params} />
@@ -53,7 +53,7 @@ const CompoundClient: React.FC<CompoundClienttProps> = ({
                     ))}
                 </div>
             </div>
-        </ClientOnly>
+        </>
     );
 };
 export default CompoundClient;

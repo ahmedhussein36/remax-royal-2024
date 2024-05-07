@@ -16,7 +16,7 @@ const DevelopersPage = async ({ searchParams }: DevelopersPageProps) => {
     const currentUser = await getCurrentUser();
 
     return (
-        <ClientOnly>
+        <>
             <Container>
                 <div className="flex gap-4 justify-between items-center mt-6 mb-2 w-full">
                     <div>
@@ -26,26 +26,18 @@ const DevelopersPage = async ({ searchParams }: DevelopersPageProps) => {
                             subtitle={`نتائج ${developers.length || 0}`}
                         />
                     </div>
-
-                    <div className=" flex justify-center items-center w-">
-                        <div className="flex justify-center items-center w-full">
-                            <Search placeholder={searchParams.title} />
-                        </div>
-                    </div>
                 </div>
 
-              
-                    {developers.length !== 0 ? (
-                        <DeveloperClient
-                            developers={developers as any}
-                            currentUser={currentUser}
-                        />
-                    ) : (
-                        <EmptyStateAr />
-                    )}
-              
+                {developers.length !== 0 ? (
+                    <DeveloperClient
+                        developers={developers as any}
+                        currentUser={currentUser}
+                    />
+                ) : (
+                    <EmptyStateAr />
+                )}
             </Container>
-        </ClientOnly>
+        </>
     );
 };
 

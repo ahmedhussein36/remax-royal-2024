@@ -1,6 +1,8 @@
 import { SafeCompound, SafeUser } from "@/app/types";
 import ClientOnly from "@/app/components/ClientOnly";
 import CompoundCard from "@/app/components/compounds/CompoundCard";
+import { useParams } from "next/navigation";
+import Search from "./Search";
 
 interface CompoundClienttProps {
     compounds: SafeCompound[] | any[];
@@ -17,6 +19,11 @@ const CompoundClient: React.FC<CompoundClienttProps> = ({
 
     return (
         <ClientOnly>
+              <div className=" flex justify-center items-center w-">
+                        <div className="flex justify-center items-center w-full">
+                            <Search placeholder={params} />
+                        </div>
+                    </div>
             <div className="flex flex-col w-full justify-center items-center">
                 <div
                     className="

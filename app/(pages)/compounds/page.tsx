@@ -27,11 +27,7 @@ const CompoundsPage = async ({ searchParams }: DevelopersPageProps) => {
                         />
                     </div>
 
-                    <div className=" flex justify-center items-center w-">
-                        <div className="flex justify-center items-center w-full">
-                            <Search placeholder={searchParams.title} />
-                        </div>
-                    </div>
+                  
                 </div>
 
                 <div className="flex justify-center items-center mt-4 w-full">

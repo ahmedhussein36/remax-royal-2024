@@ -30,7 +30,7 @@ const CompoundsPage = async ({ searchParams }: DevelopersPageProps) => {
                     </div>
                 </div>
                 <Suspense fallback={<CompoundLoader />}>
-                    <div className="flex justify-center items-center mt-4 w-full">
+                    <div className="">
                         {compounds.length !== 0 ? (
                             <CompoundClient compounds={compounds} />
                         ) : (

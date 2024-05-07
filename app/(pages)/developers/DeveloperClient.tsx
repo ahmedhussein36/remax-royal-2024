@@ -28,7 +28,7 @@ const DeveloperClient: React.FC<DeveloperClientProps> = ({
     const parent = "developers";
 
     return (
-        <ClientOnly>
+        <>
             <div className=" flex justify-center items-center w-full md:w-1/2 m-4">
                 <div className="flex justify-center items-center w-full">
                     <Search placeholder={params} />
@@ -60,7 +60,7 @@ const DeveloperClient: React.FC<DeveloperClientProps> = ({
                     />
                 ))}
             </div>
-        </ClientOnly>
+        </>
     );
 };
 export default DeveloperClient;

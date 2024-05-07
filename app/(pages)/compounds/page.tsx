@@ -30,13 +30,12 @@ const CompoundsPage = async ({ searchParams }: DevelopersPageProps) => {
                     </div>
                 </div>
                 <Suspense fallback={<CompoundLoader />}>
-                    <div className="">
-                        {compounds.length !== 0 ? (
-                            <CompoundClient compounds={compounds} />
-                        ) : (
-                            <EmptyStateAr title="لايوجد نتائج متوفرة" />
-                        )}
-                    </div>
+                    {compounds.length !== 0 ? (
+                        <CompoundLoader />
+                        // <CompoundClient compounds={compounds} />
+                    ) : (
+                        <EmptyStateAr title="لايوجد نتائج متوفرة" />
+                    )}
                 </Suspense>
             </Container>
         </>

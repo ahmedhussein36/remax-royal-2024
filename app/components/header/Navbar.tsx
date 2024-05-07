@@ -16,7 +16,7 @@ const Navbar: React.FC<NavbarProps> = ({ currentUser }) => {
                 id="headerContainer"
                 className="py-3 px-2 flex flex-row items-center justify-between mx-auto w-full max-w-screen-xl"
             >
-                <div id="headerMenu">
+                <div id="headerMenu h-10">
                     <Logo />
                 </div>
                 <div id="navContainer" className="max-md:hidden">

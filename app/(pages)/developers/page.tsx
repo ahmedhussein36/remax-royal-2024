@@ -6,6 +6,9 @@ import Heading from "@/app/components/Heading";
 import DeveloperClient from "./DeveloperClient";
 import getDevelopers, { IParams } from "@/app/actions/getDevelopers";
 import Search from "@/app/components/Search";
+import { Suspense } from "react";
+import CompoundLoader from "@/app/components/compounds/CompoundLoader";
+import DeveloperLoader from "@/app/components/DeveloperLoader";
 
 interface DevelopersPageProps {
     searchParams: IParams;
@@ -27,15 +30,17 @@ const DevelopersPage = async ({ searchParams }: DevelopersPageProps) => {
                         />
                     </div>
                 </div>
-
-                {developers.length !== 0 ? (
-                    <DeveloperClient
-                        developers={developers as any}
-                        currentUser={currentUser}
-                    />
-                ) : (
-                    <EmptyStateAr />
-                )}
+                <ClientOnly fallback={<DeveloperLoader />}>
+                    {developers.length !== 0 ? (
+                        // <DeveloperLoader />
+                        <DeveloperClient
+                            developers={developers as any}
+                            currentUser={currentUser}
+                        />
+                    ) : (
+                        <EmptyStateAr />
+                    )}{" "}
+                </ClientOnly>
             </Container>
         </>
     );

@@ -195,7 +195,7 @@ export default function Page() {
     const placeholder = "/assets/images/placeholder2.png";
 
     return (
-        <ClientOnly>
+        <>
             <Container>
                 <div className=" flex flex-col md:flex-row justify-between items-start gap-4 my-8">
                     <div className="flex flex-col justify-center items-start w-full md:w-2/3 h-fit gap-4">
@@ -793,6 +793,6 @@ export default function Page() {
                     تواصل معنا
                 </a>
             </div>
-        </ClientOnly>
+        </>
     );
 }

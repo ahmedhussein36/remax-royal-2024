@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { SafeArea, SafeCompound, SafeProperty, SafeUser } from "@/app/types";
 import Container from "@/app/components/Container";
 import PropertyCard from "@/app/components/properties/PropertyCard";
@@ -8,7 +8,7 @@ interface ForSaleClientProps {
     listings: SafeProperty[] & {
         user: SafeUser;
         compound: SafeCompound;
-        area: SafeArea ;
+        area: SafeArea;
     };
     currentUser?: SafeUser | null;
 }
@@ -18,10 +18,9 @@ const ForSaleClient: React.FC<ForSaleClientProps> = ({
     currentUser,
 }) => {
     return (
-        <ClientOnly>
-            <>
-                <div
-                    className="
+        <>
+            <div
+                className="
                             pt-2
                             mt-8
                             grid 
@@ -30,18 +29,17 @@ const ForSaleClient: React.FC<ForSaleClientProps> = ({
                             md:grid-cols-3 
                             gap-8
                         "
-                >
-                    {listings.map((listing: any) => (
-                        <PropertyCard
-                            parent="properties-for-rent"
-                            data={listing}
-                            currentUser={currentUser}
-                            key={listing.id}
-                        />
-                    ))}
-                </div>
-            </>
-        </ClientOnly>
+            >
+                {listings.map((listing: any) => (
+                    <PropertyCard
+                        parent="properties-for-rent"
+                        data={listing}
+                        currentUser={currentUser}
+                        key={listing.id}
+                    />
+                ))}
+            </div>
+        </>
     );
 };
 export default ForSaleClient;

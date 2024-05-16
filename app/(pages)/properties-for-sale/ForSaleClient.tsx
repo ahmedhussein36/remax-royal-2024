@@ -19,7 +19,6 @@ const ForSaleClient: React.FC<ForSaleClientProps> = ({
     const parent = "properties-for-sale";
 
     return (
-        <ClientOnly>
             <>
                 <div
                     className="
@@ -55,7 +54,6 @@ const ForSaleClient: React.FC<ForSaleClientProps> = ({
                         "
                 ></div>
             </>
-        </ClientOnly>
     );
 };
 export default ForSaleClient;

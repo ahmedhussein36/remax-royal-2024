@@ -12,7 +12,6 @@ interface CompoundClienttProps {
 const CompoundClient: React.FC<CompoundClienttProps> = ({
     compounds,
     params,
-    currentUser,
 }) => {
     const parent = "compounds";
 
@@ -40,7 +39,7 @@ const CompoundClient: React.FC<CompoundClienttProps> = ({
                     {compounds.map((compound: any, index) => (
                         <CompoundCard
                             key={compound.id}
-                            slug={compound.id}
+                            slug={compound.slug}
                             id={compound.id}
                             title={compound.title}
                             image={compound.mainImage}

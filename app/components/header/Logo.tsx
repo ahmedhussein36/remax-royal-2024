@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "next/legacy/image";
 import Link from "next/link";
 export default function Logo() {
     return (
@@ -7,9 +7,9 @@ export default function Logo() {
                 <Image
                     src="/assets/images/royal-logo.png"
                     alt="remaxroyal_logo"
-                    width={100}
-                    height={100}
+                    width={80} height={30} priority={true}
                     loading="eager"
+                    className=" aspect-auto"
                 />
             </Link>
         </div>

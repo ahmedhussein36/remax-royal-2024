@@ -8,6 +8,7 @@ import Search from "./Search";
 import CompoundClient from "./CompoundClient";
 import { Suspense } from "react";
 import CompoundLoader from "@/app/components/compounds/CompoundLoader";
+import { SafeCompound } from "@/app/types";
 
 interface DevelopersPageProps {
     searchParams: IParams;
@@ -32,7 +33,7 @@ const CompoundsPage = async ({ searchParams }: DevelopersPageProps) => {
                 <Suspense fallback={<CompoundLoader />}>
                     {compounds.length !== 0 ? (
                         // <CompoundLoader />
-                        <CompoundClient compounds={compounds} />
+                        <CompoundClient compounds={compounds as any} />
                     ) : (
                         <EmptyStateAr title="لايوجد نتائج متوفرة" />
                     )}

@@ -55,7 +55,7 @@ const DeveloperClient: React.FC<DeveloperClientProps> = ({
                         title={developer.title}
                         compoundsCount={developer?.compounds?.length}
                         propertiesCount={0}
-                        slug={developer.id}
+                        slug={developer.slug}
                         parent={parent}
                     />
                 ))}

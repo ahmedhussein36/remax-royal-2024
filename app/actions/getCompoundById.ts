@@ -1,16 +1,16 @@
 import prisma from "@/app/libs/prismadb";
 
 interface IParams {
-    id: string;
+    slug: string;
 }
 
-export default async function getCompoundById(params: IParams) {
+export default async function getCompoundByslug(params: IParams) {
     try {
-        const { id } = params;
+        const { slug } = params;
 
         const compound = await prisma.compound.findUnique({
             where: {
-                id: id,
+                slug: decodeURI(slug),
             },
             include: {
                 developer: true,

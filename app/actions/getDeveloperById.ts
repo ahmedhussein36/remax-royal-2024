@@ -1,16 +1,16 @@
 import prisma from "@/app/libs/prismadb";
 
 interface IParams {
-    id: string;
+    slug: string;
 }
 
-export default async function getDeveloperById(params: IParams) {
+export default async function getDeveloperByslug(params: IParams) {
     try {
-        const { id } = params;
+        const { slug } = params;
 
         const developer = await prisma.developer.findUnique({
             where: {
-                id: id,
+                slug:decodeURI(slug),
             },
             include: {
                 property: true,

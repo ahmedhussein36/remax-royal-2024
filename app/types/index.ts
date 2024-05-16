@@ -11,7 +11,6 @@ export type SafeArea = Omit<Area, "createdAt"> & {
   createdAt: string;
 };
 
-
 export type SafeListing = Omit<Listing, "createdAt"> & {
   createdAt: string;
 };

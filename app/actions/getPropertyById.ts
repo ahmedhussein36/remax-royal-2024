@@ -1,16 +1,16 @@
 import prisma from "@/app/libs/prismadb";
 
 interface IParams {
-    propertyId?: string;
+    slug: string;
 }
 
 export default async function getPropertyById(params: IParams) {
     try {
-        const { propertyId } = params;
+        const { slug } = params;
 
         const property = await prisma.property.findUnique({
             where: {
-                id: propertyId,
+                slug: decodeURI(slug),
             },
             include: {
                 user: true,

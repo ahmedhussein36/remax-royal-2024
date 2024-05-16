@@ -5,7 +5,7 @@ import getCompoundById from "@/app/actions/getCompoundById";
 import getDeveloperById from "@/app/actions/getDeveloperById";
 
 interface IParams {
-    id: string;
+    slug: string;
 }
 
 const DeveloperPage = async ({ params }: { params: IParams }) => {

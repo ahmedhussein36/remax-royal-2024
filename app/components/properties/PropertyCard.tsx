@@ -35,7 +35,7 @@ const PropertyCard: React.FC<PropertyCardProps> = ({
 
     const location = `${data?.compound?.title} / ${data?.area?.title}`;
     return (
-        <Link href={`/${parent}/${data.id}`}>
+        <Link href={`/${parent}/${data.slug}`}>
             <div className="col-span-1 group relative mb-4 flex justify-center item-center overflow-hidden cursor-pointer">
                 <div
                     className="

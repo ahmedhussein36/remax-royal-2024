@@ -5,7 +5,7 @@ import getDeveloperById from "@/app/actions/getDeveloperById";
 import getCompounds from "@/app/actions/getCompounds";
 
 interface DevParams {
-    id: string;
+    slug: string;
 }
 
 const DeveloperPage = async ({ params }: { params: DevParams }) => {

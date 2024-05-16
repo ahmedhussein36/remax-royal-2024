@@ -20,7 +20,7 @@ const ForRentPage = async ({ searchParams }: ForRentPageProps) => {
         (listing: any) => listing.category === "للإيجار"
     );
     return (
-        <ClientOnly>
+        <>
             <Container>
                 <div className="flex gap-4 justify-between items-center my-8 w-full">
                     <Heading
@@ -43,7 +43,7 @@ const ForRentPage = async ({ searchParams }: ForRentPageProps) => {
                     <EmptyStateAr showReset />
                 )}
             </Container>
-        </ClientOnly>
+        </>
     );
 };
 

@@ -10,13 +10,21 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
+type Meta {
+  metaTitle       String
+  metaDescription String
+}
+
 model User {
   id             String         @id @default(auto()) @map("_id") @db.ObjectId
-  name           String?
-  email          String?        @unique
+  name           String
+  username       String?
+  email          String         @unique
+  role           String?
+  status         String?
   emailVerified  DateTime?
   image          String?
-  hashedPassword String?
+  hashedPassword String
   createdAt      DateTime       @default(now())
   updatedAt      DateTime       @updatedAt
   favoriteIds    String[]       @db.ObjectId
@@ -31,6 +39,11 @@ model User {
   Category       Category[]
   Tag            Tag[]
   PostCategory   PostCategory[]
+}
+
+enum Role {
+  USER
+  ADMIN
 }
 
 model Account {
@@ -83,12 +96,12 @@ model Reservation {
 
 model Property {
   id                String     @id @default(auto()) @map("_id") @db.ObjectId
+  slug              String     @unique
   createdAt         DateTime   @default(now())
   updatedAt         DateTime   @updatedAt
   title             String
   description       String
   content           String
-  slug              String
   images            String[]
   mainImage         String
   category          String
@@ -121,7 +134,7 @@ model Property {
   city              String?
   phone             String
   whatsapp          String
-  seoDetails        Json?
+  seoDetails        Meta?
   price             Int
   currency          String
   size              Int
@@ -138,15 +151,15 @@ model Property {
 
 model Compound {
   id            String     @id @default(auto()) @map("_id") @db.ObjectId
+  slug          String     @unique
   createdAt     DateTime   @default(now())
   updatedAt     DateTime   @updatedAt
   title         String
   content       String
   description   String
-  slug          String     @unique
   mainImage     String
   images        String[]
-  seoDetails    Json?
+  seoDetails    Meta?
   latLong       Float
   isLaunch      String
   status        String
@@ -165,12 +178,13 @@ model Compound {
 
 model Developer {
   id            String     @id @default(auto()) @map("_id") @db.ObjectId
-  title         String
   slug          String     @unique
+  title         String
   image         String
   description   String
   createdAt     DateTime   @default(now())
   updatedAt     DateTime   @updatedAt
+  seoDetails    Meta?
   status        String?
   isFeatured    Boolean?
   isAddHome     Boolean?
@@ -191,9 +205,10 @@ model Area {
   createdAt     DateTime   @default(now())
   updatedAt     DateTime   @updatedAt
   image         String?
-  lat           Float
-  long          Float
+  lat           Float?
+  long          Float?
   status        String?
+  seoDetails    Meta?
   isFeatured    Boolean?
   isAddHome     Boolean?
   isFooterMenu  Boolean?
@@ -207,10 +222,11 @@ model Area {
 
 model Category {
   id              String         @id @default(auto()) @map("_id") @db.ObjectId
-  title           String
   slug            String         @unique
+  title           String
   image           String
   description     String
+  seoDetails      Meta?
   createdAt       DateTime       @default(now())
   updatedAt       DateTime       @updatedAt
   status          String?
@@ -227,8 +243,8 @@ model Category {
 
 model Post {
   id              String         @id @default(auto()) @map("_id") @db.ObjectId
-  title           String
   slug            String         @unique
+  title           String
   image           String?
   content         String?
   createdAt       DateTime       @default(now())

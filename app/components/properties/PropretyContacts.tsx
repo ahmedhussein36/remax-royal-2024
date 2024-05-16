@@ -3,8 +3,8 @@
 import Image from "next/image";
 
 interface PropretyContactsProps {
-    phone: string;
-    whatsApp: string;
+    phone?: string;
+    whatsApp?: string;
 }
 
 const PropretyContacts: React.FC<PropretyContactsProps> = ({

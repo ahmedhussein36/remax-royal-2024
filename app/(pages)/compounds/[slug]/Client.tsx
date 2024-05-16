@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import Container from "@/app/components/Container";
 import PropretyContacts from "@/app/components/properties/PropretyContacts";
 import { SafeArea, SafeCompound, SafeDeveloper } from "@/app/types";
@@ -160,7 +160,10 @@ const Client: React.FC<ClientProps> = ({ compound }) => {
                                 </div>
                             </div>
                         </div>
-                        <div>من {formatNumber(compoundDetails.minPrice)} إلى {formatNumber(compoundDetails.maxPrice)}</div>
+                        <div>
+                            من {formatNumber(compoundDetails.minPrice)} إلى{" "}
+                            {formatNumber(compoundDetails.maxPrice)}
+                        </div>
                     </div>
                     <div className="w-full md:w-1/3 h-full">
                         <div className=" w-full h-full rounded-lg border-2 p-4">
@@ -229,15 +232,6 @@ const Client: React.FC<ClientProps> = ({ compound }) => {
 
                 <div className=" grid grid-cols-1 md:grid-cols-3 gap-3 lg:gap-12">
                     <div className=" col-span-full md:col-span-2 w-full">
-                        <div className=" flex flex-col justify-center items-start gap-3">
-                            <div className=" text-xl font-bold my-4">
-                                <h2>نبذة عن المشروع</h2>
-                            </div>
-                            <div className=" border-blue-200 border rounded-lg p-4 bg-blue-50 w-full">
-                                {parse(compound.description)}
-                            </div>
-                        </div>
-
                         <div className="my-12">
                             <h2 className="text-xl font-bold mb-4">
                                 تفاصيل المشروع

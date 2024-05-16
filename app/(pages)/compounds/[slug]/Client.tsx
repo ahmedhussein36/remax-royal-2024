@@ -35,6 +35,13 @@ interface PageProps {
     amineties?: object[];
 }
 const Client: React.FC<ClientProps> = ({ compound }) => {
+
+const metadata ={
+    title: compound.seoDetails?.metaTitle,
+    description: compound.seoDetails?.metaDescription,
+
+}
+
     const [isLoading, setIsLoading] = useState(false);
     const [data, setData] = useState({
         name: "",
@@ -131,8 +138,8 @@ const Client: React.FC<ClientProps> = ({ compound }) => {
                                 alt={compoundDetails.title}
                             />{" "}
                         </div>
-                        <div className=" flex flex-col md:flex-row justify-start items-center gap-4">
-                            <div className="relative aspect-square w-[70px] rounded-full overflow-hidden border-4 border-slate-200">
+                        <div className=" flex flex-col md:flex-row justify-start items-start gap-4">
+                            <div className="relative aspect-square w-[85px] rounded-full overflow-hidden border-4 border-slate-200">
                                 <Image
                                     src={
                                         compound.developer.image || placeholder
@@ -149,8 +156,8 @@ const Client: React.FC<ClientProps> = ({ compound }) => {
                                         {compoundDetails.title}
                                     </h1>
                                 </div>
-                                <div className=" flex flex-col md:flex-row gap-2 w-full">
-                                    <p>{compoundDetails.area}</p>
+                                <div className=" flex justify-start items-center gap-2 w-full">
+                                    <span>{compoundDetails.area}</span>
                                     <div className=" flex gap-2">
                                         <span>من تطوير</span>
                                         <span className=" rounded-lg bg-slate-100 px-3">
@@ -158,11 +165,11 @@ const Client: React.FC<ClientProps> = ({ compound }) => {
                                         </span>
                                     </div>
                                 </div>
+                                <div className="mt-2">
+                                    من {formatNumber(compoundDetails.minPrice)}{" "}
+                                    إلى {formatNumber(compoundDetails.maxPrice)}
+                                </div>
                             </div>
-                        </div>
-                        <div>
-                            من {formatNumber(compoundDetails.minPrice)} إلى{" "}
-                            {formatNumber(compoundDetails.maxPrice)}
                         </div>
                     </div>
                     <div className="w-full md:w-1/3 h-full">
@@ -228,11 +235,11 @@ const Client: React.FC<ClientProps> = ({ compound }) => {
                     </div>
                 </div>
 
-                <hr className="m-8"></hr>
+                <hr className="m-4"></hr>
 
                 <div className=" grid grid-cols-1 md:grid-cols-3 gap-3 lg:gap-12">
                     <div className=" col-span-full md:col-span-2 w-full">
-                        <div className="my-12">
+                        <div className="my-4">
                             <h2 className="text-xl font-bold mb-4">
                                 تفاصيل المشروع
                             </h2>
@@ -280,7 +287,9 @@ const Client: React.FC<ClientProps> = ({ compound }) => {
                                 </table>
                             </div>
                         </div>
-                        <div className="my-12">
+                        <div className="my-12 relative">
+                            <div className=" absolute "></div>
+                            <h2>عن {compoundDetails.title}</h2>
                             {parse(compoundDetails.description)}
                         </div>
                     </div>

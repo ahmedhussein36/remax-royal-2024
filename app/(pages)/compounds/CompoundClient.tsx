@@ -1,4 +1,3 @@
-"use client"
 import { SafeCompound, SafeUser } from "@/app/types";
 import CompoundCard from "@/app/components/compounds/CompoundCard";
 import Search from "./Search";

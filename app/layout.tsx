@@ -12,8 +12,12 @@ import "./globals.css";
 const font = Noto_Kufi_Arabic({ subsets: ["arabic"] });
 
 export const metadata = {
-    title: "Remax royal",
-    description: "Remax Royal all homes you search for",
+    title: {
+        default: "RE/MAX Royal | ريماكس رويال : عقارت للبيع وللإيجار في مصر",
+        template: `%s | RE/MAX Royal`,
+    },
+    description:
+        "ريماكس رويال موطن العقارات التي تبحث عنها | عقارات للبيع وللايجار في مصر",
 };
 
 export default async function RootLayout({

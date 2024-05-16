@@ -8,7 +8,7 @@ const HeroSection = ({ children }: { children: React.ReactNode }) => {
             justify-center items-center mb-8 rounded-3xl`}
         >
             <div className="p-6 my-4">
-                <h1 className=" font-extrabold text-xl lg:text-5xl text-white">
+                <h1 className="bold md:font-extrabold text-xl lg:text-4xl text-slate-600">
                     دوّر علي بيتك الجديد عندنا
                 </h1>
             </div>

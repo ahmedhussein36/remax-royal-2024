@@ -36,12 +36,6 @@ interface PageProps {
 }
 const Client: React.FC<ClientProps> = ({ compound }) => {
 
-const metadata ={
-    title: compound.seoDetails?.metaTitle,
-    description: compound.seoDetails?.metaDescription,
-
-}
-
     const [isLoading, setIsLoading] = useState(false);
     const [data, setData] = useState({
         name: "",

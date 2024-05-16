@@ -5,8 +5,8 @@ import HeroSection from "./components/home/HeroSection";
 import { notFound } from "next/navigation";
 
 export const metadata = {
-    title: "Remax Royal : ريماكس رويال ",
-    description: "ريماكس رويال موطن العقارات التي تبحث عنها",
+    title: "RE/MAX Royal | ريماكس رويال : عقارت للبيع وللإيجار في مصر",
+    description: "ريماكس رويال موطن العقارات التي تبحث عنها | عقارات للبيع وللايجار في مصر",
 };
 
 const Home = async () => {

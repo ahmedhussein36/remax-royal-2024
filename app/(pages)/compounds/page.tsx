@@ -27,6 +27,9 @@ export async function generateMetadata({
     return {
         title,
         description,
+        alternates: {
+            canonical: `/compounds`,
+        },
         openGraph: {
             title,
             description,

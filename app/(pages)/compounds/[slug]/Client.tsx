@@ -1,7 +1,12 @@
 "use client";
 import Container from "@/app/components/Container";
 import PropretyContacts from "@/app/components/properties/PropretyContacts";
-import { SafeArea, SafeCompound, SafeDeveloper } from "@/app/types";
+import {
+    SafeArea,
+    SafeCompound,
+    SafeDeveloper,
+    SafeProperty,
+} from "@/app/types";
 import Image from "next/legacy/image";
 import parse from "html-react-parser";
 import { MdWhatsapp } from "react-icons/md";
@@ -14,6 +19,7 @@ interface ClientProps {
         developer: SafeDeveloper;
         area: SafeArea;
     };
+    properties: SafeProperty[];
 }
 interface PageProps {
     title: string;
@@ -34,14 +40,35 @@ interface PageProps {
     metaDescription?: string;
     amineties?: object[];
 }
-const Client: React.FC<ClientProps> = ({ compound }) => {
-
+const Client: React.FC<ClientProps> = ({ compound, properties }) => {
     const [isLoading, setIsLoading] = useState(false);
     const [data, setData] = useState({
         name: "",
         phone: "",
-        subject: "مشروع ات ايست الاهلي صبور",
+        subject: "",
     });
+
+    const [allAmineties, setAllAmineties] = useState([]);
+
+    function getMaxPrice(properties: SafeProperty[]): number {
+        if (properties.length === 0) return 0; // Handle empty array case
+
+        return properties.reduce((max, property) => {
+            return property.price > max ? property.price : max;
+        }, properties[0].price);
+    }
+
+    function getMinPrice(properties: SafeProperty[]): number {
+        if (properties.length === 0) return 0; // Handle empty array case
+
+        return properties.reduce((max, property) => {
+            return property.price < max ? property.price : max;
+        }, properties[0].price);
+    }
+
+    function getAmineties(properties: SafeProperty[]) {
+        if (properties.length === 0) return []; // Handle empty array case
+    }
 
     const compoundDetails: PageProps = {
         title: compound.title,
@@ -52,14 +79,12 @@ const Client: React.FC<ClientProps> = ({ compound }) => {
         area: compound.area.title,
         size: 0,
         latlong: compound.latLong,
-        minPrice: 0,
-        maxPrice: 0,
+        minPrice: getMinPrice(properties),
+        maxPrice: getMaxPrice(properties),
         phone: "",
         whatsapp: "",
         paymentPlans: [],
         properties: [],
-        metaTitle: compound?.seoDetails?.metaTitle,
-        metaDescription: compound?.seoDetails?.metaDescription,
         amineties: [],
     };
 

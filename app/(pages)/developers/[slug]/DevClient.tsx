@@ -70,7 +70,7 @@ const DevClient: React.FC<DevClientProps> = ({ developer, compounds }) => {
                         <h2>عن {developer.title}</h2>
                     </div>
                     <div className=" border-blue-200 border rounded-lg p-4 bg-blue-50 w-full">
-                        <p>{developer.description}</p>
+                        <p>{developer.content}</p>
                     </div>
                 </div>
 

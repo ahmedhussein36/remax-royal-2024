@@ -6,10 +6,10 @@ import getCurrentUser from "./actions/getCurrentUser";
 import TopLoader from "./components/TopLoader";
 import Footer from "./components/Footer";
 
-// import { Noto_Kufi_Arabic } from "next/font/google";
+import { Noto_Kufi_Arabic } from "next/font/google";
 import "./globals.css";
 
-// const font = Noto_Kufi_Arabic({ subsets: ["arabic"] });
+const font = Noto_Kufi_Arabic({ subsets: ["arabic"] });
 
 export const metadata = {
     title: {
@@ -30,7 +30,7 @@ export default async function RootLayout({
     return (
         <html lang="ar" dir="rtl">
             <body
-            // className={font.className}J
+            className={font.className}
             >
                 <TopLoader />
                 <div className=" flex flex-col">

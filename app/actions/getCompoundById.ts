@@ -25,7 +25,7 @@ export default async function getCompoundById(params: IParams) {
 
         return {
             ...compound,
-            createdAat: compound?.createdAt?.toString(),
+            createdAat: compound?.createdAt?.toISOString(),
             developer: {
                 ...compound?.developer,
             },

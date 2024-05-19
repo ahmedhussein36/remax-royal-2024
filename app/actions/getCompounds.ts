@@ -4,59 +4,65 @@ export interface IParams {
     title?: string;
     developerId?: string;
     areaId?: string;
+    status?: string;
 }
 
 export default async function getCompounds(params: IParams) {
     try {
-        const { title, developerId, areaId } = params;
+        const { title, developerId, areaId, status } = params;
 
-        let query: any = {};
+        const query: any = {};
 
         if (title) {
             query.title = {
                 contains: title,
+                mode: "insensitive", // Case-insensitive search
             };
+        }
+
+        if (status) {
+            query.status = status;
+        }
+
+        if (areaId) {
+            query.areaId = areaId;
         }
 
         if (developerId) {
             query.developerId = developerId;
         }
-        if (areaId) {
-            query.areaId = areaId;
-        }
 
         const compounds = await prisma.compound.findMany({
             where: query,
-            include: {
-                developer: true,
-                user: true,
-                area: true,
-                properties: true,
+            select: {
+                id: true,
+                slug: true,
+                images: true,
+                mainImage: true,
+                title: true,
+                createdAt: true,
+                developer: {
+                    select: {
+                        title: true,
+                    },
+                },
+                area: {
+                    select: {
+                        title: true,
+                    },
+                },
             },
             orderBy: {
                 createdAt: "desc",
             },
         });
 
-        const safeCompounds = compounds.map((compound) => ({
+        return compounds.map((compound) => ({
             ...compound,
-            createdAt: compound.createdAt,
-            developer: {
-                ...compound.developer,
-            },
-            area: {
-                ...compound.area,
-            },
-            user: {
-                ...compound.user,
-            },
-            properties: {
-                ...compound.properties,
-            },
+            createdAt: compound.createdAt.toISOString(),
         }));
-
-        return safeCompounds;
-    } catch (error: any) {
-        throw new Error(error);
+    } catch (error) {
+        console.error("Error fetching compounds:", error);
+        throw new Error("Could not fetch compounds");
     }
 }

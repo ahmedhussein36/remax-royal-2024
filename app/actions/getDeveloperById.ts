@@ -4,7 +4,7 @@ interface IParams {
     slug: string;
 }
 
-export default async function getDeveloperByslug(params: IParams) {
+export default async function getDeveloperById(params: IParams) {
     try {
         const { slug } = params;
 
@@ -15,8 +15,8 @@ export default async function getDeveloperByslug(params: IParams) {
             include: {
                 property: true,
                 compound: true,
-            },
-        });
+            }
+        })
 
         if (!developer) {
             return null;
@@ -24,8 +24,9 @@ export default async function getDeveloperByslug(params: IParams) {
 
         const safeDeveloper = {
             ...developer,
-            created_at: developer?.createdAt?.toString(),
-        };
+            created_at: developer?.createdAt?.toString()
+
+        }
 
         return safeDeveloper;
     } catch (error: any) {

@@ -1,7 +1,6 @@
 "use client";
 import { SafeArea, SafeCompound, SafeProperty, SafeUser } from "@/app/types";
 import PropertyCard from "@/app/components/properties/PropertyCard";
-import ClientOnly from "@/app/components/ClientOnly";
 
 interface ForSaleClientProps {
     listings: SafeProperty[] & {
@@ -19,9 +18,9 @@ const ForSaleClient: React.FC<ForSaleClientProps> = ({
     const parent = "properties-for-sale";
 
     return (
-            <>
-                <div
-                    className="
+        <>
+            <div
+                className="
                             pt-2
                             mt-8
                             grid 
@@ -30,19 +29,19 @@ const ForSaleClient: React.FC<ForSaleClientProps> = ({
                             md:grid-cols-3  
                             gap-8
                         "
-                >
-                    {listings.map((listing: any) => (
-                        <PropertyCard
-                            parent={parent}
-                            data={listing}
-                            currentUser={currentUser}
-                            key={listing.id}
-                        />
-                    ))}
-                </div>
+            >
+                {listings.map((listing: any) => (
+                    <PropertyCard
+                        parent={parent}
+                        data={listing}
+                        currentUser={currentUser}
+                        key={listing.id}
+                    />
+                ))}
+            </div>
 
-                <div
-                    className="
+            <div
+                className="
                             pt-2
                             mt-8
                             grid 
@@ -52,8 +51,8 @@ const ForSaleClient: React.FC<ForSaleClientProps> = ({
                             gap-8
                             relative
                         "
-                ></div>
-            </>
+            ></div>
+        </>
     );
 };
 export default ForSaleClient;

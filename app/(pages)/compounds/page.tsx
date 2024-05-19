@@ -1,45 +1,66 @@
+// app/compounds/page.tsx
+
+import { Suspense } from "react";
 import Container from "@/app/components/Container";
 import EmptyStateAr from "@/app/components/EmptyStateAr";
-import getCurrentUser from "@/app/actions/getCurrentUser";
-import ClientOnly from "@/app/components/ClientOnly";
 import Heading from "@/app/components/Heading";
 import getCompounds, { IParams } from "@/app/actions/getCompounds";
-import Search from "./Search";
 import CompoundClient from "./CompoundClient";
-import { Suspense } from "react";
 import CompoundLoader from "@/app/components/compounds/CompoundLoader";
-import { SafeCompound } from "@/app/types";
 
-interface DevelopersPageProps {
-    searchParams: IParams;
+export const revalidate = 10; // Revalidate every 10 seconds
+
+export async function generateStaticParams() {
+    // You can return an array of params to pre-render pages at build time.
+    return [{}]; // Pre-render a default state, can be adjusted as needed.
 }
 
-const CompoundsPage = async ({ searchParams }: DevelopersPageProps) => {
+export async function generateMetadata({
+    searchParams,
+}: {
+    searchParams: IParams;
+}) {
     const compounds = await getCompounds(searchParams);
-    const currentUser = await getCurrentUser();
+    const title = `كمبوندات في مصر - ${compounds.length} نتائج`;
+    const description = `استعراض الكمبوندات المتاحة في مصر. نتائج البحث: ${compounds.length} كمبوندات.`;
+
+    return {
+        title,
+        description,
+        openGraph: {
+            title,
+            description,
+            // You can add more Open Graph tags here
+        },
+        twitter: {
+            title,
+            description,
+            // You can add more Twitter card tags here
+        },
+    };
+}
+
+const CompoundsPage = async ({ searchParams }: { searchParams: IParams }) => {
+    const compounds = await getCompounds(searchParams);
 
     return (
-        <>
-            <Container>
-                <div className="flex gap-4 justify-between items-center mt-6 mb-2 w-full">
-                    <div>
-                        {" "}
-                        <Heading
-                            title={"كمبوندات في مصر "}
-                            subtitle={`نتائج ${compounds.length || 0}`}
-                        />
-                    </div>
+        <Container>
+            <div className="flex gap-4 justify-between items-center mt-6 mb-2 w-full">
+                <div>
+                    <Heading
+                        title="كمبوندات في مصر"
+                        subtitle={`نتائج ${compounds.length || 0}`}
+                    />
                 </div>
-                <Suspense fallback={<CompoundLoader />}>
-                    {compounds.length !== 0 ? (
-                        // <CompoundLoader />
-                        <CompoundClient compounds={compounds as any} />
-                    ) : (
-                        <EmptyStateAr title="لايوجد نتائج متوفرة" />
-                    )}
-                </Suspense>
-            </Container>
-        </>
+            </div>
+            <Suspense fallback={<CompoundLoader />}>
+                {compounds.length !== 0 ? (
+                    <CompoundClient compounds={compounds} />
+                ) : (
+                    <EmptyStateAr title="لايوجد نتائج متوفرة" />
+                )}
+            </Suspense>
+        </Container>
     );
 };
 

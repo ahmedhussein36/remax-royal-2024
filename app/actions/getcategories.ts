@@ -5,7 +5,7 @@ export interface IParams {
     status?: string;
 }
 
-export default async function getDevelopers(params: IParams) {
+export default async function getcategories(params: IParams) {
     try {
         const { title, status } = params;
 
@@ -20,27 +20,19 @@ export default async function getDevelopers(params: IParams) {
             query.status = status;
         }
 
-        const developers = await prisma.developer.findMany({
+        const category = await prisma.category.findMany({
             where: query,
-            select: {
-                id: true,
-                slug: true,
-                title: true,
-                image: true,
-                status: true,
-                createdAt: true,
-            },
             orderBy: {
                 createdAt: "desc",
             },
         });
 
-        const safeDevelopers = developers.map((developer) => ({
-            ...developer,
-            createdAt: developer.createdAt,
+        const safeCategory = category.map((category) => ({
+            ...category,
+            createdAt: category.createdAt,
         }));
 
-        return safeDevelopers;
+        return safeCategory;
     } catch (error: any) {
         throw new Error(error);
     }

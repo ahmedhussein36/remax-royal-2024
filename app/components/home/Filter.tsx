@@ -77,8 +77,7 @@ const Filter = () => {
             bathroomCount: bathroomCount?.value,
             propertyType: null,
             propertyGroup: propertyGroup?.name,
-            city: city?.name,
-            aria: aria?.name,
+            city: null,
             minprice: price?.gte,
             maxprice: price?.lte,
         };
@@ -98,8 +97,6 @@ const Filter = () => {
         roomCount,
         bathroomCount,
         propertyGroup,
-        city,
-        aria,
         title,
         price?.gte,
         price?.lte,
@@ -132,7 +129,7 @@ const Filter = () => {
                 <div className=" col-span-2">
                     <SearchInput
                         isFilter={true}
-                        id="aria"
+                        id="title"
                         value={title}
                         onChange={(e) => setTitle(e.target.value as any)}
                         Placeholder="ابحث عن المنطقة أ الحي أو الكمبوند "

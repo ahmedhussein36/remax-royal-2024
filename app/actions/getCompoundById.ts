@@ -4,7 +4,7 @@ interface IParams {
     slug: string;
 }
 
-export default async function getCompoundByslug(params: IParams) {
+export default async function getCompoundById(params: IParams) {
     try {
         const { slug } = params;
 
@@ -15,6 +15,7 @@ export default async function getCompoundByslug(params: IParams) {
             include: {
                 developer: true,
                 area: true,
+                properties: true,
             },
         });
 
@@ -22,12 +23,19 @@ export default async function getCompoundByslug(params: IParams) {
             return null;
         }
 
-        const safeCompound = {
+        return {
             ...compound,
             createdAat: compound?.createdAt?.toString(),
+            developer: {
+                ...compound?.developer,
+            },
+            area: {
+                ...compound?.area,
+            },
+            properties: {
+                ...compound?.properties,
+            },
         };
-
-        return safeCompound;
     } catch (error: any) {
         throw new Error(error);
     }

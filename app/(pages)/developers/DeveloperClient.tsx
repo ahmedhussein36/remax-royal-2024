@@ -1,14 +1,10 @@
-"use client";
 import {
     SafeCompound,
     SafeDeveloper,
     SafeProperty,
     SafeUser,
 } from "@/app/types";
-import ClientOnly from "@/app/components/ClientOnly";
 import Card from "@/app/components/Card";
-import getCompounds from "@/app/actions/getCompounds";
-import { useEffect } from "react";
 import Search from "./Search";
 
 interface DeveloperClientProps {
@@ -23,7 +19,6 @@ interface DeveloperClientProps {
 const DeveloperClient: React.FC<DeveloperClientProps> = ({
     developers,
     params,
-    currentUser,
 }) => {
     const parent = "developers";
 

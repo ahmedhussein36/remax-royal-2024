@@ -1,10 +1,9 @@
-import { SafeCompound, SafeUser } from "@/app/types";
+import { SafeCompound } from "@/app/types";
 import CompoundCard from "@/app/components/compounds/CompoundCard";
 import Search from "./Search";
 
 interface CompoundClienttProps {
     compounds: SafeCompound[] | any[];
-    currentUser?: SafeUser | null;
     params?: string;
 }
 

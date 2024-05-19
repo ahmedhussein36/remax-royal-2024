@@ -1,4 +1,3 @@
-"use client";
 import {
     SafeArea,
     SafeCompound,
@@ -10,7 +9,6 @@ import Container from "@/app/components/Container";
 import Image from "next/legacy/image";
 import CompoundCard from "@/app/components/compounds/CompoundCard";
 import PropretyContacts from "@/app/components/properties/PropretyContacts";
-import { useCallback, useEffect, useState } from "react";
 
 interface DevClientProps {
     developer: SafeDeveloper;
@@ -22,46 +20,6 @@ interface DevClientProps {
 }
 
 const DevClient: React.FC<DevClientProps> = ({ developer, compounds }) => {
-    const [compoundAreas, setCompoundAreas] = useState<string[]>([]);
-    const [propertiesLength, setPropertiesLength] = useState<number>();
-
-    // const formatNumber = (number: number | undefined): string => {
-    //     if (!number) return String(0);
-    //     if (number >= 1000) {
-    //         return number.toLocaleString();
-    //     } else {
-    //         return number.toString();
-    //     }
-    // };
-
-    // const minPriceInt = Math.floor(developer.min_price || 0);
-
-    // const formattedMinPrice = formatNumber(minPriceInt) || null;
-    // const placeholder = "/assets/images/placeholder2.jpg";
-
-    useEffect(() => {
-        let areas = compounds.map((compound: any) => compound?.area.title);
-        setCompoundAreas(areas);
-        // let properties = compounds.map((compound: any) => compound?.area.title);
-        // setCompoundAreas(properties);
-    }, [compounds]);
-
-    // const propertiesLength = compounds.reduce(
-    //     (acc, compound:any) => acc + compound?.properties.length,
-    //     0
-    // );
-
-    useEffect(() => {
-        const properties = compounds.map(
-            (compound: any) => compound?.properties.length
-        );
-        const propertyLength = properties.reduce(
-            (acc, property) => acc + property,0
-        );
-
-       console.log(properties)
-    }, [compounds]);
-
     return (
         <>
             <div className="h-[30vh] w-full bg-blue-800 relative flex justify-center items-center">
@@ -89,7 +47,7 @@ const DevClient: React.FC<DevClientProps> = ({ developer, compounds }) => {
                         </div>
                         <div className="flex gap-5">
                             <div>{compounds?.length || 0} كمبوند</div>
-                            <div>{propertiesLength} وحدة</div>
+                            <div>{0} وحدة</div>
                         </div>
                         {/* {developer?.min_price && (
                             <div>
@@ -121,14 +79,14 @@ const DevClient: React.FC<DevClientProps> = ({ developer, compounds }) => {
                         <h3>المناطق</h3>
                     </div>
                     <div className="flex gap-3">
-                        {compoundAreas.map((item: any) => (
+                        {/* {compoundAreas.map((item: any) => (
                             <div
                                 className=" p-2 px-4 border rounded-lg"
                                 key={item}
                             >
                                 {item}
                             </div>
-                        ))}
+                        ))} */}
                     </div>
                 </div>
 

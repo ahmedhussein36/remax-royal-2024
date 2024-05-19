@@ -6,7 +6,6 @@ import ClientOnly from "@/app/components/ClientOnly";
 import Heading from "@/app/components/Heading";
 import Sort from "@/app/components/Sort";
 import SearchClient from "./SearchClient";
-import axios from "axios";
 
 interface SearchPageProps {
     searchParams: IParams;
@@ -25,22 +24,26 @@ const SearchPage = async ({ searchParams }: SearchPageProps) => {
     }
 
     return (
-        
-            <Container>
-                <div className="flex gap-4 justify-between items-center my-8 w-full">
-                    <Heading
-                        title={`نتائج البحث عن العقارت في  ${
-                            searchParams.city || "مصر"
-                        } `}
-                        subtitle={`عدد النتائج: ${listings.length}`}
-                    />
-                    <div className="w-60">
-                        <Sort />
-                    </div>
+        <Container>
+            <div className="flex gap-4 justify-between items-center my-8 w-full">
+                <Heading
+                    title={`نتائج البحث عن العقارت في  ${
+                        searchParams.city || "مصر"
+                    } `}
+                    subtitle={`عدد النتائج: ${listings.length}`}
+                />
+                <div className="w-60">
+                    <Sort />
                 </div>
-               <ClientOnly> <SearchClient listings={listings} currentUser={currentUser} />  </ClientOnly>
-            </Container>
-      
+            </div>
+            <ClientOnly>
+                {" "}
+                <SearchClient
+                    listings={listings}
+                    currentUser={currentUser}
+                />{" "}
+            </ClientOnly>
+        </Container>
     );
 };
 

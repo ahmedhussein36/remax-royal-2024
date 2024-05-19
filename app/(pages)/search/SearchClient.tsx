@@ -1,7 +1,6 @@
 import { SafeProperty, SafeUser } from "@/app/types";
 import Container from "@/app/components/Container";
 import PropertyCard from "@/app/components/properties/PropertyCard";
-import ClientOnly from "@/app/components/ClientOnly";
 
 interface SearchClientProps {
     listings: SafeProperty[];

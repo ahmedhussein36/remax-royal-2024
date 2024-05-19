@@ -14,9 +14,9 @@ export default async function getPropertyById(params: IParams) {
             },
             include: {
                 user: true,
-                Developer: true,
-                Area: true,
                 compound: true,
+                Area: true,
+                Developer: true,
             },
         });
 

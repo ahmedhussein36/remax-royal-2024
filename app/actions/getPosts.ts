@@ -31,7 +31,8 @@ export default async function getPosts(params: IParams) {
 
         const safePosts = posts.map((post) => ({
             ...post,
-            createdAt: post.createdAt,
+            createdAt: post.createdAt.getTime(),
+            updatedAt: post.updatedAt.getTime(),
         }));
 
         return safePosts;

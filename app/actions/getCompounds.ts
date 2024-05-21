@@ -59,7 +59,7 @@ export default async function getCompounds(params: IParams) {
 
         return compounds.map((compound) => ({
             ...compound,
-            createdAt: compound.createdAt.toISOString(),
+            createdAt: compound.createdAt.getTime(),
         }));
     } catch (error) {
         console.error("Error fetching compounds:", error);

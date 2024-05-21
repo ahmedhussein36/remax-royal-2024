@@ -69,7 +69,8 @@ export default async function getProperties(params: IParams) {
 
         const safeProperties = properties.map((listing) => ({
             ...listing,
-            createdAt: listing.createdAt.toISOString(),
+            createdAt: listing.createdAt.getTime(),
+            updatedAt: listing.updatedAt.getTime(),
         }));
 
         return safeProperties;

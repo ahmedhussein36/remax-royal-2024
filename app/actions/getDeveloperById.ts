@@ -10,13 +10,13 @@ export default async function getDeveloperById(params: IParams) {
 
         const developer = await prisma.developer.findUnique({
             where: {
-                slug:decodeURI(slug),
+                slug: decodeURI(slug),
             },
             include: {
                 property: true,
                 compound: true,
-            }
-        })
+            },
+        });
 
         if (!developer) {
             return null;
@@ -24,9 +24,9 @@ export default async function getDeveloperById(params: IParams) {
 
         const safeDeveloper = {
             ...developer,
-            created_at: developer?.createdAt?.toString()
-
-        }
+            createdAt: developer?.createdAt?.getTime(),
+            updatedAt: developer?.updatedAt?.getTime(),
+        };
 
         return safeDeveloper;
     } catch (error: any) {

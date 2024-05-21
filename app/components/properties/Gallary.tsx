@@ -24,7 +24,7 @@ const Gallary = ({ images, mainImage }: GallaryProps) => {
                     src={mainImage}
                     alt="property image"
                     layout="fill"
-                    priority={false}
+                    priority={true}
                 />
             </div>
             <div className="bg-white lg:grid lg:grid-rows-3 gap-3 hidden md:hidden ">
@@ -37,7 +37,7 @@ const Gallary = ({ images, mainImage }: GallaryProps) => {
                             <Image
                                 objectFit="cover"
                                 layout="fill"
-                                priority={false}
+                                priority={true}
                                 src={image}
                                 alt="property image"
                                 className=" relative"

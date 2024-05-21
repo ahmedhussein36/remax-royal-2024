@@ -29,7 +29,8 @@ export default async function getcategories(params: IParams) {
 
         const safeCategory = category.map((category) => ({
             ...category,
-            createdAt: category.createdAt,
+            createdAt: category?.createdAt?.getTime(),
+            updatedAt: category?.updatedAt?.getTime(),
         }));
 
         return safeCategory;

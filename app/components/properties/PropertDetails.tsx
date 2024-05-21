@@ -9,11 +9,13 @@ const PropDetails: React.FC<PropDetailsProps> = ({ data }) => {
     const date = new Date(data.createdAt);
 
     // Format the date
-    const formattedDate : string = date.toLocaleDateString("en-US", {
+    const formattedDate: string = date.toLocaleDateString("en-US", {
         day: "2-digit",
         month: "short",
         year: "numeric",
     });
+
+    const refNum = `RR-${Math.ceil((date.getTime() + (parseInt(data.id))) / 600000000)}`;
 
     return (
         <div className="flex flex-col mt-4  rounded-lg p-6">
@@ -35,7 +37,7 @@ const PropDetails: React.FC<PropDetailsProps> = ({ data }) => {
                     <div className="flex justify-start items-center gap-2 w-full border-b py-3">
                         <span className="w-1/2 text-sm">الرقم المرجعي</span>
                         <span className=" w-1/2 font-bold text-sm">
-                            {`RR-${(data?.id).slice(0, 4)}` || "N/A"}
+                            {refNum || "N/A"}
                         </span>
                     </div>
                     <div className="flex justify-start items-center gap-2 w-full border-b py-3">
@@ -76,6 +78,13 @@ const PropDetails: React.FC<PropDetailsProps> = ({ data }) => {
 
             <div className="border-b-2 my-12"></div>
 
+            <div aria-label="description">
+                <h2>وصف العقار</h2>
+                <div className=" text-lg text-slate-600 space-y-3 leading-[2]">
+                    {parse(data?.content || "")}
+                </div>
+            </div>
+
             <h2 className="font-bold text-xl"> الكماليات</h2>
             <div
                 aria-label="amenities"
@@ -83,11 +92,6 @@ const PropDetails: React.FC<PropDetailsProps> = ({ data }) => {
             >
                 {data.amenities.map((item: any) => item.name)}
                 <div className="border-b-2 my-12"></div>
-            </div>
-            <div aria-label="description">
-                <div className=" text-lg text-slate-600 space-y-3 leading-[2]">
-                    {parse(data?.content || "")}
-                </div>
             </div>
         </div>
     );

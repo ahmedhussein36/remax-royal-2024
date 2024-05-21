@@ -48,8 +48,8 @@ const PropertyClient: React.FC<PropertyClientProps> = ({
                     </div>
                     <div className="w-full md:w-1/3 columns-1 md:column-2 mt-8">
                         <AgentInfo
-                            user={listing.user?.name as string}
-                            image={listing.user?.image as string}
+                            user={listing?.user?.name as string || ""}
+                            image={listing?.user?.image as string}
                             listing={listing}
                         />
                         <PaymentPlans data={listing} />

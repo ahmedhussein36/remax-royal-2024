@@ -37,7 +37,8 @@ export default async function getPropertyById(params: IParams) {
 
         return {
             ...property,
-            createdAt: property.createdAt.toString(),
+            createdAt: property.createdAt.getTime(),
+            updatedAt: property.updatedAt.getTime(),
             user: {
                 ...property.user,
             },

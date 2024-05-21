@@ -16,7 +16,6 @@ const ForSaleClient: React.FC<ForSaleClientProps> = ({
     currentUser,
 }) => {
     const parent = "properties-for-sale";
-
     return (
         <>
             <div

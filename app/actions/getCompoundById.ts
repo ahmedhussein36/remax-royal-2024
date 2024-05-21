@@ -33,7 +33,8 @@ export default async function getCompoundById(params: IParams) {
 
         return {
             ...compound,
-            createdAat: compound?.createdAt?.toISOString(),
+            createdAt: compound?.createdAt?.getTime(),
+            updatedAt: compound?.updatedAt?.getTime(),
             developer: {
                 ...compound?.developer,
             },

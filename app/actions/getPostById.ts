@@ -20,7 +20,8 @@ export default async function getPostById(params: IParams) {
 
         const safePost = {
             ...post,
-            createdAat: post?.createdAt?.toString(),
+            createdAt: post.createdAt.getTime(),
+            updatedAt: post.updatedAt.getTime(),
         };
 
         return safePost;

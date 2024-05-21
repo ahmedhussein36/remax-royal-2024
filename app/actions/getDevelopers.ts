@@ -37,7 +37,7 @@ export default async function getDevelopers(params: IParams) {
 
         const safeDevelopers = developers.map((developer) => ({
             ...developer,
-            createdAt: developer.createdAt,
+            createdAt: developer.createdAt.getTime(),
         }));
 
         return safeDevelopers;

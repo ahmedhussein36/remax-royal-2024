@@ -20,7 +20,8 @@ export default async function getareaById(params: IParams) {
 
         const safearea = {
             ...area,
-            createdAat: area?.createdAt?.toString(),
+            createdAt: area?.createdAt?.getTime(),
+            updatedAt: area?.updatedAt?.getTime(),
         };
 
         return safearea;

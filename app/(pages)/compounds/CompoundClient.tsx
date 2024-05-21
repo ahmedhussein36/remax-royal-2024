@@ -34,7 +34,7 @@ const CompoundClient: React.FC<CompoundClienttProps> = ({
                             relative
                         "
                 >
-                    {compounds.map((compound: any, index) => (
+                    {compounds.map((compound, index) => (
                         <CompoundCard
                             key={compound.id}
                             slug={compound.slug}

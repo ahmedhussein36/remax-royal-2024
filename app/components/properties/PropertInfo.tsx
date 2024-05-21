@@ -21,6 +21,16 @@ const PropertInfo: React.FC<PropertInfoProps> = ({
     title,
     location,
 }) => {
+    const formatNumber = (price: any) => {
+        if (price >= 1000) {
+            return price.toLocaleString();
+        } else {
+            return price;
+        }
+    };
+
+    const formattedMinPrice: number = formatNumber(data.price as number);
+
     return (
         <div className=" flex justify-between items-start border-b-2 p-6 w-full">
             <div className="flex flex-col gap-2 justify-between  items-start w-3/4 ">
@@ -28,14 +38,14 @@ const PropertInfo: React.FC<PropertInfoProps> = ({
                     <h1 className="my-1 text-xl font-bold text-slate-700">
                         {title}
                     </h1>
-                    <div className="flex items-center gap-2 my-1">
+                    <div className="flex items-center gap-2 my-2">
                         <SlLocationPin />
 
-                        <p>{location}</p>
+                        <div>{location}</div>
                     </div>
                 </div>
 
-                <div className="proFeature bg-slate-0 px-4  py-2 w-[50%] flex justify-between items-center gap-2 rounded-md text-slate-600">
+                <div className="proFeature bg-slate-0  py-2 w-[50%] flex justify-between items-center gap-2 rounded-md text-slate-600">
                     <div className="flex justify-start items-center gap-1">
                         <LuBedDouble size={20} color="#64748b" />
                         <span className=" text-base">
@@ -58,13 +68,13 @@ const PropertInfo: React.FC<PropertInfoProps> = ({
                 <div className="proPrice h-full flex justify-between gap-6 items-end ">
                     <div className="flex gap-2 items-end">
                         <span className="text-2xl text-slate-600 font-bold">
-                            {data.price}
+                            {formattedMinPrice}
                         </span>
                         <span>{"ج.م"}</span>
                     </div>
                     {data.installmentValue !== 0 && (
                         <div className=" text-lg font-bold text-slate-500">
-                            <span>{data.installmentValue}</span>{" "}
+                            <span>{formatNumber(data.installmentValue)}</span>{" "}
                             <span>/ شهريا</span>
                         </div>
                     )}

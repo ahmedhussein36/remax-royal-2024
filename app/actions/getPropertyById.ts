@@ -13,10 +13,16 @@ export default async function getPropertyById(params: IParams) {
                 slug: decodeURI(slug),
             },
             include: {
-                // user: true,
-                compound: true,
-                Area: true,
-                Developer: true,
+                compound: {
+                    select: {
+                        title: true,
+                    },
+                },
+                Area: {
+                    select: {
+                        title: true,
+                    },
+                },
             },
         });
 

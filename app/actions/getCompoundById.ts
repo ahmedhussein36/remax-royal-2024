@@ -13,8 +13,16 @@ export default async function getCompoundById(params: IParams) {
                 slug: decodeURI(slug),
             },
             include: {
-                developer: true,
-                area: true,
+                developer: {
+                    select: {
+                        title: true,
+                    },
+                },
+                area: {
+                    select: {
+                        title: true,
+                    },
+                },
                 properties: true,
             },
         });

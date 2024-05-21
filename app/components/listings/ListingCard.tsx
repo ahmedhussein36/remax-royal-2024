@@ -99,7 +99,7 @@ const ListingCard: React.FC<ListingCardProps> = ({
                         <div>{data.title}</div>
                         <div>
                             {data.propertyType} {data.category} في{" "}
-                            {data.compound} - {data.area}
+                            {data.compound.title} - {data.area.title}
                         </div>
                     </div>
                     <div className="flex flex-row items-center gap-1">

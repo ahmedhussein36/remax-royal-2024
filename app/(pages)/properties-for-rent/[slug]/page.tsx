@@ -3,6 +3,7 @@ import ClientOnly from "@/app/components/ClientOnly";
 import EmptyState from "@/app/components/EmptyState";
 import PropertyClient from "./PropertyClient";
 import getPropertyById from "@/app/actions/getPropertyById";
+import { SafeListing, SafeProperty } from "@/app/types";
 
 interface IParams {
     slug: string;
@@ -39,9 +40,8 @@ export async function generateMetadata({
     }
 }
 
-
 const PropertyPage = async ({ params }: { params: IParams }) => {
-    const listing = await getPropertyById(params);
+    const listing: any = await getPropertyById(params);
 
     if (!listing) {
         return (
@@ -53,7 +53,7 @@ const PropertyPage = async ({ params }: { params: IParams }) => {
 
     return (
         <>
-            <PropertyClient listing={listing as any} />
+            <PropertyClient listing={listing} />
         </>
     );
 };

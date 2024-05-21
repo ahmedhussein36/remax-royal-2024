@@ -23,12 +23,12 @@ const PropertyClient: React.FC<PropertyClientProps> = ({
     listing,
     currentUser,
 }) => {
-    const location = `${listing.compound} / ${listing.area}`;
+    const location = `${listing.compound.title} / ${listing?.area?.title}`;
 
     return (
         <>
             <Container>
-                <Gallary images={listing.images} />
+                <Gallary images={listing.images} mainImage={listing.mainImage}/>
                 <div className="flex flex-col md:flex-row justify-between items-start gap-4 w-full my-4">
                     <div className="w-full gap-4 column-8">
                         <PropertInfo

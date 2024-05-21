@@ -31,7 +31,7 @@ const PropertyClient: React.FC<PropertyClientProps> = ({
         <>
             <Container>
                 <div>
-                    <Gallary images={listing.images} />
+                    <Gallary images={listing.images} mainImage={listing.mainImage}/>
                 </div>
 
                 <div className="flex flex-col md:flex-row justify-between items-start gap-4 w-full my-4">

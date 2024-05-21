@@ -2,13 +2,11 @@
 
 import { SafeArea, SafeCompound, SafeProperty, SafeUser } from "@/app/types";
 import Container from "@/app/components/Container";
-import ClientOnly from "@/app/components/ClientOnly";
 import Gallary from "@/app/components/properties/Gallary";
 import PropertInfo from "@/app/components/properties/PropertInfo";
 import PropertDetails from "@/app/components/properties/PropertDetails";
 import AgentInfo from "@/app/components/properties/AgentInfo";
 import PaymentPlans from "@/app/components/properties/PaymentPlans";
-import { useState } from "react";
 
 interface PropertyClientProps {
     listing: SafeProperty & {
@@ -31,7 +29,10 @@ const PropertyClient: React.FC<PropertyClientProps> = ({
         <>
             <Container>
                 <div>
-                    <Gallary images={listing.images} mainImage={listing.mainImage}/>
+                    <Gallary
+                        images={listing.images}
+                        mainImage={listing.mainImage}
+                    />
                 </div>
 
                 <div className="flex flex-col md:flex-row justify-between items-start gap-4 w-full my-4">

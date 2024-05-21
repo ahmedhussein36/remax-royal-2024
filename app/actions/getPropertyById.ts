@@ -18,9 +18,14 @@ export default async function getPropertyById(params: IParams) {
                         title: true,
                     },
                 },
-                Area: {
+                area: {
                     select: {
                         title: true,
+                    },
+                },
+                user: {
+                    select: {
+                        name: true,
                     },
                 },
             },
@@ -33,12 +38,9 @@ export default async function getPropertyById(params: IParams) {
         return {
             ...property,
             createdAt: property.createdAt.toString(),
-            // user: {
-            //     ...property.user,
-            //     createdAt: property.user.createdAt.toString(),
-            //     updatedAt: property.user.updatedAt.toString(),
-            //     emailVerified: property.user.emailVerified?.toString() || null,
-            // },
+            user: {
+                ...property.user,
+            },
         };
     } catch (error: any) {
         throw new Error(error);

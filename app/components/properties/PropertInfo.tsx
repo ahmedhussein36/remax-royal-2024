@@ -23,12 +23,12 @@ const PropertInfo: React.FC<PropertInfoProps> = ({
 }) => {
     return (
         <div className=" flex justify-between items-start border-b-2 p-6 w-full">
-            <div className="flex flex-col gap-3 justify-between  items-start w-3/4 ">
-                <div className="title flex flex-col gap-2 items-start">
-                    <h1 className=" text-xl font-bold text-slate-700">
+            <div className="flex flex-col gap-2 justify-between  items-start w-3/4 ">
+                <div className="title flex flex-col gap-1 items-start">
+                    <h1 className="my-1 text-xl font-bold text-slate-700">
                         {title}
                     </h1>
-                    <div className="flex items-center gap-2">
+                    <div className="flex items-center gap-2 my-1">
                         <SlLocationPin />
 
                         <p>{location}</p>

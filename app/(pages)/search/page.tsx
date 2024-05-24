@@ -39,8 +39,8 @@ const SearchPage = async ({ searchParams }: SearchPageProps) => {
             <ClientOnly>
                 {" "}
                 <SearchClient
-                    listings={listings}
-                    currentUser={currentUser}
+                    listings={listings as any}
+                    currentUser={currentUser as any}
                 />{" "}
             </ClientOnly>
         </Container>

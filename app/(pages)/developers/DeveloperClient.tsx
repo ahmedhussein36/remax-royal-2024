@@ -12,7 +12,6 @@ interface DeveloperClientProps {
         compounds: SafeCompound;
         property: SafeProperty;
     };
-    currentUser?: SafeUser | null;
     params?: string;
 }
 

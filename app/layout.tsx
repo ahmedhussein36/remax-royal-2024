@@ -37,7 +37,7 @@ export default async function RootLayout({
                     <div className=" z-10">
                         <LoginModal />
                         <RegisterModal />
-                        <Navbar currentUser={currentUser} />
+                        <Navbar currentUser={currentUser as any} />
                         <ToasterProvider />
                     </div>
                     <main className=" flex flex-col">

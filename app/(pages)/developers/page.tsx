@@ -39,7 +39,6 @@ export async function generateMetadata({
 
 const DevelopersPage = async ({ searchParams }: { searchParams: IParams }) => {
     const developers = await getDevelopers(searchParams);
-    const currentUser = await getCurrentUser();
 
     return (
         <>
@@ -58,7 +57,6 @@ const DevelopersPage = async ({ searchParams }: { searchParams: IParams }) => {
                         // <DeveloperLoader />
                         <DeveloperClient
                             developers={developers as any}
-                            currentUser={currentUser}
                         />
                     ) : (
                         <EmptyStateAr />

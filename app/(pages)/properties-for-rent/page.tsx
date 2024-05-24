@@ -37,7 +37,7 @@ const ForRentPage = async ({ searchParams }: ForRentPageProps) => {
                 {filterdByRent.length !== 0 ? (
                     <ForRentClient
                         listings={filterdByRent as any}
-                        currentUser={currentUser}
+                        currentUser={currentUser as any}
                     />
                 ) : (
                     <EmptyStateAr showReset />

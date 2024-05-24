@@ -15,6 +15,8 @@ const ForSalePage = async ({ searchParams }: ForSalePageProps) => {
     const listings = await getProperties(searchParams);
     const currentUser = await getCurrentUser();
 
+    
+
     const filterdBySale = listings.filter(
         (listing: any) => listing.category === "للبيع"
     );
@@ -37,7 +39,7 @@ const ForSalePage = async ({ searchParams }: ForSalePageProps) => {
             {filterdBySale.length !== 0 ? (
                 <ForSaleClient
                     listings={filterdBySale as any}
-                    currentUser={currentUser}
+                    currentUser={currentUser as any}
                 />
             ) : (
                 <EmptyStateAr showReset />

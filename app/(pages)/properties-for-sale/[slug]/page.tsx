@@ -39,9 +39,9 @@ export async function generateMetadata({
     }
 }
 
-
 const PropertyPage = async ({ params }: { params: IParams }) => {
     const listing = await getPropertyById(params);
+    const currentUser = await getCurrentUser();
 
     if (!listing) {
         return (
@@ -55,6 +55,7 @@ const PropertyPage = async ({ params }: { params: IParams }) => {
         <>
             <PropertyClient
                 listing={listing as any}
+                currentUser={currentUser as any}
             />
         </>
     );

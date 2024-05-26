@@ -30,7 +30,7 @@ const Sort = ({ onSortChange }: SortProps) => {
                 options={options as any}
                 placeholder={placeholder}
                 className="text-right text-slate-500 text-sm transition font-medium border-0"
-                classNamePrefix="select pl-28"
+                classNamePrefix="select pl-28" 
                 isSearchable={false}
                 isClearable
                 isRtl={true}

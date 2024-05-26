@@ -1,5 +1,11 @@
 import Image from "next/image";
-import { SafeArea, SafeCompound, SafeDeveloper, SafeProperty, SafeUser } from "@/app/types";
+import {
+    SafeArea,
+    SafeCompound,
+    SafeDeveloper,
+    SafeProperty,
+    SafeUser,
+} from "@/app/types";
 import { LuBedDouble } from "react-icons/lu";
 import { LuBath } from "react-icons/lu";
 import { LiaRulerCombinedSolid } from "react-icons/lia";
@@ -9,10 +15,10 @@ import PropretyContacts from "./PropretyContacts";
 import Link from "next/link";
 
 interface PropertyCardProps {
-    data: SafeProperty& {
-        compound: SafeCompound
-        area: SafeArea
-        developer: SafeDeveloper
+    data: SafeProperty & {
+        compound: SafeCompound;
+        area: SafeArea;
+        developer: SafeDeveloper;
     };
     currentUser?: SafeUser | null;
     parent?: string;
@@ -35,7 +41,7 @@ const PropertyCard: React.FC<PropertyCardProps> = ({
 
     const location = `${data?.compound?.title} / ${data?.area?.title}`;
     return (
-        <Link href={`/${parent}/${data.slug}`}>
+        <Link href={`/${parent}/${data.id}`}>
             <div className="col-span-1 group relative mb-4 flex justify-center item-center overflow-hidden cursor-pointer">
                 <div
                     className="

@@ -6,6 +6,7 @@ import ClientOnly from "@/app/components/ClientOnly";
 import Heading from "@/app/components/Heading";
 import Sort from "@/app/components/Sort";
 import SearchClient from "./SearchClient";
+import FilterByGroups from "@/app/components/ِFilterByGroups";
 
 interface SearchPageProps {
     searchParams: IParams;
@@ -14,14 +15,6 @@ interface SearchPageProps {
 const SearchPage = async ({ searchParams }: SearchPageProps) => {
     const listings = await getProperties(searchParams);
     const currentUser = await getCurrentUser();
-
-    if (listings.length === 0) {
-        return (
-            <ClientOnly>
-                <EmptyStateAr showReset />
-            </ClientOnly>
-        );
-    }
 
     return (
         <Container>
@@ -36,13 +29,17 @@ const SearchPage = async ({ searchParams }: SearchPageProps) => {
                     <Sort />
                 </div>
             </div>
-            <ClientOnly>
-                {" "}
-                <SearchClient
-                    listings={listings as any}
-                    currentUser={currentUser as any}
-                />{" "}
-            </ClientOnly>
+            <FilterByGroups parent="search" />
+            <>
+                {listings.length ? (
+                    <SearchClient
+                        listings={listings as any}
+                        currentUser={currentUser as any}
+                    />
+                ) : (
+                    <EmptyStateAr />
+                )}
+            </>
         </Container>
     );
 };

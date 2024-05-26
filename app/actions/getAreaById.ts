@@ -4,7 +4,7 @@ interface IParams {
     slug: string;
 }
 
-export default async function getareaById(params: IParams) {
+export default async function getAreaById(params: IParams) {
     try {
         const { slug } = params;
 

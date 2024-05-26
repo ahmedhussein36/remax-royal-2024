@@ -1,16 +1,14 @@
 "use client";
 
 import qs from "query-string";
-import { useCallback, useMemo, useState } from "react";
+import { useCallback, useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
-import CitySelect, { CitySelectValue } from "../customInputs/CitySelect";
-import AriaSelect, { AriaSelectValue } from "../customInputs/AriaSelect";
 import { SelectInput } from "./SelectInput";
 import CategoryInput from "../customInputs/CategoryInput";
 import { categories, commercialTypes, residentalTypes } from "../data/data";
 import { IoSearch } from "react-icons/io5";
 import Button from "../Button";
-import SearchInput, { SearchValue } from "../inputs/SearchInput";
+import SearchInput from "../inputs/SearchInput";
 
 const searchIcon = () => <IoSearch color="#ffff" size={20} />;
 
@@ -57,9 +55,7 @@ const Filter = () => {
     const [category, setCategory] = useState();
     const [bathroomCount, setBathroomCount] = useState<any>();
     const [price, setPrice] = useState<any>(); //[priceMin, priceMax
-    const [city, setCity] = useState<CitySelectValue>();
-    const [aria, setAria] = useState<AriaSelectValue>();
-    const [propertyGroup, setPropertyGroup] = useState<any>();
+    const [propertyType, setPropertyType] = useState<any>();
     const [title, setTitle] = useState<string>();
 
     const onSubmit = useCallback(async () => {
@@ -75,8 +71,7 @@ const Filter = () => {
             title: title,
             roomCount: roomCount?.value,
             bathroomCount: bathroomCount?.value,
-            propertyType: null,
-            propertyGroup: propertyGroup?.name,
+            propertyType: propertyType?.name,
             city: null,
             minprice: price?.gte,
             maxprice: price?.lte,
@@ -96,7 +91,7 @@ const Filter = () => {
         category,
         roomCount,
         bathroomCount,
-        propertyGroup,
+        propertyType,
         title,
         price?.gte,
         price?.lte,
@@ -104,19 +99,29 @@ const Filter = () => {
     ]);
     return (
         <div className="flex flex-col justify-center items-start gap-4 w-full">
-            <div className="flex gap-4 w-[200px]">
-                {categories.map((item, i) => (
-                    <CategoryInput
-                        isFilter={true}
-                        key={i}
-                        label={item.name}
-                        selected={category === item.name}
-                        onClick={(value) => setCategory(value as any)}
+            <div className="flex gap-4 w-full justify-between items-center">
+                <div className="w-1/2 flex justify-start items-center gap-3">
+                    {categories.map((item, i) => (
+                        <CategoryInput
+                            isFilter={true}
+                            key={i}
+                            label={item.name}
+                            selected={category === item.name}
+                            onClick={(value) => setCategory(value as any)}
+                        />
+                    ))}
+                </div>
+
+                <div className="h-full">
+                    <Button
+                        onClick={onSubmit}
+                        label={"بحث"}
+                        icon={searchIcon}
                     />
-                ))}
+                </div>
             </div>
 
-            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-7 items-center gap-2 w-full">
+            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4 items-center gap-2 w-full">
                 {/* <div className="">
                     <CitySelect
                         isSearchable={false}
@@ -126,7 +131,7 @@ const Filter = () => {
                     />
                 </div> */}
 
-                <div className=" col-span-2">
+                <div className=" col-span-4">
                     <SearchInput
                         isFilter={true}
                         id="title"
@@ -139,8 +144,8 @@ const Filter = () => {
                 <div className="">
                     <SelectInput
                         isSearchable={false}
-                        value={propertyGroup}
-                        onChange={(value) => setPropertyGroup(value as any)}
+                        value={propertyType}
+                        onChange={(value) => setPropertyType(value as any)}
                         placeholder={"نوع العقار"}
                         options={allTypes}
                     />
@@ -172,14 +177,6 @@ const Filter = () => {
                         onChange={(value) => setPrice(value as any)}
                         placeholder={"السعر"}
                         options={priceOptions}
-                    />
-                </div>
-
-                <div className="h-full">
-                    <Button
-                        onClick={onSubmit}
-                        label={"بحث"}
-                        icon={searchIcon}
                     />
                 </div>
             </div>

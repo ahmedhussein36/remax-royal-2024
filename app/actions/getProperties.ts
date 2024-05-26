@@ -10,6 +10,8 @@ export interface IParams {
     category?: string;
     propertyType?: string;
     status?: string;
+    minprice?: number;
+    maxprice?: number;
 }
 
 export default async function getProperties(params: IParams) {
@@ -24,6 +26,8 @@ export default async function getProperties(params: IParams) {
             developerId,
             compoundId,
             title,
+            minprice,
+            maxprice,
         } = params;
 
         let query: any = {};
@@ -45,6 +49,13 @@ export default async function getProperties(params: IParams) {
 
         if (city) {
             query.city = city;
+        }
+
+        if (minprice && maxprice) {
+            query.price = {
+                gte: +minprice,
+                lte: +maxprice,
+            };
         }
 
         if (propertyType) {

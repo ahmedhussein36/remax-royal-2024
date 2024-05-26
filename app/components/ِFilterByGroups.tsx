@@ -23,10 +23,10 @@ const FilterByGroups: React.FC<{ parent: string }> = ({ parent }) => {
                         lg:grid-cols-8 md:grid-cols-6 sm:grid-cols-3 gap-3 gap-y-2
                         justify-items-start"
         >
-            {allTypes.map((item,i) => (
+            {allTypes.map((item, i) => (
                 <div
                     onClick={() =>
-                        router.push(`/${parent}?propertyGroup=${item.name}`)
+                        router.push(`/${parent}?propertyType=${item.name}`)
                     }
                     key={i}
                     className="

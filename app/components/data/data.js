@@ -304,7 +304,7 @@ export const topSearchingAreas = [
         name: "القاهرة الجديدة",
         name_en: "New Cairo",
         image: "/assets/images/new-cairo.jpg",
-        slug: `/search?aria=القاهرة الجديدة`,
+        slug: `/القاهرة الجديدة`,
     },
     {
         id: "2",
@@ -312,7 +312,7 @@ export const topSearchingAreas = [
         name: "العاصمة الإدارية ",
         name_en: "New Capital City",
         image: "/assets/images/new-capital-city.jpg",
-        slug: `/search?aria=العاصمة الإدارية الجديدة`,
+        slug: `/العاصمة الإدارية الجديدة`,
     },
     {
         id: "3",
@@ -320,7 +320,7 @@ export const topSearchingAreas = [
         name: " السادس من اكتوبر",
         name_en: " 6th October City",
         image: "/assets/images/6th-october-city.jpg",
-        slug: `/search?aria=مدينة السادس من اكتوبر`,
+        slug: `/مدينة السادس من اكتوبر`,
     },
     {
         id: "4",
@@ -328,7 +328,7 @@ export const topSearchingAreas = [
         name: "الساحل الشمالي",
         name_en: "The North Coast",
         image: "/assets/images/north-coast.jpg",
-        slug: `/search?aria=الساحل الشمالي`,
+        slug: `/الساحل الشمالي`,
     },
     {
         id: "5",
@@ -336,7 +336,7 @@ export const topSearchingAreas = [
         name: "مدينة الشيخ زايد",
         name_en: "Shiekh Zayed City",
         image: "/assets/images/shiekh-zayed-city.jpg",
-        slug: `/search?aria=مدينة الشيخ زايد`,
+        slug: `/مدينة الشيخ زايد`,
     },
     {
         id: "6",
@@ -344,7 +344,7 @@ export const topSearchingAreas = [
         name: "الجونة",
         name_en: "El-Gouna",
         image: "/assets/images/algouna.jpg",
-        slug: `/search?aria=الجونة`,
+        slug: `/الجونة`,
     },
     {
         id: "7",
@@ -352,7 +352,7 @@ export const topSearchingAreas = [
         name: "مدينة المستقبل",
         name_en: "Al Mustakbal City",
         image: "/assets/images/almustakbal.jpg",
-        slug: `/search?aria=مدينة المستقبل`,
+        slug: `/مدينة المستقبل`,
     },
     {
         id: "8",
@@ -360,6 +360,6 @@ export const topSearchingAreas = [
         name: "العين السخنة",
         name_en: "Al-Ain Alsokhna",
         image: "/assets/images/alsokhna.jpg",
-        slug: `/search?aria=العين السخنة`,
+        slug: `/العين السخنة`,
     },
 ];

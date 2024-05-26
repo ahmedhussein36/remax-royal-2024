@@ -5,6 +5,7 @@ import getCompoundByslug from "@/app/actions/getCompoundById";
 import ClientOnly from "@/app/components/ClientOnly";
 import getProperties from "@/app/actions/getProperties";
 import getAreaById from "@/app/actions/getAreaById";
+import getCompounds from "@/app/actions/getCompounds";
 
 interface IParams {
     slug: string;
@@ -43,7 +44,7 @@ export async function generateMetadata({
 
 const DeveloperPage = async ({ params }: { params: IParams }) => {
     const area = await getAreaById(params);
-    const compounds = await getProperties({ areaId: area?.id });
+    const compounds = await getCompounds({ areaId: area?.id });
     const properties = await getProperties({ areaId: area?.id });
 
     if (!area) {

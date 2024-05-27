@@ -5,7 +5,6 @@ import { AiFillHeart, AiOutlineHeart } from "react-icons/ai";
 import useFavorite from "@/app/hooks/useFavorite";
 import { SafeUser } from "@/app/types";
 
-import ClientOnly from "./ClientOnly";
 
 interface HeartButtonProps {
   listingId: string
@@ -25,7 +24,7 @@ const HeartButton: React.FC<HeartButtonProps> = ({
     <div 
       onClick={toggleFavorite}
       className="
-        hover:opacity-80
+        hover:opacity-80 z-50
         transition
         cursor-pointer
       "

@@ -1,11 +1,16 @@
+"use cient";
+
 import { SafeProperty } from "@/app/types";
 import parse from "html-react-parser";
+import { useEffect, useMemo, useState } from "react";
 
 interface PropDetailsProps {
     data: SafeProperty;
 }
 
 const PropDetails: React.FC<PropDetailsProps> = ({ data }) => {
+    const [unique, setunique] = useState("");
+
     const date = new Date(data.createdAt);
 
     // Format the date
@@ -15,7 +20,17 @@ const PropDetails: React.FC<PropDetailsProps> = ({ data }) => {
         year: "numeric",
     });
 
-    const refNum = `RR-${Math.ceil((date.getTime() + (parseInt(data.id))) / 600000000)}`;
+    const refNum = useMemo(() => {
+        const uniqueNum = Math.floor(
+            +data.createdAt / parseInt(data.id)
+        ).toString();
+
+        setunique(uniqueNum);
+
+        if (uniqueNum.length > 6) setunique(uniqueNum.slice(3));
+
+        return `RR-${unique}`;
+    }, [data, unique]);
 
     return (
         <div className="flex flex-col mt-4  rounded-lg p-6">

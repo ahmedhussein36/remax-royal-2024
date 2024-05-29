@@ -10,7 +10,7 @@ export const metadata = {
         "ريماكس رويال موطن العقارات التي تبحث عنها | عقارات للبيع وللايجار في مصر",
 };
 
-const Home = async ({ searchParams }: { searchParams: IParams }) => {
+const Home = async () => {
     // const areas = await getAreas(searchParams);
     return (
         <>

@@ -78,14 +78,14 @@ const PropertyCard: React.FC<PropertyCardProps> = ({
                         <div className="proTitle w-full flex flex-col justify-between items-start gap-2">
                             <div className="w-full flex justify-between items-center">
                                 <div className="flex justify-center items-center text-slate-600 text-md font-bold">
-                                    <h3>{data.title}</h3>
+                                    <h3 className="my-1">{data.title}</h3>
                                 </div>
                             </div>
 
-                            <div className="propLocation flex justify-center gap-2 items-center text-xs text-slate-500">
+                            {/* <div className="propLocation flex justify-center gap-2 items-center text-xs text-slate-500">
                                 <SlLocationPin size={18} color="#718096" />
                                 <p>{location}</p>
-                            </div>
+                            </div> */}
                         </div>
                         <div className="proFeature w-full flex justify-start items-center gap-2 text-xs text-slate-500">
                             <div className="flex justify-start items-center gap-1">

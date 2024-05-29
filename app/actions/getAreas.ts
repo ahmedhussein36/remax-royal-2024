@@ -11,21 +11,10 @@ export default async function getAreas(params: IParams) {
 
         let query: any = {};
 
-        if (title) {
-            query.title = { contains: title };
-        }
-        if (status) {
-            query.status = status;
-        }
-
         const areas = await prisma.area.findMany({
-            where: query,
-            include: {
-                compounds: true,
-                properties: true,
-            },
+            take: 8,
             orderBy: {
-                createdAt: "desc",
+                createdAt: "asc",
             },
         });
 

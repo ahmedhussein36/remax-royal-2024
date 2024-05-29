@@ -1,26 +1,26 @@
-import Container from "@/app/components/Container";
+// import Container from "@/app/components/Container";
 import Filter from "./components/home/Filter";
-import TopAreas from "./components/home/TopAreas";
+// import TopAreas from "./components/home/TopAreas";
 import HeroSection from "./components/home/HeroSection";
-import getAreas, { IParams } from "./actions/getAreas";
+// import getAreas, { IParams } from "./actions/getAreas";
 
-// export const metadata = {
-//     title: "RE/MAX Royal | ريماكس رويال : عقارت للبيع وللإيجار في مصر",
-//     description:
-//         "ريماكس رويال موطن العقارات التي تبحث عنها | عقارات للبيع وللايجار في مصر",
-// };
+export const metadata = {
+    title: "RE/MAX Royal | ريماكس رويال : عقارت للبيع وللإيجار في مصر",
+    description:
+        "ريماكس رويال موطن العقارات التي تبحث عنها | عقارات للبيع وللايجار في مصر",
+};
 
 const Home = async ({ searchParams }: { searchParams: IParams }) => {
-    const areas = await getAreas(searchParams);
+    // const areas = await getAreas(searchParams);
     return (
         <>
             <div>
                 <HeroSection>
                     <Filter />
                 </HeroSection>
-                <Container>
+                {/* <Container>
                     <TopAreas areas={areas as any} />
-                </Container>
+                </Container> */}
             </div>
         </>
     );

@@ -1,5 +1,9 @@
 "use client";
-import { commercialTypes, residentalTypes } from "@/app/components/data/data";
+import {
+    allTypes,
+    commercialTypes,
+    residentalTypes,
+} from "@/app/components/data/data";
 import { useRouter } from "next/navigation";
 
 interface GroupItem {
@@ -7,8 +11,6 @@ interface GroupItem {
     name: string;
     label: string;
 }
-
-const allTypes: GroupItem[] = [...residentalTypes, ...commercialTypes];
 
 const FilterByGroups: React.FC<{ parent: string }> = ({ parent }) => {
     const router = useRouter();

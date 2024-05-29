@@ -86,6 +86,141 @@ export const navItems = [
     },
 ];
 
+export const allTypes = [
+    {
+        id: "1",
+        label: "شقة",
+        name: "شقة",
+        name_en: "Apartmnet",
+    },
+    {
+        id: "2",
+        label: "فيلا",
+        name: "فيلا",
+        name_en: "Villa",
+    },
+    {
+        id: "19",
+        label: "ستاند آلون",
+        name: "ستاند آلون",
+        name_en: "Stand Alone",
+    },
+    {
+        id: "3",
+        label: "تاونهاوس",
+        name: "تاونهاوس",
+        name_en: "Townhouse",
+    },
+    {
+        id: "20",
+        label: "توين هاوس",
+        name: "توين هاوس",
+        name_en: "Twinhouse",
+    },
+    {
+        id: "4",
+        label: "بنتهاوس",
+        name: "بنتهاوس",
+        name_en: "penthouse",
+    },
+    {
+        id: "5",
+        label: "دوبلكس",
+        name: "دوبلكس",
+        name_en: "Duplex",
+    },
+    {
+        id: "19",
+        label: "استديو",
+        name: "استديو",
+        name_en: "Studio",
+    },
+    {
+        id: "20",
+        label: "شاليه",
+        name: "شاليه",
+        name_en: "Chalet",
+    },
+    {
+        id: "6",
+        label: "مبنى سكني",
+        name: "مبنى سكني",
+        name_en: "Building",
+    },
+    {
+        id: "7",
+        label: "مجمع فيلات",
+        name: "مجمع فيلات",
+        name_en: "Villa compound",
+    },
+    {
+        id: "8",
+        label: "طابق سكني",
+        name: "طابق سكني",
+        name_en: "Floor",
+    },
+    {
+        id: "9",
+        label: "منزل",
+        name: "منزل",
+        name_en: "House",
+    },
+    {
+        id: "10",
+        label: "قطعة أرض",
+        name: "قطعة أرض",
+        name_en: "Land",
+    },
+    {
+        id: "11",
+        label: "مكتب",
+        name: "مكتب",
+        name_en: "Office for sale",
+    },
+    {
+        id: "12",
+        label: "مخزن",
+        name: "مخزن",
+        name_en: "Warehouse",
+    },
+    {
+        id: "13",
+        label: "محل تجاري ",
+        name: "محل تجاري ",
+        name_en: "Shop for sale",
+    },
+    {
+        id: "14",
+        label: "طابق تجاري",
+        name: "طابق تجاري",
+        name_en: "commercial floor",
+    },
+    {
+        id: "15",
+        label: "مصنع",
+        name: "مصنع",
+        name_en: "Factory",
+    },
+    {
+        id: "16",
+        label: "مساحة عمل",
+        name: "مساحة عمل",
+        name_en: "Work space",
+    },
+    {
+        id: "17",
+        label: "قاعة عرض",
+        name: "قاعة عرض",
+        name_en: "Show room",
+    },
+    {
+        id: "18",
+        label: "مبنى تجاري",
+        name: "مبنى تجاري",
+        name_en: "Commercial building",
+    },
+];
+
 export const residentalTypes = [
     {
         id: "1",

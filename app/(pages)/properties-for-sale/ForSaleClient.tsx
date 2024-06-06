@@ -35,6 +35,7 @@ const ForSaleClient: React.FC<ForSaleClientProps> = ({
                         data={listing}
                         currentUser={currentUser}
                         key={listing.id}
+                        slug={listing.slug}
                     />
                 ))}
             </div>

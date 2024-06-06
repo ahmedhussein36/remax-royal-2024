@@ -1,12 +1,11 @@
-import ClientOnly from "@/app/components/ClientOnly";
+import getCurrentUser from "@/app/actions/getCurrentUser";
 import EmptyState from "@/app/components/EmptyState";
-import DevClient from "./DevClient";
-import getDeveloperById from "@/app/actions/getDeveloperById";
-import getCompounds from "@/app/actions/getCompounds";
-import getDeveloperByslug from "@/app/actions/getDeveloperById";
+import PropertyClient from "./PropertyClient";
+import { GetServerSideProps } from "next";
+import getPropertyById, { IParam } from "@/app/actions/getPropertyById";
 
-interface DevParams {
-    slug: string;
+interface PageProps {
+    params: IParam;
 }
 
 export async function generateMetadata({
@@ -17,7 +16,7 @@ export async function generateMetadata({
     };
 }) {
     try {
-        const post = await getDeveloperByslug(params);
+        const post = await getPropertyById(params);
         if (!post)
             return {
                 title: "Not Found",
@@ -28,7 +27,7 @@ export async function generateMetadata({
             title: post?.seoDetails?.metaTitle,
             description: post.seoDetails?.metaDescription,
             alternates: {
-                canonical: `/developers/${post.slug}`,
+                canonical: `/properties-for-rent/${post.slug}`,
             },
         };
     } catch (error) {
@@ -40,13 +39,11 @@ export async function generateMetadata({
     }
 }
 
-const DeveloperPage = async ({ params }: { params: DevParams }) => {
-    const developer = await getDeveloperById(params);
-    const compounds = await getCompounds({
-        developerId: developer?.id,
-    });
- 
-    if (!developer) {
+const PropertyPage = async ({ params }: PageProps) => {
+    const listing = await getPropertyById(params);
+    const currentUser = await getCurrentUser();
+
+    if (!listing) {
         return (
             <>
                 <EmptyState />
@@ -56,12 +53,12 @@ const DeveloperPage = async ({ params }: { params: DevParams }) => {
 
     return (
         <>
-            <DevClient
-                developer={developer as any}
-                compounds={compounds as any}
+            <PropertyClient
+                listing={listing as any}
+                currentUser={currentUser as any}
             />
         </>
     );
 };
 
-export default DeveloperPage;
+export default PropertyPage;

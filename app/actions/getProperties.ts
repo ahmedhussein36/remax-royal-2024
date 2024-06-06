@@ -73,6 +73,11 @@ export default async function getProperties(params: IParams) {
 
         const properties = await prisma.property.findMany({
             where: query,
+            include: {
+                compound: { select: { title: true } },
+                area: { select: { title: true } },
+                user: { select: { name: true } },
+            },
             orderBy: {
                 createdAt: "desc",
             },

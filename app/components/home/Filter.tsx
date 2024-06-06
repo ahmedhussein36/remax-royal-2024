@@ -121,7 +121,7 @@ const Filter = () => {
                 </div>
             </div>
 
-            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4 items-center gap-2 w-full">
+            <div className="grid grid-cols-8 items-center gap-2 w-full">
                 {/* <div className="">
                     <CitySelect
                         isSearchable={false}
@@ -131,7 +131,7 @@ const Filter = () => {
                     />
                 </div> */}
 
-                <div className=" col-span-4">
+                <div className=" col-span-8">
                     <SearchInput
                         isFilter={true}
                         id="title"
@@ -141,7 +141,7 @@ const Filter = () => {
                     />
                 </div>
 
-                <div className="">
+                <div className="col-span-4 md:col-span-2">
                     <SelectInput
                         isSearchable={false}
                         value={propertyType}
@@ -151,7 +151,7 @@ const Filter = () => {
                     />
                 </div>
 
-                <div className="">
+                <div className="col-span-4 md:col-span-2">
                     <SelectInput
                         isSearchable={false}
                         value={roomCount}
@@ -161,7 +161,7 @@ const Filter = () => {
                     />
                 </div>
 
-                <div className="">
+                <div className="col-span-4 md:col-span-2">
                     <SelectInput
                         isSearchable={false}
                         value={bathroomCount}
@@ -170,7 +170,7 @@ const Filter = () => {
                         options={bathOptions}
                     />
                 </div>
-                <div className="">
+                <div className="col-span-4 md:col-span-2">
                     <SelectInput
                         isSearchable={false}
                         value={price}

@@ -1,33 +1,22 @@
 import prisma from "@/app/libs/prismadb";
+import { Property } from "@prisma/client";
 
-interface IParams {
-    id: string;
+export interface IParam {
+    slug: string;
 }
 
-export default async function getPropertyById(params: IParams) {
+export default async function getPropertyById(
+    params: IParam
+): Promise<Property | null> {
     try {
-        const { id } = params;
+        const { slug } = params;
 
         const property = await prisma.property.findUnique({
-            where: {
-                id: decodeURI(id),
-            },
+            where: { slug: decodeURI(slug) },
             include: {
-                compound: {
-                    select: {
-                        title: true,
-                    },
-                },
-                area: {
-                    select: {
-                        title: true,
-                    },
-                },
-                user: {
-                    select: {
-                        name: true,
-                    },
-                },
+                compound: { select: { title: true } },
+                area: { select: { title: true } },
+                user: { select: { name: true } },
             },
         });
 
@@ -37,13 +26,12 @@ export default async function getPropertyById(params: IParams) {
 
         return {
             ...property,
-            createdAt: property.createdAt.getTime(),
-            updatedAt: property.updatedAt.getTime(),
-            user: {
-                ...property.user,
-            },
+            ...property.compound,
+            ...property.area,
+            ...property.user,
         };
-    } catch (error: any) {
-        throw new Error(error);
+    } catch (error) {
+        console.error(error);
+        throw new Error("Failed to retrieve property by slug");
     }
 }

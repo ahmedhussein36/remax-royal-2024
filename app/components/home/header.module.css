@@ -1,6 +1,6 @@
 .hero_container {
-    background-image: url(https://res.cloudinary.com/dpzvseigo/image/upload/v1715871551/pexels-photo-1732414.webp);
-    background-size: cover;
+    background-image: url(/assets/images/karma_kay_5.png);
+    background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
 }

@@ -18,7 +18,7 @@ const TopAreas = ({ areas }: { areas: SafeArea[] }) => {
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 my-10 items-center">
                 {areas.slice(0, 8).map((area) => (
                     <div
-                        className=" flex 
+                        className=" flex flex-col
                                 justify-start items-center gap-3 overflow-hidden 
                                 cursor-pointer border-neutral-300 border
                                 rounded-xl  hover:shadow-md transition-all duration-300 
@@ -26,10 +26,10 @@ const TopAreas = ({ areas }: { areas: SafeArea[] }) => {
                         onClick={() => router.push(`area/${area.slug}`)}
                         key={area.id}
                     >
-                        <div className=" relative w-32 h-20 aspect-auto">
+                        <div className="flex justify-center items-center border 0relative w-[120px] h-[120px] rounded-full overflow-hidden">
                             <Image
                                 src={area?.image || ""}
-                                fill
+                                width={200} height={120}
                                 sizes="100%"
                                 alt={area.title}
                             />

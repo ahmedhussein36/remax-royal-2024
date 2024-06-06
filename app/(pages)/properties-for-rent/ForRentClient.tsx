@@ -29,6 +29,7 @@ const ForSaleClient: React.FC<ForSaleClientProps> = ({
             >
                 {listings.map((listing: any) => (
                     <PropertyCard
+                        slug={listing.slug}
                         parent="properties-for-rent"
                         data={listing}
                         currentUser={currentUser}

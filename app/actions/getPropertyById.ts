@@ -26,9 +26,6 @@ export default async function getPropertyById(
 
         return {
             ...property,
-            ...property.compound,
-            ...property.area,
-            ...property.user,
         };
     } catch (error) {
         console.error(error);

@@ -26,7 +26,7 @@ const TopAreas = ({ areas }: { areas: SafeArea[] }) => {
                         onClick={() => router.push(`area/${area.slug}`)}
                         key={area.id}
                     >
-                        <div className="flex justify-center items-center border 0relative w-[120px] h-[120px] rounded-full overflow-hidden">
+                        <div className="flex justify-center items-center border relative w-[100px] h-[100px] rounded-full overflow-hidden">
                             <Image
                                 src={area?.image || ""}
                                 width={300} height={200}

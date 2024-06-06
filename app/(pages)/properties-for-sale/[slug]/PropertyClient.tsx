@@ -38,7 +38,17 @@ const PropertyClient: React.FC<PropertyClientProps> = ({
                 <div className="flex flex-col md:flex-row justify-between items-start gap-4 w-full my-4">
                     <div className="w-full gap-4 column-8">
                         <PropertInfo
-                            title={listing.title}
+                            title={
+                                listing.propertyType +
+                                " " +
+                                listing.category +
+                                " " +
+                                "في" +
+                                " " +
+                                listing.compound.title +
+                                "ب" +
+                                listing.area.title
+                            }
                             location={location}
                             data={listing}
                             currentUser={currentUser}
@@ -48,7 +58,7 @@ const PropertyClient: React.FC<PropertyClientProps> = ({
                     </div>
                     <div className="w-full md:w-1/3 columns-1 md:column-2 mt-8">
                         <AgentInfo
-                            user={listing?.user?.name as string || ""}
+                            user={(listing?.user?.name as string) || ""}
                             image={listing?.user?.image as string}
                             listing={listing}
                         />

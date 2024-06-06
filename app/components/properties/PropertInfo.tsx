@@ -36,7 +36,7 @@ const PropertInfo: React.FC<PropertInfoProps> = ({
             <div className="flex flex-col gap-2 justify-between  items-start w-3/4 ">
                 <div className="title flex flex-col gap-1 items-start">
                     <h1 className="my-1 text-xl font-bold text-slate-700">
-                        {title}
+                        {data.title}
                     </h1>
                     <div className="flex items-center gap-2 my-2">
                         <SlLocationPin />

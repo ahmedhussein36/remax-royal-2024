@@ -2,35 +2,29 @@
 
 import { SafeProperty } from "@/app/types";
 import parse from "html-react-parser";
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useState } from "react";
 
 interface PropDetailsProps {
     data: SafeProperty;
 }
 
 const PropDetails: React.FC<PropDetailsProps> = ({ data }) => {
-    const [unique, setunique] = useState("");
+    const [createdAt, setCreatedAt] = useState("");
 
-    const date = new Date(data.createdAt);
+    useEffect(() => {
+        const date = new Date(data.createdAt);
 
-    // Format the date
-    const formattedDate: string = date.toLocaleDateString("en-US", {
-        day: "2-digit",
-        month: "short",
-        year: "numeric",
-    });
+        // Format the date
+        const formattedDate: string = date.toLocaleDateString("en-US", {
+            day: "2-digit",
+            month: "short",
+            year: "numeric",
+        });
 
-    const refNum = useMemo(() => {
-        const uniqueNum = Math.floor(
-            +data.createdAt / parseInt(data.id)
-        ).toString();
+        setCreatedAt(formattedDate);
 
-        setunique(uniqueNum);
-
-        if (uniqueNum.length > 6) setunique(uniqueNum.slice(3));
-
-        return `RR-${unique}`;
-    }, [data, unique]);
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, []);
 
     return (
         <div className="flex flex-col mt-4  rounded-lg p-6">
@@ -52,7 +46,7 @@ const PropDetails: React.FC<PropDetailsProps> = ({ data }) => {
                     <div className="flex justify-start items-center gap-2 w-full border-b py-3">
                         <span className="w-1/2 text-sm">الرقم المرجعي</span>
                         <span className=" w-1/2 font-bold text-sm">
-                            {refNum || "N/A"}
+                            {data.ref || "N/A"}
                         </span>
                     </div>
                     <div className="flex justify-start items-center gap-2 w-full border-b py-3">
@@ -67,7 +61,7 @@ const PropDetails: React.FC<PropDetailsProps> = ({ data }) => {
                     <div className="flex justify-start items-center gap-2 w-full border-b py-3">
                         <span className="w-1/2 text-sm"> تاريخ الاضافة</span>
                         <span className=" w-1/2 font-bold text-sm">
-                            {formattedDate}
+                            {createdAt}
                         </span>
                     </div>
                     <div className="flex justify-start items-center gap-2 w-full border-b py-3">

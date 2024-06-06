@@ -26,6 +26,7 @@ const SearchClient: React.FC<SearchClientProps> = ({
             >
                 {listings.map((listing: SafeProperty) => (
                     <PropertyCard
+                        slug={listing.slug}
                         parent={
                             listing.category === "للبيع"
                                 ? "properties-for-sale"

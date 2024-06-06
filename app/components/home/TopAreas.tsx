@@ -29,8 +29,8 @@ const TopAreas = ({ areas }: { areas: SafeArea[] }) => {
                         <div className="flex justify-center items-center border 0relative w-[120px] h-[120px] rounded-full overflow-hidden">
                             <Image
                                 src={area?.image || ""}
-                                width={200} height={120}
-                                sizes="100%"
+                                width={300} height={200}
+                                sizes=""
                                 alt={area.title}
                             />
                         </div>

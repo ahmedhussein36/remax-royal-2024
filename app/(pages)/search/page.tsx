@@ -18,7 +18,7 @@ const SearchPage = async ({ searchParams }: SearchPageProps) => {
 
     return (
         <Container>
-            <div className="flex gap-4 justify-between items-center my-8 w-full">
+            <div className="flex gap-4 justify-between items-center w-full">
                 <Heading
                     title={`نتائج البحث عن العقارت في  ${
                         searchParams.city || "مصر"

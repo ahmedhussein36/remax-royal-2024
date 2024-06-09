@@ -4,6 +4,9 @@ import DevClient from "./DevClient";
 import getDeveloperById from "@/app/actions/getDeveloperById";
 import getCompounds from "@/app/actions/getCompounds";
 import getDeveloperByslug from "@/app/actions/getDeveloperById";
+import { AiFillHome } from "react-icons/ai";
+import Container from "@/app/components/Container";
+import Breadcrumb from "@/app/components/Breadcrumb";
 
 interface DevParams {
     slug: string;
@@ -45,7 +48,7 @@ const DeveloperPage = async ({ params }: { params: DevParams }) => {
     const compounds = await getCompounds({
         developerId: developer?.id,
     });
- 
+
     if (!developer) {
         return (
             <>
@@ -54,8 +57,24 @@ const DeveloperPage = async ({ params }: { params: DevParams }) => {
         );
     }
 
+    const items: any = [
+        {
+            label: `المطورين`,
+            href: `/developer`,
+        },
+        { label: developer.title, href: `developers/${developer.slug}` },
+    ];
+
+    const home: any = {
+        label: <AiFillHome />,
+        href: "/",
+    };
+
     return (
         <>
+            <Container>
+                <Breadcrumb home={home} items={items} />
+            </Container>
             <DevClient
                 developer={developer as any}
                 compounds={compounds as any}

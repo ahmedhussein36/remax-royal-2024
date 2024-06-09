@@ -14,8 +14,8 @@ export default async function getPropertyById(
         const property = await prisma.property.findUnique({
             where: { slug: decodeURI(slug) },
             include: {
-                compound: { select: { title: true } },
-                area: { select: { title: true } },
+                compound: { select: { title: true, slug: true } },
+                area: { select: { title: true, slug: true } },
                 user: { select: { name: true } },
             },
         });

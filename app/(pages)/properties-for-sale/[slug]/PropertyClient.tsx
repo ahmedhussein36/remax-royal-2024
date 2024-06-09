@@ -60,7 +60,8 @@ const PropertyClient: React.FC<PropertyClientProps> = ({
                         <AgentInfo
                             user={(listing?.user?.name as string) || ""}
                             image={listing?.user?.image as string}
-                            listing={listing}
+                            phone={listing?.phone || "+201500366642"}
+                            whatsapp={listing?.whatsapp || "+201500366642"}
                         />
                         <PaymentPlans data={listing} />
                     </div>

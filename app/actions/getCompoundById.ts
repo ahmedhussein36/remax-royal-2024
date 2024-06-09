@@ -12,7 +12,7 @@ export default async function getCompoundById(params: IParams) {
             where: {
                 slug: decodeURI(slug),
             },
-            include: {
+            include: { 
                 developer: {
                     select: {
                         title: true,
@@ -21,6 +21,7 @@ export default async function getCompoundById(params: IParams) {
                 area: {
                     select: {
                         title: true,
+                        slug: true
                     },
                 },
                 properties: true,

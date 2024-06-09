@@ -6,12 +6,18 @@ import Avatar from "./Avatar";
 import PropretyContacts from "./PropretyContacts";
 
 interface AgentInfoProps {
-    listing: SafeProperty;
+    phone: string;
+    whatsapp: string;
     user?: string;
     image?: string;
 }
 
-const AgentInfo: React.FC<AgentInfoProps> = ({ user, image, listing }) => {
+const AgentInfo: React.FC<AgentInfoProps> = ({
+    user,
+    image,
+    phone,
+    whatsapp,
+}) => {
     return (
         <div className="w-full md:max-w-[350px] border-2 rounded-md flex flex-col gap-4 justify-between items-start p-4">
             <div className="flex justify-center items-center gap-4">
@@ -36,8 +42,8 @@ const AgentInfo: React.FC<AgentInfoProps> = ({ user, image, listing }) => {
 
             <div className="w-full">
                 <PropretyContacts
-                    phone={listing.phone}
-                    whatsApp={listing.whatsapp}
+                    phone={`+2${phone}`}
+                    whatsApp={`+2${whatsapp}`}
                 />
             </div>
         </div>

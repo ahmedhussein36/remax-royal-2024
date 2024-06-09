@@ -6,6 +6,8 @@ import DeveloperClient from "./DeveloperClient";
 import getDevelopers, { IParams } from "@/app/actions/getDevelopers";
 import { Suspense } from "react";
 import DeveloperLoader from "@/app/components/DeveloperLoader";
+import { AiFillHome } from "react-icons/ai";
+import Breadcrumb from "@/app/components/Breadcrumb";
 
 export async function generateStaticParams() {
     // You can return an array of params to pre-render pages at build time.
@@ -40,9 +42,19 @@ export async function generateMetadata({
 const DevelopersPage = async ({ searchParams }: { searchParams: IParams }) => {
     const developers = await getDevelopers(searchParams);
 
+    const parent = "developers";
+
+    const items = [{ label: `المطورين في مصر`, href: `/${parent}` }];
+
+    const home = {
+        label: <AiFillHome />,
+        href: "/",
+    };
     return (
         <>
             <Container>
+                <Breadcrumb home={home as any} items={items} />
+
                 <div className="flex gap-4 justify-between items-center mt-6 mb-2 w-full">
                     <div>
                         {" "}
@@ -55,9 +67,7 @@ const DevelopersPage = async ({ searchParams }: { searchParams: IParams }) => {
                 <Suspense fallback={<DeveloperLoader />}>
                     {developers.length !== 0 ? (
                         // <DeveloperLoader />
-                        <DeveloperClient
-                            developers={developers as any}
-                        />
+                        <DeveloperClient developers={developers as any} />
                     ) : (
                         <EmptyStateAr />
                     )}{" "}

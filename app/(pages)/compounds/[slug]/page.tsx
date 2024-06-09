@@ -4,6 +4,9 @@ import getCompoundById from "@/app/actions/getCompoundById";
 import getCompoundByslug from "@/app/actions/getCompoundById";
 import ClientOnly from "@/app/components/ClientOnly";
 import getProperties from "@/app/actions/getProperties";
+import { AiFillHome } from "react-icons/ai";
+import Container from "@/app/components/Container";
+import Breadcrumb from "@/app/components/Breadcrumb";
 
 interface IParams {
     slug: string;
@@ -52,8 +55,26 @@ const DeveloperPage = async ({ params }: { params: IParams }) => {
         );
     }
 
+    const items : any = [
+        {
+            label: `كمبوندات`,
+            href: `/compounds`,
+        },
+        { label: compound?.area.title, href: `/area/${compound?.area.slug}` },
+
+        { label: compound.title, href: `compounds/${compound.slug}` },
+    ];
+
+    const home: any = {
+        label: <AiFillHome />,
+        href: "/",
+    };
+
     return (
         <>
+            <Container>
+                <Breadcrumb home={home} items={items} />
+            </Container>
             <Client compound={compound as any} properties={properties as any} />
         </>
     );

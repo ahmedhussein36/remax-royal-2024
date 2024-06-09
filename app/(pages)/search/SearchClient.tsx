@@ -12,7 +12,7 @@ const SearchClient: React.FC<SearchClientProps> = ({
     currentUser,
 }) => {
     return (
-        <Container>
+        <>
             <div
                 className="
                             pt-2
@@ -38,7 +38,7 @@ const SearchClient: React.FC<SearchClientProps> = ({
                     />
                 ))}
             </div>
-        </Container>
+        </>
     );
 };
 export default SearchClient;

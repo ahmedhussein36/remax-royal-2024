@@ -56,26 +56,36 @@ body {
   width: 7px;
 }
 
-li{
-  list-style-type:disc;;
+li {
+  list-style-type: disc;
+  ;
   padding: 4px 0;
 }
 
-h1{
+h1 {
   font-weight: 800;
   font-size: larger;
 }
 
-h2{
+h2 {
   font-weight: 500;
-  font-size:large;
+  font-size: large;
 }
 
-h3,h4,h5,h6{
+h3,
+h4,
+h5,
+h6 {
   font-weight: 400;
 }
 
-h1,h2,h3,h4,h5,h6, p{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   line-height: 2;
   margin: 15px 0;
 }
@@ -114,4 +124,17 @@ h1,h2,h3,h4,h5,h6, p{
   .text-base {
     font-size: 14px;
   }
+}
+
+
+.breadcrumb {
+  @apply flex items-center;
+}
+
+.breadcrumb a {
+  @apply text-gray-600 hover:text-gray-900;
+}
+
+.breadcrumb svg {
+  @apply mx-2 text-gray-400;
 }

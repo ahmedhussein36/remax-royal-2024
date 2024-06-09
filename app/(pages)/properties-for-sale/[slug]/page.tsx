@@ -30,8 +30,8 @@ export async function generateMetadata({
             title: post?.seoDetails?.metaTitle,
             description: post.seoDetails?.metaDescription,
             alternates: {
-                canonical: `/properties-for-sale/${post.slug}`,
-            },
+                canonical: `https://remaxroyal.net/properties-for-sale/${post.slug}`,
+            },  
         };
     } catch (error) {
         console.error(error);

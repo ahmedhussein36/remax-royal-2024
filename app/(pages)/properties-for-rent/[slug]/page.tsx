@@ -24,13 +24,13 @@ export async function generateMetadata({
             return {
                 title: "Not Found",
                 description: "The page you are looking for does not exist.",
-            }; 
+            };
 
         return {
             title: post?.seoDetails?.metaTitle,
             description: post.seoDetails?.metaDescription,
             alternates: {
-                canonical: `/properties-for-rent/${post.slug}`,
+                canonical: `https://remaxroyal.net/properties-for-rent/${post.slug}`,
             },
         };
     } catch (error) {
@@ -60,7 +60,10 @@ const PropertyPage = async ({ params }: PageProps) => {
             : "properties-for-rent";
 
     const items = [
-        { label: `وحدات للبيع في ${listing?.city}`, href: `/search?category=للبيع&city=${listing.city}` },
+        {
+            label: `وحدات للبيع في ${listing?.city}`,
+            href: `/search?category=للبيع&city=${listing.city}`,
+        },
         { label: listing.title, href: `/${parent}/${listing.slug}` },
     ];
 

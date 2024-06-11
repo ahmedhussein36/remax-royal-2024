@@ -40,15 +40,6 @@ const DevClient: React.FC<DevClientProps> = ({
                             <div>{compounds?.length || 0} كمبوند</div>
                             <div>{properties?.length || 0} وحدة</div>
                         </div>
-                        {/* {area?.min_price && (
-                            <div>
-                                سعر يبدأ من
-                                <span className=" font-bold text-xl text-white mx-2">
-                                    {formattedMinPrice}
-                                </span>
-                                جنيه
-                            </div>
-                        )} */}
                     </div>
                     <div className=" flex-1 flex justify-center items-end ">
                         <PropretyContacts phone={""} whatsApp={""} />
@@ -64,7 +55,9 @@ const DevClient: React.FC<DevClientProps> = ({
                             عن {area.title}
                         </h2>
                     </div>
-                    <div className=" w-full">{parse(area.content || "")}</div>
+                    <div className="w-full">
+                        {parse(area.content ? area.content.trim() : "")}
+                    </div>
                 </div>
 
                 <div className="my-12">

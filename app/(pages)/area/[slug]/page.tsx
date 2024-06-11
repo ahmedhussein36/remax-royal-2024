@@ -6,6 +6,9 @@ import ClientOnly from "@/app/components/ClientOnly";
 import getProperties from "@/app/actions/getProperties";
 import getAreaById from "@/app/actions/getAreaById";
 import getCompounds from "@/app/actions/getCompounds";
+import { AiFillHome } from "react-icons/ai";
+import Container from "@/app/components/Container";
+import Breadcrumb from "@/app/components/Breadcrumb";
 
 interface IParams {
     slug: string;
@@ -55,8 +58,20 @@ const DeveloperPage = async ({ params }: { params: IParams }) => {
         );
     }
 
+    const parent = "area";
+
+    const items = [{ label: area.title, href: `/${parent}/${area.slug}` }];
+
+    const home = {
+        label: <AiFillHome />,
+        href: "/",
+    };
+
     return (
         <>
+            <Container>
+                <Breadcrumb home={home as any} items={items} />
+            </Container>
             <AreaClient
                 area={area as any}
                 compounds={compounds as any}

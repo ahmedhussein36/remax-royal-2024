@@ -8,25 +8,29 @@ import ForSaleClient from "./ForSaleClient";
 import FilterByGroups from "@/app/components/ِFilterByGroups";
 import { AiFillHome } from "react-icons/ai";
 import Breadcrumb from "@/app/components/Breadcrumb";
+import { getlistings, listingsLength } from "@/app/actions/getAll";
 
 interface ForSalePageProps {
     searchParams: IParams;
 }
 
 const ForSalePage = async ({ searchParams }: ForSalePageProps) => {
-    const listings = await getProperties(searchParams);
+    const listings = await getProperties({
+        category: "للبيع",
+        ...searchParams,
+    });
     const currentUser = await getCurrentUser();
+    const currentPage = searchParams?.page || 1;
+    const getAll = await getlistings({ category: "للبيع" });
 
-    const filterdBySale = listings.filter(
-        (listing: any) => listing.category === "للبيع"
-    );
+    const perPage = searchParams?.perPage || 12;
 
     const parent = "properties-for-sale";
 
     const items = [{ label: `عقارات للبيع في مصر`, href: `/${parent}` }];
 
     const home = {
-        label: <AiFillHome />, 
+        label: <AiFillHome />,
         href: "/",
     };
 
@@ -37,7 +41,7 @@ const ForSalePage = async ({ searchParams }: ForSalePageProps) => {
             <div className="flex gap-4 justify-between items-center my-8 w-full">
                 <Heading
                     title={" عقارات للبيع في مصر"}
-                    subtitle={`عدد الوحدات المتوفرة: ${filterdBySale.length}`}
+                    subtitle={`عدد الوحدات المتوفرة: ${getAll.length}`}
                 />
                 <div className="w-60">
                     <Sort />
@@ -45,11 +49,14 @@ const ForSalePage = async ({ searchParams }: ForSalePageProps) => {
             </div>
 
             <div>
-                <FilterByGroups parent={"properties-for-sale"} />
+                <FilterByGroups listings={getAll as any} parent={parent} />
             </div>
-            {filterdBySale.length !== 0 ? (
+            {listings.length !== 0 ? (
                 <ForSaleClient
-                    listings={filterdBySale as any}
+                    propertiesLength={getAll.length}
+                    currentPage={currentPage}
+                    perPage={perPage}
+                    listings={listings as any}
                     currentUser={currentUser as any}
                 />
             ) : (

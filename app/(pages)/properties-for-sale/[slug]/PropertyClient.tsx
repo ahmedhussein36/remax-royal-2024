@@ -10,9 +10,9 @@ import PaymentPlans from "@/app/components/properties/PaymentPlans";
 
 interface PropertyClientProps {
     listing: SafeProperty & {
-        user: SafeUser;
-        compound: SafeCompound;
-        area: SafeArea;
+        user: { name: string, image: string };
+        compound: { title: string };
+        area: { title: string };
     };
 
     currentUser?: SafeUser | null;

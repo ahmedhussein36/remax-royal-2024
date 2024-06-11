@@ -1,24 +1,32 @@
 "use client";
-import {
-    allTypes,
-    commercialTypes,
-    residentalTypes,
-} from "@/app/components/data/data";
-import { useRouter } from "next/navigation";
 
-interface GroupItem {
-    id: string;
-    name: string;
-    label: string;
+import { useRouter } from "next/navigation";
+import { SafeProperty } from "../types";
+import { useEffect, useState } from "react";
+
+interface TypePrpos {
+    listings: SafeProperty[];
+    parent: string;
 }
 
-const FilterByGroups: React.FC<{ parent: string }> = ({ parent }) => {
+const FilterByGroups: React.FC<TypePrpos> = ({ listings, parent }) => {
     const router = useRouter();
+
+    const allTypes = Array.from(
+        new Set(listings.map((listing) => listing.propertyType))
+    ).map((propertyType) => {
+        return {
+            type: propertyType,
+            count: listings.filter(
+                (listing) => listing.propertyType === propertyType
+            ).length,
+        };
+    });
 
     return (
         <div
             className="w-full mt-4 py-3
-                        px-3 bg-slate-100 
+                        px-3
                         rounded-lg 
                         grid grid-cols-4
                         xl:grid-cols-9
@@ -28,16 +36,16 @@ const FilterByGroups: React.FC<{ parent: string }> = ({ parent }) => {
             {allTypes.map((item, i) => (
                 <div
                     onClick={() =>
-                        router.push(`/${parent}?propertyType=${item.name}`)
+                        router.push(`/${parent}?propertyType=${item.type}`)
                     }
                     key={i}
-                    className="
+                    className=" bg-slate-100
                                 w-full flex items-center justify-center 
-                                text-xs font-semibold text-slate-600
-                                rounded-lg  cursor-pointer 
-                                hover:bg-slate-200 p-2 "
+                                text-slate-600
+                                rounded-full  cursor-pointer 
+                                hover:bg-slate-200 p-2  transition-all duration-500 ease-in-out"
                 >
-                    {item.name}
+                    {item.type} ({item.count})
                 </div>
             ))}
         </div>

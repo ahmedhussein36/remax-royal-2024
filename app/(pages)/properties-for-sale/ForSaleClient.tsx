@@ -1,20 +1,30 @@
 "use client";
-import { SafeArea, SafeCompound, SafeProperty, SafeUser } from "@/app/types";
+import { SafeProperty, SafeUser } from "@/app/types";
 import PropertyCard from "@/app/components/properties/PropertyCard";
+import { useEffect, useState } from "react";
+import Pagination from "@/app/components/Pagination";
 
 interface ForSaleClientProps {
-    listings: SafeProperty[] & {
-        user: SafeUser;
-        compound: SafeCompound;
-        area: SafeArea;
-    };
+    perPage: number;
+    currentPage: number;
+    propertiesLength: number;
+    listings: SafeProperty[];
     currentUser?: SafeUser | null;
 }
 
 const ForSaleClient: React.FC<ForSaleClientProps> = ({
     listings,
+    perPage,
+    currentPage,
     currentUser,
+    propertiesLength,
 }) => {
+    const [totalPages, setTotalPages] = useState(1);
+
+    useEffect(() => {
+        setTotalPages(Math.ceil(propertiesLength / perPage));
+    }, [perPage, propertiesLength]);
+
     const parent = "properties-for-sale";
     return (
         <>
@@ -39,19 +49,13 @@ const ForSaleClient: React.FC<ForSaleClientProps> = ({
                     />
                 ))}
             </div>
-
-            <div
-                className="
-                            pt-2
-                            mt-8
-                            grid 
-                            grid-cols-1
-                            sm:grid-cols-3
-                            md:grid-cols-4 
-                            gap-8
-                            relative
-                        "
-            ></div>
+            {listings.length > totalPages && (
+                <Pagination
+                    currentPage={currentPage}
+                    totalPages={totalPages}
+                    parent={parent}
+                />
+            )}
         </>
     );
 };

@@ -5,11 +5,20 @@ export interface IParams {
     developerId?: string;
     areaId?: string;
     status?: string;
+    page?: number;
+    perPage?: number;
 }
 
 export default async function getCompounds(params: IParams) {
     try {
-        const { title, developerId, areaId, status } = params;
+        const {
+            title,
+            developerId,
+            areaId,
+            status,
+            page = 1,
+            perPage = 12,
+        } = params;
 
         const query: any = {};
 
@@ -55,6 +64,9 @@ export default async function getCompounds(params: IParams) {
             orderBy: {
                 createdAt: "desc",
             },
+
+            skip: (page - 1) * perPage,
+            take: perPage,
         });
 
         return compounds.map((compound) => ({

@@ -8,6 +8,7 @@ import { Suspense } from "react";
 import DeveloperLoader from "@/app/components/DeveloperLoader";
 import { AiFillHome } from "react-icons/ai";
 import Breadcrumb from "@/app/components/Breadcrumb";
+import { developersLength } from "@/app/actions/getAll";
 
 export async function generateStaticParams() {
     // You can return an array of params to pre-render pages at build time.
@@ -20,8 +21,9 @@ export async function generateMetadata({
     searchParams: IParams;
 }) {
     const developers = await getDevelopers(searchParams);
-    const title = `المطورين العقاريين في مصر - ${developers.length} نتائج`;
-    const description = `اكتشف المطورين العقاريين في مصر. نتائج البحث: ${developers.length} مطور عقاري.`;
+
+    const title = `المطورين العقاريين في مصر `;
+    const description = `اكتشف المطورين العقاريين في مصر. أكثر من: ${developers.length} مطور عقاري.`;
 
     return {
         title,
@@ -34,6 +36,7 @@ export async function generateMetadata({
         twitter: {
             title,
             description,
+
             // You can add more Twitter card tags here
         },
     };
@@ -41,6 +44,9 @@ export async function generateMetadata({
 
 const DevelopersPage = async ({ searchParams }: { searchParams: IParams }) => {
     const developers = await getDevelopers(searchParams);
+    const currentPage = searchParams?.page || 1;
+    const getAll = await developersLength();
+    const perPage = searchParams?.perPage || 20;
 
     const parent = "developers";
 
@@ -60,14 +66,19 @@ const DevelopersPage = async ({ searchParams }: { searchParams: IParams }) => {
                         {" "}
                         <Heading
                             title={"جميع المطورين العقاريين"}
-                            subtitle={`نتائج ${developers.length || 0}`}
+                            subtitle={`نتائج ${getAll || 0}`}
                         />
                     </div>
                 </div>
                 <Suspense fallback={<DeveloperLoader />}>
                     {developers.length !== 0 ? (
                         // <DeveloperLoader />
-                        <DeveloperClient developers={developers as any} />
+                        <DeveloperClient
+                            developers={developers as any}
+                            currentPage={currentPage}
+                            length={getAll}
+                            perPage={perPage}
+                        />
                     ) : (
                         <EmptyStateAr />
                     )}{" "}

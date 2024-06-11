@@ -1,6 +1,6 @@
 .hero_container {
     background-image: url(/assets/images/karma_kay_5.png);
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }

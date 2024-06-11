@@ -1,3 +1,4 @@
+"use client";
 import {
     SafeCompound,
     SafeDeveloper,
@@ -6,8 +7,16 @@ import {
 } from "@/app/types";
 import Card from "@/app/components/Card";
 import Search from "./Search";
+import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
+import Link from "next/link";
+import { useEffect, useState } from "react";
+import { useRouter } from "next/navigation";
+import Pagination from "@/app/components/Pagination";
 
 interface DeveloperClientProps {
+    currentPage: number;
+    length: number;
+    perPage: number;
     developers: SafeDeveloper[] & {
         compounds: SafeCompound;
         property: SafeProperty;
@@ -17,8 +26,20 @@ interface DeveloperClientProps {
 
 const DeveloperClient: React.FC<DeveloperClientProps> = ({
     developers,
+    currentPage,
+    length,
+    perPage,
     params,
 }) => {
+    const [totalPages, setTotalPages] = useState(1);
+    const [disabled, setDisabled] = useState(false);
+
+    const router = useRouter();
+
+    useEffect(() => {
+        setTotalPages(Math.ceil(length / perPage));
+    }, [perPage, length]);
+
     const parent = "developers";
 
     return (
@@ -54,6 +75,12 @@ const DeveloperClient: React.FC<DeveloperClientProps> = ({
                     />
                 ))}
             </div>
+
+            <Pagination
+                currentPage={currentPage}
+                totalPages={totalPages}
+                parent={parent}
+            />
         </>
     );
 };

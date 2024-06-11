@@ -6,13 +6,15 @@ import {
     SafeCompound,
     SafeDeveloper,
     SafeProperty,
+    SafeUser,
 } from "@/app/types";
 import Image from "next/legacy/image";
 import parse from "html-react-parser";
 import { MdWhatsapp } from "react-icons/md";
 import { RiShareBoxLine } from "react-icons/ri";
-import { useState } from "react";
+import { useCallback, useState } from "react";
 import Button from "@/app/components/Button";
+import PropertyCard from "@/app/components/properties/PropertyCard";
 
 interface ClientProps {
     compound: SafeCompound & {
@@ -20,6 +22,7 @@ interface ClientProps {
         area: SafeArea;
     };
     properties: SafeProperty[];
+    currentUser: SafeUser;
 }
 interface PageProps {
     title: string;
@@ -40,7 +43,11 @@ interface PageProps {
     metaDescription?: string;
     amineties?: object[];
 }
-const Client: React.FC<ClientProps> = ({ compound, properties }) => {
+const Client: React.FC<ClientProps> = ({
+    compound,
+    properties,
+    currentUser,
+}) => {
     const [isLoading, setIsLoading] = useState(false);
     const [data, setData] = useState({
         name: "",
@@ -143,6 +150,11 @@ const Client: React.FC<ClientProps> = ({ compound, properties }) => {
     const formatmaxPrice = formatNumber(compoundDetails.maxPrice) || null;
 
     const placeholder = "/assets/images/placeholder2.png";
+
+    const parent = useCallback((category: string) => {
+        if (category === "للبيع") return "properties-for-sale";
+        if (category === "للإيجار") return "properties-for-rent";
+    }, []);
     return (
         <>
             <Container>
@@ -253,9 +265,7 @@ const Client: React.FC<ClientProps> = ({ compound, properties }) => {
                         </div>
                     </div>
                 </div>
-
                 <hr className="m-4"></hr>
-
                 <div className=" grid grid-cols-1 md:grid-cols-3 gap-3 lg:gap-12">
                     <div className=" col-span-full md:col-span-2 w-full">
                         <div className="my-4">
@@ -294,7 +304,6 @@ const Client: React.FC<ClientProps> = ({ compound, properties }) => {
                                         <tr>
                                             <td className=" p-2">المساحة</td>
                                             <td>
-                                                {" "}
                                                 {compoundDetails?.size} فداناً
                                             </td>
                                         </tr>
@@ -306,6 +315,36 @@ const Client: React.FC<ClientProps> = ({ compound, properties }) => {
                                 </table>
                             </div>
                         </div>
+
+                        {properties.length ? (
+                            <div>
+                                <h2>إكتشف وحدات {compoundDetails.title}</h2>
+                                <div
+                                    className="
+                            pt-2
+                            mt-8
+                            grid 
+                            grid-cols-1 
+                            sm:grid-cols-2 
+                            md:grid-cols-2  
+                            gap-8
+                        "
+                                >
+                                    {properties.map((listing: any) => (
+                                        <PropertyCard
+                                            parent={parent(listing.category)}
+                                            data={listing}
+                                            currentUser={currentUser}
+                                            key={listing.id}
+                                            slug={listing.slug}
+                                        />
+                                    ))}
+                                </div>{" "}
+                            </div>
+                        ) : (
+                            ""
+                        )}
+
                         <div className="my-12 relative">
                             <div className=" absolute "></div>
                             <h2>عن {compoundDetails.title}</h2>
@@ -373,25 +412,25 @@ const Client: React.FC<ClientProps> = ({ compound, properties }) => {
                         </div>
                     </div>
                 </div>
+                <div className="md:hidden w-full m-2 fixed bottom-0 bg-slate-100 rounded-lg mb-0 shadow-xl p-4 flex justify-between items-center gap-4">
+                    <div
+                        onClick={() => {
+                            open(`https://wa.me/20225388918`);
+                        }}
+                        className=" flex justify-center items-center gap-3 w-1/2 rounded-lg bg-green-600 text-white p-2 text-center"
+                    >
+                        <MdWhatsapp color="#fff" size={30} />
+                        تواصل
+                    </div>
+                    <a
+                        href="#contacts"
+                        className="flex justify-center items-center gap-3 w-1/2 rounded-lg bg-blue-600 text-white p-2 text-center"
+                    >
+                        <RiShareBoxLine color="#fff" size={30} />
+                        تواصل معنا
+                    </a>
+                </div>{" "}
             </Container>
-            <div className="md:hidden w-full m-2 fixed bottom-0 bg-slate-100 rounded-lg mb-0 shadow-xl p-4 flex justify-between items-center gap-4">
-                <div
-                    onClick={() => {
-                        open(`https://wa.me/20225388918`);
-                    }}
-                    className=" flex justify-center items-center gap-3 w-1/2 rounded-lg bg-green-600 text-white p-2 text-center"
-                >
-                    <MdWhatsapp color="#fff" size={30} />
-                    تواصل
-                </div>
-                <a
-                    href="#contacts"
-                    className="flex justify-center items-center gap-3 w-1/2 rounded-lg bg-blue-600 text-white p-2 text-center"
-                >
-                    <RiShareBoxLine color="#fff" size={30} />
-                    تواصل معنا
-                </a>
-            </div>
         </>
     );
 };

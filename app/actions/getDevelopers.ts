@@ -3,11 +3,13 @@ import prisma from "@/app/libs/prismadb";
 export interface IParams {
     title?: string;
     status?: string;
+    page?: number;
+    perPage?: number;
 }
 
 export default async function getDevelopers(params: IParams) {
     try {
-        const { title, status } = params;
+        const { title, status, page = 1, perPage = 20 } = params;
 
         let query: any = {};
 
@@ -33,6 +35,8 @@ export default async function getDevelopers(params: IParams) {
             orderBy: {
                 createdAt: "desc",
             },
+            skip: (page - 1) * perPage,
+            take: perPage,
         });
 
         const safeDevelopers = developers.map((developer) => ({

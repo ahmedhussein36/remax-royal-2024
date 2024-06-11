@@ -16,6 +16,7 @@ export default async function getCompoundById(params: IParams) {
                 developer: {
                     select: {
                         title: true,
+                        image: true
                     },
                 },
                 area: {

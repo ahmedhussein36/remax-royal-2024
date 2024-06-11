@@ -7,6 +7,9 @@ import getProperties from "@/app/actions/getProperties";
 import { AiFillHome } from "react-icons/ai";
 import Container from "@/app/components/Container";
 import Breadcrumb from "@/app/components/Breadcrumb";
+import PropertyCard from "@/app/components/properties/PropertyCard";
+import getCurrentUser from "@/app/actions/getCurrentUser";
+import { SafeUser } from "@/app/types";
 
 interface IParams {
     slug: string;
@@ -46,6 +49,7 @@ export async function generateMetadata({
 const DeveloperPage = async ({ params }: { params: IParams }) => {
     const compound = await getCompoundById(params);
     const properties = await getProperties({ compoundId: compound?.id });
+    const currentUser = await getCurrentUser();
 
     if (!compound) {
         return (
@@ -55,7 +59,7 @@ const DeveloperPage = async ({ params }: { params: IParams }) => {
         );
     }
 
-    const items : any = [
+    const items: any = [
         {
             label: `كمبوندات`,
             href: `/compounds`,
@@ -70,12 +74,18 @@ const DeveloperPage = async ({ params }: { params: IParams }) => {
         href: "/",
     };
 
+    const parent = "properies-for-sale";
+
     return (
         <>
             <Container>
                 <Breadcrumb home={home} items={items} />
             </Container>
-            <Client compound={compound as any} properties={properties as any} />
+            <Client
+                compound={compound as any}
+                properties={properties as any}
+                currentUser={currentUser as any}
+            />
         </>
     );
 };

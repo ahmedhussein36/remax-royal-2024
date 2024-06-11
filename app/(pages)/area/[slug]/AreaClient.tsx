@@ -1,15 +1,11 @@
-import {
-    SafeArea,
-    SafeCompound,
-    SafeDeveloper,
-    SafeProperty,
-    SafeUser,
-} from "@/app/types";
+/* eslint-disable @next/next/no-img-element */
+import { SafeArea, SafeCompound, SafeProperty, SafeUser } from "@/app/types";
 import Container from "@/app/components/Container";
-import Image from "next/legacy/image";
+import Image from "next/image";
 import CompoundCard from "@/app/components/compounds/CompoundCard";
 import PropretyContacts from "@/app/components/properties/PropretyContacts";
 import parse from "html-react-parser";
+import PropertyCard from "@/app/components/properties/PropertyCard";
 
 interface DevClientProps {
     area: SafeArea;
@@ -21,21 +17,28 @@ interface DevClientProps {
     currentUser?: SafeUser | null;
 }
 
-const DevClient: React.FC<DevClientProps> = ({ area, compounds }) => {
+const DevClient: React.FC<DevClientProps> = ({
+    area,
+    compounds,
+    properties,
+    currentUser,
+}) => {
     return (
         <>
-            <div className="h-[30vh] w-full bg-blue-800 relative flex justify-center items-center">
+            <div className=" w-full relative flex justify-center items-center">
                 <div className="w-[1280px] flex justify-start items-center h-full p-2 py-4 pt-8 gap-6 z-[1]">
-                    <div className=" h-[120px] w-[120px] relative p-3 bg-white rounded-lg overflow-hidden "></div>
-                    <div className="flex flex-1 flex-col gap-4 text-white">
+                    <div className=" h-[80px] w-[80px] relative p-3 bg-white rounded-full overflow-hidden border-spacing-10 border-[6px] border-slate-200">
+                        <Image src={area?.image || ""} alt={area.slug} fill />
+                    </div>
+                    <div className="flex flex-1 flex-col gap-4 text-slate-600">
                         <div>
-                            <h1 className="font-bold text-4xl">
-                              نتائج بحث عن وحدات في  {area?.title}
+                            <h1 className="font-bold text-xl m-0">
+                                {area?.title}
                             </h1>
                         </div>
                         <div className="flex gap-5">
                             <div>{compounds?.length || 0} كمبوند</div>
-                            <div>{0} وحدة</div>
+                            <div>{properties?.length || 0} وحدة</div>
                         </div>
                         {/* {area?.min_price && (
                             <div>
@@ -52,30 +55,16 @@ const DevClient: React.FC<DevClientProps> = ({ area, compounds }) => {
                     </div>
                 </div>
             </div>
-            <Container>
-                <div className=" flex flex-col justify-center items-start gap-3 my-4">
-                    <div className=" text-xl font-bold my-4">
-                        <h2>عن {area.title}</h2>
-                    </div>
-                    <div className=" border-blue-200 border rounded-lg p-4 bg-blue-50 w-full">
-                        {parse(area.content || "")}
-                    </div>
-                </div>
 
-                <div className=" flex flex-col justify-center items-start gap-3 my-12">
-                    <div className=" text-xl font-bold">
-                        <h3>المناطق</h3>
+            <Container>
+                <hr />
+                <div className=" flex flex-col justify-center items-start gap-1 my-8">
+                    <div className="font-bold">
+                        <h2 className="text-xl font-bold mb-4">
+                            عن {area.title}
+                        </h2>
                     </div>
-                    <div className="flex gap-3">
-                        {/* {compoundAreas.map((item: any) => (
-                            <div
-                                className=" p-2 px-4 border rounded-lg"
-                                key={item}
-                            >
-                                {item}
-                            </div>
-                        ))} */}
-                    </div>
+                    <div className=" w-full">{parse(area.content || "")}</div>
                 </div>
 
                 <div className="my-12">
@@ -108,6 +97,42 @@ const DevClient: React.FC<DevClientProps> = ({ area, compounds }) => {
                                         parent="compounds"
                                     />
                                 ))}
+                        </div>
+                    </div>
+                </div>
+                <div className="my-12">
+                    <h2 className="text-xl font-bold mb-4">
+                        وحدات {area.title}
+                    </h2>
+                    <div className="flex flex-col w-full justify-center items-center">
+                        <div
+                            className="
+                                    pt-2
+                                    mt-4
+                                    grid 
+                                    grid-cols-1
+                                    sm:grid-cols-1
+                                    md:grid-cols-2
+                                    lg:grid-cols-3
+                                    gap-8
+                                    relative
+                                "
+                        >
+                            {properties?.length
+                                ? properties.map((listing: any) => (
+                                      <PropertyCard
+                                          parent={
+                                              listing.category === "للبيع"
+                                                  ? "properties-for-sale"
+                                                  : "properties-for-rent"
+                                          }
+                                          data={listing}
+                                          currentUser={currentUser}
+                                          key={listing.id}
+                                          slug={listing.slug}
+                                      />
+                                  ))
+                                : ""}
                         </div>
                     </div>
                 </div>

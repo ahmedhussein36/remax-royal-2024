@@ -9,6 +9,8 @@ import FilterByGroups from "@/app/components/ِFilterByGroups";
 import { AiFillHome } from "react-icons/ai";
 import Breadcrumb from "@/app/components/Breadcrumb";
 import { getlistings, listingsLength } from "@/app/actions/getAll";
+import { Suspense } from "react";
+import CompoundLoader from "@/app/components/compounds/CompoundLoader";
 
 interface ForSalePageProps {
     searchParams: IParams;
@@ -52,13 +54,15 @@ const ForSalePage = async ({ searchParams }: ForSalePageProps) => {
                 <FilterByGroups listings={getAll as any} parent={parent} />
             </div>
             {listings.length !== 0 ? (
-                <ForSaleClient
-                    propertiesLength={getAll.length}
-                    currentPage={currentPage}
-                    perPage={perPage}
-                    listings={listings as any}
-                    currentUser={currentUser as any}
-                />
+                <Suspense fallback={<CompoundLoader />}>
+                    <ForSaleClient
+                        propertiesLength={getAll.length}
+                        currentPage={currentPage}
+                        perPage={perPage}
+                        listings={listings as any}
+                        currentUser={currentUser as any}
+                    />
+                </Suspense>
             ) : (
                 <EmptyStateAr showReset />
             )}

@@ -26,7 +26,10 @@ const SearchClient: React.FC<SearchClientProps> = ({
         setTotalPages(Math.ceil(propertiesLength / perPage));
     }, [perPage, propertiesLength]);
 
-    const parent = "search";
+    const parent = (category: string) => {
+        if (category === "للبيع") return "properties-for-sale";
+        if (category !== "للبيع") return "properties-for-rent";
+    };
     return (
         <>
             <div
@@ -42,7 +45,7 @@ const SearchClient: React.FC<SearchClientProps> = ({
             >
                 {listings.map((listing: any) => (
                     <PropertyCard
-                        parent={parent}
+                        parent={parent(listing.category)}
                         data={listing}
                         currentUser={currentUser}
                         key={listing.id}
@@ -54,7 +57,7 @@ const SearchClient: React.FC<SearchClientProps> = ({
             <Pagination
                 currentPage={currentPage}
                 totalPages={totalPages}
-                parent={parent}
+                parent={"search"}
             />
         </>
     );

@@ -10,7 +10,7 @@ import PaymentPlans from "@/app/components/properties/PaymentPlans";
 
 interface PropertyClientProps {
     listing: SafeProperty & {
-        user: { name: string, image: string };
+        user: { name: string; image: string };
         compound: { title: string };
         area: { title: string };
     };
@@ -28,41 +28,25 @@ const PropertyClient: React.FC<PropertyClientProps> = ({
     return (
         <>
             <Container>
-                <div>
+                <div className=" flex flex-col justify-start items-start gap-3">
                     <Gallary
                         images={listing.images}
                         mainImage={listing.mainImage}
+                    />
+                    <PropertInfo
+                        title={listing.title}
+                        location={location}
+                        data={listing}
+                        currentUser={currentUser}
+                        listingId={listing.id}
                     />
                 </div>
 
                 <div className="flex flex-col md:flex-row justify-between items-start gap-4 w-full my-4">
                     <div className="w-full gap-4 column-8">
-                        <PropertInfo
-                            title={
-                                listing.propertyType +
-                                " " +
-                                listing.category +
-                                " " +
-                                "في" +
-                                " " +
-                                listing.compound.title +
-                                "ب" +
-                                listing.area.title
-                            }
-                            location={location}
-                            data={listing}
-                            currentUser={currentUser}
-                            listingId={listing.id}
-                        />
                         <PropertDetails data={listing} />
                     </div>
                     <div className="w-full md:w-1/3 columns-1 md:column-2 mt-8">
-                        <AgentInfo
-                            user={(listing?.user?.name as string) || ""}
-                            image={listing?.user?.image as string}
-                            phone={listing?.phone || "+201500366642"}
-                            whatsapp={listing?.whatsapp || "+201500366642"}
-                        />
                         <PaymentPlans data={listing} />
                     </div>
                 </div>

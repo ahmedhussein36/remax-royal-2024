@@ -88,8 +88,8 @@ const Client: React.FC<ClientProps> = ({
         latlong: compound.latLong,
         minPrice: getMinPrice(properties),
         maxPrice: getMaxPrice(properties),
-        phone: "",
-        whatsapp: "",
+        phone: "+201500366642",
+        whatsapp:"+201500366642",
         paymentPlans: [],
         properties: [],
         amineties: [],
@@ -405,8 +405,8 @@ const Client: React.FC<ClientProps> = ({
                             </form>
                             <div className=" flex-1 flex justify-center items-center my-6 ">
                                 <PropretyContacts
-                                    phone={compoundDetails.phone}
-                                    whatsApp={compoundDetails.whatsapp}
+                                    phone={compoundDetails.phone || "+201500366642"}
+                                    whatsApp={compoundDetails.whatsapp || "+201500366642"}
                                 />
                             </div>
                         </div>
@@ -415,7 +415,7 @@ const Client: React.FC<ClientProps> = ({
                 <div className="md:hidden w-full m-2 fixed bottom-0 bg-slate-100 rounded-lg mb-0 shadow-xl p-4 flex justify-between items-center gap-4">
                     <div
                         onClick={() => {
-                            open(`https://wa.me/20225388918`);
+                            open(`https://wa.me/+201500366642`);
                         }}
                         className=" flex justify-center items-center gap-3 w-1/2 rounded-lg bg-green-600 text-white p-2 text-center"
                     >

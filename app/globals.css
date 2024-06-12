@@ -58,8 +58,8 @@ body {
 
 li {
   list-style-type: disc;
-  ;
-  padding: 4px 0;
+  padding: 4px;
+  margin-right: 25px;
 }
 
 h1 {

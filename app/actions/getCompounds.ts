@@ -53,11 +53,13 @@ export default async function getCompounds(params: IParams) {
                 developer: {
                     select: {
                         title: true,
+                        slug: true,
                     },
                 },
                 area: {
                     select: {
                         title: true,
+                        slug: true,
                     },
                 },
             },

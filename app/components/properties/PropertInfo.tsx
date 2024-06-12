@@ -5,6 +5,7 @@ import { SlLocationPin } from "react-icons/sl";
 import { FiShare2 } from "react-icons/fi";
 import HeartButton from "./SingleHeartButton ";
 import { SafeProperty, SafeUser } from "@/app/types";
+import PropretyContacts from "./PropretyContacts";
 
 interface PropertInfoProps {
     data: SafeProperty;
@@ -32,8 +33,8 @@ const PropertInfo: React.FC<PropertInfoProps> = ({
     const formattedMinPrice: number = formatNumber(data.price as number);
 
     return (
-        <div className=" flex justify-between items-start border-b-2 p-6 w-full">
-            <div className="flex flex-col gap-2 justify-between  items-start w-3/4 ">
+        <div className=" flex justify-between items-start border-b-2 p-6 w-full sticky top-0 bg-white">
+            <div className="flex flex-col gap-2 justify-between  items-start w-full">
                 <div className="title flex flex-col gap-1 items-start">
                     <h1 className="my-1 text-xl font-bold text-slate-700">
                         {data.title}
@@ -45,7 +46,7 @@ const PropertInfo: React.FC<PropertInfoProps> = ({
                     </div>
                 </div>
 
-                <div className="proFeature bg-slate-0  py-2 w-[50%] flex justify-between items-center gap-2 rounded-md text-slate-600">
+                <div className="proFeature bg-slate-0  py-2 w-full flex justify-start items-center gap-8 rounded-md text-slate-600">
                     <div className="flex justify-start items-center gap-1">
                         <LuBedDouble size={20} color="#64748b" />
                         <span className=" text-base">
@@ -65,22 +66,27 @@ const PropertInfo: React.FC<PropertInfoProps> = ({
                     </div>
                 </div>
 
-                <div className="proPrice h-full flex justify-between gap-6 items-end ">
-                    <div className="flex gap-2 items-end">
-                        <span className="text-2xl text-slate-600 font-bold">
-                            {formattedMinPrice}
-                        </span>
-                        <span>{"ج.م"}</span>
-                    </div>
-                    {data.installmentValue !== 0 && (
-                        <div className=" text-lg font-bold text-slate-500">
-                            <span>{formatNumber(data.installmentValue)}</span>{" "}
-                            <span>/ شهريا</span>
+                <div className="proPrice h-full flex justify-between gap-6 items-end w-full">
+                    <div className=" flex justify-start items-center gap-8">
+                        <div className="flex gap-2 items-end">
+                            <span className="text-2xl text-slate-600 font-bold">
+                                {formattedMinPrice}
+                            </span>
+                            <span>{"ج.م"}</span>
                         </div>
-                    )}
+                        {data.installmentValue !== 0 && (
+                            <div className=" text-lg font-bold text-slate-500">
+                                <span>
+                                    {formatNumber(data.installmentValue)}
+                                </span>{" "}
+                                <span>/ شهريا</span>
+                            </div>
+                        )}
+                    </div>
+                    <PropretyContacts phone={"+201500366642"} whatsApp={"+201500366642"} />
                 </div>
             </div>
-            <div className=" flex justify-end items-center w-1/4">
+            {/* <div className=" flex justify-end items-center w-1/4">
                 <div className="flex justify-between items-center gap-6">
                     <HeartButton
                         listingId={listingId}
@@ -88,7 +94,7 @@ const PropertInfo: React.FC<PropertInfoProps> = ({
                     />
                     <FiShare2 size={28} color={""} />
                 </div>
-            </div>
+            </div> */}
         </div>
     );
 };

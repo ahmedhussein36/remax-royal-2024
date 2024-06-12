@@ -41,7 +41,7 @@ const PropertyCard: React.FC<PropertyCardProps> = ({
 
     const formattedMinPrice = formatNumber(data?.price);
 
-    // const location = `${data?.compound?.title} / ${data?.area?.title}`;
+    const location = `${data?.compound?.title} / ${data?.area?.title}`;
     return (
         <Link href={`/${parent}/${slug}`}>
             <div className="col-span-1 group relative mb-4 flex justify-center item-center overflow-hidden cursor-pointer">
@@ -68,15 +68,14 @@ const PropertyCard: React.FC<PropertyCardProps> = ({
                     </div>
                     <div className="relative proImage w-[400px] h-[220px] overflow-hidden flex justify-center items-center">
                         <Image
-                            className="group-hover:scale-105 duration-300 transition-all "
+                            className="group-hover:scale-105 duration-300 transition-all object-cover "
                             src={data.mainImage}
                             alt="listing thumbnail image"
                             fill
-                            sizes={"100%"}
                             loading="lazy"
                         ></Image>
                     </div>
-                    <div className="propInfo w-full p-4 flex flex-col justify-between items-start gap-2">
+                    <div className="propInfo w-full p-4 flex flex-col justify-between items-start gap-3">
                         <div className="proTitle w-full flex flex-col justify-between items-start gap-2">
                             <div className="w-full flex justify-between items-center">
                                 <div className="flex justify-center items-center text-slate-600 text-md font-bold">
@@ -84,10 +83,10 @@ const PropertyCard: React.FC<PropertyCardProps> = ({
                                 </div>
                             </div>
 
-                            {/* <div className="propLocation flex justify-center gap-2 items-center text-xs text-slate-500">
+                            <div className="propLocation flex justify-center gap-2 items-center text-xs text-slate-500">
                                 <SlLocationPin size={18} color="#718096" />
-                                <p>{location}</p>
-                            </div> */}
+                                <div>{location}</div>
+                            </div>
                         </div>
                         <div className="proFeature w-full flex justify-start items-center gap-2 text-xs text-slate-500">
                             <div className="flex justify-start items-center gap-1">
@@ -109,7 +108,7 @@ const PropertyCard: React.FC<PropertyCardProps> = ({
                                 </span>
                             </div>
                         </div>
-                        <div className="proPrice h-full flex justify-between gap-4 items-end">
+                        <div className="proPrice h-full flex justify-between gap-4 my-2 items-end">
                             <div className="flex gap-2 items-center justify-start">
                                 <span className=" text-xl text-slate-600 font-bold">
                                     {formattedMinPrice}
@@ -118,7 +117,7 @@ const PropertyCard: React.FC<PropertyCardProps> = ({
                             </div>
                             {data.installmentValue !== 0 && (
                                 <div className=" flex gap-2 text-sm text-slate-500">
-                                    <span> {data.installmentValue}</span>
+                                    <span> {formatNumber(data.installmentValue || 0)}</span>
                                     <span>/ شهريا</span>
                                 </div>
                             )}

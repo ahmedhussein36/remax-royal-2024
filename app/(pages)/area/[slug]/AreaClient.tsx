@@ -42,7 +42,10 @@ const DevClient: React.FC<DevClientProps> = ({
                         </div>
                     </div>
                     <div className=" flex-1 flex justify-center items-end ">
-                        <PropretyContacts phone={""} whatsApp={""} />
+                        <PropretyContacts
+                            phone={"+201500366642"}
+                            whatsApp={"+201500366642"}
+                        />
                     </div>
                 </div>
             </div>

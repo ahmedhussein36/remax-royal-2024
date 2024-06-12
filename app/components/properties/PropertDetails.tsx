@@ -93,15 +93,6 @@ const PropDetails: React.FC<PropDetailsProps> = ({ data }) => {
                     {parse(data?.content || "")}
                 </div>
             </div>
-
-            <h2 className="font-bold text-xl"> الكماليات</h2>
-            <div
-                aria-label="amenities"
-                className="flex flex-wrap justify-start items-center my-6 gap-4"
-            >
-                {data.amenities.map((item: any) => item.name)}
-                <div className="border-b-2 my-12"></div>
-            </div>
         </div>
     );
 };

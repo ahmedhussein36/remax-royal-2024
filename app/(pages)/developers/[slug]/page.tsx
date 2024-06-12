@@ -7,6 +7,7 @@ import getDeveloperByslug from "@/app/actions/getDeveloperById";
 import { AiFillHome } from "react-icons/ai";
 import Container from "@/app/components/Container";
 import Breadcrumb from "@/app/components/Breadcrumb";
+import getProperties from "@/app/actions/getProperties";
 
 interface DevParams {
     slug: string;
@@ -48,6 +49,9 @@ const DeveloperPage = async ({ params }: { params: DevParams }) => {
     const compounds = await getCompounds({
         developerId: developer?.id,
     });
+    const properties = await getProperties({
+        developerId: developer?.id,
+    });
 
     if (!developer) {
         return (
@@ -76,6 +80,7 @@ const DeveloperPage = async ({ params }: { params: DevParams }) => {
                 <Breadcrumb home={home} items={items} />
             </Container>
             <DevClient
+                properties={properties as any}
                 developer={developer as any}
                 compounds={compounds as any}
             />

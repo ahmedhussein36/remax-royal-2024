@@ -1,49 +1,64 @@
-import Image from "next/legacy/image";
+"use client";
+
+import Image from "next/image";
+import { useState } from "react";
+import { BiCamera, BiSolidCamera } from "react-icons/bi";
 
 interface GallaryProps {
-    images?: string[];
+    images: string[];
     mainImage: string;
 }
 
 const placeholder = "/assets/images/placeholder2.png";
 
 const Gallary = ({ images, mainImage }: GallaryProps) => {
+    const [hoveredIndex, setHoveredIndex] = useState(-1);
+
+    const AllImages: string[] = [mainImage, ...images];
+
     return (
         <div
             id="gallary"
-            className="mt-8 w-full grid grid-cols-1 md:grid-cols-1 
-            lg:grid-cols-4 xl:grid-cols-4 gap-8 h-[30vh] md:h-[50vh] 
-            lg:h-[60vh] xl:h-[65vh]"
+            className="flex w-full h-[500px] items-center justify-center mb-4 rounded-xl overflow-hidden"
         >
-            <div
-                className="grid col-span-1 md:col-span-1 lg:col-span-3 xl:col-span-3 bg-slate-200 overflow-clip 
-            relative rounded-lg w-full h-full lg:h-full"
-            >
-                <Image
-                    objectFit="cover"
-                    src={mainImage}
-                    alt="property image"
-                    layout="fill"
-                    priority={true}
-                />
-            </div>
-            <div className="bg-white lg:grid lg:grid-rows-3 gap-3 hidden md:hidden ">
-                {images?.length &&
-                    images.map((image, i) => (
+            <div className="bg-slate-100 flex w-full justify-end items-center gap-3">
+                {AllImages.length &&
+                    AllImages.map((image, i) => (
                         <div
                             key={i}
-                            className=" bg-slate-100 rounded-lg relative overflow-hidden w-full h-full"
+                            className={`
+                                ${
+                                    i === 0 && hoveredIndex === -1
+                                        ? "w-full grayscale-0"
+                                        : " w-[15%] grayscale-[80%]"
+                                }
+                                 bg-slate-100 hover:w-full duration-500 ease-in-out grayscale-[80%] hover:grayscale-0
+                            relative overflow-hidden h-[500px]`}
+                            onMouseEnter={() => setHoveredIndex(i)}
+                            onMouseLeave={() => setHoveredIndex(-1)}
                         >
                             <Image
-                                objectFit="cover"
-                                layout="fill"
+                                fill
                                 priority={true}
                                 src={image}
                                 alt="property image"
-                                className=" relative"
+                                className="w-full h-full object-cover"
                             />{" "}
                         </div>
                     ))}
+                <div className=" relative w-[200px] h-[500px] bg-gray-500 text-white flex justify-center items-center gap-2 flex-col">
+                    <div>
+                        <BiCamera size={36} />
+                    </div>
+                    <div>عرض {AllImages.length} صور</div>
+                    <Image
+                        fill
+                        priority={true}
+                        src={AllImages[0]}
+                        alt="property image"
+                        className="w-full h-full object-cover opacity-10"
+                    />{" "}
+                </div>
             </div>
         </div>
     );

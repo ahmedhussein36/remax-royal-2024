@@ -19,6 +19,8 @@ export type SafeProperty = Omit<
 
 export type SafeCompound = Omit<Compound, "createdAt"> & {
     createdAt: string;
+    area: SafeArea
+    properties: SafeProperty[]
 };
 export type SafeArea = Omit<Area, "createdAt"> & {
     createdAt: string;

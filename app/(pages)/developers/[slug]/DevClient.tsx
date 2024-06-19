@@ -140,10 +140,11 @@ const DevClient: React.FC<DevClientProps> = ({
                                           key={compound.id}
                                           slug={compound.slug}
                                           id={compound.id}
-                                          title={compound.title}
+                                          title={compound.name}
                                           image={compound.mainImage}
+                                          properties={compound.properties}
                                           location={compound?.area?.title}
-                                          developer={developer.title}
+                                          developer={developer}
                                           parent="compounds"
                                       />
                                   ))

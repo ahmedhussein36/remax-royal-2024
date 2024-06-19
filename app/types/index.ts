@@ -10,7 +10,7 @@ import {
 
 export type SafeProperty = Omit<
     Property,
-    "createdAt" | "updatedAt" | "content"
+    "createdAt" | "updatedAt"
 > & {
     createdAt: string;
     updatedAt: string;

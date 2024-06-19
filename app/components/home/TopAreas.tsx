@@ -1,44 +1,81 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import Heading from "../Heading";
-import { useRouter } from "next/navigation";
 import Image from "next/image";
 import { SafeArea } from "@/app/types";
+import Link from "next/link";
+import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
 const TopAreas = ({ areas }: { areas: SafeArea[] }) => {
-    const router = useRouter();
+    const [frame, setFrame] = useState(0);
+    const [currentIndex, setCurrentIndex] = useState(0);
+    const totalItems = areas.length;
 
+    const handleNext = () => {
+        if (currentIndex < totalItems) {
+            setCurrentIndex(currentIndex + 1);
+            setFrame(frame + 255);
+        }
+    };
+
+    const handlePrev = () => {
+        if (currentIndex > 0) {
+            setCurrentIndex(currentIndex - 1);
+            setFrame(frame - 255);
+        }
+    };
     return (
-        <div>
-            <Heading
-                title="المناطق الأكثر بحثا"
-                subtitle="تصفح المناطق الأكثر طلباً في مصر "
-            />
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 my-10 items-center">
-                {areas.slice(0, 8).map((area) => (
-                    <div
-                        className=" flex flex-col
-                                justify-start items-center gap-3 overflow-hidden py-8
-                                cursor-pointer border-neutral-300 border
-                                rounded-xl  hover:shadow-md transition-all duration-300 
+        <div className=" relative">
+            <div className="w-full overflow-hidden relative">
+                <Heading
+                    title="المناطق الأكثر بحثا"
+                    subtitle="تصفح المناطق الأكثر بحثا في مصر "
+                />
+
+                <div
+                    className={`flex justify-between items-center gap-4 my-10 w-fit
+                    transition-all duration-500 translate-x-0
+                    `}
+                    style={{ transform: `translateX(${frame}px)` }}
+                >
+                    {areas.map((area, index) => (
+                        <Link
+                            href={`area/${area.slug}`}
+                            className=" group overlay flex flex-col relative h-[180px]
+                                justify-center items-center overflow-hidden
+                                cursor-pointer border-neutral-300 border w-[240px]
+                                rounded-xl hover:shadow-md transition-all duration-300 ease-in-out
                                 "
-                        onClick={() => router.push(`area/${area.slug}`)}
-                        key={area.id}
-                    >
-                        <div className="flex justify-center relative items-center border w-[80px] h-[80px] rounded-full overflow-hidden">
+                            key={area.id}
+                        >
                             <Image
                                 src={area?.image || ""}
-                                // width={300} height={200} 
                                 fill
-                                sizes="cover"
                                 alt={area.title}
+                                className=" object-cover group-hover:scale-105 ease-in-out duration-500"
                             />
-                        </div>
-                        <span className=" font-bold text-slate-700">{area.title}</span>
-                    </div>
-                ))}
+                            <span className=" absolute top-8 right-4 font-bold text-white z-10">
+                                {area.title}
+                            </span>
+                        </Link>
+                    ))}
+                </div>
             </div>
+            <button
+                onClick={handlePrev}
+                disabled={currentIndex === 0}
+                className="flex justify-center items-center shadow-lg absolute top-[50%] -right-6 bg-slate-100 hover:bg-white disabled:text-gray-300 disabled:hover:bg-slate-100 text-black font-bold p-3 rounded-full"
+            >
+                <IoIosArrowForward size={20} />
+            </button>
+            <button
+                className="flex justify-center items-center shadow-lg absolute top-[50%] -left-6 bg-slate-100 hover:bg-white disabled:text-gray-300 disabled:hover:bg-slate-100 text-black font-bold p-3 rounded-full"
+                onClick={handleNext}
+                disabled={currentIndex === totalItems - 5}
+            >
+                <IoIosArrowBack size={20} />
+            </button>
         </div>
     );
 };

@@ -138,3 +138,31 @@ p {
 .breadcrumb svg {
   @apply mx-2 text-gray-400;
 }
+
+
+.overlay::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  transition: all 0.5s ease-in-out;
+}
+
+.overlay:hover::after {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+.slick-disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+
+.promotion {
+  background-image: url(/images/frteee.png);
+  background-repeat: no-repeat;
+}

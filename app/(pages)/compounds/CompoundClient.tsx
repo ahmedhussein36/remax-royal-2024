@@ -34,16 +34,20 @@ const CompoundClient: React.FC<CompoundClienttProps> = ({
                             relative
                         "
                 >
-                    {compounds.map((compound, index) => (
+                    {compounds.map((compound: SafeCompound, index) => (
                         <CompoundCard
                             key={compound.id}
                             slug={compound.slug}
                             id={compound.id}
-                            title={compound.title}
+                            title={
+                                (compound.name !== "" || null
+                                    ? compound.name
+                                    : compound.title) || ""
+                            }
                             image={compound.mainImage}
-                            typesCount={compound.isLaunch}
                             location={compound?.area?.title}
-                            developer={compound.developer.title}
+                            developer={compound?.developer}
+                            properties={compound.properties}
                             parent={parent}
                         />
                     ))}

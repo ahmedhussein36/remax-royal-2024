@@ -11,7 +11,7 @@ import PaymentPlans from "@/app/components/properties/PaymentPlans";
 interface PropertyClientProps {
     listing: SafeProperty & {
         user: { name: string; image: string };
-        compound: { title: string };
+        compound: { name: string };
         area: { title: string };
     };
 
@@ -22,7 +22,7 @@ const PropertyClient: React.FC<PropertyClientProps> = ({
     listing,
     currentUser,
 }) => {
-    const location = `${listing?.compound?.title} / ${
+    const location = `كمبوند ${listing?.compound?.name} / ${
         listing?.area?.title || ""
     }`;
     return (

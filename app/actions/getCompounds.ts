@@ -5,6 +5,7 @@ export interface IParams {
     developerId?: string;
     areaId?: string;
     status?: string;
+    isAddHome?: boolean;
     page?: number;
     perPage?: number;
 }
@@ -16,6 +17,7 @@ export default async function getCompounds(params: IParams) {
             developerId,
             areaId,
             status,
+            isAddHome,
             page = 1,
             perPage = 12,
         } = params;
@@ -33,6 +35,10 @@ export default async function getCompounds(params: IParams) {
             query.status = status;
         }
 
+        if (isAddHome) {
+            query.isAddHome = isAddHome;
+        }
+
         if (areaId) {
             query.areaId = areaId;
         }
@@ -46,14 +52,18 @@ export default async function getCompounds(params: IParams) {
             select: {
                 id: true,
                 slug: true,
+                name: true,
                 images: true,
                 mainImage: true,
+                isAddHome: true,
                 title: true,
                 createdAt: true,
+                properties: true,
                 developer: {
                     select: {
                         title: true,
                         slug: true,
+                        image: true,
                     },
                 },
                 area: {

@@ -1,6 +1,6 @@
 "use client";
-import Image from "next/legacy/image";
-import { SafeUser } from "@/app/types";
+import Image from "next/image";
+import { SafeProperty, SafeUser } from "@/app/types";
 import { SlLocationPin } from "react-icons/sl";
 import HeartButton from "../HeartButton";
 import Link from "next/link";
@@ -11,8 +11,13 @@ interface CompoundCardProps {
     id: string;
     slug?: string;
     image: string;
-    title?: string;
-    developer?: string;
+    title: string;
+    developer?: {
+        title: string;
+        image: string;
+    };
+    properties: SafeProperty[];
+
     location?: string;
     minPrice?: number;
     typesCount?: any[];
@@ -26,6 +31,7 @@ const CompoundCard: React.FC<CompoundCardProps> = ({
     image,
     title,
     developer,
+    properties,
     location,
     typesCount,
     currentUser,
@@ -47,6 +53,19 @@ const CompoundCard: React.FC<CompoundCardProps> = ({
 
     ("use client side rendering to show more types on click");
     const moreTypes = () => {};
+
+    const placeholder = "/assets/images/placeholder2.png";
+
+    const allTypes = Array.from(
+        new Set(properties.map((listing: any) => listing.propertyType))
+    ).map((propertyType) => {
+        return {
+            type: propertyType,
+            count: properties.filter(
+                (listing: any) => listing.propertyType === propertyType
+            ).length,
+        };
+    });
 
     return (
         <Link href={`/${parent}/${slug}`}>
@@ -71,49 +90,58 @@ const CompoundCard: React.FC<CompoundCardProps> = ({
                     </div>
                     <div className="relative proImage w-[400px] h-[220px] overflow-hidden flex justify-center items-center">
                         <Image
-                            className="group-hover:scale-105 duration-300 transition-all "
+                            className="group-hover:scale-105 duration-300 transition-all object-cover "
                             src={image}
                             alt={title}
-                            layout="fill"
-                            objectFit="cover"
+                            fill
                             loading="lazy"
-                        ></Image>
+                        />
+                        <div className=" absolute right-4 bottom-4 flex justify-start items-center gap-2 rounded-full">
+                            <div className=" overflow-hidden p-2 w-[40px] h-[40px] relative bg-white border rounded-full">
+                                <Image
+                                    src={developer?.image || placeholder}
+                                    alt={developer?.title || "المطور"}
+                                    fill
+                                    className=" object-cover"
+                                />
+                            </div>
+                        </div>
                     </div>
                     <div className="propInfo w-full py-4 px-6 flex flex-col justify-between items-start gap-3">
-                        <div className="proTitle w-full flex flex-col justify-between items-start gap-3">
-                            <div className=" text-sm p-1 bg-slate-100 rounded-full px-4">
-                                {developer}
+                        <div className="proTitle w-full flex flex-col justify-between items-start gap-1">
+                            <div className=" font-medium text-xs bg-slate-100 rounded-md p-2">
+                                {developer?.title.replace(/[^a-zA-Z ]/g, "")}
                             </div>
-                            <div className="w-full flex justify-between items-center">
-                                <div className="flex justify-center items-center text-slate-600 text-md font-bold">
-                                    <h3>{title}</h3>
-                                </div>
+                            <div className="flex justify-center items-center text-slate-600 mt-2">
+                                <h3 className="text-lg font-semibold m-0">
+                                    {title}
+                                </h3>
                             </div>
-
                             <div className="propLocation flex justify-center gap-2 items-center text-xs text-slate-500">
                                 <SlLocationPin size={18} color="#718096" />
-                                <p>{location} / مصر</p>
+                                <div>{location} / مصر</div>
                             </div>
                         </div>
                         <div className="proFeature w-full flex flex-col justify-center items-start gap-3 text-sm text-slate-500">
-                            {/* <div className="flex justify-start items-center gap-4 w-full flex-wrap">
-                                {typesCount?.length !== 0 &&
-                                    formateTypes?.map((type, i) => (
-                                        <div key={i}>
-                                            <div className="flex justify-start items-center gap-1 w-full">
-                                                <span>{type.name}</span>:
-                                                <span>{type.count}</span>
-                                            </div>
-                                        </div>
-                                    ))}
-                                    {typesCount?.length > 4 && (
-                                        <span  className=" text-left text-slate-600 underline">المزيد</span>
-                                    )}
-                            </div> */}
+                            <div className=" flex justify-between items-center gap-4">
+                                {allTypes.length
+                                    ? allTypes.map((type, i) => (
+                                          <div
+                                              className=" flex justify-center items-center"
+                                              key={i}
+                                          >
+                                              <div className=" flex justify-start items-center gap-1">
+                                                  <span>{type.count}</span>
+                                                  <span>{type.type}</span>
+                                              </div>
+                                          </div>
+                                      ))
+                                    : ""}
+                            </div>
                             <div className=" flex justify-start items-center gap-3 pb-4">
                                 <div className="flex justify-start items-center text-lg font-bold text-slate-700">
                                     {formattedMinPrice} ج.م
-                                </div>{" "}
+                                </div>
                                 <div className="flex justify-start items-center gap-1">
                                     {minDownPayment} ج.م / {maxInstYears} سنوات
                                 </div>

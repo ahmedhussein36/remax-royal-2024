@@ -2,7 +2,6 @@
 
 import { useRouter } from "next/navigation";
 import { SafeProperty } from "../types";
-import { useEffect, useState } from "react";
 
 interface TypePrpos {
     listings: SafeProperty[];

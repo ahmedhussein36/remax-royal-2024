@@ -29,9 +29,7 @@ export default async function RootLayout({
 
     return (
         <html lang="ar" dir="rtl">
-            <body
-            className={font.className}
-            >
+            <body className={font.className}>
                 <TopLoader />
                 <div className=" flex flex-col">
                     <div className=" z-10">

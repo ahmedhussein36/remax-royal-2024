@@ -3,6 +3,8 @@ import prisma from "@/app/libs/prismadb";
 export interface IParams {
     title?: string;
     status?: string;
+    perPage?: number;
+    page?: number;
 }
 
 export default async function getAreas(params: IParams) {

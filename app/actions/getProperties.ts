@@ -4,6 +4,7 @@ export interface IParams {
     userId?: string;
     areaId?: string;
     developerId?: string;
+    isAddHome?: boolean;
     city?: string;
     title?: string;
     compoundId?: string;
@@ -21,13 +22,14 @@ export default async function getProperties(params: IParams) {
         userId,
         areaId,
         category,
+        isAddHome,
         propertyType,
         status,
-        city, 
+        city,
         developerId,
         compoundId,
         title,
-        minprice, 
+        minprice,
         maxprice,
         page = 1,
         perPage = 12,
@@ -46,6 +48,9 @@ export default async function getProperties(params: IParams) {
     }
     if (status) {
         query.status = status;
+    }
+    if (isAddHome) {
+        query.isAddHome = isAddHome;
     }
     if (city) {
         query.city = city;
@@ -80,9 +85,14 @@ export default async function getProperties(params: IParams) {
     const properties = await prisma.property.findMany({
         where: query,
         include: {
-            compound: { select: { title: true } },
+            compound: {
+                select: { id: true, title: true, slug: true, name: true },
+            },
+            developer: {
+                select: { image: true },
+            },
             area: { select: { title: true } },
-            user: { select: { name: true , image: true} },
+            user: { select: { name: true, image: true } },
         },
         orderBy: {
             createdAt: "desc",

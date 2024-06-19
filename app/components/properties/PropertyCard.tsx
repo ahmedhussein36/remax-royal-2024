@@ -17,9 +17,24 @@ import Link from "next/link";
 interface PropertyCardProps {
     slug: string;
     data: SafeProperty & {
-        compound: SafeCompound;
-        area: SafeArea;
-        developer: SafeDeveloper;
+        compound: {
+            id: string;
+            slug: string;
+            title: string;
+            name: string;
+        };
+        area: {
+            id: string;
+            slug: string;
+            title: string;
+            name: string;
+        };
+        developer: {
+            id: string;
+            slug: string;
+            title: string;
+            name: string;
+        };
     };
     currentUser?: SafeUser | null;
     parent?: string;
@@ -41,7 +56,7 @@ const PropertyCard: React.FC<PropertyCardProps> = ({
 
     const formattedMinPrice = formatNumber(data?.price);
 
-    const location = `${data?.compound?.title} / ${data?.area?.title}`;
+    const location = `${data?.compound?.name} / ${data?.area?.title}`;
     return (
         <Link href={`/${parent}/${slug}`}>
             <div className="col-span-1 group relative mb-4 flex justify-center item-center overflow-hidden cursor-pointer">
@@ -117,7 +132,12 @@ const PropertyCard: React.FC<PropertyCardProps> = ({
                             </div>
                             {data.installmentValue !== 0 && (
                                 <div className=" flex gap-2 text-sm text-slate-500">
-                                    <span> {formatNumber(data.installmentValue || 0)}</span>
+                                    <span>
+                                        {" "}
+                                        {formatNumber(
+                                            data.installmentValue || 0
+                                        )}
+                                    </span>
                                     <span>/ شهريا</span>
                                 </div>
                             )}

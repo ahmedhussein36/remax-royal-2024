@@ -14,13 +14,16 @@ export type SafeProperty = Omit<
 > & {
     createdAt: string;
     updatedAt: string;
-    content: string;
+    compounds: SafeCompound;
+    area: SafeArea;
+    developer: SafeDeveloper;
 };
 
 export type SafeCompound = Omit<Compound, "createdAt"> & {
     createdAt: string;
-    area: SafeArea
-    properties: SafeProperty[]
+    area: SafeArea;
+    developer: SafeDeveloper;
+    properties: SafeProperty[];
 };
 export type SafeArea = Omit<Area, "createdAt"> & {
     createdAt: string;

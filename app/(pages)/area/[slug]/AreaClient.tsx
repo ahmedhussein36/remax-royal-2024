@@ -90,6 +90,8 @@ const DevClient: React.FC<DevClientProps> = ({
                                         title={compound.title}
                                         image={compound.mainImage}
                                         location={compound?.area?.title}
+                                        developer={compound.developer}
+                                        properties={compound.properties}
                                         parent="compounds"
                                     />
                                 ))}

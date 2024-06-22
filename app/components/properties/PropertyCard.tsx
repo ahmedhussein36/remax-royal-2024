@@ -87,6 +87,8 @@ const PropertyCard: React.FC<PropertyCardProps> = ({
                             src={data.mainImage}
                             alt="listing thumbnail image"
                             fill
+                            sizes="100%"
+                            priority={false}
                             loading="lazy"
                         ></Image>
                     </div>

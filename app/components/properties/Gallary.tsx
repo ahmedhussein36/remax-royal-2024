@@ -32,7 +32,7 @@ const Gallary = ({ images, mainImage }: GallaryProps) => {
                                         ? "w-full grayscale-0"
                                         : " w-[15%] grayscale-[80%]"
                                 }
-                                 bg-slate-100 hover:w-full duration-500 ease-in-out grayscale-[80%] hover:grayscale-0
+                                 bg-slate-100 hover:w-full duration-500 ease-in-out hover:grayscale-0
                             relative overflow-hidden h-[500px]`}
                             onMouseEnter={() => setHoveredIndex(i)}
                             onMouseLeave={() => setHoveredIndex(-1)}

@@ -94,6 +94,8 @@ const CompoundCard: React.FC<CompoundCardProps> = ({
                             src={image}
                             alt={title}
                             fill
+                            sizes="100%"
+                            priority={false}
                             loading="lazy"
                         />
                         <div className=" absolute right-4 bottom-4 flex justify-start items-center gap-2 rounded-full">
@@ -102,6 +104,9 @@ const CompoundCard: React.FC<CompoundCardProps> = ({
                                     src={developer?.image || placeholder}
                                     alt={developer?.title || "المطور"}
                                     fill
+                                    sizes="100%"
+                                    priority={false}
+                                    quality={75}
                                     className=" object-cover"
                                 />
                             </div>

@@ -61,8 +61,8 @@ const PropertyPage = async ({ params }: PageProps) => {
 
     const items = [
         {
-            label: `عقارات للبيع في ${listing?.city}`,
-            href: `/search?category=للبيع&city=${listing.city}`,
+            label: `عقارات للبيع`,
+            href: `/${parent}`,
         },
         { label: listing?.area.title, href: `/area/${listing?.area.slug}` },
         {

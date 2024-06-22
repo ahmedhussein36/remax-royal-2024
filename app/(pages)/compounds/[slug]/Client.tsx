@@ -15,6 +15,8 @@ import { RiShareBoxLine } from "react-icons/ri";
 import { useCallback, useState } from "react";
 import Button from "@/app/components/Button";
 import PropertyCard from "@/app/components/properties/PropertyCard";
+import EntityType from "@/app/components/EntityType";
+import { spacing } from "react-select/dist/declarations/src/theme";
 
 interface ClientProps {
     compound: SafeCompound & {
@@ -26,6 +28,7 @@ interface ClientProps {
 }
 interface PageProps {
     title: string;
+    name: string;
     mainImage: string;
     images: string[];
     description: string;
@@ -79,6 +82,7 @@ const Client: React.FC<ClientProps> = ({
 
     const compoundDetails: PageProps = {
         title: compound.title,
+        name: compound?.name || compound.title,
         mainImage: compound.mainImage,
         images: compound.images,
         description: compound.content,
@@ -89,9 +93,9 @@ const Client: React.FC<ClientProps> = ({
         minPrice: getMinPrice(properties),
         maxPrice: getMaxPrice(properties),
         phone: "+201500366642",
-        whatsapp:"+201500366642",
+        whatsapp: "+201500366642",
         paymentPlans: [],
-        properties: [],
+        properties: compound.properties,
         amineties: [],
     };
 
@@ -155,6 +159,17 @@ const Client: React.FC<ClientProps> = ({
         if (category === "للبيع") return "properties-for-sale";
         if (category === "للإيجار") return "properties-for-rent";
     }, []);
+
+    const allTypes = Array.from(
+        new Set(properties.map((listing: any) => listing.propertyType))
+    ).map((propertyType) => {
+        return {
+            type: propertyType,
+            count: properties.filter(
+                (listing: any) => listing.propertyType === propertyType
+            ).length,
+        };
+    });
     return (
         <>
             <Container>
@@ -164,10 +179,12 @@ const Client: React.FC<ClientProps> = ({
                             <Image
                                 src={compoundDetails.mainImage || placeholder}
                                 layout="fill"
+                                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                                 priority
+                                quality={75}
                                 objectFit="cover"
                                 alt={compoundDetails.title}
-                            />{" "}
+                            />
                         </div>
                         <div className=" flex flex-col md:flex-row justify-start items-start gap-4">
                             <div className="relative aspect-square w-[85px] rounded-full overflow-hidden border-4 border-slate-200">
@@ -182,10 +199,11 @@ const Client: React.FC<ClientProps> = ({
                                 />
                             </div>
                             <div className="flex flex-col justify-center items-start gap-3">
-                                <div>
+                                <div className=" flex justify-start items-center gap-8">
                                     <h1 className="text-2xl font-bold">
                                         {compoundDetails.title}
                                     </h1>
+                                    <EntityType type="كمبوند" />
                                 </div>
                                 <div className=" flex justify-start items-center gap-2 w-full">
                                     <span>{compoundDetails.area}</span>
@@ -196,9 +214,15 @@ const Client: React.FC<ClientProps> = ({
                                         </span>
                                     </div>
                                 </div>
-                                <div className="mt-2">
-                                    من {formatNumber(compoundDetails.minPrice)}{" "}
-                                    إلى {formatNumber(compoundDetails.maxPrice)}
+                                <div className="mt-2 flex justify-start items-center gap-2">
+                                    <span>سعر يبدأ من </span>
+                                    <span>
+                                        {formatNumber(compoundDetails.minPrice)}
+                                    </span>
+                                    <span>حتى</span>
+                                    <span>
+                                        {formatNumber(compoundDetails.maxPrice)}
+                                    </span>
                                 </div>
                             </div>
                         </div>
@@ -208,6 +232,23 @@ const Client: React.FC<ClientProps> = ({
                             <h4 className=" font-bold text-xl mb-6">
                                 خطط السداد
                             </h4>
+                            <div className=" w-full flex justify-start items-center gap-2">
+                                <div className=" w-full p-3 flex flex-col justify-start items-center gap-2 bg-slate-100">
+                                    <span className=" font-bold text-xl">
+                                        5%
+                                    </span>
+                                    <span>مقدم</span>
+                                    <span>8 سنوات</span>
+                                </div>
+                                <div className="w-full p-3 flex flex-col justify-start items-center gap-2 bg-slate-100">
+                                    <span className=" font-bold text-xl">
+                                        5%
+                                    </span>
+                                    <span>مقدم</span>
+                                    <span>8 سنوات</span>
+                                </div>
+                            </div>
+
                             <div className=" flex flex-wrap justify-center items-center gap-5">
                                 {compoundDetails.paymentPlans &&
                                     compoundDetails?.paymentPlans.map(
@@ -296,9 +337,36 @@ const Client: React.FC<ClientProps> = ({
                                         <tr>
                                             <td className=" p-2">الوحدات</td>
                                             <td>
-                                                {compoundDetails?.properties.join(
-                                                    " - "
-                                                )}
+                                                <div className=" flex justify-start items-center gap-2">
+                                                    {allTypes.length
+                                                        ? allTypes.map(
+                                                              (type, i) => (
+                                                                  <div
+                                                                      className=" flex justify-center items-center"
+                                                                      key={i}
+                                                                  >
+                                                                      {i !==
+                                                                      0 ? (
+                                                                          <span className=" flex justify-start items-center gap-2">
+                                                                              <span>
+                                                                                  -
+                                                                              </span>
+                                                                              {
+                                                                                  type.type
+                                                                              }
+                                                                          </span>
+                                                                      ) : (
+                                                                          <span className=" flex justify-start items-center gap-1">
+                                                                              {
+                                                                                  type.type
+                                                                              }
+                                                                          </span>
+                                                                      )}
+                                                                  </div>
+                                                              )
+                                                          )
+                                                        : ""}
+                                                </div>
                                             </td>
                                         </tr>
                                         <tr>
@@ -318,7 +386,9 @@ const Client: React.FC<ClientProps> = ({
 
                         {properties.length ? (
                             <div>
-                                <h2>إكتشف وحدات {compoundDetails.title}</h2>
+                                <h2 className="text-xl font-bold mb-4">
+                                    إكتشف وحدات {compoundDetails.name}
+                                </h2>
                                 <div
                                     className="
                             pt-2
@@ -405,8 +475,13 @@ const Client: React.FC<ClientProps> = ({
                             </form>
                             <div className=" flex-1 flex justify-center items-center my-6 ">
                                 <PropretyContacts
-                                    phone={compoundDetails.phone || "+201500366642"}
-                                    whatsApp={compoundDetails.whatsapp || "+201500366642"}
+                                    phone={
+                                        compoundDetails.phone || "+201500366642"
+                                    }
+                                    whatsApp={
+                                        compoundDetails.whatsapp ||
+                                        "+201500366642"
+                                    }
                                 />
                             </div>
                         </div>

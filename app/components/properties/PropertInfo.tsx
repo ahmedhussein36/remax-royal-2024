@@ -6,6 +6,7 @@ import { FiShare2 } from "react-icons/fi";
 import HeartButton from "./SingleHeartButton ";
 import { SafeProperty, SafeUser } from "@/app/types";
 import PropretyContacts from "./PropretyContacts";
+import EntityType from "../EntityType";
 
 interface PropertInfoProps {
     data: SafeProperty;
@@ -35,10 +36,14 @@ const PropertInfo: React.FC<PropertInfoProps> = ({
     return (
         <div className=" flex justify-between items-start border-b-2 p-6 w-full sticky top-0 bg-white">
             <div className="flex flex-col gap-2 justify-between  items-start w-full">
-                <div className="title flex flex-col gap-1 items-start">
-                    <h1 className="my-1 text-xl font-bold text-slate-700">
-                        {data.title}
-                    </h1>
+                <div className="w-full title flex flex-col gap-1 items-start">
+                    <div className=" w-full flex justify-start items-start gap-8">
+                        <h1 className="my-1 w-[70%] text-xl font-bold text-slate-700">
+                            {data.title}
+                        </h1>
+                        <EntityType type={"وحدة"} />
+                    </div>
+
                     <div className="flex items-center gap-2 my-2">
                         <SlLocationPin />
 
@@ -83,7 +88,10 @@ const PropertInfo: React.FC<PropertInfoProps> = ({
                             </div>
                         )}
                     </div>
-                    <PropretyContacts phone={"+201500366642"} whatsApp={"+201500366642"} />
+                    <PropretyContacts
+                        phone={"+201500366642"}
+                        whatsApp={"+201500366642"}
+                    />
                 </div>
             </div>
             {/* <div className=" flex justify-end items-center w-1/4">

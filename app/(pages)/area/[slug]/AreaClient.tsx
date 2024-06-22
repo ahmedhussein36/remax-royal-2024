@@ -6,6 +6,7 @@ import CompoundCard from "@/app/components/compounds/CompoundCard";
 import PropretyContacts from "@/app/components/properties/PropretyContacts";
 import parse from "html-react-parser";
 import PropertyCard from "@/app/components/properties/PropertyCard";
+import EntityType from "@/app/components/EntityType";
 
 interface DevClientProps {
     area: SafeArea;
@@ -31,10 +32,11 @@ const DevClient: React.FC<DevClientProps> = ({
                         <Image src={area?.image || ""} alt={area.slug} fill />
                     </div>
                     <div className="flex flex-1 flex-col gap-4 text-slate-600">
-                        <div>
-                            <h1 className="font-bold text-xl m-0">
+                        <div className=" flex justify-start items-center gap-8">
+                            <h1 className="font-bold text-xl m-0 w-[75]">
                                 {area?.title}
                             </h1>
+                            <EntityType type="منطقة" />
                         </div>
                         <div className="flex gap-5">
                             <div>{compounds?.length || 0} كمبوند</div>

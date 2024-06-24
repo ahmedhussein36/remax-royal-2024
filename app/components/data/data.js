@@ -71,7 +71,7 @@ export const navItems = [
     {
         id: "6",
         name: "المدونة",
-        slug: "/#",
+        slug: "/blog",
     },
 
     {

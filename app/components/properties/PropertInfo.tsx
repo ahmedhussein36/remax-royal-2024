@@ -7,9 +7,14 @@ import HeartButton from "./SingleHeartButton ";
 import { SafeProperty, SafeUser } from "@/app/types";
 import PropretyContacts from "./PropretyContacts";
 import EntityType from "../EntityType";
+import Image from "next/image";
 
 interface PropertInfoProps {
     data: SafeProperty;
+    developer: {
+        title: string;
+        image: string;
+    };
     currentUser?: SafeUser | null;
     listingId: string;
     title: string;
@@ -18,6 +23,7 @@ interface PropertInfoProps {
 
 const PropertInfo: React.FC<PropertInfoProps> = ({
     data,
+    developer,
     listingId,
     currentUser,
     title,
@@ -32,26 +38,37 @@ const PropertInfo: React.FC<PropertInfoProps> = ({
     };
 
     const formattedMinPrice: number = formatNumber(data.price as number);
+    const placeholder = "/assets/images/placeholder2.png";
 
     return (
-        <div className=" flex justify-between items-start border-b-2 p-6 w-full sticky top-0 bg-white">
-            <div className="flex flex-col gap-2 justify-between  items-start w-full">
+        <div className=" flex justify-between gap-3 items-start pb-3 border-b-2 w-full sticky top-0 bg-white">
+            <div className="relative aspect-square w-[65px] rounded-full overflow-hidden border-4 border-slate-200">
+                <Image
+                    src={developer?.image || placeholder}
+                    fill
+                    loading="lazy"
+                    priority={false}
+                    alt={developer?.title || "المطور"}
+                    className=" object-cover"
+                />
+            </div>
+            <div className="flex flex-col gap-1 justify-between  items-start w-full">
                 <div className="w-full title flex flex-col gap-1 items-start">
-                    <div className=" w-full flex justify-start items-start gap-8">
-                        <h1 className="my-1 w-[70%] text-xl font-bold text-slate-700">
+                    <div className=" flex justify-start items-center gap-8">
+                        <h1 className="my-1 w-[100%] text-xl font-bold text-slate-700">
                             {data.title}
                         </h1>
                         <EntityType type={"وحدة"} />
                     </div>
 
-                    <div className="flex items-center gap-2 my-2">
+                    <div className="flex items-center gap-2 py-1">
                         <SlLocationPin />
 
                         <div>{location}</div>
                     </div>
                 </div>
 
-                <div className="proFeature bg-slate-0  py-2 w-full flex justify-start items-center gap-8 rounded-md text-slate-600">
+                <div className="proFeature bg-slate-0  py-1 w-full flex justify-start items-center gap-8 rounded-md text-slate-600">
                     <div className="flex justify-start items-center gap-1">
                         <LuBedDouble size={20} color="#64748b" />
                         <span className=" text-base">

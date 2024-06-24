@@ -17,6 +17,7 @@ import Button from "@/app/components/Button";
 import PropertyCard from "@/app/components/properties/PropertyCard";
 import EntityType from "@/app/components/EntityType";
 import { spacing } from "react-select/dist/declarations/src/theme";
+import Link from "next/link";
 
 interface ClientProps {
     compound: SafeCompound & {
@@ -187,7 +188,7 @@ const Client: React.FC<ClientProps> = ({
                             />
                         </div>
                         <div className=" flex flex-col md:flex-row justify-start items-start gap-4">
-                            <div className="relative aspect-square w-[85px] rounded-full overflow-hidden border-4 border-slate-200">
+                            <div className="relative aspect-square w-[65px] rounded-full overflow-hidden border-4 border-slate-200">
                                 <Image
                                     src={
                                         compound.developer.image || placeholder
@@ -200,7 +201,7 @@ const Client: React.FC<ClientProps> = ({
                             </div>
                             <div className="flex flex-col justify-center items-start gap-3">
                                 <div className=" flex justify-start items-center gap-8">
-                                    <h1 className="text-2xl font-bold">
+                                    <h1 className="text-2xl font-bold w-fit">
                                         {compoundDetails.title}
                                     </h1>
                                     <EntityType type="كمبوند" />
@@ -209,9 +210,12 @@ const Client: React.FC<ClientProps> = ({
                                     <span>{compoundDetails.area}</span>
                                     <div className=" flex gap-2">
                                         <span>من تطوير</span>
-                                        <span className=" rounded-lg bg-slate-100 px-3">
+                                        <Link
+                                            href={`/developers/${compound.developer.slug}`}
+                                            className="hover:underline rounded-lg bg-slate-100 px-3"
+                                        >
                                             {compoundDetails.developer}
-                                        </span>
+                                        </Link>
                                     </div>
                                 </div>
                                 <div className="mt-2 flex justify-start items-center gap-2">

@@ -8,6 +8,7 @@ import Footer from "./components/Footer";
 
 import { Noto_Kufi_Arabic } from "next/font/google";
 import "./globals.css";
+import ModalPro from "./components/ModalPro";
 
 const font = Noto_Kufi_Arabic({ subsets: ["arabic"] });
 

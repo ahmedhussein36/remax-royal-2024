@@ -17,6 +17,7 @@ export default async function getPropertyById(
                 compound: { select: { title: true, slug: true, name: true } },
                 area: { select: { title: true, slug: true } },
                 user: { select: { name: true } },
+                developer: { select: { title: true, image: true, slug: true } },
             },
         });
 

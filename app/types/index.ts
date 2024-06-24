@@ -8,13 +8,10 @@ import {
     User,
 } from "@prisma/client";
 
-export type SafeProperty = Omit<
-    Property,
-    "createdAt" | "updatedAt"
-> & {
+export type SafeProperty = Omit<Property, "createdAt" | "updatedAt"> & {
     createdAt: string;
     updatedAt: string;
-    compounds: SafeCompound;
+    compound: SafeCompound;
     area: SafeArea;
     developer: SafeDeveloper;
 };

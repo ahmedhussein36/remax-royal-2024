@@ -13,6 +13,7 @@ import { SlLocationPin } from "react-icons/sl";
 import HeartButton from "../HeartButton";
 import PropretyContacts from "./PropretyContacts";
 import Link from "next/link";
+import DeveloperImage from "@/app/DeveloperImage";
 
 interface PropertyCardProps {
     slug: string;
@@ -57,6 +58,8 @@ const PropertyCard: React.FC<PropertyCardProps> = ({
     const formattedMinPrice = formatNumber(data?.price);
 
     const location = `${data?.compound?.name} / ${data?.area?.title}`;
+    const placeholder = "/assets/images/placeholder2.png";
+
     return (
         <Link href={`/${parent}/${slug}`}>
             <div className="col-span-1 group relative mb-4 flex justify-center item-center overflow-hidden cursor-pointer">
@@ -90,7 +93,11 @@ const PropertyCard: React.FC<PropertyCardProps> = ({
                             sizes="100%"
                             priority={false}
                             loading="lazy"
-                        ></Image>
+                        />
+                        <DeveloperImage
+                            developer={data.developer}
+                            placeholder={placeholder}
+                        />
                     </div>
                     <div className="propInfo w-full p-4 flex flex-col justify-between items-start gap-3">
                         <div className="proTitle w-full flex flex-col justify-between items-start gap-2">

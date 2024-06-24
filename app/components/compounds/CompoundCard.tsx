@@ -4,6 +4,7 @@ import { SafeProperty, SafeUser } from "@/app/types";
 import { SlLocationPin } from "react-icons/sl";
 import HeartButton from "../HeartButton";
 import Link from "next/link";
+import DeveloperImage from "@/app/DeveloperImage";
 
 interface CompoundCardProps {
     currentUser?: SafeUser | null;
@@ -98,19 +99,7 @@ const CompoundCard: React.FC<CompoundCardProps> = ({
                             priority={false}
                             loading="lazy"
                         />
-                        <div className=" absolute right-4 bottom-4 flex justify-start items-center gap-2 rounded-full">
-                            <div className=" overflow-hidden p-2 w-[40px] h-[40px] relative bg-white border rounded-full">
-                                <Image
-                                    src={developer?.image || placeholder}
-                                    alt={developer?.title || "المطور"}
-                                    fill
-                                    sizes="100%"
-                                    priority={false}
-                                    quality={75}
-                                    className=" object-cover"
-                                />
-                            </div>
-                        </div>
+                       <DeveloperImage developer={developer} placeholder={placeholder}/>
                     </div>
                     <div className="propInfo w-full py-4 px-6 flex flex-col justify-between items-start gap-3">
                         <div className="proTitle w-full flex flex-col justify-between items-start gap-1">

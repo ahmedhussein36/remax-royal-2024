@@ -166,3 +166,10 @@ p {
   background-image: url(/images/frteee.png);
   background-repeat: no-repeat;
 }
+
+.icon-stroke{
+  path{
+    stroke-width: 0.75px;
+    
+  }
+}

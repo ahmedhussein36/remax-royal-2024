@@ -46,7 +46,7 @@ const PropertyClient: React.FC<PropertyClientProps> = ({
                         title={listing.title}
                         location={location}
                         data={listing}
-                        currentUser={currentUser}
+                        currentUser={currentUser} 
                         listingId={listing.id}
                     />
                 </div>

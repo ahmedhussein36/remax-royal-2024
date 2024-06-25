@@ -17,6 +17,7 @@ import Button from "@/app/components/Button";
 import PropertyCard from "@/app/components/properties/PropertyCard";
 import EntityType from "@/app/components/EntityType";
 import Link from "next/link";
+import Specifics from "@/app/components/specifications/Specifics";
 
 interface ClientProps {
     compound: SafeCompound & {
@@ -170,6 +171,30 @@ const Client: React.FC<ClientProps> = ({
             ).length,
         };
     });
+
+    const types = (
+        <div className=" flex justify-start items-center gap-2">
+            {allTypes.length
+                ? allTypes.map((type, i) => (
+                      <div
+                          className=" flex justify-center items-center"
+                          key={i}
+                      >
+                          {i !== 0 ? (
+                              <span className=" flex justify-start items-center gap-2">
+                                  <span>-</span>
+                                  {type.type}
+                              </span>
+                          ) : (
+                              <span className=" flex justify-start items-center gap-1">
+                                  {type.type}
+                              </span>
+                          )}
+                      </div>
+                  ))
+                : ""}
+        </div>
+    );
     return (
         <>
             <Container>
@@ -341,41 +366,8 @@ const Client: React.FC<ClientProps> = ({
                                             <td className=" p-2">الوحدات</td>
                                             <td>
                                                 <div className=" flex justify-start items-center gap-2">
-                                                    {allTypes.length
-                                                        ? allTypes.map(
-                                                              (type, i) => (
-                                                                  <div
-                                                                      className=" flex justify-center items-center"
-                                                                      key={i}
-                                                                  >
-                                                                      {i !==
-                                                                      0 ? (
-                                                                          <span className=" flex justify-start items-center gap-2">
-                                                                              <span>
-                                                                                  -
-                                                                              </span>
-                                                                              {
-                                                                                  type.type
-                                                                              }
-                                                                          </span>
-                                                                      ) : (
-                                                                          <span className=" flex justify-start items-center gap-1">
-                                                                              {
-                                                                                  type.type
-                                                                              }
-                                                                          </span>
-                                                                      )}
-                                                                  </div>
-                                                              )
-                                                          )
-                                                        : ""}
+                                                    {types}
                                                 </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td className=" p-2">المساحة</td>
-                                            <td>
-                                                {compoundDetails?.size} فداناً
                                             </td>
                                         </tr>
                                         <tr>
@@ -385,6 +377,10 @@ const Client: React.FC<ClientProps> = ({
                                     </tbody>
                                 </table>
                             </div>
+                        </div>
+
+                        <div>
+                            <Specifics />
                         </div>
 
                         {properties.length ? (

@@ -16,7 +16,6 @@ import { useCallback, useState } from "react";
 import Button from "@/app/components/Button";
 import PropertyCard from "@/app/components/properties/PropertyCard";
 import EntityType from "@/app/components/EntityType";
-import { spacing } from "react-select/dist/declarations/src/theme";
 import Link from "next/link";
 
 interface ClientProps {
@@ -187,7 +186,7 @@ const Client: React.FC<ClientProps> = ({
                                 alt={compoundDetails.title}
                             />
                         </div>
-                        <div className=" flex flex-col md:flex-row justify-start items-start gap-4">
+                        <div className=" flex flex-col md:flex-row justify-start items-start gap-5">
                             <div className="relative aspect-square w-[65px] rounded-full overflow-hidden border-4 border-slate-200">
                                 <Image
                                     src={
@@ -199,9 +198,9 @@ const Client: React.FC<ClientProps> = ({
                                     alt={compound.developer.title}
                                 />
                             </div>
-                            <div className="flex flex-col justify-center items-start gap-3">
+                            <div className="flex flex-col justify-start items-start gap-3">
                                 <div className=" flex justify-start items-center gap-8">
-                                    <h1 className="text-2xl font-bold w-fit">
+                                    <h1 className="text-2xl font-[600] w-fit m-0 my-2">
                                         {compoundDetails.title}
                                     </h1>
                                     <EntityType type="كمبوند" />

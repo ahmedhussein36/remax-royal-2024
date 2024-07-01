@@ -66,7 +66,7 @@ const PropertyPage = async ({ params }: PageProps) => {
         },
         { label: listing?.area.title, href: `/area/${listing?.area.slug}` },
         {
-            label: listing?.compound.title,
+            label: listing?.compound.name,
             href: `compounds/${listing?.compound.slug}`,
         },
         { label: listing.title, href: `/${parent}/${listing.slug}` },

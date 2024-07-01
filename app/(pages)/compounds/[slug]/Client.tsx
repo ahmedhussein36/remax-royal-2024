@@ -90,7 +90,6 @@ const Client: React.FC<ClientProps> = ({
         developer: compound.developer.title,
         area: compound.area.title,
         size: 0,
-        latlong: compound.latLong,
         minPrice: getMinPrice(properties),
         maxPrice: getMaxPrice(properties),
         phone: "+201500366642",
@@ -176,22 +175,22 @@ const Client: React.FC<ClientProps> = ({
         <div className=" flex justify-start items-center gap-2">
             {allTypes.length
                 ? allTypes.map((type, i) => (
-                      <div
-                          className=" flex justify-center items-center"
-                          key={i}
-                      >
-                          {i !== 0 ? (
-                              <span className=" flex justify-start items-center gap-2">
-                                  <span>-</span>
-                                  {type.type}
-                              </span>
-                          ) : (
-                              <span className=" flex justify-start items-center gap-1">
-                                  {type.type}
-                              </span>
-                          )}
-                      </div>
-                  ))
+                    <div
+                        className=" flex justify-center items-center"
+                        key={i}
+                    >
+                        {i !== 0 ? (
+                            <span className=" flex justify-start items-center gap-2">
+                                <span>-</span>
+                                {type.type}
+                            </span>
+                        ) : (
+                            <span className=" flex justify-start items-center gap-1">
+                                {type.type}
+                            </span>
+                        )}
+                    </div>
+                ))
                 : ""}
         </div>
     );
@@ -380,7 +379,17 @@ const Client: React.FC<ClientProps> = ({
                         </div>
 
                         <div>
-                            <Specifics />
+                            <Specifics
+                                floorPlan={
+                                    compound.mainImage || "لايتوفر مخطط ادوار"
+                                }
+                                masterPlan={
+                                    compound.mainImage || "لايتوفر مخطط للمشروع"
+                                }
+                                lat={compound.lat}
+                                lng={compound.lng}
+                                placeName={compound?.name || compound.title}
+                            />
                         </div>
 
                         {properties.length ? (
@@ -465,9 +474,8 @@ const Client: React.FC<ClientProps> = ({
 
                                 <div className="w-full flex flex-col justify-center items-start gap-2">
                                     <Button
-                                        label={`${
-                                            isLoading ? "جاري الارسال" : "ارسال"
-                                        }`}
+                                        label={`${isLoading ? "جاري الارسال" : "ارسال"
+                                            }`}
                                         disabled={isLoading}
                                     />
                                 </div>

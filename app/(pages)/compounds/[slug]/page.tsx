@@ -66,7 +66,7 @@ const DeveloperPage = async ({ params }: { params: IParams }) => {
         },
         { label: compound?.area.title, href: `/area/${compound?.area.slug}` },
 
-        { label: compound.title, href: `compounds/${compound.slug}` },
+        { label: compound.name, href: `compounds/${compound.slug}` },
     ];
 
     const home: any = {

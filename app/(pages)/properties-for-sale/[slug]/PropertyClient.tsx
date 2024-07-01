@@ -54,7 +54,7 @@ const PropertyClient: React.FC<PropertyClientProps> = ({
                 <div className="flex flex-col md:flex-row justify-between items-start gap-4 w-full my-4">
                     <div className="w-full gap-4 column-8">
                         <PropertDetails data={listing} />
-                        <Specifics />
+                        <Specifics lat={listing.compound.lat} lng={listing.compound.lng} placeName={listing.compound.name} />
                         <Description content={listing.content} />
                     </div>
 

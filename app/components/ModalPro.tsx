@@ -32,7 +32,7 @@ const ModalPro: FC<ModalProps> = ({ children, isOpen, onClose }) => {
             >
                 <div
                     className={`flex flex-col gap-3 w-[100%] lg:w-[65%] bg-white h-[100%] lg:h-[90%] rounded-lg p-4 
-                        transition-all duration-300 ease-in-out 
+                        transition-all duration-300 ease-in-out relative
                         ${showModal ? "translate-y-0" : "translate-y-24 "}
                         ${showModal ? "opacity-100" : "opacity-0"}`}
                 >
@@ -41,7 +41,9 @@ const ModalPro: FC<ModalProps> = ({ children, isOpen, onClose }) => {
                             <IoClose size={24} />
                         </button>
                     </div>
-                    <div>{children}</div>
+                    <div className=" relative overflow-hidden grid grid-cols-1 w-full h-full">
+                        {children}
+                    </div>
                 </div>
             </div>
         </>

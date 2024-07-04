@@ -64,12 +64,12 @@ const TopCompounds: FC<TopCompoundsProps> = ({ compounds }) => {
                                                 `}
                             key={compound.id}
                         >
-                            <div className="w-full absolute text-right bottom-8 z-10 right-6 text-white font-bold">
+                            <div className="w-full absolute text-right bottom-3 z-10 right-6 text-white font-bold">
                                 <p className="">{compound.name}</p>
                             </div>
                             <Image
-                                src={compound.mainImage}
-                                alt={compound.title}
+                                src={compound.mainImage || ""}
+                                alt={compound.name || "compound-image"}
                                 fill
                                 className=" object-cover group-hover:scale-105 transition-all"
                             />

@@ -1,33 +1,48 @@
 import prisma from "@/app/libs/prismadb";
 
 export const listingsLength = async () => {
-    const properties = await prisma.property.findMany();
+    const properties = await prisma.property.findMany({
+        select: {
+            id: true,
+        },
+    });
     return properties.length;
 };
 
-export const getlistings = async (params: {
-    category?: string;
-    properyType?: string;
-}) => {
-    const { category, properyType } = params;
+export const getlistings = async () => {
+    try {
+        const properties = await prisma.property.findMany({
+            select: {
+                id: true,
+                propertyType: true,
+            },
+        });
 
-    const query: Record<string, any> = {};
-    if (category) {
-        query.category = category;
-    }
-    if (properyType) {
-        query.properyType = properyType;
-    }
+        const listings = properties.map((listing) => ({
+            ...listing,
+        }));
 
-    const properties = await prisma.property.findMany({
-        where: query,
+        return listings;
+    } catch (error) {
+        console.log(error);
+        return { massage: "cant fetch properties", error };
+    }
+};
+
+export const getTopCompounds = async () => {
+    const compounds = await prisma.compound.findMany({
         select: {
             id: true,
-            propertyType: true
+            name: true,
+            slug: true,
+            mainImage: true,
+        },
+        take: 6,
+        orderBy: {
+            createdAt: "desc",
         },
     });
-
-    return properties;
+    return compounds;
 };
 
 export const compoundsLength = async () => {

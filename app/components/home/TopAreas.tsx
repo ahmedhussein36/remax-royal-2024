@@ -55,7 +55,7 @@ const TopAreas = ({ areas }: { areas: SafeArea[] }) => {
                                 alt={area.title}
                                 className=" object-cover group-hover:scale-105 ease-in-out duration-500"
                             />
-                            <span className=" absolute top-8 right-4 font-bold text-white z-10">
+                            <span className=" absolute bottom-4 right-4 font-bold text-white z-10">
                                 {area.title}
                             </span>
                         </Link>

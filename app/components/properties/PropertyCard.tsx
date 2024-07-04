@@ -55,7 +55,7 @@ const PropertyCard: React.FC<PropertyCardProps> = ({
         }
     };
 
-    const formattedMinPrice = formatNumber(data?.price);
+    const formattedMinPrice = formatNumber(data?.price || 0);
 
     const location = `${data?.compound?.name} / ${data?.area?.title}`;
     const placeholder = "/assets/images/placeholder2.png";
@@ -87,7 +87,7 @@ const PropertyCard: React.FC<PropertyCardProps> = ({
                     <div className="relative proImage w-[400px] h-[220px] overflow-hidden flex justify-center items-center">
                         <Image
                             className="group-hover:scale-105 duration-300 transition-all object-cover "
-                            src={data.mainImage}
+                            src={data.mainImage || ""}
                             alt="listing thumbnail image"
                             fill
                             sizes="100%"
@@ -103,7 +103,9 @@ const PropertyCard: React.FC<PropertyCardProps> = ({
                         <div className="proTitle w-full flex flex-col justify-between items-start gap-2">
                             <div className="w-full flex justify-between items-center">
                                 <div className="flex justify-center items-center text-slate-600 text-md font-bold">
-                                    <h3 className="my-1">{data.title}</h3>
+                                    <h3 className="my-1">
+                                        {data?.title || ""}
+                                    </h3>
                                 </div>
                             </div>
 
@@ -155,8 +157,8 @@ const PropertyCard: React.FC<PropertyCardProps> = ({
 
                     <div className="Contact w-full px-4  pb-4 flex justify-start items-center">
                         <PropretyContacts
-                            phone={data.phone}
-                            whatsApp={data.whatsapp}
+                            phone={data?.phone || ""}
+                            whatsApp={data?.whatsapp || ""}
                         />
                     </div>
                 </div>

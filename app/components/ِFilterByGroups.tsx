@@ -1,10 +1,9 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-import { SafeProperty } from "../types";
 
 interface TypePrpos {
-    listings: SafeProperty[];
+    listings: any[];
     parent: string;
 }
 

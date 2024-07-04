@@ -17,20 +17,15 @@ interface ForSalePageProps {
 }
 
 const ForSalePage = async ({ searchParams }: ForSalePageProps) => {
-    const listings = await getProperties({
-        category: "للبيع",
-        ...searchParams,
-    });
+    const listings = await getProperties(searchParams);
+
     const currentUser = await getCurrentUser();
+    const count = await listingsLength();
+    const types = await getlistings();
     const currentPage = searchParams?.page || 1;
-    const getAll = await getlistings({ category: "للبيع" });
-
-    const perPage = searchParams?.perPage || 12;
-
+    const perPage = searchParams?.perPage || 10;
     const parent = "properties-for-sale";
-
     const items = [{ label: `عقارات للبيع في مصر`, href: `/${parent}` }];
-
     const home = {
         label: <AiFillHome />,
         href: "/",
@@ -43,7 +38,7 @@ const ForSalePage = async ({ searchParams }: ForSalePageProps) => {
             <div className="flex gap-4 justify-between items-center my-8 w-full">
                 <Heading
                     title={" عقارات للبيع في مصر"}
-                    subtitle={`عدد الوحدات المتوفرة: ${getAll.length}`}
+                    subtitle={`عدد الوحدات المتوفرة: ${count}`}
                 />
                 <div className="w-60">
                     <Sort />
@@ -51,12 +46,12 @@ const ForSalePage = async ({ searchParams }: ForSalePageProps) => {
             </div>
 
             <div>
-                <FilterByGroups listings={getAll as any} parent={parent} />
+                <FilterByGroups listings={types as any} parent={parent} />
             </div>
-            {listings.length !== 0 ? (
+            {listings ? (
                 <Suspense fallback={<CompoundLoader />}>
                     <ForSaleClient
-                        propertiesLength={getAll.length}
+                        propertiesLength={count}
                         currentPage={currentPage}
                         perPage={perPage}
                         listings={listings as any}

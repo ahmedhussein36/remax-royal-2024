@@ -44,7 +44,7 @@ const CompoundClient: React.FC<CompoundClienttProps> = ({
                                     ? compound.name
                                     : compound.title) || ""
                             }
-                            image={compound.mainImage}
+                            image={compound?.mainImage || ""}
                             location={compound?.area?.title}
                             developer={compound?.developer}
                             properties={compound.properties}

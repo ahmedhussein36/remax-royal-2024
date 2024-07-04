@@ -99,19 +99,18 @@ model Property {
   slug              String     @unique
   createdAt         DateTime   @default(now())
   updatedAt         DateTime   @updatedAt
-  ref               String
-  title             String
-  description       String
-  content           String
+  ref               String?
+  title             String?
+  description       String?
+  content           String?
   images            String[]
-  mainImage         String
-  category          String
-  roomCount         Int
-  bathroomCount     Int
-  propertyType      String
+  mainImage         String?
+  category          String?
+  roomCount         Int?
+  bathroomCount     Int?
+  propertyType      String?
   saleType          String?
   group             String?
-  amenities         String[]
   status            String?
   isFeatured        Boolean?
   isAddHome         Boolean?
@@ -133,13 +132,13 @@ model Property {
   deliveryDate      String?
   country           String
   city              String?
-  phone             String
-  whatsapp          String
+  phone             String?
+  whatsapp          String?
   seoDetails        Meta?
-  price             Int
-  currency          String
-  size              Int
-  sizeUnit          String
+  price             Int?
+  currency          String?
+  size              Int?
+  sizeUnit          String?
   userId            String?    @db.ObjectId
   user              User?      @relation(fields: [userId], references: [id], onDelete: Cascade)
   developerId       String?    @db.ObjectId
@@ -157,19 +156,20 @@ model Compound {
   updatedAt     DateTime   @updatedAt
   title         String
   name          String?
-  content       String
-  description   String
-  mainImage     String
+  content       String?
+  description   String?
+  mainImage     String?
   images        String[]
   seoDetails    Meta?
-  lat           Float
-  lng           Float
-  isLaunch      String
-  status        String
-  isFeatured    Boolean
-  isAddHome     Boolean
-  isFooterMenu  Boolean
-  isRecommended Boolean
+  lat           Float?
+  lng           Float?
+  latLong       Float?
+  isLaunch      String?
+  status        String?
+  isFeatured    Boolean?
+  isAddHome     Boolean?
+  isFooterMenu  Boolean?
+  isRecommended Boolean?
   properties    Property[]
   developer     Developer? @relation(fields: [developerId], references: [id])
   developerId   String?    @db.ObjectId

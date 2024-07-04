@@ -1,9 +1,10 @@
 import prisma from "@/app/libs/prismadb";
-
 export interface IParams {
     userId?: string;
     areaId?: string;
     developerId?: string;
+    roomCount?: number;
+    bathroomCount?: number;
     isAddHome?: boolean;
     city?: string;
     title?: string;
@@ -23,6 +24,8 @@ export default async function getProperties(params: IParams) {
         areaId,
         category,
         isAddHome,
+        roomCount,
+        bathroomCount,
         propertyType,
         status,
         city,
@@ -35,7 +38,7 @@ export default async function getProperties(params: IParams) {
         perPage = 12,
     } = params;
 
-    const query: Record<string, any> = {};
+    let query: any = {};
 
     if (title) {
         query.title = { contains: title };
@@ -45,6 +48,12 @@ export default async function getProperties(params: IParams) {
     }
     if (category) {
         query.category = category;
+    }
+    if (roomCount) {
+        query.roomCount = roomCount;
+    }
+    if (bathroomCount) {
+        query.bathroomCount = bathroomCount;
     }
     if (status) {
         query.status = status;
@@ -82,28 +91,53 @@ export default async function getProperties(params: IParams) {
         query.developerId = developerId;
     }
 
-    const properties = await prisma.property.findMany({
-        where: query,
-        include: {
-            compound: {
-                select: { id: true, title: true, slug: true, name: true },
+    try {
+        const properties = await prisma.property.findMany({
+            where: query,
+            select: {
+                id: true,
+                title: true,
+                slug: true,
+                roomCount: true,
+                mainImage: true,
+                price: true,
+                installmentValue: true,
+                propertyType: true,
+                bathroomCount: true,
+                size: true,
+                content: false,
+                compound: {
+                    select: {
+                        id: true,
+                        name: true,
+                        slug: true,
+                    },
+                },
+                area: {
+                    select: {
+                        id: true,
+                        title: true,
+                        slug: true,
+                    },
+                },
+                developer: {
+                    select: {
+                        id: true,
+                        image: true,
+                        title: true,
+                    },
+                },
             },
-            developer: {
-                select: { image: true },
+            orderBy: {
+                createdAt: "desc",
             },
-            area: { select: { title: true } },
-            user: { select: { name: true, image: true } },
-        },
-        orderBy: {
-            createdAt: "desc",
-        },
-        skip: (page - 1) * perPage,
-        take: perPage,
-    });
-
-    return properties.map((listing) => ({
-        ...listing,
-        createdAt: listing.createdAt.getTime(),
-        updatedAt: listing.updatedAt.getTime(),
-    }));
+            skip: (page - 1) * perPage,
+            take: perPage,
+        });
+        return properties.map((listing) => ({
+            ...listing,
+        }));
+    } catch (error) {
+        console.log(error);
+    }
 }

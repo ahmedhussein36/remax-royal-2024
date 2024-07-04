@@ -69,8 +69,8 @@ const Filter = () => {
             ...currentQuery,
             category,
             title: title,
-            roomCount: roomCount?.value,
-            bathroomCount: bathroomCount?.value,
+            roomCount: parseInt(roomCount?.value) || null,
+            bathroomCount: parseInt(bathroomCount?.value) || null,
             propertyType: propertyType?.name,
             city: null,
             minprice: price?.gte,
@@ -154,7 +154,7 @@ const Filter = () => {
                 <div className="col-span-4 md:col-span-2">
                     <SelectInput
                         isSearchable={false}
-                        value={roomCount}
+                        value={roomCount as any}
                         onChange={(value) => setRoomCount(value as any)}
                         placeholder={"عدد الغرف"}
                         options={roomOptions}
@@ -164,7 +164,7 @@ const Filter = () => {
                 <div className="col-span-4 md:col-span-2">
                     <SelectInput
                         isSearchable={false}
-                        value={bathroomCount}
+                        value={bathroomCount as any}
                         onChange={(value) => setBathroomCount(value as any)}
                         placeholder={"عدد الحمامات"}
                         options={bathOptions}

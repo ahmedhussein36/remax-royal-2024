@@ -8,7 +8,7 @@ interface ForSaleClientProps {
     perPage: number;
     currentPage: number;
     propertiesLength: number;
-    listings: SafeProperty[];
+    listings: any[];
     currentUser?: SafeUser | null;
 }
 

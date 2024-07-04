@@ -10,6 +10,7 @@ import getProperties from "./actions/getProperties";
 import getCurrentUser from "./actions/getCurrentUser";
 import Promotion from "./components/Promotion";
 import Contactus from "@/app//components/Contactus";
+import { getTopCompounds } from "./actions/getAll";
 
 export const metadata = {
     title: "RE/MAX Royal | ريماكس رويال : عقارت للبيع وللإيجار في مصر",
@@ -18,10 +19,10 @@ export const metadata = {
 };
 
 const Home = async ({ searchParams }: { searchParams: IParams }) => {
-    const currentUser = await getCurrentUser();
+    // const currentUser = await getCurrentUser();
     const areas = await getAreas({ perPage: 8 });
-    const compounds = await getCompounds({ perPage: 6 });
-    const listings = await getProperties({ perPage: 6, isAddHome: true });
+    const compounds = await getTopCompounds();
+    // const listings = await getProperties({ perPage: 6, isAddHome: true });
     return (
         <>
             <div>
@@ -31,12 +32,14 @@ const Home = async ({ searchParams }: { searchParams: IParams }) => {
                 <Container>
                     <TopAreas areas={areas as any} />
                     <TopCompounds compounds={compounds as any} />
+
+                    <Contactus />
+                    {/* />
                     <Promotion />
                     <TopListings
                         listings={listings as any}
                         currentUser={currentUser as any}
-                    />
-                    <Contactus />
+                    /> */}
                 </Container>
             </div>
         </>

@@ -17,7 +17,7 @@ interface CompoundCardProps {
         title: string;
         image: string;
     };
-    properties: SafeProperty[];
+    properties: any[];
 
     location?: string;
     minPrice?: number;

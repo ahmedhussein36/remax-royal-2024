@@ -10,7 +10,7 @@ interface BreadcrumbItem {
 interface BreadcrumbProps {
     items: BreadcrumbItem[];
     home: {
-        label: string;
+        label: string; 
         href: string;
     };
 }

@@ -17,7 +17,7 @@ export default async function getDevelopers(params: IParams) {
             query.title = {
                 contains: title,
             };
-        }
+        } 
         if (status) {
             query.status = status;
         }
@@ -31,9 +31,16 @@ export default async function getDevelopers(params: IParams) {
                 image: true,
                 status: true,
                 createdAt: true,
+                content: false,
+                compound: {
+                    select: { id: true },
+                },
+                property: {
+                    select: { id: true },
+                },
             },
             orderBy: {
-                createdAt: "desc",
+                createdAt: "asc",
             },
             skip: (page - 1) * perPage,
             take: perPage,
@@ -41,7 +48,7 @@ export default async function getDevelopers(params: IParams) {
 
         const safeDevelopers = developers.map((developer) => ({
             ...developer,
-            createdAt: developer.createdAt.getTime(),
+            createdAt: developer.createdAt.toISOString(),
         }));
 
         return safeDevelopers;

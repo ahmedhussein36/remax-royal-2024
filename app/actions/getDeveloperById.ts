@@ -13,8 +13,12 @@ export default async function getDeveloperById(params: IParams) {
                 slug: decodeURI(slug),
             },
             include: {
-                property: true,
-                compound: true,
+                compound: {
+                    select: { id: true },
+                },
+                property: {
+                    select: { id: true },
+                },
             },
         });
 

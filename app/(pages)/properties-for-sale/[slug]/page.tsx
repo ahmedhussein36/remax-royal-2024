@@ -1,7 +1,6 @@
 import getCurrentUser from "@/app/actions/getCurrentUser";
 import EmptyState from "@/app/components/EmptyState";
 import PropertyClient from "./PropertyClient";
-import { GetServerSideProps } from "next";
 import getPropertyById, { IParam } from "@/app/actions/getPropertyById";
 import Breadcrumb from "@/app/components/Breadcrumb";
 import Container from "@/app/components/Container";

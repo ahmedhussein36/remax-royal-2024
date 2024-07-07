@@ -66,7 +66,7 @@ const DeveloperPage = async ({ params }: { params: IParams }) => {
         label: <AiFillHome />,
         href: "/",
     };
-
+ 
     return (
         <>
             <Container>

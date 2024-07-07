@@ -18,10 +18,9 @@ interface ForSalePageProps {
 
 const ForSalePage = async ({ searchParams }: ForSalePageProps) => {
     const listings = await getProperties(searchParams);
-
     const currentUser = await getCurrentUser();
     const count = await listingsLength();
-    const types = await getlistings();
+    const types = await getlistings(searchParams);
     const currentPage = searchParams?.page || 1;
     const perPage = searchParams?.perPage || 10;
     const parent = "properties-for-sale";

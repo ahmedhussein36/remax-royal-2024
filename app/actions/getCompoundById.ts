@@ -12,12 +12,21 @@ export default async function getCompoundById(params: IParams) {
             where: {
                 slug: decodeURI(slug),
             },
-            include: {
+            select: {
+                id: true,
+                slug: true,
+                name: true,
+                images: true,
+                content: true,
+                mainImage: true,
+                isAddHome: true,
+                seoDetails: true,
+                title: true,
                 developer: {
                     select: {
                         title: true,
-                        image: true,
                         slug: true,
+                        image: true,
                     },
                 },
                 area: {
@@ -26,7 +35,6 @@ export default async function getCompoundById(params: IParams) {
                         slug: true,
                     },
                 },
-                properties: true,
             },
         });
 
@@ -36,17 +44,6 @@ export default async function getCompoundById(params: IParams) {
 
         return {
             ...compound,
-            createdAt: compound?.createdAt?.getTime(),
-            updatedAt: compound?.updatedAt?.getTime(),
-            developer: {
-                ...compound?.developer,
-            },
-            area: {
-                ...compound?.area,
-            },
-            properties: {
-                ...compound?.properties,
-            },
         };
     } catch (error: any) {
         throw new Error(error);

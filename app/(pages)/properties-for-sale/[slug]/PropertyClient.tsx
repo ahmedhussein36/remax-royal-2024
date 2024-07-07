@@ -1,28 +1,16 @@
 "use client";
 
-import { SafeArea, SafeCompound, SafeProperty, SafeUser } from "@/app/types";
+import { SafeUser, SingleProperty } from "@/app/types";
 import Container from "@/app/components/Container";
 import Gallary from "@/app/components/properties/Gallary";
 import PropertInfo from "@/app/components/properties/PropertInfo";
 import PropertDetails from "@/app/components/properties/PropertDetails";
-import AgentInfo from "@/app/components/properties/AgentInfo";
 import PaymentPlans from "@/app/components/properties/PaymentPlans";
-import Description from "@/app/components/properties/Description";
 import Specifics from "@/app/components/specifications/Specifics";
+import Description from "@/app/components/properties/Description";
 
 interface PropertyClientProps {
-    listing: SafeProperty & {
-        user: { name: string; image: string };
-        compound: { name?: string; slug: string };
-        area: { title: string; slug: string };
-        developer: {
-            id: string;
-            slug: string;
-            title: string;
-            name: string;
-        };
-    };
-
+    listing: SingleProperty;
     currentUser?: SafeUser | null;
 }
 
@@ -30,9 +18,8 @@ const PropertyClient: React.FC<PropertyClientProps> = ({
     listing,
     currentUser,
 }) => {
-    const location = `كمبوند ${listing.compound.name} / ${
-        listing.area.title || ""
-    }`;
+    const location = `كمبوند ${listing.compound.name} / ${listing.area.title || ""
+        }`;
     return (
         <>
             <Container>
@@ -57,7 +44,7 @@ const PropertyClient: React.FC<PropertyClientProps> = ({
                         <Specifics
                             lat={listing?.compound?.lat || 0}
                             lng={listing.compound.lng || 0}
-                            placeName={listing.compound.name}
+                            placeName={listing?.compound?.name || ""}
                         />
                         <Description content={listing?.content || ""} />
                     </div>

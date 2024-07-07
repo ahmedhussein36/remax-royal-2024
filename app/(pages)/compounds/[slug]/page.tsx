@@ -62,8 +62,8 @@ const CompoundPage = async ({ params }: { params: IParams }) => {
             href: `/compounds`,
         },
         {
-            label: compound?.area.title,
-            href: `/area/${compound?.area.slug}`,
+            label: compound?.area?.title,
+            href: `/area/${compound?.area?.slug}`,
         },
         {
             label: compound.name,
@@ -72,19 +72,19 @@ const CompoundPage = async ({ params }: { params: IParams }) => {
     ];
 
     const home = {
-        label: <AiFillHome />,
+        label: <AiFillHome />, 
         href: "/",
     };
 
     return (
         <React.Fragment>
             <Container>
-                <Breadcrumb home={home} items={items} />
+                <Breadcrumb home={home as any} items={items as any} />
             </Container>
             <Client
-                compound={compound}
-                properties={properties}
-                currentUser={currentUser}
+                compound={compound as any}
+                properties={properties as any}
+                currentUser={currentUser as any}
             />
         </React.Fragment>
     );

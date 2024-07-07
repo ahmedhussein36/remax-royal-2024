@@ -1,12 +1,9 @@
 import Container from "@/app/components/Container";
 import Filter from "./components/home/Filter";
-import TopAreas from "./components/home/TopAreas";
 import HeroSection from "./components/home/HeroSection";
-import getAreas, { IParams } from "./actions/getAreas";
-import getCompounds from "./actions/getCompounds";
 import TopCompounds from "./components/TopCompounds";
 import TopListings from "./components/TopListings";
-import getProperties from "./actions/getProperties";
+import getProperties, { IParams } from "./actions/getProperties";
 import getCurrentUser from "./actions/getCurrentUser";
 import Promotion from "./components/Promotion";
 import Contactus from "@/app//components/Contactus";
@@ -19,10 +16,10 @@ export const metadata = {
 };
 
 const Home = async ({ searchParams }: { searchParams: IParams }) => {
-    // const currentUser = await getCurrentUser();
-    const areas = await getAreas({ perPage: 8 });
+    const currentUser = await getCurrentUser();
+    // const areas = await getAreas({ perPage: 8 });
     const compounds = await getTopCompounds();
-    // const listings = await getProperties({ perPage: 6, isAddHome: true });
+    const listings = await getProperties({ perPage: 6, isAddHome: true });
     return (
         <>
             <div>
@@ -30,16 +27,15 @@ const Home = async ({ searchParams }: { searchParams: IParams }) => {
                     <Filter />
                 </HeroSection>
                 <Container>
-                    <TopAreas areas={areas as any} />
+                    {/* <TopAreas areas={areas as any} /> */}
                     <TopCompounds compounds={compounds as any} />
-
-                    <Contactus />
-                    {/* />
                     <Promotion />
                     <TopListings
                         listings={listings as any}
                         currentUser={currentUser as any}
-                    /> */}
+                    />
+
+                    <Contactus />
                 </Container>
             </div>
         </>

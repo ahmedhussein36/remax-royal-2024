@@ -91,53 +91,53 @@ export default async function getProperties(params: IParams) {
         query.developerId = developerId;
     }
 
-    try {
-        const properties = await prisma.property.findMany({
-            where: query,
-            select: {
-                id: true,
-                title: true,
-                slug: true,
-                roomCount: true,
-                mainImage: true,
-                price: true,
-                installmentValue: true,
-                propertyType: true,
-                bathroomCount: true,
-                size: true,
-                content: false,
-                compound: {
-                    select: {
-                        id: true,
-                        name: true,
-                        slug: true,
-                    },
-                },
-                area: {
-                    select: {
-                        id: true,
-                        title: true,
-                        slug: true,
-                    },
-                },
-                developer: {
-                    select: {
-                        id: true,
-                        image: true,
-                        title: true,
-                    },
+    const properties = await prisma.property.findMany({
+        where: query,
+        select: {
+            id: true,
+            title: true,
+            slug: true,
+            category: true,
+            roomCount: true,
+            mainImage: true,
+            price: true,
+            installmentValue: true,
+            propertyType: true,
+            bathroomCount: true,
+            size: true,
+            content: false,
+            updatedAt: false,
+            compound: {
+                select: {
+                    id: true,
+                    name: true,
+                    slug: true,
                 },
             },
-            orderBy: {
-                createdAt: "desc",
+            area: {
+                select: {
+                    id: true,
+                    title: true,
+                    slug: true,
+                },
             },
-            skip: (page - 1) * perPage,
-            take: perPage,
-        });
-        return properties.map((listing) => ({
-            ...listing,
-        }));
-    } catch (error) {
-        console.log(error);
-    }
+            developer: {
+                select: {
+                    id: true,
+                    image: true,
+                    title: true,
+                },
+            },
+        },
+        orderBy: {
+            createdAt: "desc",
+        },
+        skip: (page - 1) * perPage,
+        take: perPage,
+    });
+    const safeListings = properties.map((listing) => ({
+        ...listing,
+    }));
+
+    return safeListings;
 }

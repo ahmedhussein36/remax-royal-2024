@@ -1,8 +1,5 @@
 import Image from "next/image";
 import {
-    SafeArea,
-    SafeCompound,
-    SafeDeveloper,
     SafeProperty,
     SafeUser,
 } from "@/app/types";
@@ -17,26 +14,7 @@ import DeveloperImage from "@/app/DeveloperImage";
 
 interface PropertyCardProps {
     slug: string;
-    data: SafeProperty & {
-        compound: {
-            id: string;
-            slug: string;
-            title: string;
-            name: string;
-        };
-        area: {
-            id: string;
-            slug: string;
-            title: string;
-            name: string;
-        };
-        developer: {
-            id: string;
-            slug: string;
-            title: string;
-            name: string;
-        };
-    };
+    data: SafeProperty; 
     currentUser?: SafeUser | null;
     parent?: string;
 }
@@ -88,11 +66,11 @@ const PropertyCard: React.FC<PropertyCardProps> = ({
                         <Image
                             className="group-hover:scale-105 duration-300 transition-all object-cover "
                             src={data.mainImage || ""}
-                            alt="listing thumbnail image"
+                            alt={data.title}
                             fill
                             sizes="100%"
-                            priority={false}
-                            loading="lazy"
+                            priority={true}
+                            placeholder="empty"
                         />
                         <DeveloperImage
                             developer={data.developer}

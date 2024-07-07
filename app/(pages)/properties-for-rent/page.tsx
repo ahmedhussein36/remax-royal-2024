@@ -10,20 +10,20 @@ import { AiFillHome } from "react-icons/ai";
 import Breadcrumb from "@/app/components/Breadcrumb";
 import { getlistings, listingsLength } from "@/app/actions/getAll";
 
-interface ForSalePageProps {
+export interface ForSalePageProps {
     searchParams: IParams;
 }
 
 const ForSalePage = async ({ searchParams }: ForSalePageProps) => {
-    const listings = await getProperties({
-        category: "للإيجار",
-        ...searchParams,
-    });
-    const currentUser = await getCurrentUser();
-    const currentPage = searchParams?.page || 1;
-    const getAll = await getlistings({ category: "للإيجار" });
+    // const listings = await getProperties({
+    //     category: "للإيجار",
+    //     ...searchParams,
+    // });
+    // const currentUser = await getCurrentUser();
+    // const currentPage = searchParams?.page || 1;
+    // const getAll = await getlistings({ category: "للإيجار" });
 
-    const perPage = searchParams?.perPage || 12;
+    // const perPage = searchParams?.perPage || 12;
 
     const parent = "properties-for-rent";
 
@@ -37,7 +37,8 @@ const ForSalePage = async ({ searchParams }: ForSalePageProps) => {
     return (
         <Container>
             <Breadcrumb home={home as any} items={items} />
-
+            <EmptyStateAr showReset />
+{/* 
             <div className="flex gap-4 justify-between items-center my-8 w-full">
                 <Heading
                     title={" عقارات للإيجار في مصر"}
@@ -61,7 +62,7 @@ const ForSalePage = async ({ searchParams }: ForSalePageProps) => {
                 />
             ) : (
                 <EmptyStateAr showReset />
-            )}
+            )} */}
         </Container>
     );
 };

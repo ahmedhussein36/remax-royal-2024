@@ -1,9 +1,7 @@
-import ClientOnly from "@/app/components/ClientOnly";
 import EmptyState from "@/app/components/EmptyState";
 import DevClient from "./DevClient";
 import getDeveloperById from "@/app/actions/getDeveloperById";
 import getCompounds from "@/app/actions/getCompounds";
-import getDeveloperByslug from "@/app/actions/getDeveloperById";
 import { AiFillHome } from "react-icons/ai";
 import Container from "@/app/components/Container";
 import Breadcrumb from "@/app/components/Breadcrumb";
@@ -21,7 +19,7 @@ export async function generateMetadata({
     };
 }) {
     try {
-        const post = await getDeveloperByslug(params);
+        const post = await getDeveloperById(params);
         if (!post)
             return {
                 title: "Not Found",
@@ -64,13 +62,13 @@ const DeveloperPage = async ({ params }: { params: DevParams }) => {
     const items: any = [
         {
             label: `المطورين`,
-            href: `/developer`,
+            href: `/developers`,
         },
         { label: developer.title, href: `developers/${developer.slug}` },
     ];
 
     const home: any = {
-        label: <AiFillHome />,
+        label: <AiFillHome />, 
         href: "/",
     };
 

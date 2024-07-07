@@ -1,13 +1,7 @@
 "use client";
 import Container from "@/app/components/Container";
 import PropretyContacts from "@/app/components/properties/PropretyContacts";
-import {
-    SafeArea,
-    SafeCompound,
-    SafeDeveloper,
-    SafeProperty,
-    SafeUser,
-} from "@/app/types";
+import { SafeProperty, SafeUser, SingleCompound } from "@/app/types";
 import Image from "next/legacy/image";
 import parse from "html-react-parser";
 import { MdWhatsapp } from "react-icons/md";
@@ -18,12 +12,10 @@ import PropertyCard from "@/app/components/properties/PropertyCard";
 import EntityType from "@/app/components/EntityType";
 import Link from "next/link";
 import Specifics from "@/app/components/specifications/Specifics";
+import Description from "@/app/components/properties/Description";
 
 interface ClientProps {
-    compound: SafeCompound & {
-        developer: SafeDeveloper;
-        area: SafeArea;
-    };
+    compound: SingleCompound;
     properties: SafeProperty[];
     currentUser: SafeUser;
 }
@@ -59,8 +51,6 @@ const Client: React.FC<ClientProps> = ({
         subject: "",
     });
 
-    const [allAmineties, setAllAmineties] = useState([]);
-
     function getMaxPrice(properties: SafeProperty[]): number {
         if (properties.length === 0) return 0; // Handle empty array case
 
@@ -77,16 +67,12 @@ const Client: React.FC<ClientProps> = ({
         }, properties[0].price);
     }
 
-    function getAmineties(properties: SafeProperty[]) {
-        if (properties.length === 0) return []; // Handle empty array case
-    }
-
     const compoundDetails: PageProps = {
         title: compound.title,
         name: compound?.name || compound.title,
-        mainImage: compound.mainImage,
+        mainImage: compound?.mainImage || "",
         images: compound.images,
-        description: compound.content,
+        description: compound?.content || "",
         developer: compound.developer.title,
         area: compound.area.title,
         size: 0,
@@ -95,7 +81,7 @@ const Client: React.FC<ClientProps> = ({
         phone: "+201500366642",
         whatsapp: "+201500366642",
         paymentPlans: [],
-        properties: compound.properties,
+        properties: properties,
         amineties: [],
     };
 
@@ -151,7 +137,7 @@ const Client: React.FC<ClientProps> = ({
     const minPriceInt = Math.floor(compoundDetails.minPrice || 0);
 
     const formattedMinPrice = formatNumber(minPriceInt) || null;
-    const formatmaxPrice = formatNumber(compoundDetails.maxPrice) || null;
+    // const formatmaxPrice = formatNumber(compoundDetails.maxPrice) || null;
 
     const placeholder = "/assets/images/placeholder2.png";
 
@@ -386,8 +372,8 @@ const Client: React.FC<ClientProps> = ({
                                 masterPlan={
                                     compound.mainImage || "لايتوفر مخطط للمشروع"
                                 }
-                                lat={compound.lat}
-                                lng={compound.lng}
+                                lat={compound?.lat || 0}
+                                lng={compound?.lng || 0}
                                 placeName={compound?.name || compound.title}
                             />
                         </div>
@@ -426,7 +412,7 @@ const Client: React.FC<ClientProps> = ({
                         <div className="my-12 relative">
                             <div className=" absolute "></div>
                             <h2>عن {compoundDetails.title}</h2>
-                            {parse(compoundDetails.description)}
+                            <Description content={compoundDetails?.description || ""} />
                         </div>
                     </div>
                     <div

@@ -1,6 +1,5 @@
 import Container from "@/app/components/Container";
 import EmptyStateAr from "@/app/components/EmptyStateAr";
-import getCurrentUser from "@/app/actions/getCurrentUser";
 import Heading from "@/app/components/Heading";
 import DeveloperClient from "./DeveloperClient";
 import getDevelopers, { IParams } from "@/app/actions/getDevelopers";
@@ -10,20 +9,9 @@ import { AiFillHome } from "react-icons/ai";
 import Breadcrumb from "@/app/components/Breadcrumb";
 import { developersLength } from "@/app/actions/getAll";
 
-export async function generateStaticParams() {
-    // You can return an array of params to pre-render pages at build time.
-    return [{}]; // Pre-render a default state, can be adjusted as needed.
-}
-
-export async function generateMetadata({
-    searchParams,
-}: {
-    searchParams: IParams;
-}) {
-    const developers = await getDevelopers(searchParams);
-
+export async function generateMetadata() {
     const title = `المطورين العقاريين في مصر `;
-    const description = `اكتشف المطورين العقاريين في مصر. أكثر من: ${developers.length} مطور عقاري.`;
+    const description = `اكتشف المطورين العقاريين في مصر. أكثر من:`;
 
     return {
         title,

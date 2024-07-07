@@ -1,9 +1,8 @@
 import {
-    SafeArea,
     SafeCompound,
-    SafeDeveloper,
     SafeProperty,
     SafeUser,
+    SingleDeveloper,
 } from "@/app/types";
 import Container from "@/app/components/Container";
 import Image from "next/image";
@@ -14,14 +13,8 @@ import Link from "next/link";
 import PropertyCard from "@/app/components/properties/PropertyCard";
 
 interface DevClientProps {
-    developer: SafeDeveloper;
-    compounds: SafeCompound[] & {
-        properties: SafeProperty[];
-        area: {
-            title: string;
-            slug: string;
-        };
-    };
+    developer: SingleDeveloper;
+    compounds: SafeCompound[];
     currentUser?: SafeUser | null;
     properties: SafeProperty[];
 }
@@ -66,8 +59,8 @@ const DevClient: React.FC<DevClientProps> = ({
                             </h1>
                         </div>
                         <div className="flex gap-5">
-                            <div>{compounds?.length || 0} كمبوند</div>
-                            <div>{properties?.length || 0} وحدة</div>
+                            <div>{developer?.compound?.length || 0} كمبوند</div>
+                            <div>{developer?.property?.length || 0} وحدة</div>
                         </div>
                         {/* {developer?.min_price && (
                             <div>
@@ -95,7 +88,7 @@ const DevClient: React.FC<DevClientProps> = ({
                     </div>
                     <div className="">
                         {parse(
-                            developer.content ? developer.content.trim() : ""
+                            developer?.content ? developer.content.trim() : ""
                         )}
                     </div>
                 </div>
@@ -136,17 +129,17 @@ const DevClient: React.FC<DevClientProps> = ({
                         >
                             {compounds.length
                                 ? compounds.map((compound: any) => (
-                                      <CompoundCard
-                                          key={compound.id}
-                                          slug={compound.slug}
-                                          id={compound.id}
-                                          title={compound.name}
-                                          image={compound.mainImage}
-                                          properties={compound.properties}
-                                          location={compound?.area?.title}
-                                          developer={developer}
-                                          parent="compounds"
-                                      />
+                                    <CompoundCard
+                                        key={compound.id}
+                                        slug={compound.slug}
+                                        id={compound.id}
+                                        title={compound.name}
+                                        image={compound.mainImage}
+                                        properties={compound.properties}
+                                        location={compound?.area?.title}
+                                        developer={developer}
+                                        parent="compounds"
+                                    />
                                   ))
                                 : "لاتتوفر كمبوندات الان سيتم اضافة كمبوندات لاحقا"}
                         </div>

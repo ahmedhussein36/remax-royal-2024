@@ -10,10 +10,7 @@ import EntityType from "@/app/components/EntityType";
 
 interface DevClientProps {
     area: SafeArea;
-    compounds?: SafeCompound[] & {
-        properties: SafeProperty[];
-        area: SafeArea;
-    };
+    compounds?: SafeCompound[];
     properties?: SafeProperty[];
     currentUser?: SafeUser | null;
 }
@@ -39,8 +36,8 @@ const DevClient: React.FC<DevClientProps> = ({
                             <EntityType type="منطقة" />
                         </div>
                         <div className="flex gap-5">
-                            <div>{compounds?.length || 0} كمبوند</div>
-                            <div>{properties?.length || 0} وحدة</div>
+                            <div>{area?.compounds?.length || 0} كمبوند</div>
+                            <div>{area?.properties?.length || 0} وحدة</div>
                         </div>
                     </div>
                     <div className=" flex-1 flex justify-center items-end ">

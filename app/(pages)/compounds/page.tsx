@@ -10,21 +10,9 @@ import CompoundLoader from "@/app/components/compounds/CompoundLoader";
 import { AiFillHome } from "react-icons/ai";
 import Breadcrumb from "@/app/components/Breadcrumb";
 
-export const revalidate = 10; // Revalidate every 10 seconds
-
-export async function generateStaticParams() {
-    // You can return an array of params to pre-render pages at build time.
-    return [{}]; // Pre-render a default state, can be adjusted as needed.
-}
-
-export async function generateMetadata({
-    searchParams,
-}: {
-    searchParams: IParams;
-}) {
-    const compounds = await getCompounds(searchParams);
-    const title = `كمبوندات في مصر - ${compounds.length} نتائج`;
-    const description = `استعراض الكمبوندات المتاحة في مصر. نتائج البحث: ${compounds.length} كمبوندات.`;
+export async function generateMetadata() {
+    const title = `كمبوندات في مصر`;
+    const description = `استعراض الكمبوندات المتاحة في مصر `;
 
     return {
         title,
@@ -52,7 +40,7 @@ const CompoundsPage = async ({ searchParams }: { searchParams: IParams }) => {
 
     const items = [{ label: `كمبوندات في مصر`, href: `/${parent}` }];
 
-    const home = { 
+    const home = {
         label: <AiFillHome />,
         href: "/",
     };
@@ -71,7 +59,7 @@ const CompoundsPage = async ({ searchParams }: { searchParams: IParams }) => {
             </div>
             <Suspense fallback={<CompoundLoader />}>
                 {compounds.length !== 0 ? (
-                    <CompoundClient compounds={compounds} />
+                    <CompoundClient compounds={compounds as any} />
                 ) : (
                     <EmptyStateAr title="لايوجد نتائج متوفرة" />
                 )}

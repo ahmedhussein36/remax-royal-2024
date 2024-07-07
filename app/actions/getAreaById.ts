@@ -12,6 +12,18 @@ export default async function getAreaById(params: IParams) {
             where: {
                 slug: decodeURI(slug),
             },
+            include: {
+                properties: {
+                    select: {
+                        id: true,
+                    },
+                },
+                compounds: {
+                    select: {
+                        id: true,
+                    },
+                },
+            },
         });
 
         if (!area) {

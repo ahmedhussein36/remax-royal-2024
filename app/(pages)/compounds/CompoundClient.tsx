@@ -3,7 +3,7 @@ import CompoundCard from "@/app/components/compounds/CompoundCard";
 import Search from "./Search";
 
 interface CompoundClienttProps {
-    compounds: SafeCompound[] | any[];
+    compounds: SafeCompound[];
     params?: string;
 }
 
@@ -34,20 +34,20 @@ const CompoundClient: React.FC<CompoundClienttProps> = ({
                             relative
                         "
                 >
-                    {compounds.map((compound: SafeCompound, index) => (
+                    {compounds.map((compound: SafeCompound) => (
                         <CompoundCard
                             key={compound.id}
                             slug={compound.slug}
                             id={compound.id}
                             title={
-                                (compound.name !== "" || null
+                                (compound.name !== ""
                                     ? compound.name
                                     : compound.title) || ""
                             }
                             image={compound?.mainImage || ""}
                             location={compound?.area?.title}
                             developer={compound?.developer}
-                            properties={compound.properties}
+                            properties={compound?.properties}
                             parent={parent}
                         />
                     ))}

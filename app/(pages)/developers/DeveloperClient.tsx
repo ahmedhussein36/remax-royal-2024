@@ -1,26 +1,15 @@
 "use client";
-import {
-    SafeCompound,
-    SafeDeveloper,
-    SafeProperty,
-    SafeUser,
-} from "@/app/types";
+import { SafeDeveloper } from "@/app/types";
 import Card from "@/app/components/Card";
 import Search from "./Search";
-import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
-import Link from "next/link";
 import { useEffect, useState } from "react";
-import { useRouter } from "next/navigation";
 import Pagination from "@/app/components/Pagination";
 
 interface DeveloperClientProps {
     currentPage: number;
     length: number;
     perPage: number;
-    developers: SafeDeveloper[] & {
-        compounds: SafeCompound;
-        property: SafeProperty;
-    };
+    developers: SafeDeveloper[];
     params?: string;
 }
 
@@ -32,10 +21,6 @@ const DeveloperClient: React.FC<DeveloperClientProps> = ({
     params,
 }) => {
     const [totalPages, setTotalPages] = useState(1);
-    const [disabled, setDisabled] = useState(false);
-
-    const router = useRouter();
-
     useEffect(() => {
         setTotalPages(Math.ceil(length / perPage));
     }, [perPage, length]);
@@ -68,8 +53,8 @@ const DeveloperClient: React.FC<DeveloperClientProps> = ({
                         key={developer.id}
                         logo={developer?.image}
                         title={developer.title}
-                        compoundsCount={developer?.compounds?.length}
-                        propertiesCount={0}
+                        compoundsCount={developer?.compound?.length}
+                        propertiesCount={developer?.property?.length}
                         slug={developer.slug}
                         parent={parent}
                     />

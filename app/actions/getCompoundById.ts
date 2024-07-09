@@ -16,6 +16,8 @@ export default async function getCompoundById(params: IParams) {
                 id: true,
                 slug: true,
                 name: true,
+                lat: true,
+                lng: true,
                 images: true,
                 content: true,
                 mainImage: true,

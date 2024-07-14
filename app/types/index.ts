@@ -118,7 +118,7 @@ export type SafeUser = Omit<
 
 export type lightCompound = Pick<
     Compound,
-    "id" | "title" | "name" | "slug" | "mainImage" | "lat" | "lng"
+    "id" | "title" | "name" | "slug" | "mainImage" | "lat" | "lng" | "masterPlan"
 >;
 export type lightDeveloper = Pick<Developer, "id" | "title" | "slug" | "image">;
 export type lightArea = Pick<Area, "id" | "title" | "slug">;

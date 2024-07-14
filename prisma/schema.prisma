@@ -105,6 +105,7 @@ model Property {
   content           String?
   images            String[]
   mainImage         String
+  floorPlan         String?
   category          String
   roomCount         Int
   bathroomCount     Int
@@ -159,10 +160,13 @@ model Compound {
   content       String?
   description   String?
   mainImage     String?
+  masterPlan    String?
   images        String[]
   seoDetails    Meta?
   lat           Float?
   lng           Float?
+  maxPrice      Int?
+  minPrice      Int?
   latLong       Float?
   isLaunch      String?
   status        String?

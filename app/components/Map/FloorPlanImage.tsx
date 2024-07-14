@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import Heading from "../Heading";
 
 interface FloorPlanProps {
     floorPlan: string;
@@ -8,6 +9,7 @@ interface FloorPlanProps {
 const FloorPlanImage = ({ floorPlan }: FloorPlanProps) => {
     return (
         <div className=" w-[100%] h-[100%] relative">
+            <Heading title="مخطط الطابق"/>
             <Image
                 src={floorPlan}
                 alt="مخطط الادوار"

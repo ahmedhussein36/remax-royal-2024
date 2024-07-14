@@ -107,6 +107,9 @@ export default async function getProperties(params: IParams) {
             size: true,
             content: false,
             updatedAt: false,
+            compoundId: true,
+            areaId: true,
+            developerId: true,
             compound: {
                 select: {
                     id: true,

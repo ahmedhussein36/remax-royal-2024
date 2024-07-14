@@ -18,8 +18,9 @@ const PropertyClient: React.FC<PropertyClientProps> = ({
     listing,
     currentUser,
 }) => {
-    const location = `كمبوند ${listing.compound.name} / ${listing.area.title || ""
-        }`;
+    const location = `كمبوند ${listing.compound.name} / ${
+        listing.area.title || ""
+    }`;
     return (
         <>
             <Container>
@@ -42,6 +43,9 @@ const PropertyClient: React.FC<PropertyClientProps> = ({
                     <div className="w-full gap-4 column-8">
                         <PropertDetails data={listing} />
                         <Specifics
+                            photos={[listing.mainImage, ...listing.images]}
+                            floorPlan={listing.floorPlan || ""}
+                            masterPlan={listing.compound?.masterPlan || ""}
                             lat={listing?.compound?.lat || 0}
                             lng={listing.compound.lng || 0}
                             placeName={listing?.compound?.name || ""}

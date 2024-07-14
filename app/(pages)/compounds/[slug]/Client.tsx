@@ -67,6 +67,20 @@ const Client: React.FC<ClientProps> = ({
         }, properties[0].price);
     }
 
+    const maxPrice = useCallback(() => {
+        const maxPrice = getMaxPrice(properties);
+        return maxPrice !== 0
+            ? formatNumber(maxPrice)
+            : formatNumber(compound?.maxPrice || 0);
+    }, [compound?.maxPrice, properties]);
+
+    const minPrice = useCallback(() => {
+        const minPrice = getMinPrice(properties);
+        return minPrice !== 0
+            ? formatNumber(minPrice)
+            : formatNumber(compound?.minPrice || 0);
+    }, [compound?.minPrice, properties]);
+
     const compoundDetails: PageProps = {
         title: compound.title,
         name: compound?.name || compound.title,
@@ -161,22 +175,22 @@ const Client: React.FC<ClientProps> = ({
         <div className=" flex justify-start items-center gap-2">
             {allTypes.length
                 ? allTypes.map((type, i) => (
-                    <div
-                        className=" flex justify-center items-center"
-                        key={i}
-                    >
-                        {i !== 0 ? (
-                            <span className=" flex justify-start items-center gap-2">
-                                <span>-</span>
-                                {type.type}
-                            </span>
-                        ) : (
-                            <span className=" flex justify-start items-center gap-1">
-                                {type.type}
-                            </span>
-                        )}
-                    </div>
-                ))
+                      <div
+                          className=" flex justify-center items-center"
+                          key={i}
+                      >
+                          {i !== 0 ? (
+                              <span className=" flex justify-start items-center gap-2">
+                                  <span>-</span>
+                                  {type.type}
+                              </span>
+                          ) : (
+                              <span className=" flex justify-start items-center gap-1">
+                                  {type.type}
+                              </span>
+                          )}
+                      </div>
+                  ))
                 : ""}
         </div>
     );
@@ -229,13 +243,9 @@ const Client: React.FC<ClientProps> = ({
                                 </div>
                                 <div className="mt-2 flex justify-start items-center gap-2">
                                     <span>سعر يبدأ من </span>
-                                    <span>
-                                        {formatNumber(compoundDetails.minPrice)}
-                                    </span>
+                                    <span>{minPrice()}</span>
                                     <span>حتى</span>
-                                    <span>
-                                        {formatNumber(compoundDetails.maxPrice)}
-                                    </span>
+                                    <span>{maxPrice()}</span>
                                 </div>
                             </div>
                         </div>
@@ -263,7 +273,7 @@ const Client: React.FC<ClientProps> = ({
                             </div>
 
                             <div className=" flex flex-wrap justify-center items-center gap-5">
-                                {compoundDetails.paymentPlans &&
+                                {/* {compoundDetails.paymentPlans &&
                                     compoundDetails?.paymentPlans.map(
                                         (plan, i) => (
                                             <div
@@ -301,12 +311,12 @@ const Client: React.FC<ClientProps> = ({
                                                 </div>
                                             </div>
                                         )
-                                    )}
+                                    )} */}
 
                                 <div className="w-full flex flex-col gap-2 justify-center items-center my-6">
                                     <span>سعر يبدأ من</span>
                                     <span className=" font-bold text-3xl mx-2">
-                                        {formattedMinPrice} ج.م
+                                        {minPrice()} ج.م
                                     </span>
                                 </div>
                                 <div className=" flex-1 flex justify-center items-center my-6 ">
@@ -366,12 +376,11 @@ const Client: React.FC<ClientProps> = ({
 
                         <div>
                             <Specifics
-                                floorPlan={
-                                    compound.mainImage || "لايتوفر مخطط ادوار"
-                                }
-                                masterPlan={
-                                    compound.mainImage || "لايتوفر مخطط للمشروع"
-                                }
+                                photos={[
+                                    compound.mainImage,
+                                    ...compound.images,
+                                ]}
+                                masterPlan={compound.masterPlan || ""}
                                 lat={compound?.lat || 0}
                                 lng={compound?.lng || 0}
                                 placeName={compound?.name || compound.title}
@@ -412,7 +421,9 @@ const Client: React.FC<ClientProps> = ({
                         <div className="my-12 relative">
                             <div className=" absolute "></div>
                             <h2>عن {compoundDetails.title}</h2>
-                            <Description content={compoundDetails?.description || ""} />
+                            <Description
+                                content={compoundDetails?.description || ""}
+                            />
                         </div>
                     </div>
                     <div
@@ -460,8 +471,9 @@ const Client: React.FC<ClientProps> = ({
 
                                 <div className="w-full flex flex-col justify-center items-start gap-2">
                                     <Button
-                                        label={`${isLoading ? "جاري الارسال" : "ارسال"
-                                            }`}
+                                        label={`${
+                                            isLoading ? "جاري الارسال" : "ارسال"
+                                        }`}
                                         disabled={isLoading}
                                     />
                                 </div>

@@ -7,6 +7,7 @@ import useModalPro from "@/app/hooks/useModalPro";
 import dynamic from "next/dynamic";
 import MasterPlan from "./MasterPlan";
 import FloorPlan from "./FloorPlan";
+import ImagesGallery from "../ImagesGallery";
 
 const Mapbox = dynamic(() => import("../Map/Mapbox"), {
     ssr: false,
@@ -22,7 +23,7 @@ const MasterPlanImage = dynamic(() => import("../Map/MasterPlanImage"), {
 interface SpecificsProps {
     floorPlan?: string;
     masterPlan?: string;
-    photos?: string;
+    photos?: string[] | any;
     lat?: number;
     lng?: number;
     placeName?: string;
@@ -31,6 +32,7 @@ interface SpecificsProps {
 const Specifics: FC<SpecificsProps> = ({
     floorPlan,
     masterPlan,
+    photos,
     lat,
     lng,
     placeName,
@@ -46,28 +48,44 @@ const Specifics: FC<SpecificsProps> = ({
     );
     const floorPlanImage = <FloorPlanImage floorPlan={floorPlan || ""} />;
     const masterPlanImage = <MasterPlanImage masterPlan={masterPlan || ""} />;
+    const imageModal = <ImagesGallery images={photos || []} />;
+    const [gallery, setGallery] = useState(false);
 
     const handelMap = () => {
+        setGallery(false);
         setContent(null);
         setContent(map);
         modal.onOpen();
     };
 
     const handelfloorPlan = () => {
+        setGallery(false);
         setContent(null);
         setContent(floorPlanImage);
         modal.onOpen();
     };
 
     const handeMasterPlan = () => {
+        setGallery(false);
         setContent(null);
         setContent(masterPlanImage);
         modal.onOpen();
     };
 
+    const handelImages = () => {
+        setGallery(true);
+        setContent(null);
+        setContent(imageModal);
+        modal.onOpen();
+    };
+
     return (
         <>
-            <ModalPro onClose={modal.onClose} isOpen={modal.isOpen}>
+            <ModalPro
+                onClose={modal.onClose}
+                isOpen={modal.isOpen}
+                gallery={gallery}
+            >
                 {content}
             </ModalPro>
             <div
@@ -76,9 +94,9 @@ const Specifics: FC<SpecificsProps> = ({
             >
                 <h3 className="font-bold my-2 text-xl">المواصفات</h3>
                 <div className="w-full grid grid-cols-2 lg:grid-cols-5 justify-start items-center gap-6">
-                    <Photos onClick={modal.onOpen} />
-                    <MasterPlan onClick={handeMasterPlan} />
-                    <FloorPlan onClick={handelfloorPlan} />
+                    <Photos onClick={handelImages} />
+                    {masterPlan && <MasterPlan onClick={handeMasterPlan} />}
+                    {floorPlan && <FloorPlan onClick={handelfloorPlan} />}
                     <Map onClick={handelMap} />
                 </div>
             </div>

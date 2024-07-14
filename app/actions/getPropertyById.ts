@@ -19,6 +19,7 @@ export default async function getPropertyById(
                         title: true,
                         slug: true,
                         name: true,
+                        masterPlan: true,
                         lat: true,
                         lng: true,
                     },

@@ -12,18 +12,8 @@ export default async function getCompoundById(params: IParams) {
             where: {
                 slug: decodeURI(slug),
             },
-            select: {
-                id: true,
-                slug: true,
-                name: true,
-                lat: true,
-                lng: true,
-                images: true,
-                content: true,
-                mainImage: true,
-                isAddHome: true,
-                seoDetails: true,
-                title: true,
+
+            include: {
                 developer: {
                     select: {
                         title: true,

@@ -14,15 +14,22 @@ import CompoundLoader from "@/app/components/compounds/CompoundLoader";
 
 interface ForSalePageProps {
     searchParams: IParams;
+    params: {
+        category: string;
+        propertyType: string;
+    };
 }
 
-const ForSalePage = async ({ searchParams }: ForSalePageProps) => {
-    const listings = await getProperties(searchParams);
+const ForSalePage = async ({ searchParams, params }: ForSalePageProps) => {
+    const listings = await getProperties({
+        category: "للبيع",
+        ...searchParams,
+    });
     const currentUser = await getCurrentUser();
-    const count = await listingsLength();
-    const types = await getlistings(searchParams);
     const currentPage = searchParams?.page || 1;
-    const perPage = searchParams?.perPage || 10;
+    const getAll = await getlistings(params);
+
+    const perPage = searchParams?.perPage || 12;
     const parent = "properties-for-sale";
     const items = [{ label: `عقارات للبيع في مصر`, href: `/${parent}` }];
     const home = {
@@ -37,7 +44,7 @@ const ForSalePage = async ({ searchParams }: ForSalePageProps) => {
             <div className="flex gap-4 justify-between items-center my-8 w-full">
                 <Heading
                     title={" عقارات للبيع في مصر"}
-                    subtitle={`عدد الوحدات المتوفرة: ${count}`}
+                    subtitle={`عدد الوحدات المتوفرة: ${getAll.length}`}
                 />
                 <div className="w-60">
                     <Sort />
@@ -45,12 +52,12 @@ const ForSalePage = async ({ searchParams }: ForSalePageProps) => {
             </div>
 
             <div>
-                <FilterByGroups listings={types as any} parent={parent} />
+                <FilterByGroups listings={getAll as any} parent={parent} />
             </div>
             {listings ? (
                 <Suspense fallback={<CompoundLoader />}>
                     <ForSaleClient
-                        propertiesLength={count}
+                        propertiesLength={getAll.length}
                         currentPage={currentPage}
                         perPage={perPage}
                         listings={listings as any}

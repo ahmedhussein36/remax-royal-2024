@@ -49,13 +49,13 @@ const ForSaleClient: React.FC<ForSaleClientProps> = ({
                     />
                 ))}
             </div>
-            {listings.length > totalPages && (
+            {
                 <Pagination
                     currentPage={currentPage}
                     totalPages={totalPages}
                     parent={parent}
                 />
-            )}
+            }
         </>
     );
 };

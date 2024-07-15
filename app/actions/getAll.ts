@@ -4,7 +4,7 @@ export interface IParams {
     category?: string;
 }
 
-export const listingsLength = async () => {
+export const listingsLength = async () => { 
     const properties = await prisma.property.findMany({
         select: {
             id: true,

@@ -3,8 +3,8 @@ export interface IParams {
     userId?: string;
     areaId?: string;
     developerId?: string;
-    roomCount?: number;
-    bathroomCount?: number;
+    roomCount?: any;
+    bathroomCount?: any;
     isAddHome?: boolean;
     city?: string;
     title?: string;
@@ -105,8 +105,6 @@ export default async function getProperties(params: IParams) {
             propertyType: true,
             bathroomCount: true,
             size: true,
-            content: false,
-            updatedAt: false,
             compoundId: true,
             areaId: true,
             developerId: true,

@@ -13,6 +13,7 @@ import EntityType from "@/app/components/EntityType";
 import Link from "next/link";
 import Specifics from "@/app/components/specifications/Specifics";
 import Description from "@/app/components/properties/Description";
+import ImagesGallery from "@/app/components/ImagesGallery";
 
 interface ClientProps {
     compound: SingleCompound;
@@ -45,11 +46,20 @@ const Client: React.FC<ClientProps> = ({
     currentUser,
 }) => {
     const [isLoading, setIsLoading] = useState(false);
+    const [isOpen, setIsOpen] = useState(false);
     const [data, setData] = useState({
         name: "",
         phone: "",
         subject: "",
     });
+
+    const handelOpenGallery = () => {
+        setIsOpen(true);
+    };
+
+    const handelClose = () => {
+        setIsOpen(false);
+    };
 
     function getMaxPrice(properties: SafeProperty[]): number {
         if (properties.length === 0) return 0; // Handle empty array case
@@ -196,6 +206,12 @@ const Client: React.FC<ClientProps> = ({
     );
     return (
         <>
+            {isOpen && (
+                <ImagesGallery
+                    onClose={handelClose}
+                    images={[compound.mainImage, ...compound.images] || []}
+                />
+            )}
             <Container>
                 <div className=" flex flex-col md:flex-row justify-between items-start gap-4 my-8">
                     <div className="flex flex-col justify-center items-start w-full md:w-2/3 h-fit gap-4">
@@ -376,10 +392,7 @@ const Client: React.FC<ClientProps> = ({
 
                         <div>
                             <Specifics
-                                photos={[
-                                    compound.mainImage,
-                                    ...compound.images,
-                                ]}
+                                openGallary={handelOpenGallery}
                                 masterPlan={compound.masterPlan || ""}
                                 lat={compound?.lat || 0}
                                 lng={compound?.lng || 0}
@@ -420,8 +433,9 @@ const Client: React.FC<ClientProps> = ({
 
                         <div className="my-12 relative">
                             <div className=" absolute "></div>
-                            <h2>عن {compoundDetails.title}</h2>
+
                             <Description
+                                title={`عن ${compound.name}`}
                                 content={compoundDetails?.description || ""}
                             />
                         </div>

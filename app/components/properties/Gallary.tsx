@@ -2,16 +2,17 @@
 
 import Image from "next/image";
 import { useState } from "react";
-import { BiCamera, BiSolidCamera } from "react-icons/bi";
+import { BiCamera } from "react-icons/bi";
 
 interface GallaryProps {
     images: string[];
     mainImage: string;
+    onclick?: () => void;
 }
 
-const placeholder = "/assets/images/placeholder2.png";
+// const placeholder = "/assets/images/placeholder2.png";
 
-const Gallary = ({ images, mainImage }: GallaryProps) => {
+const Gallary = ({ images, mainImage, onclick }: GallaryProps) => {
     const [hoveredIndex, setHoveredIndex] = useState(-1);
 
     const AllImages: string[] = [mainImage, ...images];
@@ -46,7 +47,12 @@ const Gallary = ({ images, mainImage }: GallaryProps) => {
                             />{" "}
                         </div>
                     ))}
-                <div className=" relative w-[200px] h-[500px] bg-gray-500 text-white flex justify-center items-center gap-2 flex-col">
+                <div
+                    className=" relative w-[200px] h-[500px] bg-gray-500 text-white 
+                                flex justify-center items-center gap-2 flex-col cursor-pointer
+                                "
+                    onClick={onclick}
+                >
                     <div>
                         <BiCamera size={36} />
                     </div>

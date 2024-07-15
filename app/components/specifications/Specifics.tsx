@@ -7,7 +7,6 @@ import useModalPro from "@/app/hooks/useModalPro";
 import dynamic from "next/dynamic";
 import MasterPlan from "./MasterPlan";
 import FloorPlan from "./FloorPlan";
-import ImagesGallery from "../ImagesGallery";
 
 const Mapbox = dynamic(() => import("../Map/Mapbox"), {
     ssr: false,
@@ -23,7 +22,7 @@ const MasterPlanImage = dynamic(() => import("../Map/MasterPlanImage"), {
 interface SpecificsProps {
     floorPlan?: string;
     masterPlan?: string;
-    photos?: string[] | any;
+    openGallary: () => void;
     lat?: number;
     lng?: number;
     placeName?: string;
@@ -32,11 +31,12 @@ interface SpecificsProps {
 const Specifics: FC<SpecificsProps> = ({
     floorPlan,
     masterPlan,
-    photos,
+    openGallary,
     lat,
     lng,
     placeName,
 }) => {
+    const [gallery, setGallery] = useState(false);
     const modal = useModalPro();
     const [content, setContent] = useState<any>();
     const map = (
@@ -48,8 +48,6 @@ const Specifics: FC<SpecificsProps> = ({
     );
     const floorPlanImage = <FloorPlanImage floorPlan={floorPlan || ""} />;
     const masterPlanImage = <MasterPlanImage masterPlan={masterPlan || ""} />;
-    const imageModal = <ImagesGallery images={photos || []} />;
-    const [gallery, setGallery] = useState(false);
 
     const handelMap = () => {
         setGallery(false);
@@ -72,13 +70,6 @@ const Specifics: FC<SpecificsProps> = ({
         modal.onOpen();
     };
 
-    const handelImages = () => {
-        setGallery(true);
-        setContent(null);
-        setContent(imageModal);
-        modal.onOpen();
-    };
-
     return (
         <>
             <ModalPro
@@ -94,7 +85,7 @@ const Specifics: FC<SpecificsProps> = ({
             >
                 <h3 className="font-bold my-2 text-xl">المواصفات</h3>
                 <div className="w-full grid grid-cols-2 lg:grid-cols-5 justify-start items-center gap-6">
-                    <Photos onClick={handelImages} />
+                    <Photos onClick={openGallary} />
                     {masterPlan && <MasterPlan onClick={handeMasterPlan} />}
                     {floorPlan && <FloorPlan onClick={handelfloorPlan} />}
                     <Map onClick={handelMap} />

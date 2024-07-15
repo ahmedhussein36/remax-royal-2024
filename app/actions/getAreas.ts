@@ -14,16 +14,20 @@ export default async function getAreas(params: IParams) {
         let query: any = {};
 
         const areas = await prisma.area.findMany({
+            where: query,
+            select:{
+                id:true,
+                slug: true,
+                title:true,
+                image: true,
+            },
             take: 8,
             orderBy: {
                 createdAt: "asc",
             },
         });
-
         const safeAreas = areas.map((area) => ({
             ...area,
-            createdAt: area?.createdAt?.getTime(),
-            updatedAt: area?.updatedAt?.getTime(),
         }));
 
         return safeAreas;

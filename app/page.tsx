@@ -8,6 +8,8 @@ import getCurrentUser from "./actions/getCurrentUser";
 import Promotion from "./components/Promotion";
 import Contactus from "@/app//components/Contactus";
 import { getTopCompounds } from "./actions/getAll";
+import getAreas from "./actions/getAreas";
+import TopAreas from "./components/home/TopAreas";
 
 export const metadata = {
     title: "RE/MAX Royal | ريماكس رويال : عقارت للبيع وللإيجار في مصر",
@@ -17,7 +19,7 @@ export const metadata = {
 
 const Home = async ({ searchParams }: { searchParams: IParams }) => {
     const currentUser = await getCurrentUser();
-    // const areas = await getAreas({ perPage: 8 });
+    const areas = await getAreas({ perPage: 8 });
     const compounds = await getTopCompounds();
     const listings = await getProperties({ perPage: 6, isAddHome: true });
     return (
@@ -27,7 +29,7 @@ const Home = async ({ searchParams }: { searchParams: IParams }) => {
                     <Filter />
                 </HeroSection>
                 <Container>
-                    {/* <TopAreas areas={areas as any} /> */}
+                    <TopAreas areas={areas as any} />
                     <TopCompounds compounds={compounds as any} />
                     <Promotion />
                     <TopListings

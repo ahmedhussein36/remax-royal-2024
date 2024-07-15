@@ -33,9 +33,10 @@ const MapComponent: React.FC<MapProps> = ({ lat, lng, placeName }) => {
             marker.setStyle(
                 new Style({
                     image: new Icon({
-                        src: "/assets/icons/marker-icon.png", // Ensure you have this image in your public folder
+                        src: "/assets/icons/mappin.png", // Ensure you have this image in your public folder
+                       
                         anchor: [0.5, 1],
-                        scale: 0.7,
+                        scale:0.1
                     }),
                 })
             );
@@ -61,7 +62,7 @@ const MapComponent: React.FC<MapProps> = ({ lat, lng, placeName }) => {
                 ],
                 view: new View({
                     center: coordinates,
-                    zoom: 13, // Set a higher zoom level initially
+                    zoom: 14.3, // Set a higher zoom level initially
                 }),
             });
 
@@ -86,7 +87,7 @@ const MapComponent: React.FC<MapProps> = ({ lat, lng, placeName }) => {
             <div ref={mapElement} style={{ width: "100%", height: "100%" }} />
             <div
                 ref={popupElement}
-                className="ol-popup text-center right-[75vw] md:right-[90vw] lg:right-[56vw] xl:right-[59vw]
+                className=" w-48 ol-popup text-center right-[75vw] md:right-[90vw] lg:right-[56vw] xl:right-[57.5vw]
                 "
             >
                 <div className="ol-popup-content ">{placeName}</div>

@@ -211,13 +211,13 @@ html,
 .ol-popup:after {
   border-top-color: white;
   border-width: 10px;
-  left: 55px;
+  left: 80px;
   margin-left: -10px;
 }
 
 .ol-popup:before {
   border-top-color: #cccccc;
   border-width: 11px;
-  left: 55px;
+  left: 80px;
   margin-left: -11px;
 }
